@@ -3,7 +3,7 @@ title: Support - Cat Analytics
 description: This is the support page of Cat Analytics 
 ---
 
-<Hero slots="heading, text" background="rgb(19, 93, 183)"/>
+<HeroSimple slots="heading, text" background="rgb(19, 93, 183)"/>
 
 # Support
 
