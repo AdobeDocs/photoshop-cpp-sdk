@@ -1,3 +1,5 @@
+![](images/adobe.jpg)
+
 # License Adobe Software Developer's Kit ("SDK") License Agreement
 
 ## ADOBE SOFTWARE DEVELOPMENT KIT LICENSE FOR ADOBE TECHNOLOGY NAMED ADOBE® PHOTOSHOP® SDK
