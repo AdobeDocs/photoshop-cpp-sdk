@@ -1,6 +1,6 @@
 # Adobe® Photoshop® CC SDK
 
-[![](/images/plugins.gif)](https://developer.adobe.com/photoshop-cpp-sdk)  
+[![](/images/plugins.gif)](https://developer.adobe.com/photoshop-cpp-sdk-docs)  
 Developers can use the SDK to create plug-ins that extend the functionality of Adobe Photoshop CC.
 
 [![](/images/companion.gif)](https://developer.adobe.com/console/14431/user/servicesandapis)  
