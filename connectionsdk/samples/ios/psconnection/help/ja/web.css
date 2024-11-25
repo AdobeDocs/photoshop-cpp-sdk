@@ -1,0 +1,32 @@
+.headerText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 25px;
+	font-weight: bold;
+	color: #999999;
+}
+.regMark {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #999999;
+	vertical-align: top;
+}
+.titleText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333333;
+}
+.bodyText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 15px;
+	font-weight: normal;
+	color: #333333;
+}
+.bodyRegMark {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	vertical-align: top;
+}

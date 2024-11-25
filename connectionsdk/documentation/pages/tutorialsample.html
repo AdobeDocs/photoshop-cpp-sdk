@@ -1,0 +1,183 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Name:				index.html
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+Description:		The index file describes the overall picture of the Adobe
+					Photoshop Kevlar SDK for other developers to use.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Tutorial Sample</h1>
+    
+    <p>There are two iOS tutorial sample apps in the SDK. One of them is called Tutorial Test and the other one is called Fire Tutorial. Tutorial Test shows how to play back painting and paint brush selection with a special pre-recorded system. The Fire Tutorial shows a real life example of what a Photoshop tutorial would look like. In addition to describing how to use a particular feature, the user can click on the &quot;do it&quot;  button to see how it can be done in Photoshop.</p>
+    <p><strong>Project Location</strong>
+    <ul>
+    <li>Tutorial Test:   <code>samples/ios/tutorialtest</code></li>
+    <li>Fire Tutorial:  <code>samples/ios/firetutorial</code></li>
+    </ul>
+    <p>One thing unique about the tutorial samples is the use of the Arbitrary Data Type. In simple terms, you're sending blob data.  Since playback of painting or anything related to brushes requires a special method of recording and playback due to the size of paint  strokes recorded, the playback will be in binary.  In the tutorials' case, we are sending a pre-recorded binary to Photoshop.  When Photoshop returns a URI location to the client, the client asks Photoshop to play that binary file via a special script. </p>
+    <p><strong>Recording Painting Strokes</strong><br />   
+    To get this "binary" painting playback, do the following:<ol>
+<li>Play "recordStoke.jsx".</li>
+<li>Do some painting.</li>
+<li>Play &quot;stopRecording.jsx&quot;.</li>
+<li>It will ask you to name the file. This is your binary script file.</li>
+</ol>
+<p>To play back painting, you use another script to play the binary script file.  This opens up the painting aspects of Photoshop that were previously unavailable.  You can now record anything that uses a brush: brush tool, quick selection tool, smudge tool, etc.  Anything that uses a brush can be recorded. </p>
+<p>
+<strong>recordStroke.jsx</strong><br />
+<br />
+<code>
+function RecordStroke()<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var descriptor = new ActionDescriptor();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var commandString = stringIDToTypeID("startStrokeRecording");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;executeAction(commandString, descriptor, DialogModes.NO);<br />
+}<br />
+<br />
+RecordStroke();<br />
+</code>
+<br />
+<br />
+<strong>stopRecording.jsx</strong><br />
+<br />
+<code>
+function StopRecording(fileName)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var descriptor = new ActionDescriptor();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var strokeFile = null;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (fileName != null)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeFile = File(fileName);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!strokeFile.exists)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeFile = null;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (strokeFile == null)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeFile = File.saveDialog("Save recording as...");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.sleep(250); // makes dialog disappear before continuing<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (strokeFile.exists)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeFile.remove();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;descriptor.putPath(stringIDToTypeID("path"), strokeFile);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var commandString = stringIDToTypeID("stopStrokeRecording");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;executeAction(commandString, descriptor, DialogModes.NO);<br />
+}<br />
+<br />
+StopRecording();<br />
+</code>
+<br /><br />
+<strong>playbackStroke.jsx</strong><br />
+<br />
+<code>
+function PlayStroke(fileName)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var playFile = null;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (fileName)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;playFile = new File(fileName);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!playFile.exists)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;playFile = null;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (playFile == null)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;playFile = File.openDialog("Select recording...");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;app.refresh();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (playFile != null)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var descriptor = new ActionDescriptor();<br />
+	<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;descriptor.putPath(stringIDToTypeID("path"), playFile);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Should we reset the tool to what it was when we recorded<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;descriptor.putBoolean(stringIDToTypeID("tool"), true);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var commandString = stringIDToTypeID("playbackStrokeFromFile");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;executeAction(commandString, descriptor, DialogModes.NO);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br />
+</code>
+</p>
+<p>
+<strong>Sending arbitrary data type</strong><br /> 
+<table border="0">
+<tr>
+<td valign="top" width="60%"><p>Once you've obtained the binary script that you want to play, embed this as a resource in your app. You then send this binary to Photoshop as block data.  The stack on the right shows what the message would look like.</p>
+  <p>Keep in mind that you will get a URI as a response from Photoshop. If you happen to send a PSD to Photoshop, you can ask Photoshop to open the PSD with<br /><br />
+ <code> app.open(new File(the-URI-from-Photoshop));</code></p></td>
+<td><img src="../images/blob-slice.jpg" width="206" height="313" /></td>
+</tr>
+</table>
+</p>
+<p>
+<strong>Things to watch out for</strong><br />
+<br />
+1.  The size of binary you want to send<br />
+Keep in mind that the device you're writing code for isn't as powerful as your desktop.  It takes time to encrypt and send big files.  In the iOS Tutorial Test example, notice that one of the binary scripts sent is 2.9MB.  When you test this out in the simulator, it's very fast.  When you test this out on the iPad, it can take 3 - 5 seconds before Photoshop receives this.
+<br />
+<br />
+2.  The URI<br />
+If you're doing this with Photoshop on the Mac, paths returns as <code>/somepath/sometemp/somefile</code>. On Windows, it will probably come back as <code>c:\Users\someuserid\sometemp\thetempfilename</code>.  You must properly escape the path from Windows if you want it to play correctly.  You can either replace '\' with '/' or just properly escape it before sending it to Photoshop in JavaScript form. <br />
+<br />
+3.  The order it gets played<br />
+You may be tempted to do something like this all in one shot:
+<ol>
+<li>Do some brush setup</li>
+<li>Select the brush</li>
+<li>Send the binary file</li>
+<li>Play back the binary file</li>
+<li>Do something else</li>
+</ol>
+<p>You would, however, be unpleasantly surprised because Photoshop will play through 1, 2, 3 and 5 before 4 happen.  Number 4 will probably happen last because 1, 2, 3 and 5 will go into a queue.  When Photoshop returns the value to the client and the client responds with play code, the play code will be queued as number 6!  Please look through the Tutorial Test project to see how to avoid this trap.
+  </p>
+</p>
+<p><strong>Fire Tutorial</strong></p>
+<p><img src="../images/firetutorial.jpg" width="519" height="391" /></p>
+<p>The Fire Tutorial takes an actual tutorial of how to create fire text and turns it into a tutorial app. It demonstrates the use of arbitrary data type send of Smudge tool scripting playback.</p>
+<p><br class="clearfloat" />
+</div>
+</body>
+</html>

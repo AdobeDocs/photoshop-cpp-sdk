@@ -1,0 +1,198 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>How Does It Work?</h1>
+
+    <p>The client application needs to create a TCP (Socket) connection on port 49494. The client application can then send JavaScript and receive back the results of the script. The client application can also make requests for notifications to be sent from Photoshop to the client. These events could be  tool changes, document open or close, document changes and others. The full list of Photoshop events along with the information that gets sent to the client can be found at the bottom of this page.
+    </p>
+    
+    <p>Image data can also be sent back and forth to the client. The image data from any open document can be requested and transferred to the client application. Sending image data from the client to Photoshop will result in a new document being created. The JPEG and Pixmap binary formats are currently supported.
+    </p>
+    
+    <p>Please note that this is not limited to tablet devices.  The communication channel to Photoshop will work with any device or computer that supports the TCP protocol and any language that supports the Socket API. Applications can be written for Blackberry, Windows Phone 7, or Linux devices, though the examples in the SDK are primarily focused on AIR, Android, Java, iOS, and Mac OS.
+    </p>
+    
+    <h2><a name="JavaScript">JavaScript in the Photoshop context</a></h2>
+    
+    <p>Photoshop uses the JavaScript language for dynamic creation of commands and user interfaces in Photoshop. The Image Processor dialog found under File -> Scripts is an example of a dialog created in JavaScript. The dialog gathers up the configuration, creates commands to process images in a given input folder and puts the processed files in an output folder. This is just one example of the use of JavaScript in the Photoshop context. We point this out so that developers will not confuse JavaScript running inside of Photoshop vs. JavaScript running inside a web page browser application like Firefox.</p>
+    
+    <p>A developer familiar with the Photoshop Actions panel, running and recording actions and creating Photoshop JavaScripts can move directly to the next section. Developers unfamiliar with actions and/or JavaScript in the Photoshop context should read the JavaScript documentation that comes as part of your Photoshop install. This documentation can be found in the Photoshop Scripting/Documents folder. Open up the <code>Photoshop CS5 Scripting Guide.pdf</code> in Acrobat Reader to become more familiar with how Photoshop uses JavaScript. An online copy of the Scripting documentation can be found <a href="http://www.adobe.com/devnet/photoshop/scripting.html">here</a>.</p>
+    
+    <h2>Security of your data and messages</h2>
+    
+    <p>All messages to and from Photoshop are encrypted and decrypted. The language selected must also include a key generator and encrypt and decrypt API. The only messages that are not encrypted are error messages. The encryption and decryption algorithms are not configurable. Make sure the encrypt and decrypt API supports the algorithms in use. The current algorithm in use is Password-Based Key Definition (PBKDF2) to generate the key from a given password, iteration count and salt value. DESede + CBC + PKCS5 v2.0 is then used with the key to encrypt and decrypt the message.
+    </p>
+    
+    <h2>Discovery of the connection</h2>
+    
+    <p>Photoshop will advertise as a Bonjour service on the local subnet after being properly configured from the Edit > Remote Connections menu. The service name will be "_photoshopserver._tcp" and the instance name will be configured by the user from the Connections dialog box. Photoshop will automatically remember these settings and start up the service after any restart. Use the dialog box to disable the service.</p>
+
+    <p>Connections can also be made if the IP address of the machine is known. The IP address can be found in the Connections dialog box.
+    </p>
+    
+    <h2><a name="CommProtocol">Details of data transfered over the TCP connection</a></h2>
+    
+    <p>This is what you are trying to send:
+    <br />
+    <img src="../images/network-message.jpg" width="309" height="427" /></p>
+    <p>Notice that the first 8 bytes is not encrypted while the rest of the message isencrypted.  The second thing to notice is that if the password is incorrect, the message sent back will not be encrypted.  The error message will be sent in plain text in the content section.</p>
+    
+    <h2>Communication Protocol</h2>
+    
+    <TABLE BORDER="1" style="margin-right: 54pt; margin-left: 54pt">
+    <TR><TH width="20%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Bytes</P></TH>
+    <TH width="80%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Description</P></TH></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">signed length of message, includes everything after</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">communication status, 0 is no error and the remainder of the message is encrypted, non-zero means an error, and the remainder of the message will not be encrypted, probably a password error</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">protocol version number, current version is 1</EM></P></TD></TR>
+        <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">transaction ID</EM></P></TD></TR>
+        <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">content type, see table below</EM></P></TD></TR>
+        <TR>
+          <TD ALIGN=CENTER COLSPAN="1"><P CLASS="CellBody">variable length</P></TD>
+          <TD COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">the actual content, see below</EM></P></TD>
+        </TR>
+    </TABLE>
+    
+    <h2>Content Type</h2>
+    
+    <TABLE BORDER="1" style="margin-right: 54pt; margin-left: 54pt">
+    <TR><TH width="20%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Value</P></TH>
+    <TH width="80%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Description</P></TH></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">1</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">error string, used for errors from server replying to content, should never be sent from client to Photoshop, rest of message is text as UTF-8</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">2</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">JavaScript is used for commands from client to Photoshop, replies from Photoshop will be text, JavaScript and text is always UTF-8 encoded</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">3</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">Image, 1 for EXIF standard JPEG format bytes follow for remainder of message, 2 for Pixmap (See table below)</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">ICC profile, not implemented in this version of Photoshop</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">5</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">Arbitrary data to be saved as temporary file. The message data will be saved to a temporary file, and the file path for that temporary file is returned. The client should use JavaScript to delete the temporary file when it is done with it. Photoshop will attempt to clean up left over temporary files on a normal exit, but cannot unlink the temporary files as the client may still be using the file.</EM></P></TD></TR>
+    </TABLE>
+    
+    <h2>Pixmap</h2>
+    
+    <TABLE BORDER="1" style="margin-right: 54pt; margin-left: 54pt">
+    <TR><TH width="20%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Bytes</P></TH>
+    <TH width="80%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Description</P></TH></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">width of image</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">height of image</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">4</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">row bytes of image</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">1</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">color mode of image, 1 for RGB currently supported</EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">1</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">channel count, 1 or 3 currently supported</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">1</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">bits per channel, 8 currently supported</EM></P></TD></TR>
+</TABLE>
+
+    <h2><a name="PSEvents">Photoshop Events</a></h2>
+    
+    <TABLE BORDER="1" style="margin-right: 54pt; margin-left: 54pt">
+    <TR><TH width="20%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Event String</P></TH>
+    <TH width="20%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Extra Data</P></TH>
+    <TH width="60%" COLSPAN="1" ROWSPAN="1"><P CLASS="CellHead">Description</P></TH></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">foregroundColorChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">color value in form of RRGGBB hex value, FF0000 for example</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">sent anytime the foreground color gets changed</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">backgroundColorChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">color value in form of RRGGBB hex value, FF0000 for example</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">sent anytime the background color gets changed</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">toolChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">uniqueToolID, "moveTool" for the Move tool for example</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">active tool switched</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">closedDocument</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">unique id of the document, "45" for example</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">document has closed</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">newDocumentViewCreated</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">unique id of the document</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">new view for the document has been made</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">currentDocumentChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">unique id of document</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">active document has changed, this could be from a new document being created or opened</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">documentChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">unique id of document</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">active document has been altered, meaning something has happened to alter the appearence of the document and an image request should be made to the server to get the new apperance</EM></P></TD></TR> 
+	<TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">activeViewChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">unique id of document</P></TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">active document view has changed</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">colorSettingsChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"></P>&nbsp;</TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">color settings have been modified</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">keyboardShortcutsChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"></P>&nbsp;</TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">keyboard shortcuts have been modified</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">preferencesChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"></P>&nbsp;</TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">preferences have been modified</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">quickMaskStateChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"></P>&nbsp;</TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">quick mask state change</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">screenModeChanged</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"></P>&nbsp;</TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">screen mode change</EM></P></TD></TR>
+    <TR><TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody">*any actionable event*</P></TD>
+    <TD ALIGN=CENTER ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"></P>&nbsp;</TD>
+    <TD ROWSPAN="1" COLSPAN="1"><P CLASS="CellBody"><EM CLASS="Code">event ids from 3rd party plug-ins, Photoshop plug-ins or Photoshop</EM></P></TD></TR>
+</TABLE>
+    
+    <p>Events can be requested by the client via a JavaScript message as follows (see the PhotoshopEvents Android example for more details on configuring at runtime):<code><br /><br />
+  
+    	String s = "var idNS = stringIDToTypeID( 'networkEventSubscribe' );"; <br />
+		s += "var desc1 = new ActionDescriptor();";<br />
+		s += "desc1.putClass( stringIDToTypeID( 'eventIDAttr' ), stringIDToTypeID( '" + inEvent + "' ) );";<br />
+		s += "executeAction( idNS, desc1, DialogModes.NO );";<br />
+		s += "'" + subscribeSuccessStr + "'";<br />
+		messageProcessor.sendJavaScript(s);<br />
+
+    <br />
+    </code>
+    </p>
+  </div>
+	<br class="clearfloat" />
+</body>
+</html>

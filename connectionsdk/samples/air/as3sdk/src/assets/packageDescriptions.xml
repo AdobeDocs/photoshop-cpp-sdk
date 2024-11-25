@@ -1,0 +1,37 @@
+<overviews>
+	<packages>
+		<package name="com.adobe.photoshop.connection">
+			<shortDescription>Contains classes related to handling the low level connection with Photoshop.</shortDescription>
+			<description>Contains classes related to handling the low level connection with Photoshop.</description>
+		</package>
+		<package name="com.adobe.photoshop.dispatchers">
+			<shortDescription>Contains classes that are capable of dispatching events or other data, used in communication with Photoshop.</shortDescription>
+			<description>Contains classes that are capable of dispatching events or other data, used in communication with Photoshop.</description>
+		</package>
+		<package name="com.adobe.photoshop.events">
+			<shortDescription>Contains events pertaining to communication, state management, and errors.</shortDescription>
+			<description>Contains events pertaining to communication, state management, and errors.</description>
+		</package>
+		<package name="com.adobe.photoshop.log">
+			<shortDescription>Contains classes that help with logging, standard output, and error reporting.</shortDescription>
+			<description>Contains classes that help with logging, standard output, and error reporting.</description>
+		</package>
+		<package name="com.adobe.photoshop.messages">
+			<shortDescription>Contains messages and support classes. These messages can be dispatched to and received from Photoshop.</shortDescription>
+			<description>Contains messages and support classes. These messages can be dispatched to and received from Photoshop.</description>
+		</package>
+		<package name="com.adobe.photoshop.utils">
+			<shortDescription>Contains miscellaneous classes that are useful for both the internal API, and for developers' own Photoshop-related code.</shortDescription>
+			<description>Contains miscellaneous classes that are useful for both the internal API, and for developers' own Photoshop-related code.</description>
+		</package>
+		<package name="com.adobe.photoshop.subscriptions">
+			<shortDescription>Contains classes that allow the API to subscribe, unsubscribe, and otherwise manage the subscriptions that Photoshop supports. (E.g. color changes.)</shortDescription>
+			<description>Contains classes that allow the API to subscribe, unsubscribe, and otherwise manage the subscriptions that Photoshop supports. These may be things 
+						like tool changes, color changes, UI events, screen mode changes, user actions, etc.</description>
+		</package>		
+		<package name="com.adobe.photoshop.tools">
+			<shortDescription>Contains classes that pertain to the Photoshop tools, such as the paintbrush, move tool, etc.</shortDescription>
+			<description>Contains classes that pertain to the Photoshop tools, such as the paintbrush, move tool, etc.</description>
+		</package>
+	</packages>
+</overviews>

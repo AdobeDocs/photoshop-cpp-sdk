@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>Introduction</string>
+		<string>intro</string>
+	</array>
+	<array>
+		<string>Step 1: Create new document</string>
+		<string>1</string>
+	</array>
+	<array>
+		<string>Step 2: Select the Type Tool</string>
+		<string>2</string>
+	</array>
+	<array>
+		<string>Step 3: Rotation of text</string>
+		<string>3</string>
+	</array>
+	<array>
+		<string>Step 4: Apply the flame</string>
+		<string>4</string>
+	</array>
+	<array>
+		<string>Step 5: Rotate Back</string>
+		<string>5</string>
+	</array>
+	<array>
+		<string>Step 6: Gaussian Blur</string>
+		<string>6</string>
+	</array>
+	<array>
+		<string>Step 7: Smudge Tool</string>
+		<string>7</string>
+	</array>
+	<array>
+		<string>Step 8: Prep for Colorization</string>
+		<string>8</string>
+	</array>
+	<array>
+		<string>Step 9: Give color to fire</string>
+		<string>9</string>
+	</array>
+	<array>
+		<string>Step 10: Intense fire</string>
+		<string>10</string>
+	</array>
+	<array>
+		<string>Step 11: Text color</string>
+		<string>11</string>
+	</array>
+	<array>
+		<string>Finish</string>
+		<string>finish</string>
+	</array>
+</array>
+</plist>

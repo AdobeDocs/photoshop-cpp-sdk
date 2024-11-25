@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		648FFF000A1416EB00C29757 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFCFE0A1416EB00C29757 /* PIUSuites.cpp */; };
+		648FFF010A1416EB00C29757 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFCFF0A1416EB00C29757 /* PIUtilities.cpp */; };
+		648FFF020A1416EB00C29757 /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFD000A1416EB00C29757 /* DialogUtilitiesMac.cpp */; };
+		648FFF0B0A14170A00C29757 /* Propetizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFF050A14170A00C29757 /* Propetizer.cpp */; };
+		648FFF0C0A14170A00C29757 /* PropetizerScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFF080A14170A00C29757 /* PropetizerScripting.cpp */; };
+		648FFF0D0A14170A00C29757 /* PropetizerUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFF0A0A14170A00C29757 /* PropetizerUI.cpp */; };
+		648FFF160A14173900C29757 /* Propetizer.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFF070A14170A00C29757 /* Propetizer.r */; };
+		648FFF170A14173B00C29757 /* PropetizerUIMac.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFF040A1416FF00C29757 /* PropetizerUIMac.r */; };
+		648FFF320A14180E00C29757 /* PropertyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFF310A14180E00C29757 /* PropertyUtils.cpp */; };
+		648FFF380A14182800C29757 /* PIMacUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFF370A14182800C29757 /* PIMacUI.cpp */; };
+		64B4E549225879BC0009DF08 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E548225879BC0009DF08 /* FileUtilitiesMac.cpp */; };
+		64EBDFFD14FC42E600F864BE /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EBDFFC14FC42E600F864BE /* Timer.cpp */; };
+		64EBDFFF14FC42EC00F864BE /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EBDFFE14FC42EC00F864BE /* Logger.cpp */; };
+		64EBE0F014FC4DDA00F864BE /* PIUFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EBE0EF14FC4DDA00F864BE /* PIUFile.cpp */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		646709B3255DAE08009F97AB /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
+		647B635411138EC40067F135 /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
+		648FFCF20A1416EB00C29757 /* FilterBigDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FilterBigDocument.h; sourceTree = "<group>"; };
+		648FFCF30A1416EB00C29757 /* PIDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIDefines.h; sourceTree = "<group>"; };
+		648FFCF50A1416EB00C29757 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
+		648FFCF60A1416EB00C29757 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
+		648FFCF70A1416EB00C29757 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
+		648FFCFA0A1416EB00C29757 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
+		648FFCFE0A1416EB00C29757 /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
+		648FFCFF0A1416EB00C29757 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
+		648FFD000A1416EB00C29757 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
+		648FFEC50A1416EB00C29757 /* ASPreInclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPreInclude.h; sourceTree = "<group>"; };
+		648FFEC60A1416EB00C29757 /* PIAbout.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAbout.h; sourceTree = "<group>"; };
+		648FFEC70A1416EB00C29757 /* PIAcquire.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAcquire.h; sourceTree = "<group>"; };
+		648FFEC80A1416EB00C29757 /* PIActions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIActions.h; sourceTree = "<group>"; };
+		648FFEC90A1416EB00C29757 /* PIActionsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIActionsPlugin.h; sourceTree = "<group>"; };
+		648FFECA0A1416EB00C29757 /* PIAliasSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAliasSuite.h; sourceTree = "<group>"; };
+		648FFECB0A1416EB00C29757 /* PIBufferSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIBufferSuite.h; sourceTree = "<group>"; };
+		648FFECC0A1416EB00C29757 /* PIChannelPortOperations.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIChannelPortOperations.h; sourceTree = "<group>"; };
+		648FFECD0A1416EB00C29757 /* PIChannelPortsSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIChannelPortsSuite.h; sourceTree = "<group>"; };
+		648FFECE0A1416EB00C29757 /* PIColorSpaceSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIColorSpaceSuite.h; sourceTree = "<group>"; };
+		648FFECF0A1416EB00C29757 /* PIErrorSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIErrorSuite.h; sourceTree = "<group>"; };
+		648FFED00A1416EB00C29757 /* PIExport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIExport.h; sourceTree = "<group>"; };
+		648FFED10A1416EB00C29757 /* PIFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIFilter.h; sourceTree = "<group>"; };
+		648FFED20A1416EB00C29757 /* PIFormat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIFormat.h; sourceTree = "<group>"; };
+		648FFED30A1416EB00C29757 /* PIGeneral.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGeneral.h; sourceTree = "<group>"; };
+		648FFED40A1416EB00C29757 /* PIGetFileListSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGetFileListSuite.h; sourceTree = "<group>"; };
+		648FFED50A1416EB00C29757 /* PIGetPathSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGetPathSuite.h; sourceTree = "<group>"; };
+		648FFED60A1416EB00C29757 /* PIHandleSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIHandleSuite.h; sourceTree = "<group>"; };
+		648FFED70A1416EB00C29757 /* PIPicker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIPicker.h; sourceTree = "<group>"; };
+		648FFED80A1416EB00C29757 /* PIProgressSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIProgressSuite.h; sourceTree = "<group>"; };
+		648FFED90A1416EB00C29757 /* PIProperties.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIProperties.h; sourceTree = "<group>"; };
+		648FFEDA0A1416EB00C29757 /* PIResDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIResDefines.h; sourceTree = "<group>"; };
+		648FFEDB0A1416EB00C29757 /* PISelection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PISelection.h; sourceTree = "<group>"; };
+		648FFEDC0A1416EB00C29757 /* PIStringTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIStringTerminology.h; sourceTree = "<group>"; };
+		648FFEDD0A1416EB00C29757 /* PITerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PITerminology.h; sourceTree = "<group>"; };
+		648FFEDE0A1416EB00C29757 /* PITypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PITypes.h; sourceTree = "<group>"; };
+		648FFEDF0A1416EB00C29757 /* PIUIHooksSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUIHooksSuite.h; sourceTree = "<group>"; };
+		648FFEE20A1416EB00C29757 /* SPAccess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAccess.h; sourceTree = "<group>"; };
+		648FFEE30A1416EB00C29757 /* SPAdapts.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAdapts.h; sourceTree = "<group>"; };
+		648FFEE40A1416EB00C29757 /* SPBasic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBasic.h; sourceTree = "<group>"; };
+		648FFEE50A1416EB00C29757 /* SPBckDbg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBckDbg.h; sourceTree = "<group>"; };
+		648FFEE60A1416EB00C29757 /* SPBlocks.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBlocks.h; sourceTree = "<group>"; };
+		648FFEE70A1416EB00C29757 /* SPCaches.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPCaches.h; sourceTree = "<group>"; };
+		648FFEE80A1416EB00C29757 /* SPCOM.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPCOM.h; sourceTree = "<group>"; };
+		648FFEE90A1416EB00C29757 /* SPConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPConfig.h; sourceTree = "<group>"; };
+		648FFEEB0A1416EB00C29757 /* SPErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPErrorCodes.h; sourceTree = "<group>"; };
+		648FFEEC0A1416EB00C29757 /* SPErrors.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPErrors.h; sourceTree = "<group>"; };
+		648FFEED0A1416EB00C29757 /* SPFiles.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPFiles.h; sourceTree = "<group>"; };
+		648FFEEE0A1416EB00C29757 /* SPHost.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPHost.h; sourceTree = "<group>"; };
+		648FFEEF0A1416EB00C29757 /* SPInterf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPInterf.h; sourceTree = "<group>"; };
+		648FFEF00A1416EB00C29757 /* SPMData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPMData.h; sourceTree = "<group>"; };
+		648FFEF10A1416EB00C29757 /* SPObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPObject.h; sourceTree = "<group>"; };
+		648FFEF20A1416EB00C29757 /* SPPiPL.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPPiPL.h; sourceTree = "<group>"; };
+		648FFEF30A1416EB00C29757 /* SPPlugs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPPlugs.h; sourceTree = "<group>"; };
+		648FFEF40A1416EB00C29757 /* SPProps.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPProps.h; sourceTree = "<group>"; };
+		648FFEF50A1416EB00C29757 /* SPRuntme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPRuntme.h; sourceTree = "<group>"; };
+		648FFEF60A1416EB00C29757 /* SPStrngs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPStrngs.h; sourceTree = "<group>"; };
+		648FFEF70A1416EB00C29757 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
+		648FFEF80A1416EB00C29757 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
+		648FFEF90A1416EB00C29757 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
+		648FFEFB0A1416EB00C29757 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
+		648FFEFC0A1416EB00C29757 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
+		648FFEFD0A1416EB00C29757 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
+		648FFF040A1416FF00C29757 /* PropetizerUIMac.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PropetizerUIMac.r; sourceTree = "<group>"; };
+		648FFF050A14170A00C29757 /* Propetizer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Propetizer.cpp; path = ../common/Propetizer.cpp; sourceTree = SOURCE_ROOT; };
+		648FFF060A14170A00C29757 /* Propetizer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Propetizer.h; path = ../common/Propetizer.h; sourceTree = SOURCE_ROOT; };
+		648FFF070A14170A00C29757 /* Propetizer.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Propetizer.r; path = ../common/Propetizer.r; sourceTree = SOURCE_ROOT; };
+		648FFF080A14170A00C29757 /* PropetizerScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PropetizerScripting.cpp; path = ../common/PropetizerScripting.cpp; sourceTree = SOURCE_ROOT; };
+		648FFF090A14170A00C29757 /* PropetizerTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PropetizerTerminology.h; path = ../common/PropetizerTerminology.h; sourceTree = SOURCE_ROOT; };
+		648FFF0A0A14170A00C29757 /* PropetizerUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PropetizerUI.cpp; path = ../common/PropetizerUI.cpp; sourceTree = SOURCE_ROOT; };
+		648FFF300A14180700C29757 /* PropertyUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PropertyUtils.h; sourceTree = "<group>"; };
+		648FFF310A14180E00C29757 /* PropertyUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PropertyUtils.cpp; sourceTree = "<group>"; };
+		648FFF360A14181E00C29757 /* PIUI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUI.h; sourceTree = "<group>"; };
+		648FFF370A14182800C29757 /* PIMacUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIMacUI.cpp; sourceTree = "<group>"; };
+		648FFF3C0A14183500C29757 /* PICA2PSErrorMap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PICA2PSErrorMap.h; sourceTree = "<group>"; };
+		64B4E5452258791E0009DF08 /* FileUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtilities.h; sourceTree = "<group>"; };
+		64B4E548225879BC0009DF08 /* FileUtilitiesMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = FileUtilitiesMac.cpp; sourceTree = "<group>"; };
+		64CC2EBD111CDE0E00423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
+		64CF8ED70AA3A72700120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
+		64CF8ED80AA3A72700120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
+		64CF8ED90AA3A72700120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
+		64CF8EDA0AA3A72700120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		64EBDFFC14FC42E600F864BE /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		64EBDFFE14FC42EC00F864BE /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		64EBE02F14FC432D00F864BE /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		64EBE03014FC433900F864BE /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		64EBE0EE14FC4DD000F864BE /* PIUFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIUFile.h; sourceTree = "<group>"; };
+		64EBE0EF14FC4DDA00F864BE /* PIUFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = PIUFile.cpp; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* Propetizer.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Propetizer.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2880D780B0EF30D001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Propetizer */ = {
+			isa = PBXGroup;
+			children = (
+				648FFF060A14170A00C29757 /* Propetizer.h */,
+				648FFF090A14170A00C29757 /* PropetizerTerminology.h */,
+				648FFF050A14170A00C29757 /* Propetizer.cpp */,
+				648FFF080A14170A00C29757 /* PropetizerScripting.cpp */,
+				648FFF0A0A14170A00C29757 /* PropetizerUI.cpp */,
+				648FFF040A1416FF00C29757 /* PropetizerUIMac.r */,
+				648FFF070A14170A00C29757 /* Propetizer.r */,
+				648FFCF00A1416EB00C29757 /* SDK common */,
+				648FFEBA0A1416EB00C29757 /* Photoshop common */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = Propetizer;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* Propetizer.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		648FFCF00A1416EB00C29757 /* SDK common */ = {
+			isa = PBXGroup;
+			children = (
+				648FFCF10A1416EB00C29757 /* includes */,
+				648FFCF80A1416EB00C29757 /* resources */,
+				648FFCFC0A1416EB00C29757 /* sources */,
+			);
+			name = "SDK common";
+			path = ../../../common;
+			sourceTree = SOURCE_ROOT;
+		};
+		648FFCF10A1416EB00C29757 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E5452258791E0009DF08 /* FileUtilities.h */,
+				64EBE0EE14FC4DD000F864BE /* PIUFile.h */,
+				648FFCF20A1416EB00C29757 /* FilterBigDocument.h */,
+				648FFF300A14180700C29757 /* PropertyUtils.h */,
+				648FFF3C0A14183500C29757 /* PICA2PSErrorMap.h */,
+				648FFCF30A1416EB00C29757 /* PIDefines.h */,
+				648FFF360A14181E00C29757 /* PIUI.h */,
+				648FFCF50A1416EB00C29757 /* PIUSuites.h */,
+				648FFCF60A1416EB00C29757 /* PIUtilities.h */,
+				648FFCF70A1416EB00C29757 /* DialogUtilities.h */,
+				64EBE02F14FC432D00F864BE /* Logger.h */,
+				64EBE03014FC433900F864BE /* Timer.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		648FFCF80A1416EB00C29757 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2880D780B0EF30D001C1C00 /* Info.plist */,
+				648FFCFA0A1416EB00C29757 /* PIUtilities.r */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		648FFCFC0A1416EB00C29757 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E548225879BC0009DF08 /* FileUtilitiesMac.cpp */,
+				64EBE0EF14FC4DDA00F864BE /* PIUFile.cpp */,
+				648FFD000A1416EB00C29757 /* DialogUtilitiesMac.cpp */,
+				64EBDFFE14FC42EC00F864BE /* Logger.cpp */,
+				648FFF370A14182800C29757 /* PIMacUI.cpp */,
+				648FFCFE0A1416EB00C29757 /* PIUSuites.cpp */,
+				648FFCFF0A1416EB00C29757 /* PIUtilities.cpp */,
+				648FFF310A14180E00C29757 /* PropertyUtils.cpp */,
+				64EBDFFC14FC42E600F864BE /* Timer.cpp */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		648FFEBA0A1416EB00C29757 /* Photoshop common */ = {
+			isa = PBXGroup;
+			children = (
+				648FFEC40A1416EB00C29757 /* photoshop */,
+				648FFEE10A1416EB00C29757 /* pica_sp */,
+				648FFEFA0A1416EB00C29757 /* resources */,
+			);
+			name = "Photoshop common";
+			path = ../../../../photoshopapi;
+			sourceTree = SOURCE_ROOT;
+		};
+		648FFEC40A1416EB00C29757 /* photoshop */ = {
+			isa = PBXGroup;
+			children = (
+				64CF8EDA0AA3A72700120C5A /* ASConfig.h */,
+				64CF8ED90AA3A72700120C5A /* ASPragma.h */,
+				648FFEC50A1416EB00C29757 /* ASPreInclude.h */,
+				64CF8ED80AA3A72700120C5A /* ASTypes.h */,
+				64CF8ED70AA3A72700120C5A /* ASZStringSuite.h */,
+				64CC2EBD111CDE0E00423B46 /* JSScriptingSuite.h */,
+				648FFEC60A1416EB00C29757 /* PIAbout.h */,
+				648FFEC70A1416EB00C29757 /* PIAcquire.h */,
+				648FFEC80A1416EB00C29757 /* PIActions.h */,
+				648FFEC90A1416EB00C29757 /* PIActionsPlugin.h */,
+				648FFECA0A1416EB00C29757 /* PIAliasSuite.h */,
+				648FFECB0A1416EB00C29757 /* PIBufferSuite.h */,
+				648FFECC0A1416EB00C29757 /* PIChannelPortOperations.h */,
+				648FFECD0A1416EB00C29757 /* PIChannelPortsSuite.h */,
+				648FFECE0A1416EB00C29757 /* PIColorSpaceSuite.h */,
+				648FFECF0A1416EB00C29757 /* PIErrorSuite.h */,
+				648FFED00A1416EB00C29757 /* PIExport.h */,
+				648FFED10A1416EB00C29757 /* PIFilter.h */,
+				648FFED20A1416EB00C29757 /* PIFormat.h */,
+				648FFED30A1416EB00C29757 /* PIGeneral.h */,
+				648FFED40A1416EB00C29757 /* PIGetFileListSuite.h */,
+				648FFED50A1416EB00C29757 /* PIGetPathSuite.h */,
+				648FFED60A1416EB00C29757 /* PIHandleSuite.h */,
+				648FFED70A1416EB00C29757 /* PIPicker.h */,
+				648FFED80A1416EB00C29757 /* PIProgressSuite.h */,
+				648FFED90A1416EB00C29757 /* PIProperties.h */,
+				648FFEDA0A1416EB00C29757 /* PIResDefines.h */,
+				648FFEDB0A1416EB00C29757 /* PISelection.h */,
+				648FFEDC0A1416EB00C29757 /* PIStringTerminology.h */,
+				648FFEDD0A1416EB00C29757 /* PITerminology.h */,
+				648FFEDE0A1416EB00C29757 /* PITypes.h */,
+				648FFEDF0A1416EB00C29757 /* PIUIHooksSuite.h */,
+				646709B3255DAE08009F97AB /* PIUXPSuite.h */,
+				647B635411138EC40067F135 /* PSIntTypes.h */,
+			);
+			path = photoshop;
+			sourceTree = "<group>";
+		};
+		648FFEE10A1416EB00C29757 /* pica_sp */ = {
+			isa = PBXGroup;
+			children = (
+				648FFEE20A1416EB00C29757 /* SPAccess.h */,
+				648FFEE30A1416EB00C29757 /* SPAdapts.h */,
+				648FFEE40A1416EB00C29757 /* SPBasic.h */,
+				648FFEE50A1416EB00C29757 /* SPBckDbg.h */,
+				648FFEE60A1416EB00C29757 /* SPBlocks.h */,
+				648FFEE70A1416EB00C29757 /* SPCaches.h */,
+				648FFEE80A1416EB00C29757 /* SPCOM.h */,
+				648FFEE90A1416EB00C29757 /* SPConfig.h */,
+				648FFEEB0A1416EB00C29757 /* SPErrorCodes.h */,
+				648FFEEC0A1416EB00C29757 /* SPErrors.h */,
+				648FFEED0A1416EB00C29757 /* SPFiles.h */,
+				648FFEEE0A1416EB00C29757 /* SPHost.h */,
+				648FFEEF0A1416EB00C29757 /* SPInterf.h */,
+				648FFEF00A1416EB00C29757 /* SPMData.h */,
+				648FFEF10A1416EB00C29757 /* SPObject.h */,
+				648FFEF20A1416EB00C29757 /* SPPiPL.h */,
+				648FFEF30A1416EB00C29757 /* SPPlugs.h */,
+				648FFEF40A1416EB00C29757 /* SPProps.h */,
+				648FFEF50A1416EB00C29757 /* SPRuntme.h */,
+				648FFEF60A1416EB00C29757 /* SPStrngs.h */,
+				648FFEF70A1416EB00C29757 /* SPSTSPrp.h */,
+				648FFEF80A1416EB00C29757 /* SPSuites.h */,
+				648FFEF90A1416EB00C29757 /* SPTypes.h */,
+			);
+			path = pica_sp;
+			sourceTree = "<group>";
+		};
+		648FFEFA0A1416EB00C29757 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				648FFEFB0A1416EB00C29757 /* PIGeneral.r */,
+				648FFEFC0A1416EB00C29757 /* PIMI.r */,
+				648FFEFD0A1416EB00C29757 /* PIPL.r */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* Propetizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FADC23308B4156C00ABE55E /* Build configuration list for PBXNativeTarget "Propetizer" */;
+			buildPhases = (
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				648FFF110A14173200C29757 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Propetizer;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Propetizer;
+			productReference = 8D01CCD20486CAD60068D4B7 /* Propetizer.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = 4FADC23708B4156C00ABE55E /* Build configuration list for PBXProject "propetizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Propetizer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* Propetizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		648FFF110A14173200C29757 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648FFF160A14173900C29757 /* Propetizer.r in Rez */,
+				648FFF170A14173B00C29757 /* PropetizerUIMac.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648FFF000A1416EB00C29757 /* PIUSuites.cpp in Sources */,
+				648FFF010A1416EB00C29757 /* PIUtilities.cpp in Sources */,
+				64B4E549225879BC0009DF08 /* FileUtilitiesMac.cpp in Sources */,
+				648FFF020A1416EB00C29757 /* DialogUtilitiesMac.cpp in Sources */,
+				648FFF0B0A14170A00C29757 /* Propetizer.cpp in Sources */,
+				648FFF0C0A14170A00C29757 /* PropetizerScripting.cpp in Sources */,
+				648FFF0D0A14170A00C29757 /* PropetizerUI.cpp in Sources */,
+				648FFF320A14180E00C29757 /* PropertyUtils.cpp in Sources */,
+				648FFF380A14182800C29757 /* PIMacUI.cpp in Sources */,
+				64EBDFFD14FC42E600F864BE /* Timer.cpp in Sources */,
+				64EBDFFF14FC42EC00F864BE /* Logger.cpp in Sources */,
+				64EBE0F014FC4DDA00F864BE /* PIUFile.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4FADC23408B4156C00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = ../../../common/resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PLUGIN_TYPE = 8BFM;
+				PRODUCT_NAME = Propetizer;
+				REZ_SEARCH_PATHS = (
+					../../.././common/includes,
+					../../../.././photoshopapi/resources,
+					../../../.././photoshopapi/photoshop,
+					../../../.././samplecode/common/resources,
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		4FADC23808B4156C00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OBJROOT = "$(SYMROOT)../../Objs";
+				REZ_PREFIX_FILE = "$(SRCROOT)/../../../common/includes/MachOMacrezXcode.h";
+				REZ_SEARCH_PATHS = (
+					../../.././common/includes,
+					../../../.././photoshopapi/resources,
+					../../../.././photoshopapi/photoshop,
+					../../../.././samplecode/common/resources,
+				);
+				SDKROOT = macosx;
+				SYMROOT = ../../../Output/Mac/Debug/;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC23308B4156C00ABE55E /* Build configuration list for PBXNativeTarget "Propetizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC23408B4156C00ABE55E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4FADC23708B4156C00ABE55E /* Build configuration list for PBXProject "propetizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC23808B4156C00ABE55E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

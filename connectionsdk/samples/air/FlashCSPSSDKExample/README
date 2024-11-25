@@ -1,0 +1,22 @@
+Adobe® Photoshop® SDK Example Code
+
+Requirements:
+Flash Professional CS 5
+AIR for Android Extension
+Photoshop SDK's AS3 swc (PhotoshopSDK.swc included in folder)
+StructuredLogSDK (StructuredLogSDK.swc included in folder)
+
+Overview:
+
+This Flash CS application demonstrates how to use the AS3 sdk to build
+and application that controls the active Photoshop tool. It shows
+how to make a connection to Photoshop and send encrypted commands
+to the tool.
+
+How to use this project:
+
+Open the .fla file in Flash Professional CS 5 or higher and publish the application to a device. Or you can try running on the desktop.
+
+
+Credits:
+Author: Renaun Erickson (http://renaun.com)

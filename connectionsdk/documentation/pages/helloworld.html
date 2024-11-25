@@ -1,0 +1,114 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Hello World</h1>
+    <p>The Hello World tutorial covers the first project for any computer programmer, saying &quot;Hello World.&quot; You will first use Xcode or Eclipse to create an <script type="text/javascript">document.write(appString);</script> client application with an input and output text edit field. Then you will install this application on the device and verify communication with Photoshop. You can then pass JavaScript to Photoshop and check the return result from Photoshop.
+    <h1>Example Types</h1>
+    <ul>
+      <li><a href="helloworld.html#HelloJava">Java Version:</a> See the sample in samples/java</li>
+      <li><a href="helloworld.html#HelloAndroid">Google Android Version:</a> See the sample in samples/android/photoshophello</li>
+      <li><a href="helloworld.html#HelloiOS">Apple iOS Version:</a>  See the sample in samples/ios/photoshophello</li>
+      <li><a href="helloworld.html#HelloMacintosh">Macintosh Application Version:</a> See the sample in samples/mac/networkclientprototype</li>
+    </ul>
+<h1 id="HelloJava">Java Version</h1>
+    <p>The Java version is found in the samples/java folder. The Java version is a command line interface that allows you to send JavaScript to the server and display the result string. If you typed in <code>"2+2"</code> for example the resulting string would be <code>"4"</code>.</p>
+    <p>A Java SDK is required to compile the example Java files into byte code for the Java runtime.</p>
+    <p>Open up a command prompt by using a DOS shell on Windows or the terminal application on Macintosh. Navigate to the samples/java folder and type "javac *.java" to compile all the Java files found in this folder.</p>
+    <p>Run the Java example by typing in <code>"java PhotoshopCommandLine 10.0.54.160 Swordfish"</code>. 10.0.54.160 will be your machine IP address and Swordfish will be your password. The IP address and password are what you used when configuring the the Remote Connections dialog box from Photoshop. If configured correctly, you will get a connection message. The application is now ready to accept JavaScript commands. Type <code>"q"</code> to stop the application.</p>
+    <p>The Java version creates the Socket, text buffers, encryption and a PhotoshopProtocol class from the input parameters: </p>
+    <p><code>Socket photoshopSocket = new Socket(args[0], 49494);<br />
+    DataOutputStream outputStream = new DataOutputStream(photoshopSocket.getOutputStream());<br />
+    DataInputStream inputStream = new DataInputStream(photoshopSocket.getInputStream());<br />
+    PhotoshopProtocol photoshopProtocol = new PhotoshopProtocol(args[1]);<br />
+	BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));<br />
+</code></p>
+    <p>The PhotoshopProtocol class shows the details on creating the message with encryption, receiving the result and decrypting the message. See  PhotoshopProtocol.java for the details.</p>
+    
+<h1 id="HelloAndroid">Google Android Version</h1>
+
+     <img alt="Photoshop Hello" src="../images/PhotoshopHello.jpg" width="244" height="430" /></p>
+     <p>The Android Photoshop Hello version can be found in: samples/android/photoshophello</p>
+     <p>This version is the Java Version with a user interface. Input your IP address and password into the first two boxes. Click the Connect button. Click the Send button. A new document will be created in Photoshop and the box above the Send button will display the name of this new document.</p>
+     <p>Import the PhotoshopHello example application into Eclipse for the details.</p>
+
+<h1 id="HelloiOS">Apple iOS</h1>
+    <p><img src="../images/ios-hello1.jpg" width="260" height="345" /><img src="../images/ios-hello2.jpg" width="260" height="345" /></p>
+    <p>The goal of the Hello World iPad app is to establish a TCP connection with Photoshop and to send and receive JavaScript messages between Photoshop and the client app.</p>
+    <p>There are two ways to create a connection:</p>
+    <p>1.  Through Bonjour (the Apple-preferred way)<br />
+    2.  With an IP address</p>
+    <p><strong>Bonjour Service<br />
+    </strong>    You can obtain a list of broadcasting servers with NSNetServiceBrowser as follows:</p>
+    <p><code>NSNetServiceBrowser *myServiceBrowser;</code></p>
+    <p>in your viewDidLoad() method, start the service:</p>
+    <p><code>myServiceBrowser = [[NetServiceBrowser alloc] init]; // init<br />
+      [myServiceBrowser selfDelegate:self]; // you need to be a delegate<br />
+    [myServiceBrowser searchForServicesOfType:@&quot;_photoshopserver._tcp.&quot; inDomain:@&quot;&quot;];</code></p>
+    <p>Depending on how you want to present the list, you can track the list via NSMutableArray. You also need to implement didFindService and didRemoveService.</p>
+    <p>Once you obtained the desired Bonjour service object (NSNetService), bind the object to NSInputStream and NSOutputStream (note that mySelectedNetService is an NSNetService obtained from service browser):</p>
+    <p><code>[mySelectedNetService getInputStream:&amp;inputStream outputStream:&amp;outputStream];</code></p>
+    <p><strong>IP Address bind</strong><br />
+    With the IP address, use CFStreamCreatePairWithSocketToHost() to bind the service (note that kCFAllocatorDefault is defined by Apple):</p>
+    <p><code>NSString *ipName = &quot;1.2.3.4&quot;; // the ip as NSString<br />
+CFReadStreamRef readStream; // temp ReadStreamRef holder<br />
+CFWriteStreamRef writeStream; // temp WriteStreamRef holder<br />
+CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, (CFStringRef)ipName  , 49494, &amp;readStream, &amp;writeStream);<br />
+inputStream = (NSInputStream *) readStream; // cast it as NSInputStream or NSOutputStream<br />
+outputStream = (NSOutputStream *) writeStream;</code></p>
+    <p>After this, you can open the stream for input and output.</p>
+    <p><strong>Subscription</strong><br />
+    One of the things this app demonstrates is subscription.  Upon connection, it subscribes to foreground and background color change. When the foreground or background color changes, Photoshop sends a notification message to the app as a 6-character hex color. The color will be represented as RR GG BB (red green blue). The code below is the JavaScript that gets sent to Photoshop for a foreground color change subscription.  You need to wrap that in an NSString.</p>
+<code>
+var idNS = stringIDToTypeID( "networkEventSubscribe" );<br />
+var desc1 = new ActionDescriptor();<br />
+desc1.putClass( stringIDToTypeID( "eventIDAttr" ), stringIDToTypeID( "foregroundColorChanged" ) );<br />
+executeAction( idNS, desc1, DialogModes.NO );<br />
+</code>
+    
+    <p>Please see the <a href="howDoesItWork.html#PSEvents">How Does It Work?</a> section for more information.</p>
+
+<h1 id="HelloMacintosh">Macintosh Application Version</h1>    
+    <p><img src="../images/macapp-client.jpg" width="440" height="272" /></p>
+    <p>Not every app needs to be on a Touch device. The Macintosh Application Cersion shows that any application  can connect to Photoshop through encrypted TCP messages.  This Mac Application demonstrates all protocol abilities such as JavaScript sending, image sending/receiving and arbitrary data type sending. This is also a great debugging app that helps double-check to see if the protocol is working as expected. The project lives in <code>samples/mac/networkclientprototype</code>.</p>
+    
+    <br class="clearfloat" />
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColorMunger", "ColorMunger.vcxproj", "{98E5441D-1C90-48B6-975D-353732CE62AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98E5441D-1C90-48B6-975D-353732CE62AF}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{98E5441D-1C90-48B6-975D-353732CE62AF}.Debug|ARM64.Build.0 = Debug|ARM64
+		{98E5441D-1C90-48B6-975D-353732CE62AF}.Debug|x64.ActiveCfg = Debug|x64
+		{98E5441D-1C90-48B6-975D-353732CE62AF}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C36BE61B-3D68-41D1-8839-4F537F7CDA84}
+	EndGlobalSection
+EndGlobal

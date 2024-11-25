@@ -1,0 +1,131 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "SelectoramaShape-sym.h"
+
+#define plugInCopyrightYear	"1996"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Selectorama Shape Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SELECTIONPARAM DIALOG DISCARDABLE  80, 80, 202, 82
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Selectorama"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,160,3,36,13,BS_NOTIFY
+    PUSHBUTTON      "&Cancel",2,160,20,36,13,BS_NOTIFY
+    RTEXT           "Area:",3,13,6,24,10
+    RADIOBUTTON     "M&inimum",4,42,7,59,10,BS_NOTIFY | WS_TABSTOP
+    RADIOBUTTON     "M&aximum",5,42,18,59,10,BS_NOTIFY | WS_TABSTOP
+    RADIOBUTTON     "&Random",6,42,29,41,10,BS_NOTIFY | WS_TABSTOP
+    RTEXT           "Amount:",7,91,30,28,11
+    EDITTEXT        8,123,27,17,14
+    CONTROL         "%",9,"Static",SS_SIMPLE | WS_GROUP,143,30,8,11
+    RTEXT           "Channels:",10,3,45,33,10
+    RADIOBUTTON     "&Target",11,42,46,40,10,BS_NOTIFY | WS_TABSTOP
+    RADIOBUTTON     "&Merged",12,42,58,42,10,BS_NOTIFY | WS_TABSTOP
+    RTEXT           "Create:",13,88,47,30,10
+    RADIOBUTTON     "&Selection",14,122,47,59,10,BS_NOTIFY | WS_TABSTOP
+    RADIOBUTTON     "&Path",15,122,58,59,10,BS_NOTIFY | WS_TABSTOP
+    RADIOBUTTON     "&Layer",16,122,68,59,10,BS_NOTIFY | WS_TABSTOP
+END
+
+
+SHAPEPARAM DIALOG DISCARDABLE  80, 80, 128, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Shape"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,90,3,35,15
+    PUSHBUTTON      "&Cancel",2,90,20,35,15
+    RTEXT           "Shape:",3,4,6,26,12
+    CONTROL         "Tr&iangle",4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    37,6,47,11
+    CONTROL         "S&quare",5,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    17,47,11
+    CONTROL         "&Circle",6,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    28,47,11
+    CONTROL         "&Star",7,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,39,
+                    47,11
+    CONTROL         "&Treble",8,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    50,47,11
+    CONTROL         "&Ribbon",9,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    61,47,11
+    CONTROL         "&Note",10,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    72,47,11
+    RTEXT           "Create:",11,5,92,25,12
+    CONTROL         "S&election",12,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    37,92,46,11
+    CONTROL         "&Path",13,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    102,46,11
+    CONTROL         "&Layer",14,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    112,46,11
+END
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "SelectoramaShape-sym.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""SelectoramaShape.pipl""\r\n"
+	"#include ""About.rc""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "SelectoramaShape.pipl"
+#include "About.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

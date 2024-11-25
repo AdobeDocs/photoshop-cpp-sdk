@@ -1,0 +1,105 @@
+/*<agl.folder "Old Styles (fonts)">*/
+/* For the most part, only font-size is defined in this stylesheet. Colors, font-weight, and text-decoration are defined in basic.css */
+/* Font-sizes in this file are based quirks mode rendering */
+a.footerlink{font-size:xx-small;line-height:135%}
+a.homeaa{font-size:70%;line-height:135%}
+a.sort{font-size:56%}
+a.rednav, a.homesubnav, a.homepage, a.promoBlurb, a.promoBlurb:visited, .bio, .caption, .date, .mainImgCaption, .sidebarCaption, .byline, .inhex, .indexblurb, .longblurb, .smallbody, .pagination, .captionHead, .deck, .indexblurbHead, .longblurbHead, .sidebarCaptionHead, .smallbodyred{font-size:xx-small}
+.sidebarhead, .subhead, .tipStep{font-size:70%}
+.bodytext{font-size:70%;line-height:135%}
+.sidebarBody{font-size:70%;line-height:150%}
+.sellingsubhead{font-size:75%}
+.pullquotenew{color:#666;font-size:75%;line-height:191%}
+.head, .largebody, .prodtagline{font-size:80%}
+.largehead, .storytitle{font-size:88%}
+.headlrg{font-size:125%}
+/* these 9 classes are obsolete and maintained only for backwards-compatability. */
+.body{font-size:x-small}
+.fineprint, .menuitem, .size1, .size2{font-size:xx-small}
+.quote{font-size:medium}
+.quotesig, .size3{font-size:small}
+/*</agl.folder>*/
+
+/*<agl.folder "Old Styles (background images)">*/
+.bgImg{background:#f1f1f1 no-repeat}
+td.grdhdtop{background:#f1f1f1 no-repeat}
+td.grdhdtopbig{background:#f1f1f1 no-repeat}
+/* page headings with gradient image */
+#intro h2.grdhdtopbig, #content h2.grdhdtopbig{color:#000;font-size:110%;font-weight:bold;line-height:20px;background:#f1f1f1 no-repeat;margin-top:20px;padding-left:10px;left:-10px;width:535px;height:20px;clear:both}
+td.grdhdtopbigorange{background:#f1f1f1 no-repeat}
+td.grdhdtopbigblue{background:#f1f1f1 no-repeat}
+td.grdhdtoporange{background:#f1f1f1 no-repeat}
+td.grdhdtopblue{background:#f1f1f1 no-repeat}
+td.grdlinesd{background:#f1f1f1 repeat-y}
+td.grdlinetop{background:#f1f1f1 no-repeat}
+td.grdlinesdbot{background:#f1f1f1 no-repeat}
+td.grdlinesdorange{background:#f1f1f1  repeat-y}
+td.grdlinesdblue{background:#f1f1f1 repeat-y}
+td.grdlinetoporange{background:#f1f1f1 no-repeat}
+td.grdlinetopblue{background:#f1f1f1 no-repeat}
+td.grdlinesdbotorange{background:#f1f1f1 no-repeat}
+td.grdlinesdbotblue{background:#f1f1f1 no-repeat}
+/*</agl.folder>*/
+
+/*<agl.folder "Subnav">*/
+/* Subnav styles - only to be used in the subnav of our site. */
+.sidenav{margin:0 10px 0 15px}
+.sidenav p{margin:0;padding:2px 0}
+.sidenav.image{margin:-2px -8px}
+.sidenav img{margin:0 2px}
+.sidenav a{text-decoration:none}
+.sidenav a:visited{color:#966}
+.sidenav a:link{color:#c00}
+.dottednav{repeat-x left top;margin:0 0 -10px;padding:0}
+/*</agl.folder>*/
+
+/*<agl.folder "Bulleted lists">*/
+/* 2px left margin matches width of bullet.gif. Zero padding and bottom margin move it closer to other content. */
+ul{list-style:none;margin:0 0 0 2px;padding:0}
+/* note that you want to only affect list items that are part of a ul */
+ul li{no-repeat 0 0.1em;margin:0 0 5px;padding:0 0 0 7px}
+/* bullets in .smallbody divs and table cells */
+div.smallbody ul li{background-position:0 0.4em}
+td.smallbody ul li{background-position:0 0}
+html>body .smallbody ul li{background-position:0 -1px}
+/*</agl.folder>*/
+
+/*<agl.folder "Numbered lists">*/
+ol{margin:0;padding:0}
+/* note that you want to only affect list items that are part of an ol */
+ol li{margin:0 0 8px 2.25em;padding:0}
+/*</agl.folder>*/
+
+/*<agl.folder "Nested lists">*/
+/* Nested lists */
+/* for bulleted lists nested inside numbered lists */
+ol ul{margin:5px 0 0 2px}
+ol ul li{background: no-repeat 0 0.1em;margin:0 0 5px;padding:0 0 0 7px}
+/* for numbered lists nested inside bulleted lists */
+ul ol{margin:0 0 10px 1em}
+ul ol li{background-image:none}
+ul ol ul li{list-style:square ;padding-left:0}
+/*</agl.folder>*/
+
+/*<agl.folder "Footer">*/
+#footer{color:#666;font-size:xx-small;line-height:1;background:#ededed repeat-x;display:block;margin:0;padding:0;position:relative;z-index:400;width:100%;height:6.5em}
+/* Hide from IE/Mac. \*/
+#footer{height:auto;border-top:0 none}
+/* Recover */
+#footer p{margin:0;padding:10px 15px 0}
+#footer ul{line-height:1.5em;margin:0 15px;padding:0.4em 0 10px}
+/* quirks mode markup hack */
+#footer ul#list1{padding:0.4em 0 0}
+/* quirks mode markup hack */
+#footer ul#list2{padding:0 0 10px}
+#footer ul li{background-image:none;display:inline;margin:0;padding:0}
+#footer img{margin-right:10px;float:left}
+#footer ul li a{border-left:1px #a6a6a6 solid;text-decoration:none;padding:0 .5em;margin:0 0 5px;/* IE 5 WIN HACK:needed to show left border. In standards mode, all <a> elements are floated. */float:left;voice-family:"\"}\"";voice-family:inherit;float:none}
+#footer ul li a:link{color:#c00}
+#footer ul li a:visited{color:#966}
+#footer ul li a:hover{color:#600;text-decoration:underline}
+#footer ul li a:active{color:#c00}
+#footer ul li#terms a, #footer ul li#tms a{padding-left:0;clear:left;border:0}
+#footerrow{background-color:#fff;display:block;position:relative;z-index:400;width:100%;height:25px}
+img#privacyicon{position:absolute;z-index:5;top:10px;left:634px}
+/*</agl.folder>*/

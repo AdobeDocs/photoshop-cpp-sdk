@@ -1,0 +1,141 @@
+/* This stylesheet is for older browsers that don't understand @import */
+
+/* basic elements */
+body{color:#000;background-color:#fff;margin:0;padding:0}
+/* make everything sans-serif */
+html, body, table, td, th, h1, h2, h3, h4, h5, h6, p, a, span, div{font-family:Verdana, Arial, Helvetica, Geneva, sans-serif}
+
+/* set image borders to zero */
+img{border:0}
+
+/* basic links */
+a, a:link{color:#c00}
+a:visited{color:#966}
+/* NS4 won't see these but other browsers will. No problem. */
+a:hover{color:#c00;text-decoration:none}
+a:active{color:#f00;text-decoration:none}
+
+/* special link classes */
+a.blkcrumb{color:#ccc}
+a.crumb{color:#666;text-decoration:none}
+a.footerlink{font-size:80%;text-decoration:none}
+a.homeaa:visited{color:#c00}
+a.homesubnav:visited{color:#999}
+a:hover{color:#c00;text-decoration:underline}
+a.homepage:hover{color:#c00;text-decoration:underline}
+a.homeaa{font-size:95%;line-height:140%;text-decoration:none}
+a.homesubnav{color:#999;font-size:80%;font-weight:bold;text-decoration:none}
+a.homepage{color:#666;font-size:small;font-weight:bold}
+a.rednav{color:#c00;font-size:95%;line-height:140%;text-decoration:none}
+a.footerlink:visited{color:#c00}
+a:visited{color:#966}
+a.promoBlurb{color:#000;font-size:80%;text-decoration:none}
+a.sort{color:#000;font-size:10px;text-decoration:none}
+
+/* current css info follows. I've combined selectors with identical rules. */
+.bio, .byline, .caption, .date, .mainImgCaption, .sidebarCaption{color:#666;font-size:80%}
+.bodytext{font-size:small;line-height:140%}
+.pagination, .captionHead, .deck, .head, .indexblurbHead, .longblurbHead, .sidebarCaptionHead, .sellingsubhead{font-size:80%;font-weight:bold}
+.default{background-color:#fff}
+.headlrg{font-size:2em;font-weight:bolder}
+.indexblurb, .inhex, .largebody, .longblurb, .smallbody{font-size:small}
+.largehead, .prodtagline, .storytitle{font-size:95%;font-weight:bold}
+.pullquotenew{color:#666;font-size:1.1em;line-height:176%;font-weight:bold}
+.sidebarBody{font-size:75%;line-height:125%}
+.smallbodyred{color:#c00;font-size:80%}
+.sidebarhead, .subhead, .tipStep{font-size:75%;font-weight:bold}
+
+.bgImg{background-color:#f1f1f1}
+
+/* Not sure where these are used. Does NS4 understand the background images in them? If not, lose those parts of these rules and just set the background-color. */
+.grdhdtop, .grdlinesd, .grdlinetop, .grdhdtopbig, .grdlinesdbot{background:#f1f1f1}
+.grdhdtoporange, .grdlinesdorange, .grdlinetoporange, .grdhdtopbigorange, .grdlinesdbotorange{background:#ffedcb}
+.grdhdtopblue, .grdlinesdblue, .grdlinetopblue, .grdhdtopbigblue, .grdlinesdbotblue{background:#bcc9e2}
+
+/* dotted lines, the CSS way. 
+Do a find and replace for <td> with background="1dot.gif */
+td.dot{background:#d1d1d1 }
+
+/* these 9 classes are obsolete and maintained only for backwards-compatability. */
+.body{font-size:small;line-height:150%}
+.fineprint{font-size:x-small}
+.leaded{line-height:150%}
+.menuitem{color:#c00;font-size:x-small}
+.quote{font-size:medium;font-family:"Times New Roman", Times, Georgia, serif;line-height:181%;margin-top:10px;margin-bottom:0}
+.quotesig{font-size:small;font-family:"Times New Roman", Times, Georgia, serif;font-style:italic;line-height:181%;margin-top:12px;margin-bottom:1px}
+.size1{font-size:x-small}
+.size2{font-size:small}
+.size3{font-size:medium}
+
+
+/* C.Cheung added new classes for Premiere Pro. 12/26/05 */
+#intro3 #selectversion {
+	FONT-WEIGHT: bold; LEFT: 200px; PADDING: 0px 0px 0px 0px; MARGIN: 0px 0px 0px 0px; WIDTH: 30em; POSITION: absolute; TOP: 150px; voice-family: inherit
+}
+#selectversion {
+	FONT-WEIGHT: bold; LEFT: 600px; PADDING: 0px 0px 0px 0px; MARGIN: 0px 0px 0px 0px; WIDTH: 20em; POSITION: absolute; TOP: 150px; voice-family: inherit
+}
+#intro3 .blackbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px
+}
+#intro3 .greytext {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666
+}
+#intro3 .introtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px
+}
+#intro3 .introtitle2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+#intro3 .introtitle3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+#intro3 .versionselect {
+	width: 200px
+}
+TABLE.matrix2 {
+	CLEAR: left; BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; MARGIN: 7px 0px; WIDTH: 550px; BORDER-COLLAPSE: collapse
+}
+.matrix2 TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 10px; PADDING-BOTTOM: 4px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #999 1px solid; voice-family: inherit
+}
+.matrix2 TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 10px; PADDING-BOTTOM: 4px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #999 1px solid; voice-family: inherit
+}
+.matrix2 THEAD TH {
+	BACKGROUND: #c0bdbd; VERTICAL-ALIGN: bottom; COLOR: #c00; TEXT-ALIGN: left
+}
+.matrix2 TBODY TH {
+	FONT-WEIGHT: normal; TEXT-ALIGN: left; VERTICAL-ALIGN: top
+}
+.matrix2 TH.sub {
+	FONT-WEIGHT: normal
+}
+.matrix2 TBODY TD {
+	TEXT-ALIGN: left; VERTICAL-ALIGN: top
+}
+.matrix2 .even TD {
+	BACKGROUND: #fff
+}
+.matrix2 .even TH {
+	BACKGROUND: #fff
+}
+.matrix2 .odd TD {
+	BACKGROUND: #ccc
+}
+.matrix2 .odd TH {
+	BACKGROUND: #ccc
+}
+.matrix2 TH A:link {
+	COLOR: #c00; TEXT-DECORATION: underline
+}
+.matrix2 TH A:visited {
+	COLOR: #c00; TEXT-DECORATION: underline
+}
+.matrix2 TH A:hover {
+	COLOR: #c00; TEXT-DECORATION: none
+}
+#matrix2 TH A:active {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+/* End of new classes created by C.Cheung */

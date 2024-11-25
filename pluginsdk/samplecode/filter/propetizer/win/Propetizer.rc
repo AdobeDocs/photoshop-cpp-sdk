@@ -1,0 +1,162 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Propetizer-sym.h"
+
+#define plugInCopyrightYear	"1996"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Propetizer Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Propetizer-sym.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Propetizer.pipl""\r\n"
+    "#include ""About.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    16001, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 400
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+16001 DIALOGEX 0, 0, 237, 407
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propetizer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,180,7,50,14
+    PUSHBUTTON      "&Cancel",2,180,24,50,14
+    LTEXT           "Static",3,7,7,162,8
+    LTEXT           "Static",4,7,16,162,8
+    LTEXT           "Static",5,7,25,162,8
+    LTEXT           "Static",6,7,34,162,8
+    LTEXT           "Static",7,7,43,108,8
+    LTEXT           "Static",8,7,52,108,8
+    LTEXT           "Static",9,7,61,108,8
+    LTEXT           "Static",10,7,70,108,8
+    LTEXT           "Static",11,7,79,108,8
+    LTEXT           "Static",12,7,88,108,8
+    LTEXT           "Static",13,7,97,108,8
+    LTEXT           "Static",14,122,52,108,8
+    LTEXT           "Static",15,122,61,108,8
+    LTEXT           "Static",16,122,70,108,8
+    LTEXT           "Static",17,122,79,108,8
+    LTEXT           "Static",18,122,88,108,8
+    LTEXT           "Static",19,122,97,108,8
+    LTEXT           "Static",20,7,106,108,8
+    LTEXT           "Static",21,122,106,108,8
+    LTEXT           "Static",22,7,115,108,8
+    LTEXT           "Static",23,122,115,108,8
+    LTEXT           "Static",24,7,124,108,8
+    LTEXT           "Static",25,7,132,81,8
+    COMBOBOX        26,100,129,130,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",27,7,149,81,8
+    COMBOBOX        28,100,146,130,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",29,7,164,81,8
+    COMBOBOX        30,100,161,130,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",31,7,180,58,8
+    COMBOBOX        32,71,177,159,120,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",33,8,198,58,8
+    COMBOBOX        34,72,195,159,120,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",35,7,223,67,8
+    EDITTEXT        36,77,219,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",37,145,224,17,8
+    EDITTEXT        38,168,221,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",39,7,240,65,8
+    EDITTEXT        40,77,237,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",41,145,240,18,8
+    EDITTEXT        42,168,236,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",43,7,256,70,8
+    EDITTEXT        44,77,253,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",45,145,256,17,8
+    EDITTEXT        46,168,253,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",47,7,277,67,8
+    EDITTEXT        48,77,274,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",49,7,295,70,8
+    EDITTEXT        50,77,292,62,15,ES_AUTOHSCROLL
+    LTEXT           "Static",51,145,295,17,8
+    EDITTEXT        52,168,292,62,15,ES_AUTOHSCROLL
+    CONTROL         "Check1",53,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,310,88,10
+    CONTROL         "Check1",54,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,310,88,10
+    EDITTEXT        55,7,328,94,39,ES_AUTOHSCROLL
+    EDITTEXT        56,136,328,94,38,ES_AUTOHSCROLL
+    LTEXT           "Static",57,7,376,115,8
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Propetizer.pipl"
+#include "About.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,94 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Windows Connection How-To</h1>
+<p>
+   A typical user workflow would be something like this:
+ <ol>
+ <li>Install Photoshop CS5.</li>
+ <li>Enable Remote connections.  Edit &gt; Remote Connections…</li>
+<li>In the Remote Connections dialog, set Password and check Enable Remote Connections. Click OK.</li>
+<li> Windows will throw a dialog asking if it should allow Photoshop CS5 through the firewall.</li>
+<li>Click OK.</li>
+</ol>
+
+<img alt="Firewall settings" src="../images/Win7FirewallSetting.png" width="350"/><br />
+<span class="captionText">Windows 7 Dialog shown</span><br />
+<br />
+If a user clicks No, they have basically just told the OS not to allow<script type="text/javascript">document.write(appString);</script> communication with remote apps.  Even though everything looks OK, <script type="text/javascript">document.write(appString);</script> the OS will block any communication.
+</p>
+
+<h2>Steps to Resolve issue</h2>
+<ol>
+  <li>Windows Start Menu &gt; Control Panel</li>
+<li> Go to Firewall Settings in Control Panel</li>
+<img alt="Firewall" src="../images/Win7Firewall1.png" width="300"/>
+<li> Click on "Allow a program through Windows Firewall".  This option is slightly different for each OS.</li>
+<li>If <script type="text/javascript">document.write(appString);</script> is listed in the list of programs simply. Click On check box to allow <script type="text/javascript">document.write(appString);</script> to communicate through Firewall.  User may have to enter admin password to make change.<br />
+<img alt="Firewall" src="../images/Win7Firewall2.png" width="400"/><br />
+On Windows 7 they differentiate between Work, Home, Public networks.  User will have to make their own choice there.  I would recommend Work and Home to start.  I do not envision too many people using thier apps in Starbucks but you never know.  Just something to be aware of. </li>
+<li>If <script type="text/javascript">document.write(appWithVersion);</script> is *NOT* listed in the list of programs.</li>    
+<li>Click "Add Program"</li>
+<li>Choose <script type="text/javascript">document.write(appWithVersion);</script> from list of Programs.  May require Admin Password.</li>
+<img alt="Firewall" src="../images/Win7Firewall4.png" width="450" />
+<li>OK all dialogs.</li>
+<li> Restart <script type="text/javascript">document.write(appString);</script> to be safe.</li>
+</ol>
+
+<h2>When all else fails</h2>
+
+  If all else fails and you still cannot connect to Photoshop, go back into the Windows Firewall Settings in Control Panel and remove all instances of <script type="text/javascript">document.write(appString);</script>.
+  <ol>
+  <li>Quit <script type="text/javascript">document.write(appString);</script> if it is running</li>
+  <li>Windows Start Menu &gt; Control Panel</li>
+  <li>Get back into Firewall setting</li>
+  <li>Click on &quot;Allow a program through Windows Firewall&quot;</li>
+  <li>You may have to click on the &quot;Change Settings&quot; button</li>
+  <li>Find and click on <script type="text/javascript">document.write(appString);</script></li>
+  <li>Click on the "Remove" button</li>
+  <li>If you see more of them, please remove all of them.</li>
+  <li>Launch <script type="text/javascript">document.write(appString);</script></li>
+  <li>When Windows pop the Firewall dialog, click "Allow Access"</li>
+  <img alt="Firewall" src="../images/Win7FirewallSetting.png" width="350"/>
+  </ol>
+  
+  </div>
+	<br class="clearfloat" />
+</body>
+</html>

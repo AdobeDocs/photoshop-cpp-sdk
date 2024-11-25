@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{a0d2a7a3-0a66-4bec-8b3b-30e8192b737a}</UniqueIdentifier>
+      <Extensions>.h, .hpp</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{fe7d3765-fe25-4655-a65b-0cad65f1a567}</UniqueIdentifier>
+      <Extensions>.r, .rc, .rr, .pipl</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{f3a460bc-382f-42b8-a1cc-d2b2b75cabe2}</UniqueIdentifier>
+      <Extensions>.cpp, .c</Extensions>
+    </Filter>
+    <Filter Include="Common Sources">
+      <UniqueIdentifier>{b0038460-f376-498e-bb05-a84b58abab3f}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\Listener.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ListenerTerminology.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\includes\PIUI.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Listener.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\Listener.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ListenerScripting.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ListenerUIWin.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\DialogUtilitiesWin.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIDLLInstance.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUActions.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUActionUtils.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUFile.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUGet.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUSelect.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUSuites.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUtilities.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIUtilitiesWin.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\PIWinUI.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\sources\Logger.cpp">
+      <Filter>Common Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\common\Listener.r">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

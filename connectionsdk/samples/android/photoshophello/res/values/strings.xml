@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, onCreate!</string>
+    <string name="app_name">PsHi</string>
+<string name="description">Hello World for Photoshop Server</string>
+</resources>

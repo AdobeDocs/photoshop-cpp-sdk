@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Server Name:"
+/>
+<EditText  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="192.168.1.101"
+    android:id="@+id/serverNameText"
+/>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text="Server Password:"
+/>
+<EditText  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Swordfish"
+	android:password="true"
+    android:id="@+id/serverPasswordText"
+/>
+<Button
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="OK"
+    android:id="@+id/okBtn"
+/>
+</LinearLayout>

@@ -1,0 +1,157 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Listener-sym.h"
+#include "ListenerTerminology.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Listener Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Listener-sym.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""Listener.pipl""\r\n"
+	"#include ""About.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+18501 DIALOG DISCARDABLE  0, 0, 301, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Listener"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,253,7,41,14
+    PUSHBUTTON      "&Cancel",2,253,24,41,14
+    RTEXT           "&Watch for event:",3,7,15,63,11
+    COMBOBOX        4,81,12,162,90,CBS_DROPDOWNLIST | WS_TABSTOP
+    RTEXT           "Then &play set:",5,7,37,63,11
+    COMBOBOX        6,81,35,162,74,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Installed notifiers:",9,7,77,63,11
+    LTEXT           "",10,7,93,287,43
+    RTEXT           "...&action:",7,7,59,63,11
+    COMBOBOX        8,81,57,162,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+18502 DIALOG DISCARDABLE  0, 0, 189, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About Listener"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,171,7,11,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cancel",2,172,24,10,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Static",3,16,7,148,83
+    PUSHBUTTON      "www.adobe.com",4,13,100,67,13
+    PUSHBUTTON      "partners.adobe.com",5,91,100,76,13
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    18501, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+18501 DLGINIT
+BEGIN
+    6, 0x403, 5, 0
+0x6574, 0x706d, "\000" 
+    8, 0x403, 5, 0
+0x6574, 0x706d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    16010                   "Dummy"
+    16011                   "Reset"
+    16012                   "Canceltesting"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Listener.pipl"
+#include "About.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

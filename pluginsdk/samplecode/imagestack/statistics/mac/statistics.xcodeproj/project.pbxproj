@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64FC827C1118E69700F6232D /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6C750AED2E2B006C09F7 /* PIUtilities.cpp */; };
+		64FC827D1118E69900F6232D /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6C760AED2E2B006C09F7 /* DialogUtilitiesMac.cpp */; };
+		6BEA6C780AED2E2B006C09F7 /* PIUtilities.r in Rez */ = {isa = PBXBuildFile; fileRef = 6BEA6C700AED2E2B006C09F7 /* PIUtilities.r */; };
+		6BEA6C7A0AED2E2B006C09F7 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6C740AED2E2B006C09F7 /* PIUSuites.cpp */; };
+		6BEA6EC90AED2E98006C09F7 /* StatisticsUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6EC80AED2E98006C09F7 /* StatisticsUIMac.cpp */; };
+		6BEA6ED20AED2EA9006C09F7 /* Statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6ECD0AED2EA9006C09F7 /* Statistics.cpp */; };
+		6BEA6ED30AED2EA9006C09F7 /* Statistics.r in Rez */ = {isa = PBXBuildFile; fileRef = 6BEA6ECF0AED2EA9006C09F7 /* Statistics.r */; };
+		6BEA6ED40AED2EA9006C09F7 /* StatisticsScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6ED10AED2EA9006C09F7 /* StatisticsScripting.cpp */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		969D530509B6834200BD3566 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.plc";
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+				"$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Info.plist",
+			);
+			script = "/usr/bin/python \"../../build/build system files/xcode/PList.py\"";
+		};
+		96D963C109C0BE6800A5716C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rc";
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+				"\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${PRODUCT_NAME}.rsrc\"",
+			);
+			script = "/usr/bin/perl -w \"../../build/build system files/xcode/RCIncluder.pl\" -macverbose -o \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${PRODUCT_NAME}.rsrc\" \"${INPUT_FILE_PATH}\"";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		646709AA255DABE2009F97AB /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
+		647B633011138D490067F135 /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
+		64CC2E4B111CCA5800423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
+		6BEA6C680AED2E2B006C09F7 /* FilterBigDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FilterBigDocument.h; sourceTree = "<group>"; };
+		6BEA6C690AED2E2B006C09F7 /* PIDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIDefines.h; sourceTree = "<group>"; };
+		6BEA6C6B0AED2E2B006C09F7 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
+		6BEA6C6C0AED2E2B006C09F7 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
+		6BEA6C6D0AED2E2B006C09F7 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
+		6BEA6C700AED2E2B006C09F7 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
+		6BEA6C740AED2E2B006C09F7 /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
+		6BEA6C750AED2E2B006C09F7 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
+		6BEA6C760AED2E2B006C09F7 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
+		6BEA6E860AED2E42006C09F7 /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
+		6BEA6E870AED2E42006C09F7 /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
+		6BEA6E880AED2E42006C09F7 /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
+		6BEA6E890AED2E42006C09F7 /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		6BEA6E8A0AED2E42006C09F7 /* ASPreInclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPreInclude.h; sourceTree = "<group>"; };
+		6BEA6E8B0AED2E42006C09F7 /* PIAbout.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAbout.h; sourceTree = "<group>"; };
+		6BEA6E8C0AED2E42006C09F7 /* PIAcquire.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAcquire.h; sourceTree = "<group>"; };
+		6BEA6E8D0AED2E42006C09F7 /* PIActions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIActions.h; sourceTree = "<group>"; };
+		6BEA6E8E0AED2E42006C09F7 /* PIActionsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIActionsPlugin.h; sourceTree = "<group>"; };
+		6BEA6E8F0AED2E42006C09F7 /* PIAliasSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAliasSuite.h; sourceTree = "<group>"; };
+		6BEA6E900AED2E42006C09F7 /* PIBufferSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIBufferSuite.h; sourceTree = "<group>"; };
+		6BEA6E910AED2E42006C09F7 /* PIChannelPortOperations.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIChannelPortOperations.h; sourceTree = "<group>"; };
+		6BEA6E920AED2E42006C09F7 /* PIChannelPortsSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIChannelPortsSuite.h; sourceTree = "<group>"; };
+		6BEA6E930AED2E42006C09F7 /* PIColorSpaceSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIColorSpaceSuite.h; sourceTree = "<group>"; };
+		6BEA6E940AED2E42006C09F7 /* PIErrorSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIErrorSuite.h; sourceTree = "<group>"; };
+		6BEA6E950AED2E42006C09F7 /* PIExport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIExport.h; sourceTree = "<group>"; };
+		6BEA6E960AED2E42006C09F7 /* PIFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIFilter.h; sourceTree = "<group>"; };
+		6BEA6E970AED2E42006C09F7 /* PIFormat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIFormat.h; sourceTree = "<group>"; };
+		6BEA6E980AED2E42006C09F7 /* PIGeneral.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGeneral.h; sourceTree = "<group>"; };
+		6BEA6E990AED2E42006C09F7 /* PIGetFileListSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGetFileListSuite.h; sourceTree = "<group>"; };
+		6BEA6E9A0AED2E42006C09F7 /* PIGetPathSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGetPathSuite.h; sourceTree = "<group>"; };
+		6BEA6E9B0AED2E42006C09F7 /* PIHandleSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIHandleSuite.h; sourceTree = "<group>"; };
+		6BEA6E9C0AED2E42006C09F7 /* PIPicker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIPicker.h; sourceTree = "<group>"; };
+		6BEA6E9D0AED2E42006C09F7 /* PIProgressSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIProgressSuite.h; sourceTree = "<group>"; };
+		6BEA6E9E0AED2E42006C09F7 /* PIProperties.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIProperties.h; sourceTree = "<group>"; };
+		6BEA6E9F0AED2E42006C09F7 /* PIResDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIResDefines.h; sourceTree = "<group>"; };
+		6BEA6EA00AED2E42006C09F7 /* PISelection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PISelection.h; sourceTree = "<group>"; };
+		6BEA6EA10AED2E42006C09F7 /* PIStringTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIStringTerminology.h; sourceTree = "<group>"; };
+		6BEA6EA20AED2E42006C09F7 /* PITerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PITerminology.h; sourceTree = "<group>"; };
+		6BEA6EA30AED2E42006C09F7 /* PITypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PITypes.h; sourceTree = "<group>"; };
+		6BEA6EA40AED2E42006C09F7 /* PIUIHooksSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUIHooksSuite.h; sourceTree = "<group>"; };
+		6BEA6EA70AED2E42006C09F7 /* SPAccess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAccess.h; sourceTree = "<group>"; };
+		6BEA6EA80AED2E42006C09F7 /* SPAdapts.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAdapts.h; sourceTree = "<group>"; };
+		6BEA6EA90AED2E42006C09F7 /* SPBasic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBasic.h; sourceTree = "<group>"; };
+		6BEA6EAA0AED2E42006C09F7 /* SPBckDbg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBckDbg.h; sourceTree = "<group>"; };
+		6BEA6EAB0AED2E42006C09F7 /* SPBlocks.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBlocks.h; sourceTree = "<group>"; };
+		6BEA6EAC0AED2E42006C09F7 /* SPCaches.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPCaches.h; sourceTree = "<group>"; };
+		6BEA6EAD0AED2E42006C09F7 /* SPCOM.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPCOM.h; sourceTree = "<group>"; };
+		6BEA6EAE0AED2E42006C09F7 /* SPConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPConfig.h; sourceTree = "<group>"; };
+		6BEA6EB00AED2E42006C09F7 /* SPErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPErrorCodes.h; sourceTree = "<group>"; };
+		6BEA6EB10AED2E42006C09F7 /* SPErrors.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPErrors.h; sourceTree = "<group>"; };
+		6BEA6EB20AED2E42006C09F7 /* SPFiles.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPFiles.h; sourceTree = "<group>"; };
+		6BEA6EB30AED2E42006C09F7 /* SPHost.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPHost.h; sourceTree = "<group>"; };
+		6BEA6EB40AED2E42006C09F7 /* SPInterf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPInterf.h; sourceTree = "<group>"; };
+		6BEA6EB50AED2E42006C09F7 /* SPMData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPMData.h; sourceTree = "<group>"; };
+		6BEA6EB60AED2E42006C09F7 /* SPObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPObject.h; sourceTree = "<group>"; };
+		6BEA6EB70AED2E42006C09F7 /* SPPiPL.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPPiPL.h; sourceTree = "<group>"; };
+		6BEA6EB80AED2E42006C09F7 /* SPPlugs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPPlugs.h; sourceTree = "<group>"; };
+		6BEA6EB90AED2E42006C09F7 /* SPProps.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPProps.h; sourceTree = "<group>"; };
+		6BEA6EBA0AED2E42006C09F7 /* SPRuntme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPRuntme.h; sourceTree = "<group>"; };
+		6BEA6EBB0AED2E42006C09F7 /* SPStrngs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPStrngs.h; sourceTree = "<group>"; };
+		6BEA6EBC0AED2E42006C09F7 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
+		6BEA6EBD0AED2E42006C09F7 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
+		6BEA6EBE0AED2E42006C09F7 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
+		6BEA6EC00AED2E42006C09F7 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
+		6BEA6EC10AED2E42006C09F7 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
+		6BEA6EC20AED2E42006C09F7 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
+		6BEA6EC80AED2E98006C09F7 /* StatisticsUIMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = StatisticsUIMac.cpp; sourceTree = "<group>"; };
+		6BEA6ECD0AED2EA9006C09F7 /* Statistics.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Statistics.cpp; path = ../common/Statistics.cpp; sourceTree = SOURCE_ROOT; };
+		6BEA6ECE0AED2EA9006C09F7 /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Statistics.h; path = ../common/Statistics.h; sourceTree = SOURCE_ROOT; };
+		6BEA6ECF0AED2EA9006C09F7 /* Statistics.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Statistics.r; path = ../common/Statistics.r; sourceTree = SOURCE_ROOT; };
+		6BEA6ED00AED2EA9006C09F7 /* StatisticsRes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = StatisticsRes.h; path = ../common/StatisticsRes.h; sourceTree = SOURCE_ROOT; };
+		6BEA6ED10AED2EA9006C09F7 /* StatisticsScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = StatisticsScripting.cpp; path = ../common/StatisticsScripting.cpp; sourceTree = SOURCE_ROOT; };
+		8D01CCD20486CAD60068D4B7 /* Statistics.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Statistics.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2880D4F0B0EEAD3001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* FilterTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6ECE0AED2EA9006C09F7 /* Statistics.h */,
+				6BEA6ED00AED2EA9006C09F7 /* StatisticsRes.h */,
+				6BEA6ECD0AED2EA9006C09F7 /* Statistics.cpp */,
+				6BEA6ED10AED2EA9006C09F7 /* StatisticsScripting.cpp */,
+				6BEA6EC80AED2E98006C09F7 /* StatisticsUIMac.cpp */,
+				6BEA6ECF0AED2EA9006C09F7 /* Statistics.r */,
+				6BEA6C660AED2E2B006C09F7 /* SDK common */,
+				6BEA6E840AED2E42006C09F7 /* Photoshop common */,
+				089C1671FE841209C02AAC07 /* Frameworks */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = FilterTemplate;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* Statistics.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BEA6C660AED2E2B006C09F7 /* SDK common */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6C670AED2E2B006C09F7 /* includes */,
+				6BEA6C6E0AED2E2B006C09F7 /* resources */,
+				6BEA6C720AED2E2B006C09F7 /* sources */,
+			);
+			name = "SDK common";
+			path = ../../../common;
+			sourceTree = SOURCE_ROOT;
+		};
+		6BEA6C670AED2E2B006C09F7 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6C680AED2E2B006C09F7 /* FilterBigDocument.h */,
+				6BEA6C690AED2E2B006C09F7 /* PIDefines.h */,
+				6BEA6C6B0AED2E2B006C09F7 /* PIUSuites.h */,
+				6BEA6C6C0AED2E2B006C09F7 /* PIUtilities.h */,
+				6BEA6C6D0AED2E2B006C09F7 /* DialogUtilities.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		6BEA6C6E0AED2E2B006C09F7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2880D4F0B0EEAD3001C1C00 /* Info.plist */,
+				6BEA6C700AED2E2B006C09F7 /* PIUtilities.r */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6BEA6C720AED2E2B006C09F7 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6C740AED2E2B006C09F7 /* PIUSuites.cpp */,
+				6BEA6C750AED2E2B006C09F7 /* PIUtilities.cpp */,
+				6BEA6C760AED2E2B006C09F7 /* DialogUtilitiesMac.cpp */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		6BEA6E840AED2E42006C09F7 /* Photoshop common */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6E850AED2E42006C09F7 /* photoshop */,
+				6BEA6EA60AED2E42006C09F7 /* pica_sp */,
+				6BEA6EBF0AED2E42006C09F7 /* resources */,
+			);
+			name = "Photoshop common";
+			path = ../../../../photoshopapi;
+			sourceTree = SOURCE_ROOT;
+		};
+		6BEA6E850AED2E42006C09F7 /* photoshop */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6E890AED2E42006C09F7 /* ASConfig.h */,
+				6BEA6E880AED2E42006C09F7 /* ASPragma.h */,
+				6BEA6E8A0AED2E42006C09F7 /* ASPreInclude.h */,
+				6BEA6E870AED2E42006C09F7 /* ASTypes.h */,
+				6BEA6E860AED2E42006C09F7 /* ASZStringSuite.h */,
+				64CC2E4B111CCA5800423B46 /* JSScriptingSuite.h */,
+				6BEA6E8B0AED2E42006C09F7 /* PIAbout.h */,
+				6BEA6E8C0AED2E42006C09F7 /* PIAcquire.h */,
+				6BEA6E8D0AED2E42006C09F7 /* PIActions.h */,
+				6BEA6E8E0AED2E42006C09F7 /* PIActionsPlugin.h */,
+				6BEA6E8F0AED2E42006C09F7 /* PIAliasSuite.h */,
+				6BEA6E900AED2E42006C09F7 /* PIBufferSuite.h */,
+				6BEA6E910AED2E42006C09F7 /* PIChannelPortOperations.h */,
+				6BEA6E920AED2E42006C09F7 /* PIChannelPortsSuite.h */,
+				6BEA6E930AED2E42006C09F7 /* PIColorSpaceSuite.h */,
+				6BEA6E940AED2E42006C09F7 /* PIErrorSuite.h */,
+				6BEA6E950AED2E42006C09F7 /* PIExport.h */,
+				6BEA6E960AED2E42006C09F7 /* PIFilter.h */,
+				6BEA6E970AED2E42006C09F7 /* PIFormat.h */,
+				6BEA6E980AED2E42006C09F7 /* PIGeneral.h */,
+				6BEA6E990AED2E42006C09F7 /* PIGetFileListSuite.h */,
+				6BEA6E9A0AED2E42006C09F7 /* PIGetPathSuite.h */,
+				6BEA6E9B0AED2E42006C09F7 /* PIHandleSuite.h */,
+				6BEA6E9C0AED2E42006C09F7 /* PIPicker.h */,
+				6BEA6E9D0AED2E42006C09F7 /* PIProgressSuite.h */,
+				6BEA6E9E0AED2E42006C09F7 /* PIProperties.h */,
+				6BEA6E9F0AED2E42006C09F7 /* PIResDefines.h */,
+				6BEA6EA00AED2E42006C09F7 /* PISelection.h */,
+				6BEA6EA10AED2E42006C09F7 /* PIStringTerminology.h */,
+				6BEA6EA20AED2E42006C09F7 /* PITerminology.h */,
+				6BEA6EA30AED2E42006C09F7 /* PITypes.h */,
+				6BEA6EA40AED2E42006C09F7 /* PIUIHooksSuite.h */,
+				646709AA255DABE2009F97AB /* PIUXPSuite.h */,
+				647B633011138D490067F135 /* PSIntTypes.h */,
+			);
+			path = photoshop;
+			sourceTree = "<group>";
+		};
+		6BEA6EA60AED2E42006C09F7 /* pica_sp */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6EA70AED2E42006C09F7 /* SPAccess.h */,
+				6BEA6EA80AED2E42006C09F7 /* SPAdapts.h */,
+				6BEA6EA90AED2E42006C09F7 /* SPBasic.h */,
+				6BEA6EAA0AED2E42006C09F7 /* SPBckDbg.h */,
+				6BEA6EAB0AED2E42006C09F7 /* SPBlocks.h */,
+				6BEA6EAC0AED2E42006C09F7 /* SPCaches.h */,
+				6BEA6EAD0AED2E42006C09F7 /* SPCOM.h */,
+				6BEA6EAE0AED2E42006C09F7 /* SPConfig.h */,
+				6BEA6EB00AED2E42006C09F7 /* SPErrorCodes.h */,
+				6BEA6EB10AED2E42006C09F7 /* SPErrors.h */,
+				6BEA6EB20AED2E42006C09F7 /* SPFiles.h */,
+				6BEA6EB30AED2E42006C09F7 /* SPHost.h */,
+				6BEA6EB40AED2E42006C09F7 /* SPInterf.h */,
+				6BEA6EB50AED2E42006C09F7 /* SPMData.h */,
+				6BEA6EB60AED2E42006C09F7 /* SPObject.h */,
+				6BEA6EB70AED2E42006C09F7 /* SPPiPL.h */,
+				6BEA6EB80AED2E42006C09F7 /* SPPlugs.h */,
+				6BEA6EB90AED2E42006C09F7 /* SPProps.h */,
+				6BEA6EBA0AED2E42006C09F7 /* SPRuntme.h */,
+				6BEA6EBB0AED2E42006C09F7 /* SPStrngs.h */,
+				6BEA6EBC0AED2E42006C09F7 /* SPSTSPrp.h */,
+				6BEA6EBD0AED2E42006C09F7 /* SPSuites.h */,
+				6BEA6EBE0AED2E42006C09F7 /* SPTypes.h */,
+			);
+			path = pica_sp;
+			sourceTree = "<group>";
+		};
+		6BEA6EBF0AED2E42006C09F7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA6EC00AED2E42006C09F7 /* PIGeneral.r */,
+				6BEA6EC10AED2E42006C09F7 /* PIMI.r */,
+				6BEA6EC20AED2E42006C09F7 /* PIPL.r */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* Statistics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962CD06E08DA18A1008533EB /* Build configuration list for PBXNativeTarget "Statistics" */;
+			buildPhases = (
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				969D52B109B681C300BD3566 /* Rez */,
+			);
+			buildRules = (
+				969D530509B6834200BD3566 /* PBXBuildRule */,
+				96D963C109C0BE6800A5716C /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Statistics;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = FilterTemplate;
+			productReference = 8D01CCD20486CAD60068D4B7 /* Statistics.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = 962CD07208DA18A1008533EB /* Build configuration list for PBXProject "statistics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* FilterTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* Statistics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		969D52B109B681C300BD3566 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEA6C780AED2E2B006C09F7 /* PIUtilities.r in Rez */,
+				6BEA6ED30AED2EA9006C09F7 /* Statistics.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEA6C7A0AED2E2B006C09F7 /* PIUSuites.cpp in Sources */,
+				6BEA6EC90AED2E98006C09F7 /* StatisticsUIMac.cpp in Sources */,
+				6BEA6ED20AED2EA9006C09F7 /* Statistics.cpp in Sources */,
+				6BEA6ED40AED2EA9006C09F7 /* StatisticsScripting.cpp in Sources */,
+				64FC827C1118E69700F6232D /* PIUtilities.cpp in Sources */,
+				64FC827D1118E69900F6232D /* DialogUtilitiesMac.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		962CD06F08DA18A1008533EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = ../../../common/resources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PLUGIN_TYPE = 8BAM;
+				PRODUCT_NAME = Statistics;
+				REZ_SEARCH_PATHS = (
+					../../.././common/includes,
+					../../../.././photoshopapi/resources,
+					../../../.././photoshopapi/photoshop,
+					../../../.././samplecode/common/resources,
+				);
+			};
+			name = Debug;
+		};
+		962CD07308DA18A1008533EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OBJROOT = "$(SYMROOT)../../Objs";
+				REZ_PREFIX_FILE = ../../../common/includes/MachOMacrezXcode.h;
+				REZ_SEARCH_PATHS = (
+					../../.././common/includes,
+					../../../.././photoshopapi/resources,
+					../../../.././photoshopapi/photoshop,
+					../../../.././samplecode/common/resources,
+				);
+				SDKROOT = macosx;
+				SYMROOT = ../../../Output/Mac/Debug/;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		962CD06E08DA18A1008533EB /* Build configuration list for PBXNativeTarget "Statistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962CD06F08DA18A1008533EB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		962CD07208DA18A1008533EB /* Build configuration list for PBXProject "statistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962CD07308DA18A1008533EB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

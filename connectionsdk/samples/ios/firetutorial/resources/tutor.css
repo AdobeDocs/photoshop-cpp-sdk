@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.headerText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 90px;
+	font-weight: bold;
+	color: #FFF;
+}
+.titleText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 24px;
+}
+.instructionText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+.normalText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 20px;
+}
+.fourPanelText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 18px;
+}
+.fourPanelInstText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tinyInfoText {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 14px;
+}

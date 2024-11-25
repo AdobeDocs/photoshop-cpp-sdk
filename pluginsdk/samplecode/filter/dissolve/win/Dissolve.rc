@@ -1,0 +1,112 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define plugInCopyrightYear	"1996"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Dissolve Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Dissolve.pipl""\r\n"
+    "#include ""About.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DISSOLVEDIALOG DIALOG  34, 40, 385, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dissolve"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,340,3,34,14,BS_NOTIFY
+    PUSHBUTTON      "&Cancel",2,340,20,34,14,BS_NOTIFY
+    RTEXT           "&Amount %:",4,260,6,38,8,NOT WS_GROUP
+    EDITTEXT        3,301,4,20,12
+    CTEXT           "",5,3,3,251,360,NOT WS_VISIBLE
+    RTEXT           "Disposition:",6,261,24,36,8,NOT WS_GROUP
+    RADIOBUTTON     "Cl&ear",7,300,24,35,8,BS_NOTIFY | WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "Coo&l",8,300,34,35,8,BS_NOTIFY | WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "&Hot",9,300,44,35,8,BS_NOTIFY | WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "&Sick",10,300,55,35,8,BS_NOTIFY | WS_GROUP | WS_TABSTOP
+    CHECKBOX        "E&ntire image",11,261,66,62,8,BS_NOTIFY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "DISSOLVEDIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 174
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Dissolve.pipl"
+#include "About.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

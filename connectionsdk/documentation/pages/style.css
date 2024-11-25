@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body  {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #333333;
+	font-size: 15px;
+}
+h1 {
+	font-size: 22px;
+}
+h2 {
+	font-size: 18px;
+}
+sup {
+	font-size: 12px;
+}
+pre {
+	background-color: #CCCCCC;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.codeChange {
+	color: #FF0000;
+}
+.clearfloat {
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.main_title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+.nextLink {
+	font-size: 10px;
+	text-align: right;
+	font-weight: bold;
+}
+.toc_links {
+	font-size: 14px;
+}
+.twoColLiqLt #container { 
+	width: 95%;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	text-align: left;
+} 
+.twoColLiqLt #mainContent {
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 23%;
+} 
+.twoColLiqLt #sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #CCCCCC;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 100%;
+}
+.menu_side {
+	background-color: #CCCCCC;
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 400px;
+}
+.main_side {
+	background: #FFFFFF;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-right: 20px;
+	padding-bottom: 100%;
+	text-align: left;
+}.captionText {
+	font-size: 10px;
+	color: #666;
+}
+.titleText {
+	font-size: 30px;
+	font-style: normal;
+	font-weight: lighter;
+	color: #333;
+}
+.boldSubTitle {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #333;
+}

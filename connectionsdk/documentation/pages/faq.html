@@ -1,0 +1,82 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Frequently Asked Questions</h1>
+    <ul>
+    <li><a href="#IOSREQ">What is the minimum iOS requirement?</a></li>
+    <li><a href="#IOSTESTAPP">How do I test the app (Apple)?</a></li>
+    <li><a href="#IOSNOACCONT">What if I don't have a paid iOS developer account with Apple? How can I test my app?</a></li>
+    <li><a href="#WINBROADCAST">How come I can't see the Photoshop server being broadcast? (Windows)</a></li>
+    <li><a href="#WINIPADUSE">Can I use my iPad app with Photoshop on Windows?</a></li>
+    <li><a href="#WINCONNISSUE">I am having connection issues on Windows. I can see Photoshop but the app can never connect to it.</a></li>
+    <li><a href="#DROIDPROJ">How do I open the Android project?</a></li>
+    <li><a href="#DROIDIMPORT">When I import an Android project, I get an error about &quot;Project 'nameofproject' is missing required source folder: 'gen'&quot;!</a></li>
+    <li><a href="#PSCONICONUSE">Can I use the PSConnection icons in my application?</a></li>
+    <li><a href="#PSCONNICONMARKET">Can I use the icons in my marketing materials?</a></li>
+    </ul>
+    <p><strong><a name="IOSREQ">What is the minimum iOS requirement?</a></strong>    <br />
+    iOS 4.2. Keep in mind that iOS 4.2 requires OSX 10.6.x with Xcode 3.2.5.</p>
+    
+<p><strong><a name="IOSTESTAPP">How do I test the app (Apple)?</a></strong><br />
+       You need to have a paid iOS developer account with Apple.  They will provide you with directions for &quot;provisioning&quot; your device with Xcode.  For more information, visit the Apple Developer page:  <a href="http://developer.apple.com/ipad/sdk/">http://developer.apple.com/ipad/sdk/</a>
+    <p><strong><a name="IOSNOACCONT">What if I don't have a paid iOS developer account with Apple? How can I test my app?</a></strong><br />
+     Without the provisioning profile, you can use the iOS simulator that comes with the Xcode/iOS SDK.
+    <p><strong><a name="WINBROADCAST">How come I can't see the Photoshop server being broadcast? (Windows)</a></strong><br />
+     The first thing you will need is Apple's Bonjour service.  This is an OS default if you are on Mac OS.  For Windows, you need to install Bonjour Service for Windows.  Apple calls it &quot;Bonjour Print Service for Windows&quot;. You can download it at <a href="http://support.apple.com/kb/DL999">http://support.apple.com/kb/DL999</a>.  The second thing that needs to happen is that you be on the same subnet.  Bonjour  broadcasting service is limited to the same subnet.  Note that if you have Apple iTunes installed, it will automatically install Apple Bonjour service for you.
+    <p><strong><a name="WINIPADUSE">Can I use my iPad app with Photoshop on Windows?</a></strong><br />
+   Yes. 
+  <p><strong><a name="WINCONNISSUE">I am having connection issues on Windows. I can see Photoshop but the app can never connect to it.</a></strong><br />
+  Windows Firewall plays a role here.  See 
+    <a href="winconnect.html">Windows Connection How-To</a> for more details.<p><strong><a name="DROIDPROJ">How do I open the Android project?</a></strong><br />
+     Unzip the SDK into the directory of your choice.  Tell Eclipse to File &gt; Import... &gt; General &gt; Existing Projects into a workspace.  Choose the desired project folder and click Finish.
+    <p><strong><a name="DROIDIMPORT">When I import an Android project, I get an error about &quot;Project 'nameofproject' is missing required source folder: 'gen'&quot;!</a></strong><br />
+       Open the project properties and select &quot;<em>Java Build Path</em>&quot; from the left panel. If you are looking at &quot;<em>Order and Export</em>&quot;, make sure &quot;<em>Android 2.2</em>&quot; is checked. If &quot;<em>Android 2.2</em>&quot; does not exist or you wish to target a different version of Android, select the <em>Libraries</em> tab and click on either &quot;<em>Add External Class Folder</em>&quot; or &quot;<em>Add External Jars</em>&quot;. Navigate to where you installed your Android SDK/platforms/desired-android-version. Then go back to &quot;<em>Order and Export</em>&quot; and check the Android lib you just added.
+      
+	  
+	<p><strong><a name="PSCONICONUSE">Can I use the PSConnection icons in my application?</a></strong><br />
+	Yes, developers can use the PSConnection source code and icons in their product. PhotoshopButton_Available.png, PhotoshopButton_Connected.png and PhotoshopButton_Offline.png should be used as is along with the PSConnection source code.
+
+	<p><strong><a name="PSCONNICONMARKET">Can I use the icons in my marketing materials?</a></strong><br />
+	Yes, developers can use the icons on their web pages and marketing materials.
+
+</div>
+	<br class="clearfloat" />
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Shape-sym.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Shape Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SELECTIONPARAM DIALOG DISCARDABLE  80, 80, 128, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Shape"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,90,3,35,15
+    PUSHBUTTON      "&Cancel",2,90,20,35,15
+    RTEXT           "Shape:",3,4,6,26,12
+    CONTROL         "Tr&iangle",4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    37,6,47,11
+    CONTROL         "S&quare",5,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    17,47,11
+    CONTROL         "&Circle",6,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    28,47,11
+    CONTROL         "&Star",7,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,39,
+                    47,11
+    CONTROL         "&Treble",8,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    50,47,11
+    CONTROL         "&Ribbon",9,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    61,47,11
+    CONTROL         "&Note",10,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    72,47,11
+    RTEXT           "Create:",11,5,92,25,12
+    CONTROL         "S&election",12,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    37,92,46,11
+    CONTROL         "&Path",13,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    102,46,11
+    CONTROL         "&Layer",14,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,
+                    112,46,11
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Shape-sym.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""Shape.pipl""\r\n"
+	"#include ""About.rc""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "SELECTIONPARAM", DIALOG
+    BEGIN
+        RIGHTMARGIN, 125
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 125
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Shape.pipl"
+#include "About.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

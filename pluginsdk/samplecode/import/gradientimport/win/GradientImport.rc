@@ -1,0 +1,118 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "GradientImport-sym.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Gradient Import Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+UIPARAM DIALOG DISCARDABLE  68, 28, 152, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "GradientImport"
+FONT 8, "Helv"
+BEGIN
+    DEFPUSHBUTTON   "&Import",1,96,5,46,14,BS_NOTIFY
+    PUSHBUTTON      "&Done",2,96,23,46,14,BS_NOTIFY
+    RTEXT           "Ro&ws:",10,6,7,30,10
+    EDITTEXT        3,40,5,28,12,WS_GROUP
+    RTEXT           "&Columns:",11,6,25,30,10
+    EDITTEXT        4,40,23,28,12,WS_GROUP
+    GROUPBOX        "Mode",13,10,41,78,64,WS_GROUP
+    RADIOBUTTON     "&Bitmap",5,20,57,64,10,BS_NOTIFY | WS_GROUP | 
+                    WS_TABSTOP
+    RADIOBUTTON     "&Gray Scale",6,20,67,64,10,BS_NOTIFY | WS_GROUP | 
+                    WS_TABSTOP
+    RADIOBUTTON     "&Indexed Color",7,20,77,64,10,BS_NOTIFY | WS_GROUP | 
+                    WS_TABSTOP
+    RADIOBUTTON     "&RGB Color",8,20,87,64,10,BS_NOTIFY | WS_GROUP | 
+                    WS_TABSTOP
+    CHECKBOX        "In&vert",9,20,111,59,10,BS_NOTIFY
+    CHECKBOX        "Con&vert alpha to transparency",14,20,122,121,10,
+                    BS_NOTIFY
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "GradientImport-sym.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""GradientImport.pipl""\r\n"
+	"#include ""About.rc""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "UIPARAM", DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 132
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "GradientImport.pipl"
+#include "About.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

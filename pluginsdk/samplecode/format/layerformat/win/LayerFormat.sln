@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LayerFormat", "LayerFormat.vcxproj", "{BA1C6B6B-58DD-4599-A7DD-D772C107AD5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA1C6B6B-58DD-4599-A7DD-D772C107AD5F}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{BA1C6B6B-58DD-4599-A7DD-D772C107AD5F}.Debug|ARM64.Build.0 = Debug|ARM64
+		{BA1C6B6B-58DD-4599-A7DD-D772C107AD5F}.Debug|x64.ActiveCfg = Debug|x64
+		{BA1C6B6B-58DD-4599-A7DD-D772C107AD5F}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DF3E2C9-45B8-4D1F-9473-0457CC4FA1F4}
+	EndGlobalSection
+EndGlobal

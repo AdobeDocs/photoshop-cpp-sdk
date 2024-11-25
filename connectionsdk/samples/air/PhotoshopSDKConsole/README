@@ -1,0 +1,25 @@
+﻿Adobe® Photoshop® SDK Example Code
+
+Requirements:
+Flash Builder 4.5
+Flex 4.5
+AIR 2.6
+Photoshop SDK's AS3 swc (PhotoshopSDK.swc)
+
+Overview:
+
+This AIR application allows you to try and ExtendScript JS commands
+on the desktop and view the response. Its great for
+playing with ExtendScript before implementing it into your
+other applications.
+
+How to use this project:
+
+In Flash Builder 4.5 click on Import -> Flash Builder Project.
+Select the PhotoshopSDKConsole.fxp and click OK.
+
+The project is setup to run on the desktop as an AIR application.
+
+
+Credits:
+Author: Renaun Erickson (http://renaun.com)

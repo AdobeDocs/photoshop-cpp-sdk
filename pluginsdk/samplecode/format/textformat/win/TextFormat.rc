@@ -1,0 +1,100 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "textformat-sym.h"
+
+#define plugInCopyrightYear	"2002"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Text Format Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "textformat-sym.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""TextFormat.pipl""\r\n"
+    "#include ""About.rc""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+16050 DIALOGEX 0, 0, 296, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "text Format Resource Remover"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,239,7,50,14
+    PUSHBUTTON      "&Cancel",2,239,24,50,14
+    LISTBOX         4,7,34,135,96,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Resource Identifier",3,7,14,137,12
+    LTEXT           "ID:",7,168,64,35,9
+    CONTROL         "&Keep Resource",13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,113,103,13
+    LTEXT           "runtime update",8,212,64,68,9
+    LTEXT           "Type:",5,168,51,35,9
+    LTEXT           "runtime update",6,213,51,68,9
+    LTEXT           "Name:",9,168,77,35,9
+    LTEXT           "runtime update",10,212,77,68,21
+    LTEXT           "Size:",11,168,100,35,9
+    LTEXT           "runtime update",12,212,100,68,10
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "TextFormat.pipl"
+#include "About.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

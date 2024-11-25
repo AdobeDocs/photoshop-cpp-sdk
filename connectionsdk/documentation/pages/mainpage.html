@@ -1,0 +1,228 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+<div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Welcome</h1>
+  <p>Welcome to the <script type="text/javascript">document.write(sdkTitleStringWithHTML);</script>.</p>
+    <p>Imagine a creative environment in which the fun   of touch, the potential of mobility, and the power of Adobe Photoshop   software meet. The <script type="text/javascript">document.write(sdkTitleString);</script> allows applications on Android™, Blackberry, and iOS mobile and tablet devices,   as well as Mac OS and Windows<sup>&reg;</sup> operating systems, to interact with   Photoshop CS5. </p>
+    <p>For developers, we believe that connecting devices and applications to Photoshop offers you new  business opportunities by enabling   you to deliver greater value to your existing customers, and helps you   to acquire new customers by offering new benefits that harness the power   of Photoshop in a way that was impossible before.    </p>
+    <p>With this SDK, developers can create and enable   apps to drive and/or communicate with Photoshop CS5 (version 12.0.4 or   later) via a  TCP connection. It’s now possible for developers to create an ebook  of Photoshop tutorials  that allows users to drive an Action within Photoshop CS5 from   within the eBook. Or, if you find yourself inspired by an ocean view,   use a tablet device to mix the colors you see and send those colors   directly back to Photoshop CS5   without ever leaving the beach. There are so many possibilities,   and with the <script type="text/javascript">document.write(sdkTitleString);</script>, Adobe is opening Photoshop up to the   community to bring these, and other scenarios we haven’t even imagined   yet to life.    </p>
+    <p>This SDK delivers a completely new way for people   to enhance, transform and enjoy the billions of images captured on   devices of all types. We can’t wait to see what you create.    </p>
+    <p>The Photoshop Team</p>
+<h1>Introduction</h1>
+    
+    <p>Adobe<sup>&reg;</sup> Photoshop<sup>&reg;</sup> CS5 includes 
+     new technology that allows an application on a mobile device to control Photoshop. This SDK 
+     provides documentation and sample projects that detail the process of creating
+     such an application. The Adobe Photoshop interface can sometimes be overwhelming for
+     both new and seasoned users. With the Adobe 
+     <script type="text/javascript">document.write(sdkTitleString);</script>, developers can now create highly customized 
+     applications that can take control of Adobe Photoshop CS5. The potential to streamline or enhance interaction with the application's interface is now limited only by the creativity of the developer community.</p>
+	 
+	 <p>Please Note: Adobe<sup>&reg;</sup> Photoshop<sup>&reg;</sup> CS5 users that have upgraded to the 12.0.4 release also have access to this feature.</p>
+     
+     <p>Control in this case is accomplished through configuring Photoshop as a server. Once this is done, a client application can connect to Photoshop via any
+     software program that can communicate over a TCP connection. A TCP connection
+     is typically used via a language that has a <b>socket</b> interface. The Java
+     <a href="http://download.oracle.com/javase/1.4.2/docs/api/java/net/Socket.html" target="_blank">Socket</a>
+     class found in java.net.Socket is one example of establishing a client-side TCP
+     socket. iOS and Cocoa developers can use the NSNetServiceBrowser or 
+     CFStreamCreatePairWithSocketToHost for establishing a connection to Photoshop.</p>
+     
+     <p>Please see the <a href="howDoesItWork.html">How Does it Work?</a> section of this SDK for more
+     information regarding the content of messages delivered over the TCP connection.</p>
+     
+  <p>This SDK will not teach you how to develop applications for your device; it provides details on how to set up and
+     use Photoshop as a server. For information on how to build applications for the device you are targeting, please consult
+     the SDK provided for that device. See the <a href="requirements.html">requirements</a> page for links.</p>
+	 
+	 <p>There are currently three Adobe <script type="text/javascript">document.write(appName);</script> Apps available at the Apple App Store. Adobe Nav shows the current tool and the current open documents on a device, as well as allowing users to select tools and change the active document from that same device. Adobe Color Lava provides users a new way to create colors, which can then be sent to Photoshop as swatches. Adobe Eazel is a unique tool for painting with water colors. Images created in Eazel can also be sent to Photoshop.<br />
+    <br />
+	</p>
+    <h2>The Big Picture</h2>
+	
+	<p>The following diagram outlines the basic concepts involved in developing client applications for Adobe Photoshop CS5:</p>
+<table border="0">
+<tr>
+<td style="width:960px;">
+  <img alt="The Big Picture" src="../images/HowDoesItWork.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+  
+<p>This SDK is not the only document you will need to build client applications. You will also need the Adobe AIR SDK, Google Android SDK or Apple iOS SDK. Links to those SDK options can be found on the <a href="requirements.html">requirements</a> page. You will need a firm understanding of how to develop for the target device or devices before proceeding. Adobe AIR is the best option for device coverage as the examples in this SDK do not cover BlackBerry or Windows Mobile devices. You will also need the Adobe Photoshop CS5 application for testing purposes before you deploy your application to the appropriate store for users to download.</p>
+	 
+    <br />
+    <br />
+
+	<h2>Technology Stack</h2>
+
+	<p>The following diagram shows the technology stack and displays how  transactions are routed inside of Photoshop. The details of each block are described below.</p>
+<table border="0">
+<tr>
+<td style="width:960px;">	
+  <img alt="Technology Stack" src="../images/TechnologyStack.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+  
+
+<br />
+    <br />
+
+	<h2>Transaction Information</h2>
+	
+	<p>The following diagrams should provide an overview of the five different types of transactions that can occur between the client application and the Photoshop server once a connection is established. This section does not discuss message prolog or encryption that occurs on the message. Refer to the detailed information about messages in the <a href="HowDoesItWork.html">How Does It Work?</a> section of this documentation.</p>
+	
+	<h5>Commands to Photoshop</h5>
+	
+	<p>The most common transaction type will involve the client sending a command to the Photoshop server. This example shows how a new document is created from the client and the resulting name of the document is returned to the client application. A client may also use JavaScript to get current information about the state of Photoshop. The result of that JavaScript can then be used to display information on the client application. See the tutorials section for more details on how the samples work.</p>
+<table border="0">
+<tr>
+<td style="width:960px;">
+  <img alt="Commands to Photoshop" src="../images/Transaction1.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+</p>
+	 
+<p>The client sends <code>var d = documents.add(); d.name;</code> to Photoshop. Photoshop creates the document and returns the name of the new document which is <code>Untitled - 1</code>. See Hello World Android for a working example of such a transaction.</p>
+
+	<h5>Register for events</h5>
+
+	<p>The client can ask for the current state of Photoshop using the <code>Commands to Photoshop</code> section above. However, after retrieving the initial state of Photoshop, the client needs to receive updates when things change. If a user switches documents and the client is showing the name of the current document, the client needs to know about the switch. The client can register for events from Photoshop. After the client has registered for events, Photoshop will send the client updates with information. The following example shows how to register for changes to the state of the current active document. This does not refer to changes made to the active document itself, but simply the fact that the user has switched to a new active document. A client can also request information on changes to the current active document; that is covered in the Images section of the tutorials.</p>
+<table border="0">
+<tr>
+<td style="width:960px;">
+  <img alt="Register for events" src="../images/Transaction2.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+	 
+<p>The client sends the following code with an <code>inEvent</code> of <code>currentDocumentChanged</code> to request  document changes:<code><br />
+	   <br />
+  
+    	String s = "var idNS = stringIDToTypeID( 'networkEventSubscribe' );"; <br />
+		s += "var desc1 = new ActionDescriptor();";<br />
+		s += "desc1.putClass( stringIDToTypeID( 'eventIDAttr' ), stringIDToTypeID( '" + inEvent + "' ) );";<br />
+		s += "executeAction( idNS, desc1, DialogModes.NO );";<br />
+		s += "'" + subscribeSuccessStr + "'";<br />
+		messageProcessor.sendJavaScript(s);<br />
+
+  <br /></code></p>
+	
+	<p>Now, if a user switches documents, Photoshop will send a message to the client: <code>currentDocumentChanged\r45</code>. The 45 in this example refers to the document with an id of 45. See the Photoshop Events section for more information and the Android PhotoshopEvents example.</p>
+
+	<h5>Image from Photoshop to client</h5>
+
+	<p>A client may request image data from Photoshop. Image data from Photoshop will be in the form of either JPEG data or Pixmap data. See the <a href="HowDoesItWork.html">How Does It Work?</a> section of this documentation for more details on Pixmap structure. The client sends Photoshop the width and height request as well as a document ID. The document is only required if the client requests image data for a document that is not the active document.</p>
+<table border="0">
+<tr>
+<td style="width:960px;">
+  <img alt="Image from Photoshop to client" src="../images/Transaction3.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+	 
+	 <p>Here is an example of the JavaScript code for a JPEG request:    <code><br /><br />
+	 var idNS = stringIDToTypeID( "sendDocumentThumbnailToNetworkClient" );<br />
+var desc1 = new ActionDescriptor();<br />
+desc1.putInteger( stringIDToTypeID( "width" ), 600 );<br />
+desc1.putInteger( stringIDToTypeID( "height" ), 400 );<br />
+desc1.putInteger( stringIDToTypeID( "format" ), 1 );<br />
+executeAction( idNS, desc1, DialogModes.NO );<br />
+    </code></p>
+
+	<h5>Image from client to Photoshop</h5>
+
+	<p>A client may request that Photoshop create a new image from either JPEG or Pixmap data. For example, a client may wish to display the current picture from the camera on the device. The client creates the JPEG or Pixmap data and sends the transaction to Photoshop with a <code>Content Type</code> of 3. Photoshop will create a new document from the data provided for the image. See the iOS example in the tutorials section.</p>
+
+<table border="0">
+<tr>
+<td style="width:960px;">
+  <img alt="Image from client to Photoshop" src="../images/Transaction4.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+	 
+<p>Please refer to the detailed information about <code>Content Type</code> in the <a href="HowDoesItWork.html">How Does It Work?</a> section of this documentation.</p>
+
+		<h5>Arbitrary data to Photoshop</h5>
+
+		<p>Photoshop can take  data supplied by the client and create a temporary file on the server. Photoshop will then respond with the full path to that file. The client can consume this information for various custom uses. See the tutorial on painting in the iOS examples.</p>
+<table border="0">
+<tr>
+<td style="width:960px;">
+  <img alt="Arbitrary data to Photoshop" src="../images/Transaction5.png" style="width:100%;" />
+  </td>
+</tr>
+</table>
+	 
+<p>Refer to the detailed information about <code>Content Type</code> in the <a href="HowDoesItWork.html">How Does It Work?</a> section of this documentation.</p>
+
+    <br />
+    <br />
+
+	<h2>Configuring the Photoshop Server</h2>
+     
+     <p>Before any of the above can happen, the Photoshop Server first needs to be configured. After launching Photoshop, select <code>Edit</code> from the main menu and then choose <code>Remote Connections</code>. The following dialog will appear:</p>
+     
+     <table border="0">
+<tr>
+<td style="width:559px;">
+     <img alt="Remote Connections Dialog" src="../images/RemoteConnectionsDialog.jpg" style="width:100%;" />
+  </td>
+</tr>
+</table>
+     
+     <p>Configure the dialog, making sure that the remote connection check box is enabled, then click OK to dismiss the dialog. For Windows users, see the <a href="winconnect.html">Windows Connection How-To</a> section for information about an OS configuration dialog that may appear the first time you enable the server.</p>
+     <p>Service Name: Type in the name of the server. This name will be visible as a Bonjour service.</p>
+     <p>Password: Type in a password. This password must be typed into the client application.</p>
+     <p>Check the Enable Remote Connections check box.</p>
+     <p>Make a note of the IPv4 Address for non Bonjour service client applications.</p>
+     
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+	<br class="clearfloat" />
+	
+</div>
+</body>
+</html>

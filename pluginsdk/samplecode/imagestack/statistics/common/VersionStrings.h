@@ -1,0 +1,1 @@
+// VersionStrings.h// Copyright Adobe Systems Inc, 2004#define Plugin_Version_Copyright_Str " ©2014 Adobe Systems Incorporated"

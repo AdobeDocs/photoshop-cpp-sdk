@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Foreground (click below):"
+    android:id="@+id/foregroundTxt"
+/>
+<Button
+    android:layout_height="wrap_content"
+    android:textSize="50px"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+    android:onClick="foregroundBtnClick" 
+    android:id="@+id/foregroundBtn"
+/>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Background (click below):"
+/>
+<Button
+    android:layout_height="wrap_content"
+    android:textSize="50px"
+    android:layout_width="fill_parent"
+    android:background="#FFFFFF"
+    android:onClick="backgroundBtnClick" 
+    android:id="@+id/backgroundBtn"
+/>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Tools:"
+/>
+<Spinner
+    android:id="@+id/toolSpn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+/>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Documents:"
+/>
+<Spinner
+    android:id="@+id/docSpn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+/>
+</LinearLayout>

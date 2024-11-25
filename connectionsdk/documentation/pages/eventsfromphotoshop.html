@@ -1,0 +1,57 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Name:				index.html
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+Description:		The index file describes the overall picture of the Adobe
+					Photoshop Kevlar SDK for other developers to use.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Events From Photoshop</h1>
+    <p>The Android PhotoshopEvents example shows how to monitor changes occuring in Photoshop and display that information on the client. The source code for this project is located in samples/android/photoshopevents. Import the PhotoshopEvents example application into Eclipse for the details.</p>
+
+    <img alt="Photoshop Events" src="../images/PhotoshopEvents.jpg" width="244" height="429" /></p>
+
+    <p>This example gets the current status of Photoshop at launch time. It then asks for Photoshop to send it notifications when things change. It monitors the current open documents and notes which one is active. It also monitors the current tool, as well as the current foreground and background colors. A user of the client application can change these values and see them reflected in the Photoshop user interface.</p>
+    
+    <p>Touching the color bars below the Foreground or Background text will pop up a color picker dialog. The new color will be sent to Photoshop and reflected in the Tool bar and the Color panel. Any change made in Photoshop will be reflected in the client application. Photoshop will send <code>foregroundColorChanged</code> or <code>backgroundColorChanged</code> messages to the client application. Along with these messages will be the current color. As an example, <code>FF0000</code> would be the string sent if red is selected in the Color panel or via the Color picker dialog in Photoshop.</p>
+    
+    <p>Tool and document changes are displayed in the drop-down menus. Users can pick a new tool or change documents via the drop-down menus and see those actions reflected in Photoshop.</p>
+    
+    <p><br class="clearfloat" />
+	</div>
+</body>
+</html>

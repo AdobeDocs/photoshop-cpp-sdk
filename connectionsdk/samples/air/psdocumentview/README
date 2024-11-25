@@ -1,0 +1,30 @@
+Adobe® Photoshop® SDK Example Code
+
+Requirements:
+Flash Builder 4.5
+Flex 4.5
+AIR 2.6
+Photoshop SDK's AS3 swc (PhotoshopSDK.swc)
+
+Overview:
+
+This is a basic Photoshop document and layer device comp create 
+and view application while in the designing phase. Specifically
+the goal is for a user to start on the device with the application
+and create a blank application with the device resolution. Then
+using Layer Comps feature in Photoshop be able to view the 
+actual comps on the device. This would be used as they designer 
+is working to see how the comps look on the device.
+
+How to use this project:
+
+In Flash Builder 4.5 click on Import -> Flash Builder Project.
+Select the DeviceCompViewer.fxp and click OK.
+The project is setup and now you can run on the desktop or
+package it up for a mobile target.
+
+The sample code is located in the the com.adobe.example.* package.
+
+
+Credits:
+Author: Renaun Erickson (http://renaun.com)

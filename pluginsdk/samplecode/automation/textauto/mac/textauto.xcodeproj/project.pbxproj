@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64A5A2E60A1500A90034015B /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0E40A1500A90034015B /* PIUSuites.cpp */; };
+		64A5A2E70A1500A90034015B /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0E50A1500A90034015B /* PIUtilities.cpp */; };
+		64A5A2E80A1500A90034015B /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0E60A1500A90034015B /* DialogUtilitiesMac.cpp */; };
+		64A5A2F50A1500C50034015B /* TextAuto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A2F20A1500C50034015B /* TextAuto.cpp */; };
+		64A5A2F60A1500C50034015B /* TextAutoPiPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A5A2F40A1500C50034015B /* TextAutoPiPL.r */; };
+		64A5A3140A1501520034015B /* PIUSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3100A1501520034015B /* PIUSelect.cpp */; };
+		64A5A3150A1501520034015B /* PIUGet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3110A1501520034015B /* PIUGet.cpp */; };
+		64A5A31D0A1501800034015B /* PIUFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A31C0A1501800034015B /* PIUFile.cpp */; };
+		64A5A3200A1501920034015B /* PIMacUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A31F0A1501920034015B /* PIMacUI.cpp */; };
+		64A5A3240A1501AE0034015B /* PIUActionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3230A1501AE0034015B /* PIUActionUtils.cpp */; };
+		64B4E54B22587AA30009DF08 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E54A22587AA30009DF08 /* FileUtilitiesMac.cpp */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		646709B9255DAE7B009F97AB /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
+		647B632E11138D210067F135 /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
+		64A5A0D90A1500A90034015B /* PIDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIDefines.h; sourceTree = "<group>"; };
+		64A5A0DB0A1500A90034015B /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
+		64A5A0DC0A1500A90034015B /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
+		64A5A0DD0A1500A90034015B /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
+		64A5A0E00A1500A90034015B /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
+		64A5A0E40A1500A90034015B /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
+		64A5A0E50A1500A90034015B /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
+		64A5A0E60A1500A90034015B /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
+		64A5A2AB0A1500A90034015B /* ASPreInclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPreInclude.h; sourceTree = "<group>"; };
+		64A5A2AC0A1500A90034015B /* PIAbout.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAbout.h; sourceTree = "<group>"; };
+		64A5A2AD0A1500A90034015B /* PIAcquire.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAcquire.h; sourceTree = "<group>"; };
+		64A5A2AE0A1500A90034015B /* PIActions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIActions.h; sourceTree = "<group>"; };
+		64A5A2AF0A1500A90034015B /* PIActionsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIActionsPlugin.h; sourceTree = "<group>"; };
+		64A5A2B00A1500A90034015B /* PIAliasSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAliasSuite.h; sourceTree = "<group>"; };
+		64A5A2B10A1500A90034015B /* PIBufferSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIBufferSuite.h; sourceTree = "<group>"; };
+		64A5A2B20A1500A90034015B /* PIChannelPortOperations.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIChannelPortOperations.h; sourceTree = "<group>"; };
+		64A5A2B30A1500A90034015B /* PIChannelPortsSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIChannelPortsSuite.h; sourceTree = "<group>"; };
+		64A5A2B40A1500A90034015B /* PIColorSpaceSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIColorSpaceSuite.h; sourceTree = "<group>"; };
+		64A5A2B50A1500A90034015B /* PIErrorSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIErrorSuite.h; sourceTree = "<group>"; };
+		64A5A2B60A1500A90034015B /* PIExport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIExport.h; sourceTree = "<group>"; };
+		64A5A2B70A1500A90034015B /* PIFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIFilter.h; sourceTree = "<group>"; };
+		64A5A2B80A1500A90034015B /* PIFormat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIFormat.h; sourceTree = "<group>"; };
+		64A5A2B90A1500A90034015B /* PIGeneral.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGeneral.h; sourceTree = "<group>"; };
+		64A5A2BA0A1500A90034015B /* PIGetFileListSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGetFileListSuite.h; sourceTree = "<group>"; };
+		64A5A2BB0A1500A90034015B /* PIGetPathSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIGetPathSuite.h; sourceTree = "<group>"; };
+		64A5A2BC0A1500A90034015B /* PIHandleSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIHandleSuite.h; sourceTree = "<group>"; };
+		64A5A2BD0A1500A90034015B /* PIPicker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIPicker.h; sourceTree = "<group>"; };
+		64A5A2BE0A1500A90034015B /* PIProgressSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIProgressSuite.h; sourceTree = "<group>"; };
+		64A5A2BF0A1500A90034015B /* PIProperties.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIProperties.h; sourceTree = "<group>"; };
+		64A5A2C00A1500A90034015B /* PIResDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIResDefines.h; sourceTree = "<group>"; };
+		64A5A2C10A1500A90034015B /* PISelection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PISelection.h; sourceTree = "<group>"; };
+		64A5A2C20A1500A90034015B /* PIStringTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIStringTerminology.h; sourceTree = "<group>"; };
+		64A5A2C30A1500A90034015B /* PITerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PITerminology.h; sourceTree = "<group>"; };
+		64A5A2C40A1500A90034015B /* PITypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PITypes.h; sourceTree = "<group>"; };
+		64A5A2C50A1500A90034015B /* PIUIHooksSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUIHooksSuite.h; sourceTree = "<group>"; };
+		64A5A2C80A1500A90034015B /* SPAccess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAccess.h; sourceTree = "<group>"; };
+		64A5A2C90A1500A90034015B /* SPAdapts.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAdapts.h; sourceTree = "<group>"; };
+		64A5A2CA0A1500A90034015B /* SPBasic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBasic.h; sourceTree = "<group>"; };
+		64A5A2CB0A1500A90034015B /* SPBckDbg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBckDbg.h; sourceTree = "<group>"; };
+		64A5A2CC0A1500A90034015B /* SPBlocks.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBlocks.h; sourceTree = "<group>"; };
+		64A5A2CD0A1500A90034015B /* SPCaches.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPCaches.h; sourceTree = "<group>"; };
+		64A5A2CE0A1500A90034015B /* SPCOM.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPCOM.h; sourceTree = "<group>"; };
+		64A5A2CF0A1500A90034015B /* SPConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPConfig.h; sourceTree = "<group>"; };
+		64A5A2D10A1500A90034015B /* SPErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPErrorCodes.h; sourceTree = "<group>"; };
+		64A5A2D20A1500A90034015B /* SPErrors.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPErrors.h; sourceTree = "<group>"; };
+		64A5A2D30A1500A90034015B /* SPFiles.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPFiles.h; sourceTree = "<group>"; };
+		64A5A2D40A1500A90034015B /* SPHost.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPHost.h; sourceTree = "<group>"; };
+		64A5A2D50A1500A90034015B /* SPInterf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPInterf.h; sourceTree = "<group>"; };
+		64A5A2D60A1500A90034015B /* SPMData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPMData.h; sourceTree = "<group>"; };
+		64A5A2D70A1500A90034015B /* SPObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPObject.h; sourceTree = "<group>"; };
+		64A5A2D80A1500A90034015B /* SPPiPL.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPPiPL.h; sourceTree = "<group>"; };
+		64A5A2D90A1500A90034015B /* SPPlugs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPPlugs.h; sourceTree = "<group>"; };
+		64A5A2DA0A1500A90034015B /* SPProps.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPProps.h; sourceTree = "<group>"; };
+		64A5A2DB0A1500A90034015B /* SPRuntme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPRuntme.h; sourceTree = "<group>"; };
+		64A5A2DC0A1500A90034015B /* SPStrngs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPStrngs.h; sourceTree = "<group>"; };
+		64A5A2DD0A1500A90034015B /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
+		64A5A2DE0A1500A90034015B /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
+		64A5A2DF0A1500A90034015B /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
+		64A5A2E10A1500A90034015B /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
+		64A5A2E20A1500A90034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
+		64A5A2E30A1500A90034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
+		64A5A2F20A1500C50034015B /* TextAuto.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = TextAuto.cpp; path = ../common/TextAuto.cpp; sourceTree = SOURCE_ROOT; };
+		64A5A2F30A1500C50034015B /* TextAuto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TextAuto.h; path = ../common/TextAuto.h; sourceTree = SOURCE_ROOT; };
+		64A5A2F40A1500C50034015B /* TextAutoPiPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = TextAutoPiPL.r; path = ../common/TextAutoPiPL.r; sourceTree = SOURCE_ROOT; };
+		64A5A30D0A15013B0034015B /* PIUSelect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSelect.h; sourceTree = "<group>"; };
+		64A5A30E0A15013B0034015B /* PIUGet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUGet.h; sourceTree = "<group>"; };
+		64A5A3100A1501520034015B /* PIUSelect.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSelect.cpp; sourceTree = "<group>"; };
+		64A5A3110A1501520034015B /* PIUGet.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUGet.cpp; sourceTree = "<group>"; };
+		64A5A3190A15015B0034015B /* PICA2PSErrorMap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PICA2PSErrorMap.h; sourceTree = "<group>"; };
+		64A5A31B0A15017C0034015B /* PIUFile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUFile.h; sourceTree = "<group>"; };
+		64A5A31C0A1501800034015B /* PIUFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = PIUFile.cpp; sourceTree = "<group>"; };
+		64A5A31F0A1501920034015B /* PIMacUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIMacUI.cpp; sourceTree = "<group>"; };
+		64A5A3210A1501950034015B /* PIUI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUI.h; sourceTree = "<group>"; };
+		64A5A3230A1501AE0034015B /* PIUActionUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUActionUtils.cpp; sourceTree = "<group>"; };
+		64A5A3250A1501B20034015B /* PIUActionUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUActionUtils.h; sourceTree = "<group>"; };
+		64B4E547225879810009DF08 /* FileUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtilities.h; sourceTree = "<group>"; };
+		64B4E54A22587AA30009DF08 /* FileUtilitiesMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = FileUtilitiesMac.cpp; sourceTree = "<group>"; };
+		64CC2E44111CCA4600423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
+		64CF8E450AA3A67300120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		64CF8E460AA3A67300120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
+		64CF8E470AA3A67300120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
+		64CF8E480AA3A67300120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* TextAuto.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAuto.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2880D490B0EE9F9001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* TextAuto */ = {
+			isa = PBXGroup;
+			children = (
+				64A5A2F30A1500C50034015B /* TextAuto.h */,
+				64A5A2F20A1500C50034015B /* TextAuto.cpp */,
+				64A5A2F40A1500C50034015B /* TextAutoPiPL.r */,
+				64A5A0D60A1500A80034015B /* SDK common */,
+				64A5A2A00A1500A90034015B /* Photoshop common */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = TextAuto;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* TextAuto.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64A5A0D60A1500A80034015B /* SDK common */ = {
+			isa = PBXGroup;
+			children = (
+				64A5A0D70A1500A80034015B /* includes */,
+				64A5A0DE0A1500A90034015B /* resources */,
+				64A5A0E20A1500A90034015B /* sources */,
+			);
+			name = "SDK common";
+			path = ../../../common;
+			sourceTree = SOURCE_ROOT;
+		};
+		64A5A0D70A1500A80034015B /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E547225879810009DF08 /* FileUtilities.h */,
+				64A5A3190A15015B0034015B /* PICA2PSErrorMap.h */,
+				64A5A30D0A15013B0034015B /* PIUSelect.h */,
+				64A5A30E0A15013B0034015B /* PIUGet.h */,
+				64A5A0D90A1500A90034015B /* PIDefines.h */,
+				64A5A0DB0A1500A90034015B /* PIUSuites.h */,
+				64A5A31B0A15017C0034015B /* PIUFile.h */,
+				64A5A3210A1501950034015B /* PIUI.h */,
+				64A5A3250A1501B20034015B /* PIUActionUtils.h */,
+				64A5A0DC0A1500A90034015B /* PIUtilities.h */,
+				64A5A0DD0A1500A90034015B /* DialogUtilities.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		64A5A0DE0A1500A90034015B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2880D490B0EE9F9001C1C00 /* Info.plist */,
+				64A5A0E00A1500A90034015B /* PIUtilities.r */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		64A5A0E20A1500A90034015B /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E54A22587AA30009DF08 /* FileUtilitiesMac.cpp */,
+				64A5A3100A1501520034015B /* PIUSelect.cpp */,
+				64A5A3110A1501520034015B /* PIUGet.cpp */,
+				64A5A31C0A1501800034015B /* PIUFile.cpp */,
+				64A5A3230A1501AE0034015B /* PIUActionUtils.cpp */,
+				64A5A0E40A1500A90034015B /* PIUSuites.cpp */,
+				64A5A0E50A1500A90034015B /* PIUtilities.cpp */,
+				64A5A31F0A1501920034015B /* PIMacUI.cpp */,
+				64A5A0E60A1500A90034015B /* DialogUtilitiesMac.cpp */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		64A5A2A00A1500A90034015B /* Photoshop common */ = {
+			isa = PBXGroup;
+			children = (
+				64A5A2AA0A1500A90034015B /* photoshop */,
+				64A5A2C70A1500A90034015B /* pica_sp */,
+				64A5A2E00A1500A90034015B /* resources */,
+			);
+			name = "Photoshop common";
+			path = ../../../../photoshopapi;
+			sourceTree = SOURCE_ROOT;
+		};
+		64A5A2AA0A1500A90034015B /* photoshop */ = {
+			isa = PBXGroup;
+			children = (
+				64CF8E450AA3A67300120C5A /* ASConfig.h */,
+				64CF8E460AA3A67300120C5A /* ASPragma.h */,
+				64A5A2AB0A1500A90034015B /* ASPreInclude.h */,
+				64CF8E470AA3A67300120C5A /* ASTypes.h */,
+				64CF8E480AA3A67300120C5A /* ASZStringSuite.h */,
+				64CC2E44111CCA4600423B46 /* JSScriptingSuite.h */,
+				64A5A2AC0A1500A90034015B /* PIAbout.h */,
+				64A5A2AD0A1500A90034015B /* PIAcquire.h */,
+				64A5A2AE0A1500A90034015B /* PIActions.h */,
+				64A5A2AF0A1500A90034015B /* PIActionsPlugin.h */,
+				64A5A2B00A1500A90034015B /* PIAliasSuite.h */,
+				64A5A2B10A1500A90034015B /* PIBufferSuite.h */,
+				64A5A2B20A1500A90034015B /* PIChannelPortOperations.h */,
+				64A5A2B30A1500A90034015B /* PIChannelPortsSuite.h */,
+				64A5A2B40A1500A90034015B /* PIColorSpaceSuite.h */,
+				64A5A2B50A1500A90034015B /* PIErrorSuite.h */,
+				64A5A2B60A1500A90034015B /* PIExport.h */,
+				64A5A2B70A1500A90034015B /* PIFilter.h */,
+				64A5A2B80A1500A90034015B /* PIFormat.h */,
+				64A5A2B90A1500A90034015B /* PIGeneral.h */,
+				64A5A2BA0A1500A90034015B /* PIGetFileListSuite.h */,
+				64A5A2BB0A1500A90034015B /* PIGetPathSuite.h */,
+				64A5A2BC0A1500A90034015B /* PIHandleSuite.h */,
+				64A5A2BD0A1500A90034015B /* PIPicker.h */,
+				64A5A2BE0A1500A90034015B /* PIProgressSuite.h */,
+				64A5A2BF0A1500A90034015B /* PIProperties.h */,
+				64A5A2C00A1500A90034015B /* PIResDefines.h */,
+				64A5A2C10A1500A90034015B /* PISelection.h */,
+				64A5A2C20A1500A90034015B /* PIStringTerminology.h */,
+				64A5A2C30A1500A90034015B /* PITerminology.h */,
+				64A5A2C40A1500A90034015B /* PITypes.h */,
+				64A5A2C50A1500A90034015B /* PIUIHooksSuite.h */,
+				646709B9255DAE7B009F97AB /* PIUXPSuite.h */,
+				647B632E11138D210067F135 /* PSIntTypes.h */,
+			);
+			path = photoshop;
+			sourceTree = "<group>";
+		};
+		64A5A2C70A1500A90034015B /* pica_sp */ = {
+			isa = PBXGroup;
+			children = (
+				64A5A2C80A1500A90034015B /* SPAccess.h */,
+				64A5A2C90A1500A90034015B /* SPAdapts.h */,
+				64A5A2CA0A1500A90034015B /* SPBasic.h */,
+				64A5A2CB0A1500A90034015B /* SPBckDbg.h */,
+				64A5A2CC0A1500A90034015B /* SPBlocks.h */,
+				64A5A2CD0A1500A90034015B /* SPCaches.h */,
+				64A5A2CE0A1500A90034015B /* SPCOM.h */,
+				64A5A2CF0A1500A90034015B /* SPConfig.h */,
+				64A5A2D10A1500A90034015B /* SPErrorCodes.h */,
+				64A5A2D20A1500A90034015B /* SPErrors.h */,
+				64A5A2D30A1500A90034015B /* SPFiles.h */,
+				64A5A2D40A1500A90034015B /* SPHost.h */,
+				64A5A2D50A1500A90034015B /* SPInterf.h */,
+				64A5A2D60A1500A90034015B /* SPMData.h */,
+				64A5A2D70A1500A90034015B /* SPObject.h */,
+				64A5A2D80A1500A90034015B /* SPPiPL.h */,
+				64A5A2D90A1500A90034015B /* SPPlugs.h */,
+				64A5A2DA0A1500A90034015B /* SPProps.h */,
+				64A5A2DB0A1500A90034015B /* SPRuntme.h */,
+				64A5A2DC0A1500A90034015B /* SPStrngs.h */,
+				64A5A2DD0A1500A90034015B /* SPSTSPrp.h */,
+				64A5A2DE0A1500A90034015B /* SPSuites.h */,
+				64A5A2DF0A1500A90034015B /* SPTypes.h */,
+			);
+			path = pica_sp;
+			sourceTree = "<group>";
+		};
+		64A5A2E00A1500A90034015B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				64A5A2E10A1500A90034015B /* PIGeneral.r */,
+				64A5A2E20A1500A90034015B /* PIMI.r */,
+				64A5A2E30A1500A90034015B /* PIPL.r */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* TextAuto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FADC23308B4156C00ABE55E /* Build configuration list for PBXNativeTarget "TextAuto" */;
+			buildPhases = (
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				64A5A2EB0A1500B20034015B /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextAuto;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = TextAuto;
+			productReference = 8D01CCD20486CAD60068D4B7 /* TextAuto.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = 4FADC23708B4156C00ABE55E /* Build configuration list for PBXProject "textauto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* TextAuto */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* TextAuto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		64A5A2EB0A1500B20034015B /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A5A2F60A1500C50034015B /* TextAutoPiPL.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A5A2E60A1500A90034015B /* PIUSuites.cpp in Sources */,
+				64A5A2E70A1500A90034015B /* PIUtilities.cpp in Sources */,
+				64A5A2E80A1500A90034015B /* DialogUtilitiesMac.cpp in Sources */,
+				64A5A2F50A1500C50034015B /* TextAuto.cpp in Sources */,
+				64B4E54B22587AA30009DF08 /* FileUtilitiesMac.cpp in Sources */,
+				64A5A3140A1501520034015B /* PIUSelect.cpp in Sources */,
+				64A5A3150A1501520034015B /* PIUGet.cpp in Sources */,
+				64A5A31D0A1501800034015B /* PIUFile.cpp in Sources */,
+				64A5A3200A1501920034015B /* PIMacUI.cpp in Sources */,
+				64A5A3240A1501AE0034015B /* PIUActionUtils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4FADC23408B4156C00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = ../../../common/resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OBJROOT = "$(SYMROOT)../../Objs";
+				PLUGIN_TYPE = 8LIZ;
+				PRODUCT_NAME = TextAuto;
+				REZ_SEARCH_PATHS = (
+					../../.././common/includes,
+					../../../.././photoshopapi/resources,
+					../../../.././photoshopapi/photoshop,
+					../../../.././samplecode/common/resources,
+				);
+				SYMROOT = ../../../Output/Mac/Debug/;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		4FADC23808B4156C00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OBJROOT = "$(SYMROOT)../../Objs";
+				REZ_PREFIX_FILE = "$(SRCROOT)/../../../common/includes/MachOMacrezXcode.h";
+				REZ_SEARCH_PATHS = (
+					../../.././common/includes,
+					../../../.././photoshopapi/resources,
+					../../../.././photoshopapi/photoshop,
+					../../../.././samplecode/common/resources,
+				);
+				SDKROOT = macosx;
+				SYMROOT = ../../../Output/Mac/Debug/;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC23308B4156C00ABE55E /* Build configuration list for PBXNativeTarget "TextAuto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC23408B4156C00ABE55E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4FADC23708B4156C00ABE55E /* Build configuration list for PBXProject "textauto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC23808B4156C00ABE55E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

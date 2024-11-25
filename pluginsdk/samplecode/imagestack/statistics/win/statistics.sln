@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "statistics", "statistics.vcxproj", "{044F9AC0-1F66-4790-A891-957097F86F20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{044F9AC0-1F66-4790-A891-957097F86F20}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{044F9AC0-1F66-4790-A891-957097F86F20}.Debug|ARM64.Build.0 = Debug|ARM64
+		{044F9AC0-1F66-4790-A891-957097F86F20}.Debug|x64.ActiveCfg = Debug|x64
+		{044F9AC0-1F66-4790-A891-957097F86F20}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DBD5D12-5B8A-471F-91C2-E027A644F356}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IPTCLister", "IPTCLister.vcxproj", "{922B36FB-B01B-4C19-BEFA-79C67D309C19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{922B36FB-B01B-4C19-BEFA-79C67D309C19}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{922B36FB-B01B-4C19-BEFA-79C67D309C19}.Debug|ARM64.Build.0 = Debug|ARM64
+		{922B36FB-B01B-4C19-BEFA-79C67D309C19}.Debug|x64.ActiveCfg = Debug|x64
+		{922B36FB-B01B-4C19-BEFA-79C67D309C19}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9EAA0C5-6324-48A6-AD64-406F4EFE38BE}
+	EndGlobalSection
+EndGlobal

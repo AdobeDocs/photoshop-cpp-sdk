@@ -1,0 +1,69 @@
+<!--
+/*************************************************************************
+*
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2010 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+Name:				index.html
+Author:				Thomas Ruark
+					Photoshop Engineering
+					Adobe Systems Incorporated
+Description:		The index file describes the overall picture of the Adobe
+					Photoshop Kevlar SDK for other developers to use.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="info.js" language="javascript"></script>
+</head>
+
+<body>
+
+  <div class="main_side">
+    <span class="main_title"><script type="text/javascript">document.write(sdkTitleStringWithHTML);</script></span>
+	<hr />
+    <h1>Images</h1>
+    
+    <p>The Android PhotoshopImages example shows how to get the current image data from Photoshop and display that information on the client. This version only displays the current active document in Photoshop. The example could be modified to display all the open images if needed. The source code to this project is in <code>samples/android/photoshoimages</code>. Import the PhotoshopImages example application into Eclipse for the details.</p>
+    
+   <img alt="Photoshop Images" src="../images/PhotoshopImages.jpg" width="244" height="431" /></p>
+
+    <p>This example asks for the image as JPEG data. If desired, the example can also work for Pixmap data but it will be extremely slow. Currently this example only gets data from Photoshop. Refer to the <code>transmitimage</code> iOS example for both sending and receiving image data.</p>
+    <h2>Asking for an image from Photoshop</h2>
+    <p>To ask Photoshop to send an image to the client, use the following JavaScript code:</p>
+    <code>
+var idNS = stringIDToTypeID( "sendDocumentThumbnailToNetworkClient" );<br />
+var desc1 = new ActionDescriptor();<br />
+desc1.putInteger( stringIDToTypeID( "width" ), 600 );<br />
+desc1.putInteger( stringIDToTypeID( "height" ), 400 );<br />
+desc1.putInteger( stringIDToTypeID( "format" ), 1 );<br />
+executeAction( idNS, desc1, DialogModes.NO );<br />
+    </code>
+    <p>Notice that width and height is the maximum size that you want from Photoshop. If the current active open image is bigger than the requested size, Photoshop will downsize it before sending. If the image is smaller than the reqested size, it will send that image as is.</p>
+    <p>The second thing of which to take notice is the format. Use 1 for JPEG and 2 for Pixmap. When you send this JavaScript message to Photoshop, you will get a message back with the image in the content section of the message.</p>
+    <p>Note that Pixmap is images in raw form. They will come in as RGB with no transparency info. If you are doing this in iOS, note that iOS prefers Pixmap in RGBA8 format, which means RRRTGGGTBBBT format instead of RRRGGGBBB. It is much easier and safer to use JPEG than Pixmap. The downside to JPEG is that if Photoshop downsizes the image, it will not look crisp due to JPEG compression. Unless there is a special reason to use Pixmap, JPEG is recommended because it is easier to use and handle.</p>
+    <h2>Sending an image to Photoshop</h2>
+    <p>To send an image to Photoshop, there is no JavaScript to send. You take the JPEG and place that directly into the message. Embed an unsigned char of 1 for JPEG or 2 for Pixmap. In the content type section, use 3 to tell Photoshop that the content is an image.</p>
+    <p><img src="../images/image-slice.jpg" width="233" height="357" /></p>
+    <p><br class="clearfloat" />
+</div>
+</body>
+</html>

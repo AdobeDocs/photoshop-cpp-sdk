@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* tutorialtestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* tutorialtestAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28D7ACF80DDB3853001CB0EB /* tutorialtestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* tutorialtestViewController.m */; };
+		D701A185131720D500DBA9F9 /* PBKeyDerive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D701A182131720D500DBA9F9 /* PBKeyDerive.cpp */; };
+		D701A186131720D500DBA9F9 /* PSCryptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D701A183131720D500DBA9F9 /* PSCryptor.cpp */; };
+		D701A1891317227A00DBA9F9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D701A1871317227A00DBA9F9 /* MainWindow.xib */; };
+		D701A18A1317227A00DBA9F9 /* tutorialtestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D701A1881317227A00DBA9F9 /* tutorialtestViewController.xib */; };
+		D701A18E131725A600DBA9F9 /* TutorialTestIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D701A18D131725A600DBA9F9 /* TutorialTestIcon.png */; };
+		D701A190131725FF00DBA9F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701A18F131725FF00DBA9F9 /* Security.framework */; };
+		D701A1971317261100DBA9F9 /* bonjourConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D701A1941317261100DBA9F9 /* bonjourConnectViewController.m */; };
+		D701A1981317261100DBA9F9 /* connectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D701A1961317261100DBA9F9 /* connectionViewController.m */; };
+		D701A19B13172FA200DBA9F9 /* bonjourConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D701A19913172FA200DBA9F9 /* bonjourConnectViewController.xib */; };
+		D701A19C13172FA200DBA9F9 /* connectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D701A19A13172FA200DBA9F9 /* connectionViewController.xib */; };
+		D701A2161317465E00DBA9F9 /* selection in Resources */ = {isa = PBXBuildFile; fileRef = D701A2131317465E00DBA9F9 /* selection */; };
+		D701A2171317465E00DBA9F9 /* stroke1 in Resources */ = {isa = PBXBuildFile; fileRef = D701A2141317465E00DBA9F9 /* stroke1 */; };
+		D701A2181317465E00DBA9F9 /* stroke2 in Resources */ = {isa = PBXBuildFile; fileRef = D701A2151317465E00DBA9F9 /* stroke2 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* tutorialtestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tutorialtestAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* tutorialtestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tutorialtestAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* tutorialtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutorialtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28D7ACF60DDB3853001CB0EB /* tutorialtestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tutorialtestViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* tutorialtestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tutorialtestViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* tutorialtest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tutorialtest_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* tutorialtest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "tutorialtest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D701A182131720D500DBA9F9 /* PBKeyDerive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PBKeyDerive.cpp; path = ../../../photoshopapi/networking/PBKeyDerive.cpp; sourceTree = SOURCE_ROOT; };
+		D701A183131720D500DBA9F9 /* PSCryptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSCryptor.cpp; path = ../../../photoshopapi/networking/PSCryptor.cpp; sourceTree = SOURCE_ROOT; };
+		D701A184131720D500DBA9F9 /* PSCryptorAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSCryptorAPI.h; path = ../../../photoshopapi/networking/PSCryptorAPI.h; sourceTree = SOURCE_ROOT; };
+		D701A1871317227A00DBA9F9 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = resources/MainWindow.xib; sourceTree = "<group>"; };
+		D701A1881317227A00DBA9F9 /* tutorialtestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = tutorialtestViewController.xib; path = resources/tutorialtestViewController.xib; sourceTree = "<group>"; };
+		D701A18D131725A600DBA9F9 /* TutorialTestIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TutorialTestIcon.png; path = resources/TutorialTestIcon.png; sourceTree = "<group>"; };
+		D701A18F131725FF00DBA9F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D701A1931317261100DBA9F9 /* bonjourConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bonjourConnectViewController.h; sourceTree = "<group>"; };
+		D701A1941317261100DBA9F9 /* bonjourConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bonjourConnectViewController.m; sourceTree = "<group>"; };
+		D701A1951317261100DBA9F9 /* connectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connectionViewController.h; sourceTree = "<group>"; };
+		D701A1961317261100DBA9F9 /* connectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = connectionViewController.m; sourceTree = "<group>"; };
+		D701A19913172FA200DBA9F9 /* bonjourConnectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = bonjourConnectViewController.xib; path = resources/bonjourConnectViewController.xib; sourceTree = "<group>"; };
+		D701A19A13172FA200DBA9F9 /* connectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = connectionViewController.xib; path = resources/connectionViewController.xib; sourceTree = "<group>"; };
+		D701A2131317465E00DBA9F9 /* selection */ = {isa = PBXFileReference; lastKnownFileType = file; name = selection; path = resources/selection; sourceTree = "<group>"; };
+		D701A2141317465E00DBA9F9 /* stroke1 */ = {isa = PBXFileReference; lastKnownFileType = file; name = stroke1; path = resources/stroke1; sourceTree = "<group>"; };
+		D701A2151317465E00DBA9F9 /* stroke2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = stroke2; path = resources/stroke2; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				D701A190131725FF00DBA9F9 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D701A1931317261100DBA9F9 /* bonjourConnectViewController.h */,
+				D701A1941317261100DBA9F9 /* bonjourConnectViewController.m */,
+				D701A1951317261100DBA9F9 /* connectionViewController.h */,
+				D701A1961317261100DBA9F9 /* connectionViewController.m */,
+				1D3623240D0F684500981E51 /* tutorialtestAppDelegate.h */,
+				1D3623250D0F684500981E51 /* tutorialtestAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* tutorialtestViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* tutorialtestViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* tutorialtest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D701A182131720D500DBA9F9 /* PBKeyDerive.cpp */,
+				D701A183131720D500DBA9F9 /* PSCryptor.cpp */,
+				D701A184131720D500DBA9F9 /* PSCryptorAPI.h */,
+				32CA4F630368D1EE00C91783 /* tutorialtest_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D701A2131317465E00DBA9F9 /* selection */,
+				D701A2141317465E00DBA9F9 /* stroke1 */,
+				D701A2151317465E00DBA9F9 /* stroke2 */,
+				D701A19913172FA200DBA9F9 /* bonjourConnectViewController.xib */,
+				D701A19A13172FA200DBA9F9 /* connectionViewController.xib */,
+				D701A18D131725A600DBA9F9 /* TutorialTestIcon.png */,
+				D701A1871317227A00DBA9F9 /* MainWindow.xib */,
+				D701A1881317227A00DBA9F9 /* tutorialtestViewController.xib */,
+				8D1107310486CEB800E47090 /* tutorialtest-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				D701A18F131725FF00DBA9F9 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* tutorialtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "tutorialtest" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tutorialtest;
+			productName = tutorialtest;
+			productReference = 1D6058910D05DD3D006BFB54 /* tutorialtest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "tutorialtest" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* tutorialtest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D701A1891317227A00DBA9F9 /* MainWindow.xib in Resources */,
+				D701A18A1317227A00DBA9F9 /* tutorialtestViewController.xib in Resources */,
+				D701A18E131725A600DBA9F9 /* TutorialTestIcon.png in Resources */,
+				D701A19B13172FA200DBA9F9 /* bonjourConnectViewController.xib in Resources */,
+				D701A19C13172FA200DBA9F9 /* connectionViewController.xib in Resources */,
+				D701A2161317465E00DBA9F9 /* selection in Resources */,
+				D701A2171317465E00DBA9F9 /* stroke1 in Resources */,
+				D701A2181317465E00DBA9F9 /* stroke2 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* tutorialtestAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* tutorialtestViewController.m in Sources */,
+				D701A185131720D500DBA9F9 /* PBKeyDerive.cpp in Sources */,
+				D701A186131720D500DBA9F9 /* PSCryptor.cpp in Sources */,
+				D701A1971317261100DBA9F9 /* bonjourConnectViewController.m in Sources */,
+				D701A1981317261100DBA9F9 /* connectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = tutorialtest_Prefix.pch;
+				INFOPLIST_FILE = "tutorialtest-Info.plist";
+				PRODUCT_NAME = tutorialtest;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = tutorialtest_Prefix.pch;
+				INFOPLIST_FILE = "tutorialtest-Info.plist";
+				PRODUCT_NAME = tutorialtest;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "tutorialtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "tutorialtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

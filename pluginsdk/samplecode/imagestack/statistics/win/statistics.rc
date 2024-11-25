@@ -1,0 +1,25 @@
+/*
+    File: statistics.RC
+
+	Copyright 2006 by Adobe Systems Inc..
+
+    Windows's resource file for stackProto Acquire.
+*/
+
+#include <windows.h>
+#include "winres.h"
+
+#include "PIGeneral.h"
+
+#define plugInCopyrightYear	"2006"
+
+#define VER_FILETYPE                 VFT_DLL
+#define VER_FILESUBTYPE              VFT2_UNKNOWN
+#define VER_FILEDESCRIPTION_STR     "Statistics"
+#define VER_INTERNALNAME_STR        "Statistics"
+#define VER_ORIGINALFILENAME_STR    "Statistics.8BA"
+#define VER_PRODUCTVERSION_STR		"15.0"
+
+#include "statistics.pipl"
+#define PLUGINNAME "statistics sdk"
+#include "About.rc"

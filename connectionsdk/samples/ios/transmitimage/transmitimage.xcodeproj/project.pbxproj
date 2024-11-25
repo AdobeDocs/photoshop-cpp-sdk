@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* transmitimageAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* transmitimageAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28D7ACF80DDB3853001CB0EB /* transmitimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* transmitimageViewController.m */; };
+		D72E8C5F12F117250007B781 /* transmitimageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72E8C5E12F117250007B781 /* transmitimageViewController.xib */; };
+		D72E8C6512F1180D0007B781 /* bonjourConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72E8C6212F1180D0007B781 /* bonjourConnectViewController.xib */; };
+		D72E8C6612F1180D0007B781 /* connectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72E8C6312F1180D0007B781 /* connectionViewController.xib */; };
+		D72E8C6712F1180D0007B781 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72E8C6412F1180D0007B781 /* MainWindow.xib */; };
+		D738038A12FBB00900CA70B0 /* ImageXferIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D738038912FBB00900CA70B0 /* ImageXferIcon.png */; };
+		D743AADD12E9087C0082FD2A /* connectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D743AADB12E9087C0082FD2A /* connectionViewController.m */; };
+		D763C0D313032B0B00C4F35B /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D763C0D213032B0B00C4F35B /* ImageHelper.m */; };
+		D77F6FF7130602AC00A410D0 /* PBKeyDerive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77F6FF4130602AC00A410D0 /* PBKeyDerive.cpp */; };
+		D77F6FF8130602AC00A410D0 /* PSCryptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77F6FF5130602AC00A410D0 /* PSCryptor.cpp */; };
+		D784F67812E7CFE300B5AE46 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D784F67712E7CFE300B5AE46 /* Security.framework */; };
+		D797D95F12EA47CF0030EF50 /* bonjourConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D797D95D12EA47CF0030EF50 /* bonjourConnectViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* transmitimageAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transmitimageAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* transmitimageAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transmitimageAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* transmitimage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transmitimage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28D7ACF60DDB3853001CB0EB /* transmitimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transmitimageViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* transmitimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transmitimageViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* transmitimage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transmitimage_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* transmitimage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "transmitimage-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D72E8C5E12F117250007B781 /* transmitimageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = transmitimageViewController.xib; path = resources/transmitimageViewController.xib; sourceTree = "<group>"; };
+		D72E8C6212F1180D0007B781 /* bonjourConnectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = bonjourConnectViewController.xib; path = resources/bonjourConnectViewController.xib; sourceTree = "<group>"; };
+		D72E8C6312F1180D0007B781 /* connectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = connectionViewController.xib; path = resources/connectionViewController.xib; sourceTree = "<group>"; };
+		D72E8C6412F1180D0007B781 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = resources/MainWindow.xib; sourceTree = "<group>"; };
+		D738038912FBB00900CA70B0 /* ImageXferIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ImageXferIcon.png; path = resources/ImageXferIcon.png; sourceTree = "<group>"; };
+		D743AADA12E9087C0082FD2A /* connectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connectionViewController.h; sourceTree = "<group>"; };
+		D743AADB12E9087C0082FD2A /* connectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = connectionViewController.m; sourceTree = "<group>"; };
+		D763C0D113032B0B00C4F35B /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
+		D763C0D213032B0B00C4F35B /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
+		D77F6FF4130602AC00A410D0 /* PBKeyDerive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PBKeyDerive.cpp; path = ../../../photoshopapi/networking/PBKeyDerive.cpp; sourceTree = SOURCE_ROOT; };
+		D77F6FF5130602AC00A410D0 /* PSCryptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSCryptor.cpp; path = ../../../photoshopapi/networking/PSCryptor.cpp; sourceTree = SOURCE_ROOT; };
+		D77F6FF6130602AC00A410D0 /* PSCryptorAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSCryptorAPI.h; path = ../../../photoshopapi/networking/PSCryptorAPI.h; sourceTree = SOURCE_ROOT; };
+		D784F67712E7CFE300B5AE46 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D797D95C12EA47CF0030EF50 /* bonjourConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bonjourConnectViewController.h; sourceTree = "<group>"; };
+		D797D95D12EA47CF0030EF50 /* bonjourConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bonjourConnectViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				D784F67812E7CFE300B5AE46 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* transmitimageAppDelegate.h */,
+				1D3623250D0F684500981E51 /* transmitimageAppDelegate.m */,
+				D743AADA12E9087C0082FD2A /* connectionViewController.h */,
+				D743AADB12E9087C0082FD2A /* connectionViewController.m */,
+				D797D95C12EA47CF0030EF50 /* bonjourConnectViewController.h */,
+				D797D95D12EA47CF0030EF50 /* bonjourConnectViewController.m */,
+				28D7ACF60DDB3853001CB0EB /* transmitimageViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* transmitimageViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* transmitimage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D77F6FF4130602AC00A410D0 /* PBKeyDerive.cpp */,
+				D77F6FF5130602AC00A410D0 /* PSCryptor.cpp */,
+				D77F6FF6130602AC00A410D0 /* PSCryptorAPI.h */,
+				32CA4F630368D1EE00C91783 /* transmitimage_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				D763C0D113032B0B00C4F35B /* ImageHelper.h */,
+				D763C0D213032B0B00C4F35B /* ImageHelper.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D738038912FBB00900CA70B0 /* ImageXferIcon.png */,
+				D72E8C6212F1180D0007B781 /* bonjourConnectViewController.xib */,
+				D72E8C6312F1180D0007B781 /* connectionViewController.xib */,
+				D72E8C6412F1180D0007B781 /* MainWindow.xib */,
+				D72E8C5E12F117250007B781 /* transmitimageViewController.xib */,
+				8D1107310486CEB800E47090 /* transmitimage-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				D784F67712E7CFE300B5AE46 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* transmitimage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "transmitimage" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = transmitimage;
+			productName = transmitimage;
+			productReference = 1D6058910D05DD3D006BFB54 /* transmitimage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "transmitimage" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* transmitimage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72E8C5F12F117250007B781 /* transmitimageViewController.xib in Resources */,
+				D72E8C6512F1180D0007B781 /* bonjourConnectViewController.xib in Resources */,
+				D72E8C6612F1180D0007B781 /* connectionViewController.xib in Resources */,
+				D72E8C6712F1180D0007B781 /* MainWindow.xib in Resources */,
+				D738038A12FBB00900CA70B0 /* ImageXferIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* transmitimageAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* transmitimageViewController.m in Sources */,
+				D743AADD12E9087C0082FD2A /* connectionViewController.m in Sources */,
+				D797D95F12EA47CF0030EF50 /* bonjourConnectViewController.m in Sources */,
+				D763C0D313032B0B00C4F35B /* ImageHelper.m in Sources */,
+				D77F6FF7130602AC00A410D0 /* PBKeyDerive.cpp in Sources */,
+				D77F6FF8130602AC00A410D0 /* PSCryptor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = transmitimage_Prefix.pch;
+				INFOPLIST_FILE = "transmitimage-Info.plist";
+				PRODUCT_NAME = transmitimage;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = transmitimage_Prefix.pch;
+				INFOPLIST_FILE = "transmitimage-Info.plist";
+				PRODUCT_NAME = transmitimage;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "transmitimage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "transmitimage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

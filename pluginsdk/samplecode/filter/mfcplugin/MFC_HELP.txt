@@ -1,0 +1,11 @@
+I made a definition USING_MFC in the project workspace that you will need in PITypes.h. 
+
+Photoshop has CRect and if you are using MFC they already have a CRect.
+
+Add this to PITypes.h found in the SDK.
+
+#ifndef USING_MFC
+
+typedef Rect CRect;
+
+#endif

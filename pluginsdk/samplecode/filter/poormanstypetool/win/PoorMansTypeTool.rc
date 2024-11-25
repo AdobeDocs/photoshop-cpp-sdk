@@ -1,0 +1,144 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "PoorMansTypeTool-sym.h"
+
+#define plugInCopyrightYear	"1999"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#define PLUGINNAME "Poor Mans Type Tool Sample Plug-In"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+POORMANSTYPETOOLPARAM DIALOG DISCARDABLE  34, 40, 305, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Poor Man's Type Tool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",1,255,3,34,14,BS_NOTIFY
+    PUSHBUTTON      "&Cancel",2,255,22,34,14,BS_NOTIFY
+    LTEXT           "&Vertical:",3,209,45,38,8,NOT WS_GROUP
+    EDITTEXT        4,255,45,20,12
+    LTEXT           "&Horizontal:",5,209,63,38,8,NOT WS_GROUP
+    EDITTEXT        6,255,63,20,12
+    LTEXT           "&Size: ",7,209,82,16,8,NOT WS_GROUP
+    COMBOBOX        8,255,82,35,68,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    CHECKBOX        "&Gaussian Blur",9,163,103,62,8,BS_NOTIFY
+    CHECKBOX        "Show &All Layers",10,238,103,66,8,BS_NOTIFY
+    CTEXT           "",11,3,3,148,150,NOT WS_VISIBLE
+    LTEXT           "Warning! Preview may be incorrect. You can only write to the targets.",
+                    12,163,124,135,18,NOT WS_GROUP
+    COMBOBOX        13,163,3,74,68,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        14,163,23,74,68,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "PoorMansTypeTool-sym.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""PoorMansTypeTool.pipl""\r\n"
+    "#include ""About.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "POORMANSTYPETOOLPARAM", DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 304
+        VERTGUIDE, 255
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+POORMANSTYPETOOLMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Test Menu"
+    BEGIN
+        MENUITEM "    1",                       1
+        MENUITEM "    2",                       2
+        MENUITEM "    4",                       3
+        MENUITEM "    8",                       4
+        MENUITEM "   16",                       5
+        MENUITEM "   32",                       6
+        MENUITEM "   64",                       7
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "PoorMansTypeTool.pipl"
+#include "About.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello Events, onCreate!</string>
+    <string name="app_name">Ps Events</string>
+    <string name="description">Photoshop events to device</string>
+    <string-array name="tools_array">
+        <item>Move</item>
+        <item>Marquee</item>
+        <item>Marquee Ellipse</item>
+        <item>Marquee Single Row</item>
+		<item>Marquee Single Column</item>
+		<item>Lasso</item>
+		<item>Polygon Select</item>
+		<item>Magnetic Lasso</item>
+		<item>Quick Select</item>
+		<item>Magic Wand</item>
+		<item>Crop</item>
+		<item>Slice</item>
+		<item>Slice Select</item>
+		<item>Spot Healing Brush</item>
+		<item>Magic Stamp</item>
+		<item>Patch Selection</item>
+		<item>Red Eye</item>
+		<item>Paint Brush</item>
+		<item>Pencil</item>
+		<item>Color Replacement Brush</item>
+		<item>Clone Stamp</item>
+		<item>Pattern Stamp</item>
+		<item>History Brush</item>
+		<item>Art Brush</item>
+		<item>Eraser</item>
+		<item>Background Eraser</item>
+		<item>Magic Eraser</item>
+		<item>Gradient</item>
+		<item>Bucket</item>
+		<item>Blur</item>
+		<item>Sharpen</item>
+		<item>Smudge</item>
+		<item>Dodge</item>
+		<item>Burn</item>
+		<item>Saturation</item>
+		<item>Pen</item>
+		<item>Freeform Pen</item>
+		<item>Add Knot</item>
+		<item>Delete Knot</item>
+		<item>Convert Knot</item>
+		<item>Type Horizontal</item>
+		<item>Type Vertical</item>
+		<item>Type Horizontal Mask</item>
+		<item>Type Vertical Mask</item>
+		<item>Path Select</item>
+		<item>Direct Select</item>
+		<item>Rectangle</item>
+		<item>Rounded Rectangle</item>
+		<item>Ellipse</item>
+		<item>Polygon</item>
+		<item>Line</item>
+		<item>Custom Shape</item>
+		<item>Text Annotation</item>
+		<item>Sound Annotation</item>
+		<item>Eye Dropper</item>
+		<item>Color Sampler</item>
+		<item>Ruler</item>
+		<item>Count</item>
+		<item>3D</item>
+		<item>Hand</item>
+		<item>Zoom</item>
+		<item>Mixer Brush</item>
+		<item>3D Rotate</item>
+		<item>3D Roll</item>
+		<item>3D Pan</item>
+		<item>3D Slide</item>
+		<item>3D Scale</item>
+		<item>3D Rotate Camera</item>
+		<item>3D Roll Camera</item>
+		<item>3D Pan Camera</item>
+		<item>3D Walk Camera</item>
+		<item>3D Zoom</item>
+		<item>Rotate</item>
+    </string-array>
+    <string-array name="toolids_array">
+		<item>moveTool</item>
+		<item>marqueeRectTool</item>
+		<item>marqueeEllipTool</item>
+		<item>marqueeSingleRowTool</item>
+		<item>marqueeSingleColumnTool</item>
+		<item>lassoTool</item>
+		<item>polySelTool</item>
+		<item>magneticLassoTool</item>
+		<item>quickSelectTool</item>
+		<item>magicWandTool</item>
+		<item>cropTool</item>
+		<item>sliceTool</item>
+		<item>sliceSelectTool</item>
+		<item>spotHealingBrushTool</item>
+		<item>magicStampTool</item>
+		<item>patchSelection</item>
+		<item>redEyeTool</item>
+		<item>paintbrushTool</item>
+		<item>pencilTool</item>
+		<item>colorReplacementBrushTool</item>
+		<item>cloneStampTool</item>
+		<item>patternStampTool</item>
+		<item>historyBrushTool</item>
+		<item>artBrushTool</item>
+		<item>eraserTool</item>
+		<item>backgroundEraserTool</item>
+		<item>magicEraserTool</item>
+		<item>gradientTool</item>
+		<item>bucketTool</item>
+		<item>blurTool</item>
+		<item>sharpenTool</item>
+		<item>smudgeTool</item>
+		<item>dodgeTool</item>
+		<item>burnInTool</item>
+		<item>saturationTool</item>
+		<item>penTool</item>
+		<item>freeformPenTool</item>
+		<item>addKnotTool</item>
+		<item>deleteKnotTool</item>
+		<item>convertKnotTool</item>
+		<item>typeCreateOrEditTool</item>
+		<item>typeVerticalCreateOrEditTool</item>
+		<item>typeCreateMaskTool</item>
+		<item>typeVerticalCreateMaskTool</item>
+		<item>pathComponentSelectTool</item>
+		<item>directSelectTool</item>
+		<item>rectangleTool</item>
+		<item>roundedRectangleTool</item>
+		<item>ellipseTool</item>
+		<item>polygonTool</item>
+		<item>lineTool</item>
+		<item>customShapeTool</item>
+		<item>textAnnotTool</item>
+		<item>soundAnnotTool</item>
+		<item>eyedropperTool</item>
+		<item>colorSamplerTool</item>
+		<item>rulerTool</item>
+		<item>countTool</item>
+		<item>set3DState</item>
+		<item>handTool</item>
+		<item>zoomTool</item>
+		<item>wetBrushTool</item>
+		<item>3DObjectRotateTool</item>
+		<item>3DObjectRollTool</item>
+		<item>3DObjectPanTool</item>
+		<item>3DObjectSlideTool</item>
+		<item>3DObjectScaleTool</item>
+		<item>3DOrbitCameraTool</item>
+		<item>3DRollCameraTool</item>
+		<item>3DPanCameraTool</item>
+		<item>3DWalkCameraTool</item>
+		<item>3DFOVTool</item>
+		<item>rotateTool</item>       		
+    </string-array>
+</resources>

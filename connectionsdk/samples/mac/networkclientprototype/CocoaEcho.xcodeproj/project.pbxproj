@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B119BCC1EB3E65900B7A85D /* EchoClientAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B119BCB1EB3E65900B7A85D /* EchoClientAppDelegate.mm */; };
+		3B119BCE1EB3E6AA00B7A85D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B119BCD1EB3E6AA00B7A85D /* main.mm */; };
+		3B40E17416B33AE7007B6FDE /* Shapes.psd in Resources */ = {isa = PBXBuildFile; fileRef = 3B40E16E16B33AE6007B6FDE /* Shapes.psd */; };
+		3B40E17516B33AE7007B6FDE /* SimpleTest.jsx in Resources */ = {isa = PBXBuildFile; fileRef = 3B40E17016B33AE6007B6FDE /* SimpleTest.jsx */; };
+		3B40E17616B33AE7007B6FDE /* TestPrologue.jsx in Resources */ = {isa = PBXBuildFile; fileRef = 3B40E17216B33AE7007B6FDE /* TestPrologue.jsx */; };
+		3B4C599A16ADCA6100FF5681 /* EchoClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C599916ADCA6100FF5681 /* EchoClient.mm */; };
+		3B6DAB0617BD5BB900220EA1 /* SlotLink.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B6DAB0417BD5BB900220EA1 /* SlotLink.png */; };
+		3BD3F3BC1651EC4000320D4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD3F3BB1651EC4000320D4A /* Security.framework */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D77F7033130603F700A410D0 /* PBKeyDerive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77F7030130603F700A410D0 /* PBKeyDerive.cpp */; };
+		D77F7034130603F700A410D0 /* PSCryptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77F7031130603F700A410D0 /* PSCryptor.cpp */; };
+		F1FFD0E112E5173100481041 /* Ducky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1FFD0DF12E5173100481041 /* Ducky.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BCF8140081DAC2600F0DFFD /* EchoClientAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EchoClientAppDelegate.h; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CocoaEchoClient_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaEchoClient_Prefix.pch; sourceTree = "<group>"; };
+		3B119BCB1EB3E65900B7A85D /* EchoClientAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EchoClientAppDelegate.mm; sourceTree = "<group>"; };
+		3B119BCD1EB3E6AA00B7A85D /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3B40E16F16B33AE6007B6FDE /* English */ = {isa = PBXFileReference; lastKnownFileType = file; name = English; path = English.lproj/Shapes.psd; sourceTree = "<group>"; };
+		3B40E17116B33AE7007B6FDE /* English */ = {isa = PBXFileReference; lastKnownFileType = text; name = English; path = English.lproj/SimpleTest.jsx; sourceTree = "<group>"; };
+		3B40E17316B33AE7007B6FDE /* English */ = {isa = PBXFileReference; lastKnownFileType = text; name = English; path = English.lproj/TestPrologue.jsx; sourceTree = "<group>"; };
+		3B4C599516ADC85E00FF5681 /* EchoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoClient.h; sourceTree = "<group>"; };
+		3B4C599916ADCA6100FF5681 /* EchoClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EchoClient.mm; sourceTree = "<group>"; };
+		3B6DAB0517BD5BB900220EA1 /* English */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = English; path = English.lproj/SlotLink.png; sourceTree = "<group>"; };
+		3BA0962F16B85E8D0044361E /* echoclient.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = echoclient.xcconfig; sourceTree = "<group>"; };
+		3BD3F3BB1651EC4000320D4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = ../../../../../../../../../../System/Library/Frameworks/Security.framework; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* CocoaEchoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaEchoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77F7030130603F700A410D0 /* PBKeyDerive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PBKeyDerive.cpp; path = ../../../photoshopapi/networking/PBKeyDerive.cpp; sourceTree = SOURCE_ROOT; };
+		D77F7031130603F700A410D0 /* PSCryptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSCryptor.cpp; path = ../../../photoshopapi/networking/PSCryptor.cpp; sourceTree = SOURCE_ROOT; };
+		D77F7032130603F700A410D0 /* PSCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSCryptor.h; path = ../../../photoshopapi/networking/PSCryptor.h; sourceTree = SOURCE_ROOT; };
+		F1FFD0E012E5173100481041 /* English */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = English; path = English.lproj/Ducky.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				3BD3F3BC1651EC4000320D4A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Echo Client */ = {
+			isa = PBXGroup;
+			children = (
+				3BA0962F16B85E8D0044361E /* echoclient.xcconfig */,
+				3B4C599516ADC85E00FF5681 /* EchoClient.h */,
+				3B4C599916ADCA6100FF5681 /* EchoClient.mm */,
+				2BCF8140081DAC2600F0DFFD /* EchoClientAppDelegate.h */,
+				3B119BCB1EB3E65900B7A85D /* EchoClientAppDelegate.mm */,
+				3B119BCD1EB3E6AA00B7A85D /* main.mm */,
+			);
+			name = "Echo Client";
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BD3F3BB1651EC4000320D4A /* Security.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* CocoaEchoClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CocoaEchoClient */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Echo Client */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CocoaEchoClient;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D77F7030130603F700A410D0 /* PBKeyDerive.cpp */,
+				D77F7031130603F700A410D0 /* PSCryptor.cpp */,
+				D77F7032130603F700A410D0 /* PSCryptor.h */,
+				32CA4F630368D1EE00C91783 /* CocoaEchoClient_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B40E16E16B33AE6007B6FDE /* Shapes.psd */,
+				3B40E17016B33AE6007B6FDE /* SimpleTest.jsx */,
+				3B40E17216B33AE7007B6FDE /* TestPrologue.jsx */,
+				F1FFD0DF12E5173100481041 /* Ducky.jpg */,
+				3B6DAB0417BD5BB900220EA1 /* SlotLink.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* CocoaEchoClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E55236126E79B90072747A /* Build configuration list for PBXNativeTarget "CocoaEchoClient" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaEchoClient;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CocoaEchoClient;
+			productReference = 8D1107320486CEB800E47090 /* CocoaEchoClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = F1E55235126E79B90072747A /* Build configuration list for PBXProject "CocoaEcho" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CocoaEchoClient */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* CocoaEchoClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				F1FFD0E112E5173100481041 /* Ducky.jpg in Resources */,
+				3B40E17416B33AE7007B6FDE /* Shapes.psd in Resources */,
+				3B40E17516B33AE7007B6FDE /* SimpleTest.jsx in Resources */,
+				3B40E17616B33AE7007B6FDE /* TestPrologue.jsx in Resources */,
+				3B6DAB0617BD5BB900220EA1 /* SlotLink.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B119BCC1EB3E65900B7A85D /* EchoClientAppDelegate.mm in Sources */,
+				D77F7033130603F700A410D0 /* PBKeyDerive.cpp in Sources */,
+				D77F7034130603F700A410D0 /* PSCryptor.cpp in Sources */,
+				3B4C599A16ADCA6100FF5681 /* EchoClient.mm in Sources */,
+				3B119BCE1EB3E6AA00B7A85D /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		3B40E16E16B33AE6007B6FDE /* Shapes.psd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B40E16F16B33AE6007B6FDE /* English */,
+			);
+			name = Shapes.psd;
+			sourceTree = "<group>";
+		};
+		3B40E17016B33AE6007B6FDE /* SimpleTest.jsx */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B40E17116B33AE7007B6FDE /* English */,
+			);
+			name = SimpleTest.jsx;
+			sourceTree = "<group>";
+		};
+		3B40E17216B33AE7007B6FDE /* TestPrologue.jsx */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B40E17316B33AE7007B6FDE /* English */,
+			);
+			name = TestPrologue.jsx;
+			sourceTree = "<group>";
+		};
+		3B6DAB0417BD5BB900220EA1 /* SlotLink.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B6DAB0517BD5BB900220EA1 /* English */,
+			);
+			name = SlotLink.png;
+			sourceTree = "<group>";
+		};
+		F1FFD0DF12E5173100481041 /* Ducky.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1FFD0E012E5173100481041 /* English */,
+			);
+			name = Ducky.jpg;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1E5522C126E79B90072747A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA0962F16B85E8D0044361E /* echoclient.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F1E5522D126E79B90072747A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA0962F16B85E8D0044361E /* echoclient.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F1E5522F126E79B90072747A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F1E55230126E79B90072747A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E55235126E79B90072747A /* Build configuration list for PBXProject "CocoaEcho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E5522C126E79B90072747A /* Debug */,
+				F1E5522D126E79B90072747A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1E55236126E79B90072747A /* Build configuration list for PBXNativeTarget "CocoaEchoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E5522F126E79B90072747A /* Debug */,
+				F1E55230126E79B90072747A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

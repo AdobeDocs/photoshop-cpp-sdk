@@ -1,0 +1,118 @@
+// ADOBE SYSTEMS INCORPORATED
+// Copyright  1993 - 2002 Adobe Systems Incorporated
+// All Rights Reserved
+//
+// NOTICE:  Adobe permits you to use, modify, and distribute this
+// file in accordance with the terms of the Adobe license agreement
+// accompanying it.  If you have received this file from a source
+// other than Adobe, then your use, modification, or distribution
+// of it requires the prior written permission of Adobe.
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------------------
+//
+//	File:
+//		SimpleFormat.h
+//
+//	Description:
+//		This file contains the header prototypes and macros for the
+//		File Format module SimpleFormat, 
+//		which writes a flat file with merged document pixels.
+//
+//	Use:
+//		Format modules are called from the Save, Save as,
+//		and Save a copy dialogs.
+//
+//-------------------------------------------------------------------------------
+
+#ifndef __SimpleFormat_H__	// Has this not been defined yet?
+#define __SimpleFormat_H__	// Only include this once by predefining it
+
+#include "PIDefines.h"
+#include "PIFormat.h"					// Format Photoshop header file.
+#include "PIUtilities.h"				// SDK Utility library.
+#include "FileUtilities.h"				// File Utility library.
+#include "SimpleFormatTerminology.h"	// Terminology for plug-in.
+#include <string>
+#include <vector>
+
+//-------------------------------------------------------------------------------
+//	Structure -- FileHeader
+//-------------------------------------------------------------------------------
+
+typedef struct HeaderVer2
+{
+	char identifier [8];
+	
+	int16 endian;
+	int16 testendian;
+	
+	int16 mode;
+	int16 depth;
+	int32 rows;
+	int32 cols;
+	int16 planes;
+	
+	int32 transparencyPlane;
+
+	int32 resourceLength;
+	
+} FileHeader;
+
+typedef struct HeaderVer1
+{
+	int16 mode;
+	int16 depth;
+	int16 rows;
+	int16 cols;
+	int16 planes;
+	
+	int32 resourceLength;
+} Header16BitRowsCols;
+
+
+//-------------------------------------------------------------------------------
+//	Data -- structures
+//-------------------------------------------------------------------------------
+
+typedef struct Data
+{ 
+	bool needsSwap;
+	bool openAsSmartObject;
+    bool usePOSIX;
+    bool showDialog;
+	bool saveResources;
+} Data;
+	
+typedef struct ResourceInfo {
+	uint32 totalSize;
+	uint32 type;
+	uint16 id;
+	std::string name;
+	uint32 size;
+	bool keep;
+} ResourceInfo;
+
+extern SPPluginRef gPluginRef;
+extern FormatRecordPtr gFormatRecord;
+extern Data* gData;
+extern int16* gResult;
+
+//-------------------------------------------------------------------------------
+//	Prototypes
+//-------------------------------------------------------------------------------
+
+void DoAbout (AboutRecordPtr about); 	   		// Pop about box.
+
+bool DoUI (std::vector<ResourceInfo *> & rInfos);
+
+// During read phase:
+bool ReadScriptParamsOnRead (void);	// Read any scripting params.
+OSErr WriteScriptParamsOnRead (void);	// Write any scripting params.
+
+// During write phase:
+bool ReadScriptParamsOnWrite (void);	// Read any scripting params.
+OSErr WriteScriptParamsOnWrite (void);	// Write any scripting params.
+
+//-------------------------------------------------------------------------------
+
+#endif // __SimpleFormat_H__
