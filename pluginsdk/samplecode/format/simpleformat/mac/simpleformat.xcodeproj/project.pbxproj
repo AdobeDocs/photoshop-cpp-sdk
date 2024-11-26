@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		64126BED09F97603006DF4E6 /* SimpleFormatScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126BE709F97603006DF4E6 /* SimpleFormatScripting.cpp */; };
 		64126BEE09F97603006DF4E6 /* SimpleFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126BEA09F97603006DF4E6 /* SimpleFormat.cpp */; };
-		64126BFE09F9774A006DF4E6 /* SimpleFormat.r in Rez */ = {isa = PBXBuildFile; fileRef = 64126BE809F97603006DF4E6 /* SimpleFormat.r */; };
-		64126BFF09F9774D006DF4E6 /* SimpleFormatUI.r in Rez */ = {isa = PBXBuildFile; fileRef = 64126BE509F975F5006DF4E6 /* SimpleFormatUI.r */; };
 		64126C0209F9775D006DF4E6 /* PIUtilities.r in Rez */ = {isa = PBXBuildFile; fileRef = 64126B9A09F97565006DF4E6 /* PIUtilities.r */; };
 		64126C2B09F979EA006DF4E6 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126C2A09F979EA006DF4E6 /* PIUSuites.cpp */; };
 		64126C3509F97A19006DF4E6 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126C3409F97A19006DF4E6 /* PIUtilities.cpp */; };
@@ -22,6 +20,7 @@
 		647B633E11138E5B0067F135 /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126C2F09F979F7006DF4E6 /* DialogUtilitiesMac.cpp */; };
 		647B65A2111396450067F135 /* FileUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 647B65A1111396450067F135 /* FileUtilities.cpp */; };
 		6493F375110E7F3700B0E165 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64C38C0510D6A968006A6A12 /* FileUtilitiesMac.cpp */; };
+		831CFA882CF66F04000D523A /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 831CFA872CF66F04000D523A /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,10 +92,8 @@
 		64126B8E09F97565006DF4E6 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		64126B8F09F97565006DF4E6 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		64126B9A09F97565006DF4E6 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
-		64126BE509F975F5006DF4E6 /* SimpleFormatUI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = SimpleFormatUI.r; sourceTree = "<group>"; };
 		64126BE609F97603006DF4E6 /* SimpleFormatUI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = SimpleFormatUI.cpp; path = ../common/SimpleFormatUI.cpp; sourceTree = SOURCE_ROOT; };
 		64126BE709F97603006DF4E6 /* SimpleFormatScripting.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = SimpleFormatScripting.cpp; path = ../common/SimpleFormatScripting.cpp; sourceTree = SOURCE_ROOT; };
-		64126BE809F97603006DF4E6 /* SimpleFormat.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = SimpleFormat.r; path = ../common/SimpleFormat.r; sourceTree = SOURCE_ROOT; };
 		64126BE909F97603006DF4E6 /* SimpleFormatTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SimpleFormatTerminology.h; path = ../common/SimpleFormatTerminology.h; sourceTree = SOURCE_ROOT; };
 		64126BEA09F97603006DF4E6 /* SimpleFormat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = SimpleFormat.cpp; path = ../common/SimpleFormat.cpp; sourceTree = SOURCE_ROOT; };
 		64126BEB09F97603006DF4E6 /* SimpleFormat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SimpleFormat.h; path = ../common/SimpleFormat.h; sourceTree = SOURCE_ROOT; };
@@ -120,6 +117,7 @@
 		64CF8EE70AA3A73400120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8EE80AA3A73400120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8EE90AA3A73400120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		831CFA872CF66F04000D523A /* PiPLs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* SimpleFormat.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleFormat.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880D630B0EECF5001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,13 +139,12 @@
 		089C166AFE841209C02AAC07 /* SimpleFormat */ = {
 			isa = PBXGroup;
 			children = (
+				831CFA872CF66F04000D523A /* PiPLs.json */,
 				64126BEB09F97603006DF4E6 /* SimpleFormat.h */,
 				64126BEA09F97603006DF4E6 /* SimpleFormat.cpp */,
 				64126BE609F97603006DF4E6 /* SimpleFormatUI.cpp */,
 				64126BE909F97603006DF4E6 /* SimpleFormatTerminology.h */,
 				64126BE709F97603006DF4E6 /* SimpleFormatScripting.cpp */,
-				64126BE809F97603006DF4E6 /* SimpleFormat.r */,
-				64126BE509F975F5006DF4E6 /* SimpleFormatUI.r */,
 				64126B7009F97565006DF4E6 /* SDK common */,
 				64126AD309F9751C006DF4E6 /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -377,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831CFA882CF66F04000D523A /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +385,6 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64126BFE09F9774A006DF4E6 /* SimpleFormat.r in Rez */,
-				64126BFF09F9774D006DF4E6 /* SimpleFormatUI.r in Rez */,
 				64126C0209F9775D006DF4E6 /* PIUtilities.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
