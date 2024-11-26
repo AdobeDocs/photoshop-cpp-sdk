@@ -31,3 +31,7 @@ cypress/screenshots
 
 # lerna
 lerna-debug.log
+pluginsdk/samplecode/Output/
+xcuserdata/
+xcshareddata/
+contents.xcworkspacedata
