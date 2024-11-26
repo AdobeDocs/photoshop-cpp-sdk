@@ -15,8 +15,6 @@
 		643D6E1809F9305D0066B855 /* FilterBigDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643D6E1509F9305C0066B855 /* FilterBigDocument.cpp */; };
 		643D6E1909F9305D0066B855 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643D6E1609F9305C0066B855 /* PIUSuites.cpp */; };
 		643D6E1A09F9305D0066B855 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643D6E1709F9305C0066B855 /* PIUtilities.cpp */; };
-		643D6E9209F937550066B855 /* Dissolve.r in Rez */ = {isa = PBXBuildFile; fileRef = 6427BDB409F929E400223601 /* Dissolve.r */; };
-		643D6E9309F937590066B855 /* DissolveUI.r in Rez */ = {isa = PBXBuildFile; fileRef = 6427BDAD09F929A900223601 /* DissolveUI.r */; };
 		645866960FA8BA230097B05D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645866950FA8BA230097B05D /* Cocoa.framework */; };
 		645866B00FA8BDCB0097B05D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645866AF0FA8BDCB0097B05D /* AppKit.framework */; };
 		647DCF180FD4562C00CD002E /* DissolveUIMacCocoa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 647DCF170FD4562C00CD002E /* DissolveUIMacCocoa.cpp */; };
@@ -26,16 +24,15 @@
 		64AFE0831106E463003F8A9F /* DissolveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AFE07F1106E463003F8A9F /* DissolveController.m */; };
 		64AFE0841106E463003F8A9F /* DissolveProxyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AFE0801106E463003F8A9F /* DissolveProxyView.m */; };
 		64B4E54D22587B580009DF08 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E54C22587B570009DF08 /* FileUtilitiesMac.cpp */; };
+		831CFA862CF66ADF000D523A /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 831CFA852CF66ADF000D523A /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		6415C7540FD4A0B80001ACD1 /* english */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = english; path = DissolveDialog.xib; sourceTree = "<group>"; };
-		6427BDAD09F929A900223601 /* DissolveUI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = DissolveUI.r; sourceTree = "<group>"; };
 		6427BDB209F929E400223601 /* Dissolve.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Dissolve.cpp; path = ../common/Dissolve.cpp; sourceTree = SOURCE_ROOT; };
 		6427BDB309F929E400223601 /* Dissolve.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Dissolve.h; path = ../common/Dissolve.h; sourceTree = SOURCE_ROOT; };
-		6427BDB409F929E400223601 /* Dissolve.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Dissolve.r; path = ../common/Dissolve.r; sourceTree = SOURCE_ROOT; };
 		6427BDB509F929E400223601 /* DissolveRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = DissolveRegistry.cpp; path = ../common/DissolveRegistry.cpp; sourceTree = SOURCE_ROOT; };
 		6427BDB609F929E400223601 /* DissolveRegistry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DissolveRegistry.h; path = ../common/DissolveRegistry.h; sourceTree = SOURCE_ROOT; };
 		6427BDB709F929E400223601 /* DissolveScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = DissolveScripting.cpp; path = ../common/DissolveScripting.cpp; sourceTree = SOURCE_ROOT; };
@@ -126,6 +123,7 @@
 		64CF8E9F0AA3A6F300120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
 		64E727AA255D02B7008BEB02 /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
 		64FC86591118F81900F6232D /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
+		831CFA852CF66ADF000D523A /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* Dissolve.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dissolve.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29FC5AE0B0ADACC00614548 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,8 +157,7 @@
 				6427BDB509F929E400223601 /* DissolveRegistry.cpp */,
 				6427BDB709F929E400223601 /* DissolveScripting.cpp */,
 				647DCF170FD4562C00CD002E /* DissolveUIMacCocoa.cpp */,
-				6427BDB409F929E400223601 /* Dissolve.r */,
-				6427BDAD09F929A900223601 /* DissolveUI.r */,
+				831CFA852CF66ADF000D523A /* PiPLs.json */,
 				6415C7520FD4A0B80001ACD1 /* english.lproj */,
 				6427BDBD09F92A0300223601 /* SDK common */,
 				6427BE2F09F92A2B00223601 /* Photoshop common */,
@@ -349,7 +346,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				643D6E9009F937470066B855 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -394,23 +390,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831CFA862CF66ADF000D523A /* PiPLs.json in Resources */,
 				6415C7550FD4A0B80001ACD1 /* DissolveDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		643D6E9009F937470066B855 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				643D6E9209F937550066B855 /* Dissolve.r in Rez */,
-				643D6E9309F937590066B855 /* DissolveUI.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
