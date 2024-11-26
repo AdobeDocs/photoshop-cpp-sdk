@@ -6,7 +6,7 @@
 using namespace std;
 
 #ifndef ps_wstring
-typedef basic_string<ASUnicode, char_traits<ASUnicode>, allocator<ASUnicode> > ps_wstring;
+typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t> > ps_wstring;
 #endif
 
 #ifndef MAX_PATH

@@ -94,7 +94,7 @@ void Logger::Write( vector<ps_wstring> & inValue, const bool endOfLine )
 	while (iter != inValue.end())
 	{
 		ASZString zString;
-		if (!sASZString2->MakeFromUnicode((*iter).c_str(), (*iter).size(), &zString))
+		if (!sASZString2->MakeFromUnicode((ASUnicode*)(*iter).c_str(), (*iter).size(), &zString))
 		{
 			ASUInt32 utf8Size = sASZString2->LengthAsUTF8String(zString);
 			unsigned char * utf8Buffer = new unsigned char[utf8Size];
