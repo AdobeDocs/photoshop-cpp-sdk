@@ -12,7 +12,7 @@
 		64A5A5690A1502BE0034015B /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3670A1502BE0034015B /* DialogUtilitiesMac.cpp */; };
 		64A5A56A0A1502BE0034015B /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3680A1502BE0034015B /* PIUtilities.cpp */; };
 		64A5A5750A1502E00034015B /* TextFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A5720A1502E00034015B /* TextFormat.cpp */; };
-		64A5A5760A1502E00034015B /* TextFormat.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A5A5740A1502E00034015B /* TextFormat.r */; };
+		833DF1F22CFFA63100B1A8FC /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 833DF1F12CFFA63100B1A8FC /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,12 +92,12 @@
 		64A5A3AB0A1502BE0034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
 		64A5A3AC0A1502BE0034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64A5A5720A1502E00034015B /* TextFormat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = TextFormat.cpp; path = ../common/TextFormat.cpp; sourceTree = SOURCE_ROOT; };
-		64A5A5740A1502E00034015B /* TextFormat.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = TextFormat.r; path = ../common/TextFormat.r; sourceTree = SOURCE_ROOT; };
 		64CC2E3E111CCA3300423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
 		64CF8EF50AA3A74200120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
 		64CF8EF60AA3A74200120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8EF70AA3A74200120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8EF80AA3A74200120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		833DF1F12CFFA63100B1A8FC /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* TextFormat.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFormat.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880D450B0EE893001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				64A5A5720A1502E00034015B /* TextFormat.cpp */,
-				64A5A5740A1502E00034015B /* TextFormat.r */,
+				833DF1F12CFFA63100B1A8FC /* PiPLs.json */,
 				64A5A3500A1502BE0034015B /* SDK common */,
 				64A5A3690A1502BE0034015B /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -296,7 +296,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				64A5A56D0A1502D10034015B /* Rez */,
 			);
 			buildRules = (
 			);
@@ -340,21 +339,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833DF1F22CFFA63100B1A8FC /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		64A5A56D0A1502D10034015B /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64A5A5760A1502E00034015B /* TextFormat.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {

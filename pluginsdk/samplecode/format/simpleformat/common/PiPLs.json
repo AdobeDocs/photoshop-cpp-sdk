@@ -78,7 +78,7 @@
 				"CanEmbedGray":false,
 				"CanEmbedIndexed":true,
 				"CanEmbedRGB":false,
-				"CanCanEmbedCMYK":true
+				"CanEmbedCMYK":true
 			},
 			"Terminology":
 			{
