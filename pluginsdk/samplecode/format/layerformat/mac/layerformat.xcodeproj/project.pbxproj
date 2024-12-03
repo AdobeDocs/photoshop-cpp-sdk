@@ -13,9 +13,9 @@
 		64126C3009F979F7006DF4E6 /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126C2F09F979F7006DF4E6 /* DialogUtilitiesMac.cpp */; };
 		64126C3509F97A19006DF4E6 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64126C3409F97A19006DF4E6 /* PIUtilities.cpp */; };
 		642D56B61A1543FA00523742 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 642D56B51A1543FA00523742 /* FileUtilitiesMac.cpp */; };
+		83C61F5D2CFFA30B00BD7F6D /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83C61F5C2CFFA30B00BD7F6D /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 		C8A1A4160D0F361200126BF6 /* LayerFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8A1A4100D0F361200126BF6 /* LayerFormat.cpp */; };
-		C8A1A4170D0F361200126BF6 /* LayerFormat.r in Rez */ = {isa = PBXBuildFile; fileRef = C8A1A4120D0F361200126BF6 /* LayerFormat.r */; };
 		C8A1A4180D0F361200126BF6 /* LayerFormatScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8A1A4130D0F361200126BF6 /* LayerFormatScripting.cpp */; };
 		C8A1A41B0D0F361A00126BF6 /* LayerFormatUI.r in Rez */ = {isa = PBXBuildFile; fileRef = C8A1A41A0D0F361A00126BF6 /* LayerFormatUI.r */; };
 /* End PBXBuildFile section */
@@ -114,10 +114,10 @@
 		64CF8EE70AA3A73400120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8EE80AA3A73400120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8EE90AA3A73400120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		83C61F5C2CFFA30B00BD7F6D /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* LayerFormat.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayerFormat.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A1A4100D0F361200126BF6 /* LayerFormat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = LayerFormat.cpp; path = ../common/LayerFormat.cpp; sourceTree = SOURCE_ROOT; };
 		C8A1A4110D0F361200126BF6 /* LayerFormat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LayerFormat.h; path = ../common/LayerFormat.h; sourceTree = SOURCE_ROOT; };
-		C8A1A4120D0F361200126BF6 /* LayerFormat.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = LayerFormat.r; path = ../common/LayerFormat.r; sourceTree = SOURCE_ROOT; };
 		C8A1A4130D0F361200126BF6 /* LayerFormatScripting.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = LayerFormatScripting.cpp; path = ../common/LayerFormatScripting.cpp; sourceTree = SOURCE_ROOT; };
 		C8A1A4140D0F361200126BF6 /* LayerFormatTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LayerFormatTerminology.h; path = ../common/LayerFormatTerminology.h; sourceTree = SOURCE_ROOT; };
 		C8A1A41A0D0F361A00126BF6 /* LayerFormatUI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = LayerFormatUI.r; sourceTree = SOURCE_ROOT; };
@@ -139,9 +139,9 @@
 		089C166AFE841209C02AAC07 /* 3DFormat */ = {
 			isa = PBXGroup;
 			children = (
+				83C61F5C2CFFA30B00BD7F6D /* PiPLs.json */,
 				C8A1A4100D0F361200126BF6 /* LayerFormat.cpp */,
 				C8A1A4110D0F361200126BF6 /* LayerFormat.h */,
-				C8A1A4120D0F361200126BF6 /* LayerFormat.r */,
 				C8A1A4130D0F361200126BF6 /* LayerFormatScripting.cpp */,
 				C8A1A4140D0F361200126BF6 /* LayerFormatTerminology.h */,
 				C8A1A41A0D0F361A00126BF6 /* LayerFormatUI.r */,
@@ -365,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C61F5D2CFFA30B00BD7F6D /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64126C0209F9775D006DF4E6 /* PIUtilities.r in Rez */,
-				C8A1A4170D0F361200126BF6 /* LayerFormat.r in Rez */,
 				C8A1A41B0D0F361A00126BF6 /* LayerFormatUI.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

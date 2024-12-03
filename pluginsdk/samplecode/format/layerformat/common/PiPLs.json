@@ -1,0 +1,134 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Format",
+			"Name":"LayerFormat",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":0,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"LayerFormat",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"SupportsPOSIXIO":true,
+			"HasTerminology":
+			{
+				"ClassID":"simP",
+				"EventID":"null",
+				"ScopeString":"AdobeSDK LayerFormat"
+			},
+			"SupportedModes":
+			{
+				"Bitmap":true,
+				"GrayScale":true,
+				"IndexedColor":true,
+				"RGBColor":true,
+				"CMYKColor":true,
+				"HSLColor":true,
+				"HSBColor":true,
+				"Multichannel":true,
+				"Duotone":true,
+				"LABColor":true
+			},
+			"EnableInfo":"true",
+			"PlugInMaxSize":[2147483647,2147483647],
+			"FormatMaxSize":[32767,32767],
+			"FormatMaxChannels":
+			[
+				1, 24, 24, 24, 24, 24,	24, 24, 24, 24, 24, 24
+			],
+
+			"FmtFileType":
+			{
+				"Type":"LYR ",
+				"Creator":"8BIM"
+			},
+			"FilteredTypes":
+			[
+				{
+					"Type":"8B1F",
+					"Creator":"    "
+				}
+			],
+			"ReadExtensions":
+			[
+				"LYR "
+			],
+			"WriteExtensions":
+			[
+				"LYR "
+			],
+			"FilteredExtensions":
+			[
+				"LYR "
+			],
+			"FormatFlags":
+			{
+				"SavesImageResources":true,
+				"CanRead":true,
+				"CanWrite":true,
+				"CanWriteIfRead":true,
+				"CanWriteTransparency":true,
+				"CanCreateThumbnail":true
+			},
+			"FormatICCFlags":
+			{
+				"CanEmbedGray":false,
+				"CanEmbedIndexed":true,
+				"CanEmbedRGB":false,
+				"CanCanEmbedCMYK":true
+			},
+			"FormatLayerSupport":true,
+			"FormatFileSizeLimit":4,
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suits":
+				[
+					{
+						"SuitName":"AdobeSDK",
+						"SuitDescription":"Adobe example plug-ins",
+						"SuitID":"sdK4",
+						"SuitLevel":1,
+						"SuitVersion":1,
+						"Classes":
+						[
+							{
+								"ClassName":"AdobeSDK layerFormat",
+								"ClassType":"simP",
+								"ClassDescription":"layerformat example file format module",
+								"Properties":
+								[
+									{
+										"PropertyName":"<Inheritance>",
+										"PropertyKey":"c@#^",
+										"PropertyType":"Fmt ",
+										"PropertyDescription":"parent class format"
+									},
+									{
+										"PropertyName":"foo",
+										"PropertyKey":"fooB",
+										"PropertyType":"bool",
+										"PropertyDescription":"foobar"
+									},
+									{
+										"PropertyName":"bar",
+										"PropertyKey":"barF",
+										"PropertyType":"bool",
+										"PropertyDescription":"foobar"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
