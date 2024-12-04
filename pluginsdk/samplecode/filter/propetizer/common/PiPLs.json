@@ -1,0 +1,213 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Filter",
+			"Name":"Propetizer...",
+			"Category":"AdobeSDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Propetizer",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"SupportedModes":
+            {
+				"Bitmap":false,
+				"GrayScale":true,
+				"IndexedColor":false,
+				"RGBColor":true,
+				"CMYKColor":true,
+				"HSLColor":true,
+				"HSBColor":true,
+				"Multichannel":true,
+				"Duotone":true,
+				"LABColor":true
+			},
+			"EnableInfo":"in (PSHOP_ImageMode, GrayScaleMode, RGBMode, CMYKMode, HSLMode, HSBMode, MultichannelMode, DuotoneMode, LabMode, RGB48Mode, Gray16Mode) || PSHOP_ImageDepth == 16 || PSHOP_ImageDepth == 32",
+			"PlugInMaxSize":[2000000,2000000],
+			"FilterCaseInfo":
+			[
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				},
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				},
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				},
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				},
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				},
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				},
+				{
+					"InputHandling":"InWhiteMat",
+					"OutputHandling":"OutStraightData",
+					"WriteOutsideSelection":false,
+					"FiltersLayerMasks":true,
+					"WorksWithBlankData":true,
+					"DontCopySourceToDestination":false
+				}
+			],
+			"HasTerminology":
+			{
+				"ClassID":"sdK9",
+				"EventID":"griD"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suits":
+				[
+					{
+						"SuitName":"AdobeSDK",
+						"SuitID":"sdK9",
+						"SuitLevel":1,
+						"SuitVersion":1,
+						"SuitDescription":"Adobe example plug-ins",
+						"Events":
+						[
+							{
+								"EventName":"AdobeSDK Propetizer",
+								"EventDescription":"propetizer example filter plug-in",
+								"ClassID":"sdK9",
+								"EventType":"griD",
+								"ReplyType":"null",
+								"DirectParamType":"#ImR",
+								"DirectParamFlagBits":
+								{
+									"DirectParamOptional":true,
+									"ListOfItems":false,
+									"Enumerated":true,
+									"ChangesState":true
+								},
+								"Parameters":[
+									{
+										"ParamName":"nudge H",
+										"ParamKeyword":"nudH",
+										"ParamType":"doub",
+										"ParamDescription":"horizontal big nudge"
+									},
+									{
+										"ParamName":"nudge V",
+										"ParamKeyword":"nudV",
+										"ParamType":"doub",
+										"ParamDescription":"vertical big nudge"
+									},
+									{
+										"ParamName":"origin H",
+										"ParamKeyword":"Hrzn",
+										"ParamType":"doub",
+										"ParamDescription":"horizontal origin"
+									},
+									{
+										"ParamName":"origin V",
+										"ParamKeyword":"Vrtc",
+										"ParamType":"doub",
+										"ParamDescription":"vertical origin"
+									},
+									{
+										"ParamName":"gridMajor",
+										"ParamKeyword":"grMJ",
+										"ParamType":"doub",
+										"ParamDescription":"major grid divisions"
+									},
+									{
+										"ParamName":"gridMinor",
+										"ParamKeyword":"grMN",
+										"ParamType":"long",
+										"ParamDescription":"minor grid subdivisions"
+									},
+									{
+										"ParamName":"watch",
+										"ParamKeyword":"watc",
+										"ParamType":"long",
+										"ParamDescription":"watch cursor"
+									},
+									{
+										"ParamName":"copyright",
+										"ParamKeyword":"cpYR",
+										"ParamType":"TEXT",
+										"ParamDescription":"copyright string"
+									},
+									{
+										"ParamName":"url",
+										"ParamKeyword":"URL ",
+										"ParamType":"TEXT",
+										"ParamDescription":"URL string"
+									},
+									{
+										"ParamName":"watermark",
+										"ParamKeyword":"wate",
+										"ParamType":"bool",
+										"ParamDescription":"watermark"
+									},
+									{
+										"ParamName":"slice ID",
+										"ParamKeyword":"slID",
+										"ParamType":"long",
+										"ParamDescription":"slice ID"
+									},
+									{
+										"ParamName":"slice index",
+										"ParamKeyword":"slIn",
+										"ParamType":"long",
+										"ParamDescription":"slice index"
+									},
+									{
+										"ParamName":"XMP",
+										"ParamKeyword":"mXMP",
+										"ParamType":"TEXT",
+										"ParamDescription":"XMP"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
