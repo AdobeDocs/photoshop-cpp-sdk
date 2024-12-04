@@ -43,8 +43,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\HiddenPiPL.r">
+    <None Include="..\common\PiPLs.json">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
+    </None>
   </ItemGroup>
 </Project>

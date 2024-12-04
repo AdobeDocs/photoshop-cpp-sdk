@@ -55,7 +55,6 @@ BEGIN
     "#pragma code_page(1252)\r\n"
     "#endif //_WIN32\r\n"
     "#include ""afxres.rc""         // Standard components\r\n"
-    "#include ""MFCPlugIn.pipl""\r\n"
     "#include ""About.rc""\r\n"
     "#endif\r\n"
     "\0"
@@ -122,10 +121,10 @@ LANGUAGE 9, 1
 #pragma code_page(1252)
 #endif //_WIN32
 #include "afxres.rc"         // Standard components
-#include "MFCPlugIn.pipl"
 #include "About.rc"
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON ".\PiPLs.json"

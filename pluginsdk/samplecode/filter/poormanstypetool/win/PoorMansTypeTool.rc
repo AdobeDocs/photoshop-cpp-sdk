@@ -79,7 +79,6 @@ END
 
 3 TEXTINCLUDE DISCARDABLE 
 BEGIN
-	"#include ""PoorMansTypeTool.pipl""\r\n"
     "#include ""About.rc""\r\n"
     "\0"
 END
@@ -136,9 +135,9 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "PoorMansTypeTool.pipl"
 #include "About.rc"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
