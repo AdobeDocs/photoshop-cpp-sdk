@@ -10,15 +10,10 @@
 		642D56B81A15458300523742 /* PoorMansTypeToolUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 642D56B71A15458200523742 /* PoorMansTypeToolUIMac.cpp */; };
 		648FFA4A0A1414A400C29757 /* PoorMansTypeTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFA450A1414A400C29757 /* PoorMansTypeTool.cpp */; };
 		648FFA4B0A1414A400C29757 /* PoorMansTypeToolScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFA480A1414A400C29757 /* PoorMansTypeToolScripting.cpp */; };
-		648FFA550A1414ED00C29757 /* PoorMansTypeTool.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFA470A1414A400C29757 /* PoorMansTypeTool.r */; };
-		648FFA560A1414F000C29757 /* PoorMansTypeToolUIMac.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFA430A14149400C29757 /* PoorMansTypeToolUIMac.r */; };
-		648FFC740A14155900C29757 /* PIUtilities.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFA6F0A14155900C29757 /* PIUtilities.r */; };
 		648FFC770A14155900C29757 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFA730A14155900C29757 /* PIUSuites.cpp */; };
 		648FFC780A14155900C29757 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFA740A14155900C29757 /* PIUtilities.cpp */; };
 		648FFC790A14155900C29757 /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648FFA750A14155900C29757 /* DialogUtilitiesMac.cpp */; };
-		648FFCC90A14155A00C29757 /* PIGeneral.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFC700A14155900C29757 /* PIGeneral.r */; };
-		648FFCCA0A14155A00C29757 /* PIMI.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFC710A14155900C29757 /* PIMI.r */; };
-		648FFCCB0A14155A00C29757 /* PIPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 648FFC720A14155900C29757 /* PIPL.r */; };
+		83C3B5E42D00FDFF00EF82E9 /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83C3B5E32D00FDFF00EF82E9 /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,10 +22,8 @@
 		642D56B71A15458200523742 /* PoorMansTypeToolUIMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PoorMansTypeToolUIMac.cpp; sourceTree = "<group>"; };
 		646709B5255DAE3E009F97AB /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
 		647B635B11138EF80067F135 /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
-		648FFA430A14149400C29757 /* PoorMansTypeToolUIMac.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PoorMansTypeToolUIMac.r; sourceTree = "<group>"; };
 		648FFA450A1414A400C29757 /* PoorMansTypeTool.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PoorMansTypeTool.cpp; path = ../common/PoorMansTypeTool.cpp; sourceTree = SOURCE_ROOT; };
 		648FFA460A1414A400C29757 /* PoorMansTypeTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PoorMansTypeTool.h; path = ../common/PoorMansTypeTool.h; sourceTree = SOURCE_ROOT; };
-		648FFA470A1414A400C29757 /* PoorMansTypeTool.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = PoorMansTypeTool.r; path = ../common/PoorMansTypeTool.r; sourceTree = SOURCE_ROOT; };
 		648FFA480A1414A400C29757 /* PoorMansTypeToolScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PoorMansTypeToolScripting.cpp; path = ../common/PoorMansTypeToolScripting.cpp; sourceTree = SOURCE_ROOT; };
 		648FFA490A1414A400C29757 /* PoorMansTypeToolTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PoorMansTypeToolTerminology.h; path = ../common/PoorMansTypeToolTerminology.h; sourceTree = SOURCE_ROOT; };
 		648FFA670A14155900C29757 /* FilterBigDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FilterBigDocument.h; sourceTree = "<group>"; };
@@ -38,7 +31,6 @@
 		648FFA6A0A14155900C29757 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		648FFA6B0A14155900C29757 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		648FFA6C0A14155900C29757 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
-		648FFA6F0A14155900C29757 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		648FFA730A14155900C29757 /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		648FFA740A14155900C29757 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
 		648FFA750A14155900C29757 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -92,14 +84,12 @@
 		648FFC6C0A14155900C29757 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		648FFC6D0A14155900C29757 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		648FFC6E0A14155900C29757 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		648FFC700A14155900C29757 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		648FFC710A14155900C29757 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		648FFC720A14155900C29757 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64CC2EC6111CDE1E00423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
 		64CF8EC80AA3A71700120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
 		64CF8EC90AA3A71700120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8ECA0AA3A71700120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8ECB0AA3A71700120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		83C3B5E32D00FDFF00EF82E9 /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* PoorMansTypeTool.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoorMansTypeTool.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880D7F0B0EF3B4001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,8 +114,7 @@
 				648FFA450A1414A400C29757 /* PoorMansTypeTool.cpp */,
 				642D56B71A15458200523742 /* PoorMansTypeToolUIMac.cpp */,
 				648FFA480A1414A400C29757 /* PoorMansTypeToolScripting.cpp */,
-				648FFA430A14149400C29757 /* PoorMansTypeToolUIMac.r */,
-				648FFA470A1414A400C29757 /* PoorMansTypeTool.r */,
+				83C3B5E32D00FDFF00EF82E9 /* PiPLs.json */,
 				648FFA650A14155900C29757 /* SDK common */,
 				648FFC2F0A14155900C29757 /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -177,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880D7F0B0EF3B4001C1C00 /* Info.plist */,
-				648FFA6F0A14155900C29757 /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -277,9 +265,6 @@
 		648FFC6F0A14155900C29757 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				648FFC700A14155900C29757 /* PIGeneral.r */,
-				648FFC710A14155900C29757 /* PIMI.r */,
-				648FFC720A14155900C29757 /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -338,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C3B5E42D00FDFF00EF82E9 /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,12 +334,6 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648FFA550A1414ED00C29757 /* PoorMansTypeTool.r in Rez */,
-				648FFA560A1414F000C29757 /* PoorMansTypeToolUIMac.r in Rez */,
-				648FFC740A14155900C29757 /* PIUtilities.r in Rez */,
-				648FFCC90A14155A00C29757 /* PIGeneral.r in Rez */,
-				648FFCCA0A14155A00C29757 /* PIMI.r in Rez */,
-				648FFCCB0A14155A00C29757 /* PIPL.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
