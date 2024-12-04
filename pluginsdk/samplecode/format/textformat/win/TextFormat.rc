@@ -48,7 +48,6 @@ END
 
 3 TEXTINCLUDE 
 BEGIN
-    "#include ""TextFormat.pipl""\r\n"
     "#include ""About.rc""\r\n"
 END
 
@@ -92,9 +91,9 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "TextFormat.pipl"
 #include "About.rc"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
