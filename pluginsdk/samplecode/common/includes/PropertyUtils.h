@@ -14,7 +14,7 @@
 
 using namespace std;
 
-typedef basic_string<ASUnicode, char_traits<ASUnicode>, allocator<ASUnicode> > ps_wstring;
+typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t> > ps_wstring;
 
 
 enum InterpolationMethod { nearestNeighbor = 1, bilinear, bicubic, bicubicSmoother, bicubicSharper, bicubicAutomatic };

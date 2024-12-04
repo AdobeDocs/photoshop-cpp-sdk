@@ -1679,7 +1679,7 @@ OSErr GetLayerNames(vector<ps_wstring> & vs)
 	vs.clear();
 	if (!e && !i)
     {
-        const ASUnicode s[] = {'B','a','c','k','g','r','o','u','n','d',0};
+        const char16_t s[] = {'B','a','c','k','g','r','o','u','n','d',0};
         vs.push_back(s);
     }
 	if (!e)
