@@ -7,24 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		642542AF14D36D9C0088E453 /* ColorMungerUIMac.r in Rez */ = {isa = PBXBuildFile; fileRef = 642542AE14D36D9C0088E453 /* ColorMungerUIMac.r */; };
 		64E8A22609F9663D000C9BDC /* ColorMungerUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E8A22509F9663D000C9BDC /* ColorMungerUIMac.cpp */; };
 		64E8A23409F966A2000C9BDC /* ColorMunger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E8A23209F966A2000C9BDC /* ColorMunger.cpp */; };
 		64E8A23509F966A2000C9BDC /* ColorMungerScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E8A23309F966A2000C9BDC /* ColorMungerScripting.cpp */; };
-		64E8A23909F966B4000C9BDC /* ColorMunger.r in Rez */ = {isa = PBXBuildFile; fileRef = 64E8A23809F966B4000C9BDC /* ColorMunger.r */; };
-		64E8A51C09F968B5000C9BDC /* PIGeneral.r in Rez */ = {isa = PBXBuildFile; fileRef = 64E8A50F09F968B5000C9BDC /* PIGeneral.r */; };
-		64E8A51D09F968B5000C9BDC /* PIMI.r in Rez */ = {isa = PBXBuildFile; fileRef = 64E8A51009F968B5000C9BDC /* PIMI.r */; };
-		64E8A51E09F968B5000C9BDC /* PIPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 64E8A51109F968B5000C9BDC /* PIPL.r */; };
 		64E8A53A09F9693C000C9BDC /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E8A53909F9693C000C9BDC /* DialogUtilitiesMac.cpp */; };
 		64E8A54509F96967000C9BDC /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E8A54409F96967000C9BDC /* PIUtilities.cpp */; };
 		64E8A56E09F969D6000C9BDC /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E8A56D09F969D6000C9BDC /* PIUSuites.cpp */; };
 		64E8A58009F96A63000C9BDC /* PIUtilities.r in Rez */ = {isa = PBXBuildFile; fileRef = 64E8A57E09F96A63000C9BDC /* PIUtilities.r */; };
+		836C06392D00CCD1007E2BEC /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 836C06382D00CCD1007E2BEC /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		642542AE14D36D9C0088E453 /* ColorMungerUIMac.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = ColorMungerUIMac.r; sourceTree = "<group>"; };
 		645859121DD4EC990071D7ED /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = ../../../common/includes/Timer.h; sourceTree = "<group>"; };
 		646709B1255DADDF009F97AB /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
 		647B639611138FB30067F135 /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
@@ -38,7 +33,6 @@
 		64E8A23309F966A2000C9BDC /* ColorMungerScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ColorMungerScripting.cpp; path = ../common/ColorMungerScripting.cpp; sourceTree = SOURCE_ROOT; };
 		64E8A23609F966AB000C9BDC /* ColorMungerTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ColorMungerTerminology.h; path = ../common/ColorMungerTerminology.h; sourceTree = SOURCE_ROOT; };
 		64E8A23709F966AB000C9BDC /* ColorMunger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ColorMunger.h; path = ../common/ColorMunger.h; sourceTree = SOURCE_ROOT; };
-		64E8A23809F966B4000C9BDC /* ColorMunger.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = ColorMunger.r; path = ../common/ColorMunger.r; sourceTree = SOURCE_ROOT; };
 		64E8A24409F96780000C9BDC /* PIDefines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PIDefines.h; path = ../../../common/includes/PIDefines.h; sourceTree = SOURCE_ROOT; };
 		64E8A24809F967A5000C9BDC /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DialogUtilities.h; path = ../../../common/includes/DialogUtilities.h; sourceTree = SOURCE_ROOT; };
 		64E8A24909F967A5000C9BDC /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PIUtilities.h; path = ../../../common/includes/PIUtilities.h; sourceTree = SOURCE_ROOT; };
@@ -92,14 +86,12 @@
 		64E8A50B09F968B5000C9BDC /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		64E8A50C09F968B5000C9BDC /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		64E8A50D09F968B5000C9BDC /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		64E8A50F09F968B5000C9BDC /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		64E8A51009F968B5000C9BDC /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		64E8A51109F968B5000C9BDC /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64E8A53909F9693C000C9BDC /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = DialogUtilitiesMac.cpp; path = ../../../common/sources/DialogUtilitiesMac.cpp; sourceTree = SOURCE_ROOT; };
 		64E8A54409F96967000C9BDC /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PIUtilities.cpp; path = ../../../common/sources/PIUtilities.cpp; sourceTree = SOURCE_ROOT; };
 		64E8A56D09F969D6000C9BDC /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PIUSuites.cpp; path = ../../../common/sources/PIUSuites.cpp; sourceTree = SOURCE_ROOT; };
 		64E8A57309F969E7000C9BDC /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PIUSuites.h; path = ../../../common/includes/PIUSuites.h; sourceTree = SOURCE_ROOT; };
 		64E8A57E09F96A63000C9BDC /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = PIUtilities.r; path = ../../../common/resources/PIUtilities.r; sourceTree = SOURCE_ROOT; };
+		836C06382D00CCD1007E2BEC /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* ColorMunger.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMunger.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880DC70B0EFA4A001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../common/resources/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -124,8 +116,6 @@
 				64E8A23209F966A2000C9BDC /* ColorMunger.cpp */,
 				64E8A23309F966A2000C9BDC /* ColorMungerScripting.cpp */,
 				64E8A22509F9663D000C9BDC /* ColorMungerUIMac.cpp */,
-				642542AE14D36D9C0088E453 /* ColorMungerUIMac.r */,
-				64E8A23809F966B4000C9BDC /* ColorMunger.r */,
 				64E8A22109F965DA000C9BDC /* SDK common */,
 				64E8A47F09F968B5000C9BDC /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -175,6 +165,7 @@
 		64E8A22309F965E9000C9BDC /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				836C06382D00CCD1007E2BEC /* PiPLs.json */,
 				E2880DC70B0EFA4A001C1C00 /* Info.plist */,
 				64E8A57E09F96A63000C9BDC /* PIUtilities.r */,
 			);
@@ -276,9 +267,6 @@
 		64E8A50E09F968B5000C9BDC /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				64E8A50F09F968B5000C9BDC /* PIGeneral.r */,
-				64E8A51009F968B5000C9BDC /* PIMI.r */,
-				64E8A51109F968B5000C9BDC /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -337,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836C06392D00CCD1007E2BEC /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,12 +336,7 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E8A23909F966B4000C9BDC /* ColorMunger.r in Rez */,
-				64E8A51C09F968B5000C9BDC /* PIGeneral.r in Rez */,
-				64E8A51D09F968B5000C9BDC /* PIMI.r in Rez */,
-				64E8A51E09F968B5000C9BDC /* PIPL.r in Rez */,
 				64E8A58009F96A63000C9BDC /* PIUtilities.r in Rez */,
-				642542AF14D36D9C0088E453 /* ColorMungerUIMac.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
