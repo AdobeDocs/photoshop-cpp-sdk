@@ -1,0 +1,18 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Filter",
+			"Name":"MFC PlugIn...",
+			"Category":"AdobeSDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"MFC PlugIn...",
+			"CodeEntryPointWin64":"PluginMain",
+			"EnableInfo":"true"
+		}
+	]
+}
