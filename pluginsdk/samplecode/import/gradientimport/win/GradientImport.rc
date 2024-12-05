@@ -2,6 +2,14 @@
 //
 #include "GradientImport-sym.h"
 
+#ifndef ResourceID
+#define ResourceID		16000
+#endif
+
+#ifndef AboutID
+#define AboutID			ResourceID
+#endif
+
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -115,3 +123,8 @@ END
 #endif    // not APSTUDIO_INVOKED
 
 JSON_PIPL JSON "..\common\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+AboutID "GradientImport\n\n(c) Adobe. All rights reserved.\nAn example import plug-in module for Adobe Photoshop."
+END
