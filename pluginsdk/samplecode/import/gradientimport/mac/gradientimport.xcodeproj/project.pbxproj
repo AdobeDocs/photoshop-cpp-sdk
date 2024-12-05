@@ -13,8 +13,7 @@
 		648F01710A141A4900C29757 /* GradientImportUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F01700A141A4900C29757 /* GradientImportUIMac.cpp */; };
 		648F01770A141A5600C29757 /* GradientImportScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F01740A141A5600C29757 /* GradientImportScripting.cpp */; };
 		648F01780A141A5600C29757 /* GradientImport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F01760A141A5600C29757 /* GradientImport.cpp */; };
-		648F01840A141A8D00C29757 /* GradientImport.r in Rez */ = {isa = PBXBuildFile; fileRef = 648F01720A141A5600C29757 /* GradientImport.r */; };
-		648F01850A141A9000C29757 /* GradientImportUIMac.r in Rez */ = {isa = PBXBuildFile; fileRef = 648F016F0A141A4900C29757 /* GradientImportUIMac.r */; };
+		83CBB68C2D023C4400FC8CB2 /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83CBB68B2D023C4400FC8CB2 /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 		AB95CABF1B25976F002559A2 /* GradientImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB95CABE1B25976F002559A2 /* GradientImportController.m */; };
 		AB95CAC11B25978C002559A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB95CAC01B25978C002559A2 /* Cocoa.framework */; };
@@ -76,12 +75,7 @@
 		648F01610A141A3700C29757 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		648F01620A141A3700C29757 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		648F01630A141A3700C29757 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		648F01650A141A3700C29757 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		648F01660A141A3700C29757 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		648F01670A141A3700C29757 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
-		648F016F0A141A4900C29757 /* GradientImportUIMac.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = GradientImportUIMac.r; sourceTree = "<group>"; };
 		648F01700A141A4900C29757 /* GradientImportUIMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = GradientImportUIMac.cpp; sourceTree = "<group>"; };
-		648F01720A141A5600C29757 /* GradientImport.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = GradientImport.r; path = ../common/GradientImport.r; sourceTree = SOURCE_ROOT; };
 		648F01730A141A5600C29757 /* GradientImportTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GradientImportTerminology.h; path = ../common/GradientImportTerminology.h; sourceTree = SOURCE_ROOT; };
 		648F01740A141A5600C29757 /* GradientImportScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GradientImportScripting.cpp; path = ../common/GradientImportScripting.cpp; sourceTree = SOURCE_ROOT; };
 		648F01750A141A5600C29757 /* GradientImport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GradientImport.h; path = ../common/GradientImport.h; sourceTree = SOURCE_ROOT; };
@@ -91,7 +85,6 @@
 		648FFF5F0A141A3600C29757 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		648FFF600A141A3600C29757 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		648FFF610A141A3600C29757 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
-		648FFF640A141A3600C29757 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		648FFF680A141A3600C29757 /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		648FFF690A141A3600C29757 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
 		648FFF6A0A141A3600C29757 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -100,6 +93,7 @@
 		64CF8F050AA3A74F00120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8F060AA3A74F00120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8F070AA3A74F00120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		83CBB68B2D023C4400FC8CB2 /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* GradientImport.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientImport.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB95CABD1B25976F002559A2 /* GradientImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientImportController.h; sourceTree = "<group>"; };
 		AB95CABE1B25976F002559A2 /* GradientImportController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = GradientImportController.m; sourceTree = "<group>"; };
@@ -126,6 +120,7 @@
 		089C166AFE841209C02AAC07 /* GradientImport */ = {
 			isa = PBXGroup;
 			children = (
+				83CBB68B2D023C4400FC8CB2 /* PiPLs.json */,
 				AB95CAC41B259898002559A2 /* GradientImportDialog.xib */,
 				AB95CABD1B25976F002559A2 /* GradientImportController.h */,
 				AB95CABE1B25976F002559A2 /* GradientImportController.m */,
@@ -134,8 +129,6 @@
 				648F01760A141A5600C29757 /* GradientImport.cpp */,
 				648F01700A141A4900C29757 /* GradientImportUIMac.cpp */,
 				648F01740A141A5600C29757 /* GradientImportScripting.cpp */,
-				648F01720A141A5600C29757 /* GradientImport.r */,
-				648F016F0A141A4900C29757 /* GradientImportUIMac.r */,
 				648FFF5A0A141A3600C29757 /* SDK common */,
 				648F01240A141A3600C29757 /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -247,9 +240,6 @@
 		648F01640A141A3700C29757 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				648F01650A141A3700C29757 /* PIGeneral.r */,
-				648F01660A141A3700C29757 /* PIMI.r */,
-				648F01670A141A3700C29757 /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -281,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880DB70B0EF8A9001C1C00 /* Info.plist */,
-				648FFF640A141A3600C29757 /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -306,7 +295,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				648F01800A141A8A00C29757 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -350,23 +338,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CBB68C2D023C4400FC8CB2 /* PiPLs.json in Resources */,
 				AB95CAC51B259898002559A2 /* GradientImportDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		648F01800A141A8A00C29757 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				648F01840A141A8D00C29757 /* GradientImport.r in Rez */,
-				648F01850A141A9000C29757 /* GradientImportUIMac.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {

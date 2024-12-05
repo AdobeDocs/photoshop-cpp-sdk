@@ -1,0 +1,134 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Acquire",
+			"Name":"GradientImport...",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"GradientImport",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"HasTerminology":
+            {
+				"ClassID":"sdK3",
+				"EventID":"null"
+			},
+			"Terminology":
+            {
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+                [
+					{
+						"SuiteName":"AdobeSDK",
+						"SuiteDescription":"Adobe example plug-ins",
+						"SuiteID":"sdK3",
+						"SuiteLevel":1,
+						"SuiteVersion":1,
+						"Classes":
+						[
+							{
+								"ClassName":"AdobeSDK GradientImport",
+								"ClassType":"graD",
+								"ClassDescription":"gradientimport example import plug-in",
+								"Properties":
+								[
+									{
+										"PropertyName":"$$$/private/AETE/Inheritance=<Inheritance>",
+										"PropertyKey":"c@#^",
+										"PropertyType":"Impr",
+										"PropertyDescription":"parent class import"
+									},
+									{
+										"PropertyName":"multi-import",
+										"PropertyKey":"mulK",
+										"PropertyType":"mulS",
+										"PropertyDescription":"multiple import info structure"
+									}
+								]
+							},
+							{
+								"ClassName":"import info",
+								"ClassType":"mulS",
+								"ClassDescription":"class import info",
+								"Properties":
+								[
+									{
+										"PropertyName":"rows",
+										"PropertyKey":"Vrtc",
+										"PropertyType":"doub",
+										"PropertyDescription":"number of rows"
+									},
+									{
+										"PropertyName":"columns",
+										"PropertyKey":"Hrzn",
+										"PropertyType":"doub",
+										"PropertyDescription":"number of columns"
+									},
+									{
+										"PropertyName":"mode",
+										"PropertyKey":"Md  ",
+										"PropertyType":"grmT",
+										"PropertyDescription":"color mode",
+										"PropertyFlagBits":
+										{
+											"Enumerated":true
+										}
+									},
+									{
+										"PropertyName":"invert",
+										"PropertyKey":"Invr",
+										"PropertyType":"bool",
+										"PropertyDescription":"invert image"
+									},
+									{
+										"PropertyName":"alpha2transparency",
+										"PropertyKey":"alpT",
+										"PropertyType":"bool",
+										"PropertyDescription":"alpha is transparency"
+									}
+								]
+							}
+						],
+						"Enumerations":
+                        [
+							{
+								"EnumID":"grmT",
+								"Enumerators":
+                                [
+									{
+										"EnumName":"bitmap",
+										"EnumKeyword":"bitM",
+										"EnumDescription":"bitmap mode"
+									},
+									{
+										"EnumName":"grayscale",
+										"EnumKeyword":"gryS",
+										"EnumDescription":"grayscale mode"
+									},
+									{
+										"EnumName":"indexed color",
+										"EnumKeyword":"indX",
+										"EnumDescription":"indexed color mode"
+									},
+									{
+										"EnumName":"rgb color",
+										"EnumKeyword":"rgbC",
+										"EnumDescription":"rgb color mode"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
