@@ -77,7 +77,6 @@ END
 
 3 TEXTINCLUDE DISCARDABLE 
 BEGIN
-	"#include ""GradientImport.pipl""\r\n"
 	"#include ""About.rc""\r\n"
 END
 
@@ -111,8 +110,8 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "GradientImport.pipl"
 #include "About.rc"
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
