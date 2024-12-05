@@ -463,9 +463,8 @@ BOOL WINAPI AboutDlgProc(HWND hDlg, UINT wMsg, WPARAM wParam, LPARAM /*lParam*/)
 			{
             CenterDialog(hDlg);
 
-			char message[kStr255InitLen] = "";
+			char message[kStr255InitLen] = "GradientImport\n(c) Adobe. All rights reserved.\nAn example import plug-in module for Adobe Photoshop.";
 
-			LoadString((HINSTANCE)GetDLLInstance(), AboutID, message, kStr255MaxLen);
 			SetDlgItemText(hDlg, MESSAGE, message);
 			}
             break;
