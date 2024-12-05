@@ -1,0 +1,77 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Export",
+			"Name":"History...",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"History",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"SupportedModes":
+            {
+				"Bitmap":false,
+				"GrayScale":true,
+				"IndexedColor":true,
+				"RGBColor":true,
+				"CMYKColor":true,
+				"HSLColor":true,
+				"HSBColor":true,
+				"Multichannel":true,
+				"Duotone":true,
+				"LABColor":true
+			},
+			"EnableInfo":"true",
+			"HasTerminology":
+            {
+				"ClassID":"hisT",
+				"EventID":"null"
+			},
+			"Terminology":
+            {
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+                [
+					{
+						"SuiteName":"AdobeSDK",
+						"SuiteDescription":"Adobe example plug-ins",
+						"SuiteID":"sdKB",
+						"SuiteLevel":1,
+						"SuiteVersion":1,
+						"Classes":
+						[
+							{
+								"ClassName":"AdobeSDK History",
+								"ClassType":"hisT",
+								"ClassDescription":"history export plug-in",
+								"Properties":
+								[
+									{
+										"PropertyName":"<Inheritance>",
+										"PropertyKey":"c@#^",
+										"PropertyType":"Expr",
+										"PropertyDescription":"parent class export"
+									},
+									{
+										"PropertyName":"in",
+										"PropertyKey":"In  ",
+										"PropertyType":"alis",
+										"PropertyDescription":"file path"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
