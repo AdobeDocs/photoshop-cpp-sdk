@@ -58,8 +58,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\History.r">
+    <None Include="PiPLs.json">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
+    </None>
   </ItemGroup>
 </Project>

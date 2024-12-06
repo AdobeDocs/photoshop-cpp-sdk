@@ -4,6 +4,14 @@
 
 #define plugInCopyrightYear	"1993"
 
+#ifndef ResourceID
+#define ResourceID		16000
+#endif
+
+#ifndef AboutID
+#define AboutID			ResourceID
+#endif
+
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -75,7 +83,6 @@ END
 
 3 TEXTINCLUDE DISCARDABLE 
 BEGIN
-	"#include ""History.pipl""\r\n"
 	"#include ""About.rc""\r\n"
     "\0"
 END
@@ -111,9 +118,14 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "History.pipl"
 #include "About.rc"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON ".\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+AboutID "History\n\n(c) Adobe. All rights reserved.\nAn Export plug-in module showcasing pseudo-resources in Adobe Photoshop."
+END
