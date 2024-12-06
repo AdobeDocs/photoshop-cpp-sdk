@@ -4,6 +4,7 @@
 		{
 			"Kind":"Actions",
 			"Name":"AutomationFilter",
+			"Category":"AdobeSDK",
 			"Version":1,
 			"SubVersion":0,
 			"ComponentVersionShortNum":26,
