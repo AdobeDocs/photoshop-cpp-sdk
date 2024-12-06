@@ -13,12 +13,11 @@
 		648F03B70A141CC100C29757 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F01B50A141CC000C29757 /* PIUSuites.cpp */; };
 		648F03B80A141CC100C29757 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F01B60A141CC000C29757 /* PIUtilities.cpp */; };
 		648F03C40A141CE300C29757 /* AutomationFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F03BF0A141CE300C29757 /* AutomationFilter.cpp */; };
-		648F03CC0A141D0200C29757 /* AutomationFilterUI.r in Rez */ = {isa = PBXBuildFile; fileRef = 648F03BE0A141CD900C29757 /* AutomationFilterUI.r */; };
-		648F03CD0A141D0400C29757 /* AutomationFilterPiPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 648F03C10A141CE300C29757 /* AutomationFilterPiPL.r */; };
 		648F03F40A141E2600C29757 /* PIUGet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F03F30A141E2600C29757 /* PIUGet.cpp */; };
 		648F03F70A141E2E00C29757 /* PIUSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F03F60A141E2E00C29757 /* PIUSelect.cpp */; };
 		648F03FD0A141E4500C29757 /* PIUActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F03FC0A141E4500C29757 /* PIUActions.cpp */; };
 		648F041C0A141FA800C29757 /* PIUActionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648F041B0A141FA800C29757 /* PIUActionUtils.cpp */; };
+		837FDA2C2D03AF7F0012C407 /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 837FDA2B2D03AF7F0012C407 /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		648F01AC0A141CC000C29757 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		648F01AD0A141CC000C29757 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		648F01AE0A141CC000C29757 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
-		648F01B10A141CC000C29757 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		648F01B50A141CC000C29757 /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		648F01B60A141CC000C29757 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
 		648F01B70A141CC000C29757 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -88,13 +86,8 @@
 		648F03AE0A141CC100C29757 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		648F03AF0A141CC100C29757 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		648F03B00A141CC100C29757 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		648F03B20A141CC100C29757 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		648F03B30A141CC100C29757 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		648F03B40A141CC100C29757 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
-		648F03BE0A141CD900C29757 /* AutomationFilterUI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = AutomationFilterUI.r; sourceTree = "<group>"; };
 		648F03BF0A141CE300C29757 /* AutomationFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = AutomationFilter.cpp; path = ../common/AutomationFilter.cpp; sourceTree = SOURCE_ROOT; };
 		648F03C00A141CE300C29757 /* AutomationFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AutomationFilter.h; path = ../common/AutomationFilter.h; sourceTree = SOURCE_ROOT; };
-		648F03C10A141CE300C29757 /* AutomationFilterPiPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = AutomationFilterPiPL.r; path = ../common/AutomationFilterPiPL.r; sourceTree = SOURCE_ROOT; };
 		648F03C20A141CE300C29757 /* AutomationFilterUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = AutomationFilterUI.cpp; path = ../common/AutomationFilterUI.cpp; sourceTree = SOURCE_ROOT; };
 		648F03C30A141CE300C29757 /* AutomationFilterUI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AutomationFilterUI.h; path = ../common/AutomationFilterUI.h; sourceTree = SOURCE_ROOT; };
 		648F03DD0A141D7E00C29757 /* PIUSelect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSelect.h; sourceTree = "<group>"; };
@@ -111,6 +104,7 @@
 		648F041B0A141FA800C29757 /* PIUActionUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUActionUtils.cpp; sourceTree = "<group>"; };
 		64CC2F59111CE3F800423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
 		64DD4BB91111533F00619C3D /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
+		837FDA2B2D03AF7F0012C407 /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* AutomationFilter.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationFilter.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24BA8700B0D8BA3009560F9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,8 +128,7 @@
 				648F03C30A141CE300C29757 /* AutomationFilterUI.h */,
 				648F03BF0A141CE300C29757 /* AutomationFilter.cpp */,
 				648F03C20A141CE300C29757 /* AutomationFilterUI.cpp */,
-				648F03C10A141CE300C29757 /* AutomationFilterPiPL.r */,
-				648F03BE0A141CD900C29757 /* AutomationFilterUI.r */,
+				837FDA2B2D03AF7F0012C407 /* PiPLs.json */,
 				648F01A70A141CC000C29757 /* SDK common */,
 				648F03710A141CC100C29757 /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -194,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				E24BA8700B0D8BA3009560F9 /* Info.plist */,
-				648F01B10A141CC000C29757 /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -299,9 +291,6 @@
 		648F03B10A141CC100C29757 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				648F03B20A141CC100C29757 /* PIGeneral.r */,
-				648F03B30A141CC100C29757 /* PIMI.r */,
-				648F03B40A141CC100C29757 /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -316,7 +305,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				648F03C70A141CFC00C29757 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -360,22 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837FDA2C2D03AF7F0012C407 /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		648F03C70A141CFC00C29757 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				648F03CC0A141D0200C29757 /* AutomationFilterUI.r in Rez */,
-				648F03CD0A141D0400C29757 /* AutomationFilterPiPL.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
