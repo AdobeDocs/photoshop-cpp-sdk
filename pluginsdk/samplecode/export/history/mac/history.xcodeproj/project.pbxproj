@@ -13,8 +13,8 @@
 		64A5AC650A1508940034015B /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5AA630A1508940034015B /* PIUtilities.cpp */; };
 		64A5AC700A1508AB0034015B /* HistoryUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5AC6F0A1508AB0034015B /* HistoryUIMac.cpp */; };
 		64A5AC760A1508B50034015B /* History.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5AC710A1508B40034015B /* History.cpp */; };
-		64A5AC770A1508B50034015B /* History.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A5AC730A1508B50034015B /* History.r */; };
 		64A5AC780A1508B50034015B /* HistoryScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5AC740A1508B50034015B /* HistoryScripting.cpp */; };
+		83B68B572D02600C00804F4D /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83B68B562D02600C00804F4D /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 		ABD5E0331B1ECEA200DFDE4A /* HistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD5E0321B1ECEA200DFDE4A /* HistoryController.m */; };
 		ABD5E0391B1F099100DFDE4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD5E0381B1F099100DFDE4A /* Cocoa.framework */; };
@@ -38,7 +38,6 @@
 		64A5AA570A1508940034015B /* PIUI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUI.h; sourceTree = "<group>"; };
 		64A5AA580A1508940034015B /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		64A5AA590A1508940034015B /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
-		64A5AA5D0A1508940034015B /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		64A5AA600A1508940034015B /* PIMacUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIMacUI.cpp; sourceTree = "<group>"; };
 		64A5AA610A1508940034015B /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		64A5AA620A1508940034015B /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -93,13 +92,9 @@
 		64A5AAA10A1508940034015B /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		64A5AAA20A1508940034015B /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		64A5AAA30A1508940034015B /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		64A5AAA50A1508940034015B /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		64A5AAA60A1508940034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		64A5AAA70A1508940034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64A5AC6F0A1508AB0034015B /* HistoryUIMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = HistoryUIMac.cpp; sourceTree = "<group>"; };
 		64A5AC710A1508B40034015B /* History.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = History.cpp; path = ../common/History.cpp; sourceTree = SOURCE_ROOT; };
 		64A5AC720A1508B50034015B /* History.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = History.h; path = ../common/History.h; sourceTree = SOURCE_ROOT; };
-		64A5AC730A1508B50034015B /* History.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = History.r; path = ../common/History.r; sourceTree = SOURCE_ROOT; };
 		64A5AC740A1508B50034015B /* HistoryScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = HistoryScripting.cpp; path = ../common/HistoryScripting.cpp; sourceTree = SOURCE_ROOT; };
 		64A5AC750A1508B50034015B /* HistoryTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HistoryTerminology.h; path = ../common/HistoryTerminology.h; sourceTree = SOURCE_ROOT; };
 		64CC2F04111CE20D00423B46 /* JSScriptingSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JSScriptingSuite.h; sourceTree = "<group>"; };
@@ -107,6 +102,7 @@
 		64CF8E660AA3A69C00120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8E670AA3A69C00120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8E680AA3A69C00120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
+		83B68B562D02600C00804F4D /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* History.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = History.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD5E0311B1ECEA200DFDE4A /* HistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryController.h; sourceTree = "<group>"; };
 		ABD5E0321B1ECEA200DFDE4A /* HistoryController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = HistoryController.m; sourceTree = "<group>"; };
@@ -141,7 +137,7 @@
 				64A5AC710A1508B40034015B /* History.cpp */,
 				64A5AC6F0A1508AB0034015B /* HistoryUIMac.cpp */,
 				64A5AC740A1508B50034015B /* HistoryScripting.cpp */,
-				64A5AC730A1508B50034015B /* History.r */,
+				83B68B562D02600C00804F4D /* PiPLs.json */,
 				64A5AA4B0A1508940034015B /* SDK common */,
 				64A5AA640A1508940034015B /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -202,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880DAC0B0EF7F6001C1C00 /* Info.plist */,
-				64A5AA5D0A1508940034015B /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -303,9 +298,6 @@
 		64A5AAA40A1508940034015B /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				64A5AAA50A1508940034015B /* PIGeneral.r */,
-				64A5AAA60A1508940034015B /* PIMI.r */,
-				64A5AAA70A1508940034015B /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -320,7 +312,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				64A5AC680A15089D0034015B /* Rez */,
 			);
 			buildRules = (
 			);
@@ -364,22 +355,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B68B572D02600C00804F4D /* PiPLs.json in Resources */,
 				ABD5E03F1B1F166100DFDE4A /* HistDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		64A5AC680A15089D0034015B /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64A5AC770A1508B50034015B /* History.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
