@@ -4,6 +4,14 @@
 
 #define plugInCopyrightYear	"2000"
 
+#ifndef ResourceID
+#define ResourceID      16000
+#endif
+
+#ifndef AboutID
+#define AboutID         ResourceID
+#endif
+
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -44,7 +52,6 @@ END
 
 3 TEXTINCLUDE 
 BEGIN
-    "#include ""GetterPiPL.pipl""\r\n"
     "#include ""About.rc""\r\n"
     "\0"
 END
@@ -61,9 +68,14 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "GetterPiPL.pipl"
 #include "About.rc"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+AboutID "Getter\n\n(c) Adobe. All rights reserved.\nAn Actions Module to get info from Adobe Photoshop."
+END

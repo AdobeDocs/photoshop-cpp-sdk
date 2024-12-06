@@ -273,18 +273,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\GetterPiPL.r">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /I..\..\..\common\Resources /I..\..\..\common\Includes /I..\..\..\..\PhotoshopAPI\Photoshop /I..\..\..\..\PhotoshopAPI\PICA_SP /EP /DMSWindows=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"
-..\..\..\resources\cnvtpipl.exe "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).pipl"
-del "$(IntDir)%(Filename).rr"
-</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cl /I..\..\..\common\Resources /I..\..\..\common\Includes /I..\..\..\..\PhotoshopAPI\Photoshop /I..\..\..\..\PhotoshopAPI\PICA_SP /EP /DMSWindows=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"
-..\..\..\resources\cnvtpipl.exe "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).pipl"
-del "$(IntDir)%(Filename).rr"
-</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).pipl;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)%(Filename).pipl;%(Outputs)</Outputs>
-    </CustomBuild>
+    <None Include="..\common\PiPLs.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

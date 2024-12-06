@@ -1,0 +1,60 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Actions",
+			"Name":"Getter",
+			"Category":"AdobeSDK",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Getter",
+			"CodeMacARM64":"AutoPluginMain",
+			"CodeMacIntel64":"AutoPluginMain",
+			"CodeEntryPointWin64":"AutoPluginMain",
+			"HasTerminology":
+			{
+				"ClassID":"get ",
+				"EventID":"getr",
+				"ScopeString":"459ac2e6-82d1-11d5-9879-00b0d0204936"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"Testing",
+						"SuitDescription":"Adobe example plug-ins",
+						"SuiteID":"get ",
+						"SuiteLevel":1,
+						"SuiteVersion":1,
+						"Events":
+						[
+							{
+								"EventName":"Getter",
+								"EventDescription":"No comment",
+								"ClassID":"get ",
+								"EventType":"getr",
+								"ReplyType":"null",
+								"DirectParamType":"#ImR",
+								"DirectParamFlagBits":
+								{
+									"DirectParamOptional":true,
+									"ListOfItems":false,
+									"Enumerated":true,
+									"ChangesState":true
+								}								
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

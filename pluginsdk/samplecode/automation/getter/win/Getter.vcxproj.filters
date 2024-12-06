@@ -69,8 +69,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\GetterPiPL.r">
+    <None Include="..\common\PiPLs.json">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
+    </None>
   </ItemGroup>
 </Project>

@@ -12,12 +12,12 @@
 		64A59DF60A14FA400034015B /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59BF40A14FA3F0034015B /* PIUtilities.cpp */; };
 		64A59E0A0A14FA770034015B /* GetInfoFromPhotoshop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E050A14FA770034015B /* GetInfoFromPhotoshop.cpp */; };
 		64A59E0B0A14FA770034015B /* Getter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E070A14FA770034015B /* Getter.cpp */; };
-		64A59E0C0A14FA770034015B /* GetterPiPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A59E090A14FA770034015B /* GetterPiPL.r */; };
 		64A59E290A14FBBC0034015B /* PIUActionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E280A14FBBC0034015B /* PIUActionUtils.cpp */; };
 		64A59E2B0A14FBC30034015B /* PIUGet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E2A0A14FBC30034015B /* PIUGet.cpp */; };
 		64A59E2D0A14FBC80034015B /* PIUSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E2C0A14FBC80034015B /* PIUSelect.cpp */; };
 		64A59E4E0A14FDAF0034015B /* PIUFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E4D0A14FDAF0034015B /* PIUFile.cpp */; };
 		64B4E55122587BC90009DF08 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E55022587BC90009DF08 /* FileUtilitiesMac.cpp */; };
+		830B42132D03C35D009B743F /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 830B42122D03C35D009B743F /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,6 @@
 		64A59BEA0A14FA3F0034015B /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		64A59BEB0A14FA3F0034015B /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		64A59BEC0A14FA3F0034015B /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
-		64A59BEF0A14FA3F0034015B /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		64A59BF30A14FA3F0034015B /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		64A59BF40A14FA3F0034015B /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
 		64A59BF50A14FA3F0034015B /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -82,13 +81,9 @@
 		64A59DEC0A14FA400034015B /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		64A59DED0A14FA400034015B /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		64A59DEE0A14FA400034015B /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		64A59DF00A14FA400034015B /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		64A59DF10A14FA400034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		64A59DF20A14FA400034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64A59E050A14FA770034015B /* GetInfoFromPhotoshop.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GetInfoFromPhotoshop.cpp; path = ../common/GetInfoFromPhotoshop.cpp; sourceTree = SOURCE_ROOT; };
 		64A59E060A14FA770034015B /* GetInfoFromPhotoshop.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GetInfoFromPhotoshop.h; path = ../common/GetInfoFromPhotoshop.h; sourceTree = SOURCE_ROOT; };
 		64A59E070A14FA770034015B /* Getter.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Getter.cpp; path = ../common/Getter.cpp; sourceTree = SOURCE_ROOT; };
-		64A59E090A14FA770034015B /* GetterPiPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = GetterPiPL.r; path = ../common/GetterPiPL.r; sourceTree = SOURCE_ROOT; };
 		64A59E1E0A14FB710034015B /* PIUActionUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUActionUtils.h; sourceTree = "<group>"; };
 		64A59E1F0A14FB780034015B /* PIUGet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUGet.h; sourceTree = "<group>"; };
 		64A59E200A14FB7E0034015B /* PIUSelect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSelect.h; sourceTree = "<group>"; };
@@ -109,6 +104,7 @@
 		64CF8E270AA3A62F00120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
 		64DD4B55111146D300619C3D /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
 		6B898CC10B28EA2600936965 /* PSConstantArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSConstantArray.h; sourceTree = "<group>"; };
+		830B42122D03C35D009B743F /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* Getter.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Getter.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880DBE0B0EF940001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +127,7 @@
 				64A59E070A14FA770034015B /* Getter.cpp */,
 				64A59E060A14FA770034015B /* GetInfoFromPhotoshop.h */,
 				64A59E050A14FA770034015B /* GetInfoFromPhotoshop.cpp */,
-				64A59E090A14FA770034015B /* GetterPiPL.r */,
+				830B42122D03C35D009B743F /* PiPLs.json */,
 				64A59BE50A14FA3F0034015B /* SDK common */,
 				64A59DAF0A14FA400034015B /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -190,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880DBE0B0EF940001C1C00 /* Info.plist */,
-				64A59BEF0A14FA3F0034015B /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -296,9 +291,6 @@
 		64A59DEF0A14FA400034015B /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				64A59DF00A14FA400034015B /* PIGeneral.r */,
-				64A59DF10A14FA400034015B /* PIMI.r */,
-				64A59DF20A14FA400034015B /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -313,7 +305,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				64A59DFE0A14FA570034015B /* Rez */,
 			);
 			buildRules = (
 			);
@@ -357,21 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830B42132D03C35D009B743F /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		64A59DFE0A14FA570034015B /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64A59E0C0A14FA770034015B /* GetterPiPL.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
