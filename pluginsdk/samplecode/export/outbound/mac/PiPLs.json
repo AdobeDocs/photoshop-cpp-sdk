@@ -1,0 +1,77 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Export",
+			"Name":"Outbound...",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Outbound",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"SupportedModes":
+            {
+				"Bitmap":false,
+				"GrayScale":true,
+				"IndexedColor":true,
+				"RGBColor":true,
+				"CMYKColor":true,
+				"HSLColor":true,
+				"HSBColor":true,
+				"Multichannel":true,
+				"Duotone":true,
+				"LABColor":true
+			},
+			"EnableInfo":"in (PSHOP_ImageMode, GrayScaleMode, IndexedColorMode, RGBMode, CMYKMode, HSLMode, HSBMode, MultichannelMode, DuotoneMode, LabMode)",
+			"HasTerminology":
+            {
+				"ClassID":"outB",
+				"EventID":"null"
+			},
+			"Terminology":
+            {
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+                [
+					{
+						"SuiteName":"AdobeSDK",
+						"SuiteDescription":"Adobe example plug-ins",
+						"SuiteID":"sdK5",
+						"SuiteLevel":1,
+						"SuiteVersion":1,
+						"Classes":
+						[
+							{
+								"ClassName":"AdobeSDK Outbound",
+								"ClassType":"outB",
+								"ClassDescription":"outbound export plug-in",
+								"Properties":
+								[
+									{
+										"PropertyName":"<Inheritance>",
+										"PropertyKey":"c@#^",
+										"PropertyType":"Expr",
+										"PropertyDescription":"parent class export"
+									},
+									{
+										"PropertyName":"in",
+										"PropertyKey":"In  ",
+										"PropertyType":"alis",
+										"PropertyDescription":"file path"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
