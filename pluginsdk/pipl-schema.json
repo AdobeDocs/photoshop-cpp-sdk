@@ -1,0 +1,790 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "PiPLs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "NoAboutBox": {
+            "type": "boolean"
+          },
+          "Kind": {
+            "type": "string",
+            "enum": [
+              "Illustrator",
+              "SuitePea",
+              "Actions",
+              "Extension",
+              "Measurement",
+              "Acquire",
+              "Export",
+              "Filter",
+              "Format",
+              "Selection",
+              "Picker",
+              "Parser"
+            ]
+          },
+          "Version": {
+            "type": "integer"
+          },
+          "SubVersion": {
+            "type": "integer"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Category": {
+            "type": "string"
+          },
+          "ZStringName": {
+            "type": "string"
+          },
+          "ZStringCategory": {
+            "type": "string"
+          },
+          "ProgressText": {
+            "type": "string"
+          },
+          "PickerID": {
+            "type": "string"
+          },
+          "FilterLayerSupport": {
+            "type": "boolean"
+          },
+          "PlugInMaxSize": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "integer"
+            }
+          },
+          "MonitorScalingAware": {
+            "type": "boolean"
+          },
+          "WantsScrap": {
+            "type": "boolean"
+          },
+          "LegacyFilterGalleryMenuItem": {
+            "type": "boolean"
+          },
+          "PositionDependent": {
+            "type": "boolean"
+          },
+          "SupportsPOSIXIO": {
+            "type": "boolean"
+          },
+          "PrimaryMetadataSource": {
+            "type": "boolean"
+          },
+          "PrimaryThumbnailSource": {
+            "type": "boolean"
+          },
+          "XMPRead": {
+            "type": "boolean"
+          },
+          "XMPWrite": {
+            "type": "boolean"
+          },
+          "SupportsBackgroundSave": {
+            "type": "boolean"
+          },
+          "ResourceThreadSafe": {
+            "type": "boolean"
+          },
+          "BulkSettings": {
+            "type": "boolean"
+          },
+          "BulkOpen": {
+            "type": "boolean"
+          },
+          "LoadUnload": {
+            "type": "boolean"
+          },
+          "PluginLaunchesEditor": {
+            "type": "boolean"
+          },
+          "SupportsPluginOpeningFile": {
+            "type": "boolean"
+          },
+          "FormatLayerSupport": {
+            "type": "boolean"
+          },
+          "FormatLayerSupportReadOnly": {
+            "type": "boolean"
+          },
+          "FileProperties": {
+            "type": "boolean"
+          },
+          "Priority": {
+            "type": "integer"
+          },
+          "RequiredHost": {
+            "type": ["integer", "string"]
+          },
+          "RequiredHostVersion": {
+            "type": "object",
+            "properties": {
+              "Major": {
+                "type": "integer"
+              },
+              "Minor": {
+                "type": "integer"
+              },
+              "Dot": {
+                "type": "integer"
+              }
+            }
+          },
+          "ComponentVersionShortNum": {
+            "type": "integer"
+          },
+          "ComponentVersionMinorRevNum": {
+            "type": "integer"
+          },
+          "ComponentVersionDotRevNum": {
+            "type": "integer"
+          },
+          "ComponentName": {
+            "type": "string"
+          },
+          "CodeMacARM64": {
+            "type": "string"
+          },
+          "CodeMacIntel64": {
+            "type": "string"
+          },
+          "CodeEntryPointWin64": {
+            "type": "string"
+          },
+          "SupportedModes": {
+            "type": "object",
+            "properties": {
+              "Bitmap": {
+                "type": "boolean"
+              },
+              "GrayScale": {
+                "type": "boolean"
+              },
+              "IndexedColor": {
+                "type": "boolean"
+              },
+              "RGBColor": {
+                "type": "boolean"
+              },
+              "CMYKColor": {
+                "type": "boolean"
+              },
+              "HSLColor": {
+                "type": "boolean"
+              },
+              "HSBColor": {
+                "type": "boolean"
+              },
+              "Multichannel": {
+                "type": "boolean"
+              },
+              "Duotone": {
+                "type": "boolean"
+              },
+              "LABColor": {
+                "type": "boolean"
+              }
+            }
+          },
+          "EnableInfo": {
+            "type": "string"
+          },
+          "FilterCaseInfo": {
+            "type": "array",
+            "minItems": 7,
+            "maxItems": 7,
+            "items": {
+              "type": "object",
+              "properties": {
+                "InputHandling": {
+                  "type": "string",
+                  "enum": [
+                    "InCantFilter",
+                    "InStraightData",
+                    "InBlackMat",
+                    "InGrayMat",
+                    "InWhiteMat",
+                    "InDefringe",
+                    "InBlackZap",
+                    "InGrayZap",
+                    "InWhiteZap",
+                    "InBackgroundZap",
+                    "InForegroundZap"
+                  ]
+                },
+                "OutputHandling": {
+                  "type": "string",
+                  "enum": [
+                    "OutCantFilter",
+                    "OutStraightData",
+                    "OutBlackMat",
+                    "OutGrayMat",
+                    "OutWhiteMat",
+                    "OutFillMask"
+                  ]
+                },
+                "WriteOutsideSelection": {
+                  "type": "boolean"
+                },
+                "FiltersLayerMasks": {
+                  "type": "boolean"
+                },
+                "WorksWithBlankData": {
+                  "type": "boolean"
+                },
+                "DontCopySourceToDestination": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "InputHandling",
+                "OutputHandling"
+              ]
+            }
+          },
+          "FmtFileType": {
+            "type": "object",
+            "properties": {
+              "Type": {
+                "type": ["integer", "string"]
+              },
+              "Creator": {
+                "type": ["integer", "string"]
+              }
+            },
+            "required": [
+              "Type",
+              "Creator"
+            ]
+          },
+          "WriteTypes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": ["integer", "string"]
+                },
+                "Creator": {
+                  "type": ["integer", "string"]
+                }
+              },
+              "required": [
+                "Type",
+                "Creator"
+              ]
+            }
+          },
+          "WriteExtensions": {
+            "type": "array",
+            "items": {
+              "type": ["integer", "string"]
+            }
+          },
+          "ReadTypes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": ["integer", "string"]
+                },
+                "Creator": {
+                  "type": ["integer", "string"]
+                }
+              },
+              "required": [
+                "Type",
+                "Creator"
+              ]
+            }
+          },
+          "ReadExtensions": {
+            "type": "array",
+            "items": {
+              "type": ["integer", "string"]
+            }
+          },
+          "FilteredTypes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": ["integer", "string"]
+                },
+                "Creator": {
+                  "type": ["integer", "string"]
+                }
+              },
+              "required": [
+                "Type",
+                "Creator"
+              ]
+            }
+          },
+          "FilteredExtensions": {
+            "type": "array",
+            "items": {
+              "type": ["integer", "string"]
+            }
+          },
+          "FormatFlags": {
+            "type": "object",
+            "properties": {
+              "SavesImageResources": {
+                "type": "boolean"
+              },
+              "CanRead": {
+                "type": "boolean"
+              },
+              "CanWrite": {
+                "type": "boolean"
+              },
+              "CanWriteIfRead": {
+                "type": "boolean"
+              },
+              "CanWriteTransparency": {
+                "type": "boolean"
+              },
+              "CanCreateThumbnail": {
+                "type": "boolean"
+              }
+            }
+          },
+          "FormatICCFlags": {
+            "type": "object",
+            "properties": {
+              "CanEmbedGray": {
+                "type": "boolean"
+              },
+              "CanEmbedIndexed": {
+                "type": "boolean"
+              },
+              "CanEmbedRGB": {
+                "type": "boolean"
+              },
+              "CanEmbedCMYK": {
+                "type": "boolean"
+              }
+            }
+          },
+          "FormatICCRequiredFlags": {
+            "type": "object",
+            "properties": {
+              "GrayRequired": {
+                "type": "boolean"
+              },
+              "IndexedRequired": {
+                "type": "boolean"
+              },
+              "RGBRequired": {
+                "type": "boolean"
+              },
+              "CMYKRequired": {
+                "type": "boolean"
+              }
+            }
+          },
+          "FormatMaxSize": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "integer"
+            }
+          },
+          "FormatMaxChannels": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "FormatFileSizeLimit": {
+            "type": "integer"
+          },
+          "Persistent": {
+            "type": "boolean"
+          },
+          "Reentrant": {
+            "type": "boolean"
+          },
+          "Messages": {
+            "type": "object",
+            "properties": {
+              "NoStartupRequired": {
+                "type": "boolean"
+              },
+              "PurgeCache": {
+                "type": "boolean"
+              },
+              "NoShutdownRequired": {
+                "type": "boolean"
+              },
+              "AcceptProperty": {
+                "type": "boolean"
+              }
+            }
+          },
+          "ExportFlags": {
+            "type": "object",
+            "properties": {
+              "SupportsTransparency": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "SupportsTransparency"
+            ]
+          },
+          "StackRenderer": {
+            "type": "boolean"
+          },
+          "HasTerminology": {
+            "type": "object",
+            "properties": {
+              "ClassID": {
+                "type": ["integer", "string"]
+              },
+              "EventID": {
+                "type": ["integer", "string"]
+              },
+              "ScopeString": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "ClassID",
+              "EventID"
+            ]
+          },
+          "Terminology": {
+            "type": "object",
+            "properties": {
+              "MajorVersion": {
+                "type": "integer"
+              },
+              "MinorVersion": {
+                "type": "integer"
+              },
+              "Language": {
+                "type": "integer"
+              },
+              "ScriptCode": {
+                "type": "integer"
+              },
+              "Suites": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "SuiteName": {
+                      "type": "string"
+                    },
+                    "SuiteDescription": {
+                      "type": "string"
+                    },
+                    "SuiteID": {
+                      "type": ["integer", "string"]
+                    },
+                    "SuiteLevel": {
+                      "type": "integer"
+                    },
+                    "SuiteVersion": {
+                      "type": "integer"
+                    },
+                    "Events": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "EventName": {
+                            "type": "string"
+                          },
+                          "EventDescription": {
+                            "type": "string"
+                          },
+                          "ClassID": {
+                            "type": ["integer", "string"]
+                          },
+                          "EventType": {
+                            "type": ["integer", "string"]
+                          },
+                          "ReplyType": {
+                            "type": ["integer", "string"]
+                          },
+                          "ReplyDescription": {
+                            "type": "string"
+                          },
+                          "ReplyFlagBits": {
+                            "type": "object",
+                            "properties": {
+                              "ReplyOptional": {
+                                "type": "boolean"
+                              },
+                              "ListOfItems": {
+                                "type": "boolean"
+                              },
+                              "Enumerated": {
+                                "type": "boolean"
+                              },
+                              "TightBindingFunction": {
+                                "type": "boolean"
+                              },
+                              "NonVerbEvent": {
+                                "type": "boolean"
+                              }
+                            }
+                          },
+                          "DirectParamType": {
+                            "type": ["integer", "string"]
+                          },
+                          "DirectParamDescription": {
+                            "type": "string"
+                          },
+                          "DirectParamFlagBits": {
+                            "type": "object",
+                            "properties": {
+                              "DirectParamOptional": {
+                                "type": "boolean"
+                              },
+                              "ListOfItems": {
+                                "type": "boolean"
+                              },
+                              "Enumerated": {
+                                "type": "boolean"
+                              },
+                              "ChangesState": {
+                                "type": "boolean"
+                              }
+                            }
+                          },
+                          "Parameters": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "ParamName": {
+                                  "type": "string"
+                                },
+                                "ParamKeyword": {
+                                  "type": ["integer", "string"]
+                                },
+                                "ParamType": {
+                                  "type": ["integer", "string"]
+                                },
+                                "ParamDescription": {
+                                  "type": "string"
+                                },
+                                "ParamFlagBits": {
+                                  "type": "object",
+                                  "properties": {
+                                    "Optional": {
+                                      "type": "boolean"
+                                    },
+                                    "ListOfItems": {
+                                      "type": "boolean"
+                                    },
+                                    "Enumerated": {
+                                      "type": "boolean"
+                                    },
+                                    "LabeledParam": {
+                                      "type": "boolean"
+                                    },
+                                    "Feminine": {
+                                      "type": "boolean"
+                                    },
+                                    "Masculine": {
+                                      "type": "boolean"
+                                    },
+                                    "Plural": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                }
+                              },
+                              "required": [
+                                "ParamName",
+                                "ParamKeyword",
+                                "ParamType"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "EventName",
+                          "ClassID",
+                          "EventType",
+                          "ReplyType",
+                          "DirectParamType"
+                        ]
+                      }
+                    },
+                    "Classes": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "ClassName": {
+                            "type": "string"
+                          },
+                          "ClassType": {
+                            "type": ["integer", "string"]
+                          },
+                          "ClassDescription": {
+                            "type": "string"
+                          },
+                          "Properties": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "PropertyName": {
+                                  "type": "string"
+                                },
+                                "PropertyKey": {
+                                  "type": ["integer", "string"]
+                                },
+                                "PropertyType": {
+                                  "type": ["integer", "string"]
+                                },
+                                "PropertyDescription": {
+                                  "type": "string"
+                                },
+                                "PropertyFlagBits": {
+                                  "type": "object",
+                                  "properties": {
+                                    "ListOfItems": {
+                                      "type": "boolean"
+                                    },
+                                    "Enumerated": {
+                                      "type": "boolean"
+                                    },
+                                    "ReadWrite": {
+                                      "type": "boolean"
+                                    },
+                                    "Apostrophe": {
+                                      "type": "boolean"
+                                    },
+                                    "Feminine": {
+                                      "type": "boolean"
+                                    },
+                                    "Masculine": {
+                                      "type": "boolean"
+                                    },
+                                    "Plural": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                }
+                              },
+                              "required": [
+                                "PropertyName",
+                                "PropertyKey",
+                                "PropertyType"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "ClassName",
+                          "ClassType"
+                        ]
+                      }
+                    },
+                    "Enumerations": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "EnumID": {
+                            "type": ["integer", "string"]
+                          },
+                          "Enumerators": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "EnumName": {
+                                  "type": "string"
+                                },
+                                "EnumKeyword": {
+                                  "type": ["integer", "string"]
+                                },
+                                "EnumDescription": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "EnumName",
+                                "EnumKeyword"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "EnumID",
+                          "Enumerators"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "SuiteID",
+                    "SuiteLevel",
+                    "SuiteVersion"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "MajorVersion",
+              "MinorVersion",
+              "Language",
+              "ScriptCode",
+              "Suites"
+            ]
+          }
+        },
+        "required": [
+          "Kind",
+          "Version",
+          "SubVersion",
+          "Name"
+        ],
+        "dependentRequired": {
+          "HasTerminology": ["Terminology"]
+        },
+        "anyOf": [
+          {
+            "required": [
+              "CodeMacARM64"
+            ]
+          },
+          {
+            "required": [
+              "CodeMacIntel64"
+            ]
+          },
+          {
+            "required": [
+              "CodeEntryPointWin64"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "PiPLs"
+  ]
+}
