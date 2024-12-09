@@ -157,22 +157,6 @@
     <ClInclude Include="..\..\..\common\includes\PIUI.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\Listener.r">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling PiPL resource...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Compiling PiPL resource...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /I..\..\..\..\PhotoshopAPI\PICA_SP /I..\..\..\..\PhotoshopAPI\Photoshop   /I..\..\..\..\PhotoshopAPI\Resources     /I..\..\..\common\Resources    /I..\..\..\common\Includes /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
-..\..\..\Resources\cnvtpipl "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).pipl"
-del "$(IntDir)%(Filename).rr"
-</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cl /I..\..\..\..\PhotoshopAPI\PICA_SP /I..\..\..\..\PhotoshopAPI\Photoshop   /I..\..\..\..\PhotoshopAPI\Resources     /I..\..\..\common\Resources    /I..\..\..\common\Includes /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
-..\..\..\Resources\cnvtpipl "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).pipl"
-del "$(IntDir)%(Filename).rr"
-</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).pipl;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)%(Filename).pipl;%(Outputs)</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="Listener.rc">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -295,6 +279,9 @@ del "$(IntDir)%(Filename).rr"
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BrowseInformation>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</BrowseInformation>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\common\PiPLs.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

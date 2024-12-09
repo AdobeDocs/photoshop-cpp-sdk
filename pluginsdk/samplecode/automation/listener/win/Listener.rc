@@ -49,7 +49,6 @@ END
 
 3 TEXTINCLUDE DISCARDABLE 
 BEGIN
-	"#include ""Listener.pipl""\r\n"
 	"#include ""About.rc""\r\n"
     "\0"
 END
@@ -150,8 +149,13 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "Listener.pipl"
 #include "About.rc"
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+kListenerAboutID "Listener\n\n(c) Adobe. All rights reserved.\nA persistent Actions Module to background listen in Adobe Photoshop."
+END

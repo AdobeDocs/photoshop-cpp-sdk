@@ -82,8 +82,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\Listener.r">
+    <None Include="..\common\PiPLs.json">
       <Filter>Resources</Filter>
-    </CustomBuild>
+    </None>
   </ItemGroup>
 </Project>

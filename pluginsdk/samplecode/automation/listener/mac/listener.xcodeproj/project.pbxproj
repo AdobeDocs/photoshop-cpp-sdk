@@ -13,15 +13,14 @@
 		648A68731CB49AAC008C2711 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648A68721CB49AAC008C2711 /* AppKit.framework */; };
 		64A5A07B0A14FE7C0034015B /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E790A14FE7B0034015B /* PIUSuites.cpp */; };
 		64A5A07C0A14FE7C0034015B /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A59E7A0A14FE7B0034015B /* PIUtilities.cpp */; };
-		64A5A08A0A14FE9D0034015B /* ListenerUIMac.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A5A0880A14FE9D0034015B /* ListenerUIMac.r */; };
 		64A5A0920A14FEA60034015B /* Listener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A08B0A14FEA60034015B /* Listener.cpp */; };
-		64A5A0930A14FEA60034015B /* Listener.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A5A08D0A14FEA60034015B /* Listener.r */; };
 		64A5A0940A14FEA60034015B /* ListenerScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A08E0A14FEA60034015B /* ListenerScripting.cpp */; };
 		64A5A0A50A14FF980034015B /* PIUGet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0A40A14FF980034015B /* PIUGet.cpp */; };
 		64A5A0A90A14FFAC0034015B /* PIUActionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0A80A14FFAC0034015B /* PIUActionUtils.cpp */; };
 		64A5A0AB0A14FFB00034015B /* PIUActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0AA0A14FFB00034015B /* PIUActions.cpp */; };
 		64A5A0AF0A14FFD00034015B /* PIUFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0AE0A14FFD00034015B /* PIUFile.cpp */; };
 		64B4E55322587BE90009DF08 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E55222587BE80009DF08 /* FileUtilitiesMac.cpp */; };
+		83ED828F2D07708800AA5811 /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ED828E2D07708800AA5811 /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 		AB6C1A411B45697700D200CE /* ListenerUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0870A14FE9D0034015B /* ListenerUIMac.cpp */; };
 		ABD5B4261B2EC3640035F6BB /* ListenerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD5B4251B2EC3640035F6BB /* ListenerController.m */; };
@@ -93,14 +92,9 @@
 		64A5A0720A14FE7C0034015B /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		64A5A0730A14FE7C0034015B /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		64A5A0740A14FE7C0034015B /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		64A5A0760A14FE7C0034015B /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		64A5A0770A14FE7C0034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		64A5A0780A14FE7C0034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64A5A0870A14FE9D0034015B /* ListenerUIMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = ListenerUIMac.cpp; sourceTree = "<group>"; };
-		64A5A0880A14FE9D0034015B /* ListenerUIMac.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = ListenerUIMac.r; sourceTree = "<group>"; };
 		64A5A08B0A14FEA60034015B /* Listener.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Listener.cpp; path = ../common/Listener.cpp; sourceTree = SOURCE_ROOT; };
 		64A5A08C0A14FEA60034015B /* Listener.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Listener.h; path = ../common/Listener.h; sourceTree = SOURCE_ROOT; };
-		64A5A08D0A14FEA60034015B /* Listener.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Listener.r; path = ../common/Listener.r; sourceTree = SOURCE_ROOT; };
 		64A5A08E0A14FEA60034015B /* ListenerScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ListenerScripting.cpp; path = ../common/ListenerScripting.cpp; sourceTree = SOURCE_ROOT; };
 		64A5A08F0A14FEA60034015B /* ListenerTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ListenerTerminology.h; path = ../common/ListenerTerminology.h; sourceTree = SOURCE_ROOT; };
 		64A5A0A00A14FF780034015B /* PIUActionUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUActionUtils.h; sourceTree = "<group>"; };
@@ -122,6 +116,7 @@
 		64CF8E380AA3A65E00120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
 		64DD4A0F1111335100619C3D /* PSIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSIntTypes.h; sourceTree = "<group>"; };
 		6B898CA70B28E8DF00936965 /* PSConstantArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSConstantArray.h; sourceTree = "<group>"; };
+		83ED828E2D07708800AA5811 /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* Listener.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Listener.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB49A10E1B317573006F3BAE /* ListenerUIMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListenerUIMac.h; sourceTree = "<group>"; };
 		ABD5B4241B2EC3640035F6BB /* ListenerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenerController.h; sourceTree = "<group>"; };
@@ -156,8 +151,7 @@
 				64A5A08B0A14FEA60034015B /* Listener.cpp */,
 				64A5A08E0A14FEA60034015B /* ListenerScripting.cpp */,
 				64A5A0870A14FE9D0034015B /* ListenerUIMac.cpp */,
-				64A5A08D0A14FEA60034015B /* Listener.r */,
-				64A5A0880A14FE9D0034015B /* ListenerUIMac.r */,
+				83ED828E2D07708800AA5811 /* PiPLs.json */,
 				64A59E6B0A14FE7B0034015B /* SDK common */,
 				64A5A0350A14FE7C0034015B /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -325,9 +319,6 @@
 		64A5A0750A14FE7C0034015B /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				64A5A0760A14FE7C0034015B /* PIGeneral.r */,
-				64A5A0770A14FE7C0034015B /* PIMI.r */,
-				64A5A0780A14FE7C0034015B /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -342,7 +333,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				64A5A0800A14FE890034015B /* Rez */,
 			);
 			buildRules = (
 			);
@@ -386,23 +376,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ED828F2D07708800AA5811 /* PiPLs.json in Resources */,
 				ABD5B4281B2EC7480035F6BB /* ListenerDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		64A5A0800A14FE890034015B /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64A5A08A0A14FE9D0034015B /* ListenerUIMac.r in Rez */,
-				64A5A0930A14FEA60034015B /* Listener.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {

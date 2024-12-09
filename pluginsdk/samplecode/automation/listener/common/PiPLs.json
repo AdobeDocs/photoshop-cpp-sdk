@@ -1,0 +1,89 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Actions",
+			"Name":"Listener...",
+			"Category":"AdobeSDK",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Listener",
+			"CodeMacARM64":"AutoPluginMain",
+			"CodeMacIntel64":"AutoPluginMain",
+			"CodeEntryPointWin64":"AutoPluginMain",
+			"Persistent":true,
+			"Messages":
+			{
+				"NoStartupRequired":false,
+				"PurgeCache":false,
+				"NoShutdownRequired":false,
+				"AcceptProperty":true
+			},
+			"HasTerminology":
+			{
+				"ClassID":"sdKG",
+				"EventID":"lstN",
+				"ScopeString":"AdobeSDK Listener"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"AdobeSDK",
+						"SuitDescription":"Adobe example plug-ins",
+						"SuiteID":"sdKG",
+						"SuiteLevel":1,
+						"SuiteVersion":1,
+						"Events":
+						[
+							{
+								"EventName":"Listener",
+								"EventDescription":"Listener persistent actions plug-in",
+								"ClassID":"sdKG",
+								"EventType":"lstN",
+								"ReplyType":"null",
+								"DirectParamType":"#ImR",
+								"DirectParamFlagBits":
+								{
+									"DirectParamOptional":true,
+									"ListOfItems":false,
+									"Enumerated":true,
+									"ChangesState":true
+								},
+								"Parameters":
+								[
+									{
+										"ParamName":"action set",
+										"ParamKeyword":"actS",
+										"ParamType":"TEXT",
+										"ParamDescription":"action set description"
+									},
+									{
+										"ParamName":"action",
+										"ParamKeyword":"actN",
+										"ParamType":"TEXT",
+										"ParamDescription":"action description"
+									},
+									{
+										"ParamName":"action ID",
+										"ParamKeyword":"actI",
+										"ParamType":"long",
+										"ParamDescription":"action ID description"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
