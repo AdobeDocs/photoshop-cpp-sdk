@@ -11,13 +11,13 @@
 		64A5A2E70A1500A90034015B /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0E50A1500A90034015B /* PIUtilities.cpp */; };
 		64A5A2E80A1500A90034015B /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A0E60A1500A90034015B /* DialogUtilitiesMac.cpp */; };
 		64A5A2F50A1500C50034015B /* TextAuto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A2F20A1500C50034015B /* TextAuto.cpp */; };
-		64A5A2F60A1500C50034015B /* TextAutoPiPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 64A5A2F40A1500C50034015B /* TextAutoPiPL.r */; };
 		64A5A3140A1501520034015B /* PIUSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3100A1501520034015B /* PIUSelect.cpp */; };
 		64A5A3150A1501520034015B /* PIUGet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3110A1501520034015B /* PIUGet.cpp */; };
 		64A5A31D0A1501800034015B /* PIUFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A31C0A1501800034015B /* PIUFile.cpp */; };
 		64A5A3200A1501920034015B /* PIMacUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A31F0A1501920034015B /* PIMacUI.cpp */; };
 		64A5A3240A1501AE0034015B /* PIUActionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3230A1501AE0034015B /* PIUActionUtils.cpp */; };
 		64B4E54B22587AA30009DF08 /* FileUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E54A22587AA30009DF08 /* FileUtilitiesMac.cpp */; };
+		83942FFC2D0774B50073262E /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83942FFB2D0774B50073262E /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,6 @@
 		64A5A0DB0A1500A90034015B /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		64A5A0DC0A1500A90034015B /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		64A5A0DD0A1500A90034015B /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
-		64A5A0E00A1500A90034015B /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		64A5A0E40A1500A90034015B /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		64A5A0E50A1500A90034015B /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
 		64A5A0E60A1500A90034015B /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -83,12 +82,8 @@
 		64A5A2DD0A1500A90034015B /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		64A5A2DE0A1500A90034015B /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		64A5A2DF0A1500A90034015B /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		64A5A2E10A1500A90034015B /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		64A5A2E20A1500A90034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		64A5A2E30A1500A90034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64A5A2F20A1500C50034015B /* TextAuto.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = TextAuto.cpp; path = ../common/TextAuto.cpp; sourceTree = SOURCE_ROOT; };
 		64A5A2F30A1500C50034015B /* TextAuto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TextAuto.h; path = ../common/TextAuto.h; sourceTree = SOURCE_ROOT; };
-		64A5A2F40A1500C50034015B /* TextAutoPiPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = TextAutoPiPL.r; path = ../common/TextAutoPiPL.r; sourceTree = SOURCE_ROOT; };
 		64A5A30D0A15013B0034015B /* PIUSelect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSelect.h; sourceTree = "<group>"; };
 		64A5A30E0A15013B0034015B /* PIUGet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUGet.h; sourceTree = "<group>"; };
 		64A5A3100A1501520034015B /* PIUSelect.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSelect.cpp; sourceTree = "<group>"; };
@@ -107,6 +102,7 @@
 		64CF8E460AA3A67300120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8E470AA3A67300120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8E480AA3A67300120C5A /* ASZStringSuite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASZStringSuite.h; sourceTree = "<group>"; };
+		83942FFB2D0774B50073262E /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* TextAuto.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAuto.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880D490B0EE9F9001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,7 +124,7 @@
 			children = (
 				64A5A2F30A1500C50034015B /* TextAuto.h */,
 				64A5A2F20A1500C50034015B /* TextAuto.cpp */,
-				64A5A2F40A1500C50034015B /* TextAutoPiPL.r */,
+				83942FFB2D0774B50073262E /* PiPLs.json */,
 				64A5A0D60A1500A80034015B /* SDK common */,
 				64A5A2A00A1500A90034015B /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -186,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880D490B0EE9F9001C1C00 /* Info.plist */,
-				64A5A0E00A1500A90034015B /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -292,9 +287,6 @@
 		64A5A2E00A1500A90034015B /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				64A5A2E10A1500A90034015B /* PIGeneral.r */,
-				64A5A2E20A1500A90034015B /* PIMI.r */,
-				64A5A2E30A1500A90034015B /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -309,7 +301,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				64A5A2EB0A1500B20034015B /* Rez */,
 			);
 			buildRules = (
 			);
@@ -353,21 +344,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83942FFC2D0774B50073262E /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		64A5A2EB0A1500B20034015B /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64A5A2F60A1500C50034015B /* TextAutoPiPL.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
