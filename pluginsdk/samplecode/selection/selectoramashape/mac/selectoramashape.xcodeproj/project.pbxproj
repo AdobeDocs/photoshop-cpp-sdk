@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6464B5BC1C46F389004F191B /* SelectoramaShape.r in Rez */ = {isa = PBXBuildFile; fileRef = 6464B5BB1C46F389004F191B /* SelectoramaShape.r */; };
 		648A67991CB4829D008C2711 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648A67981CB4829D008C2711 /* AppKit.framework */; };
 		648A686F1CB483E3008C2711 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648A686E1CB483E3008C2711 /* Cocoa.framework */; };
 		64A5A7B00A1504550034015B /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A5AE0A1504550034015B /* PIUSuites.cpp */; };
@@ -19,6 +18,7 @@
 		6B7FE8180B8F738900A46725 /* ShapeUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B7FE8170B8F738900A46725 /* ShapeUIMac.cpp */; };
 		6B7FE8200B8F73A700A46725 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B7FE81A0B8F73A700A46725 /* Shape.cpp */; };
 		6B7FE8220B8F73A700A46725 /* ShapeScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B7FE81D0B8F73A700A46725 /* ShapeScripting.cpp */; };
+		831035EF2D07F2A3007E11D5 /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 831035EE2D07F2A3007E11D5 /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 		AB2DC63C1B1DA931008D3BB5 /* SelectoramaController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC6371B1DA931008D3BB5 /* SelectoramaController.m */; };
 		AB2DC63D1B1DA931008D3BB5 /* SelectoramaDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC6381B1DA931008D3BB5 /* SelectoramaDialog.xib */; };
@@ -28,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		6464B5BB1C46F389004F191B /* SelectoramaShape.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; name = SelectoramaShape.r; path = ../common/SelectoramaShape.r; sourceTree = "<group>"; };
 		646709C1255DAF87009F97AB /* PIUXPSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIUXPSuite.h; sourceTree = "<group>"; };
 		648A67981CB4829D008C2711 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../../../../../../System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		648A686E1CB483E3008C2711 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -46,7 +45,6 @@
 		64A5A5A40A1504550034015B /* PIUI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUI.h; sourceTree = "<group>"; };
 		64A5A5A50A1504550034015B /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		64A5A5A60A1504550034015B /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
-		64A5A5AA0A1504550034015B /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		64A5A5AD0A1504550034015B /* PIMacUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIMacUI.cpp; sourceTree = "<group>"; };
 		64A5A5AE0A1504550034015B /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		64A5A5AF0A1504550034015B /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -101,9 +99,6 @@
 		64A5A5EE0A1504550034015B /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		64A5A5EF0A1504550034015B /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		64A5A5F00A1504550034015B /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		64A5A5F20A1504550034015B /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		64A5A5F30A1504550034015B /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		64A5A5F40A1504550034015B /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		64A5A7BC0A1504720034015B /* SelectoramaUIMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = SelectoramaUIMac.cpp; sourceTree = "<group>"; };
 		64A5A7C00A15047A0034015B /* Selectorama.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Selectorama.cpp; path = ../common/Selectorama.cpp; sourceTree = SOURCE_ROOT; };
 		64A5A7C10A15047A0034015B /* Selectorama.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Selectorama.h; path = ../common/Selectorama.h; sourceTree = SOURCE_ROOT; };
@@ -114,12 +109,11 @@
 		64CF8F150AA3A75B00120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8F160AA3A75B00120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
 		6B7FE8170B8F738900A46725 /* ShapeUIMac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = ShapeUIMac.cpp; sourceTree = "<group>"; };
-		6B7FE8190B8F73A700A46725 /* Selectorama.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Selectorama.r; path = ../common/Selectorama.r; sourceTree = SOURCE_ROOT; };
 		6B7FE81A0B8F73A700A46725 /* Shape.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Shape.cpp; path = ../common/Shape.cpp; sourceTree = SOURCE_ROOT; };
 		6B7FE81B0B8F73A700A46725 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = ../common/Shape.h; sourceTree = SOURCE_ROOT; };
-		6B7FE81C0B8F73A700A46725 /* Shape.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Shape.r; path = ../common/Shape.r; sourceTree = SOURCE_ROOT; };
 		6B7FE81D0B8F73A700A46725 /* ShapeScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ShapeScripting.cpp; path = ../common/ShapeScripting.cpp; sourceTree = SOURCE_ROOT; };
 		6B7FE81E0B8F73A700A46725 /* ShapeTerminology.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ShapeTerminology.h; path = ../common/ShapeTerminology.h; sourceTree = SOURCE_ROOT; };
+		831035EE2D07F2A3007E11D5 /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* SelectoramaShape.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectoramaShape.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2DC6361B1DA931008D3BB5 /* SelectoramaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectoramaController.h; sourceTree = "<group>"; };
 		AB2DC6371B1DA931008D3BB5 /* SelectoramaController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = SelectoramaController.m; sourceTree = "<group>"; };
@@ -163,9 +157,7 @@
 				6B7FE81A0B8F73A700A46725 /* Shape.cpp */,
 				6B7FE81D0B8F73A700A46725 /* ShapeScripting.cpp */,
 				6B7FE8170B8F738900A46725 /* ShapeUIMac.cpp */,
-				6464B5BB1C46F389004F191B /* SelectoramaShape.r */,
-				6B7FE8190B8F73A700A46725 /* Selectorama.r */,
-				6B7FE81C0B8F73A700A46725 /* Shape.r */,
+				831035EE2D07F2A3007E11D5 /* PiPLs.json */,
 				64A5A5980A1504550034015B /* SDK common */,
 				64A5A5B10A1504550034015B /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -228,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880D710B0EF281001C1C00 /* Info.plist */,
-				64A5A5AA0A1504550034015B /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -327,9 +318,6 @@
 		64A5A5F10A1504550034015B /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				64A5A5F20A1504550034015B /* PIGeneral.r */,
-				64A5A5F30A1504550034015B /* PIMI.r */,
-				64A5A5F40A1504550034015B /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -344,7 +332,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				64A5A7B50A15045C0034015B /* Rez */,
 			);
 			buildRules = (
 			);
@@ -388,23 +375,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831035EF2D07F2A3007E11D5 /* PiPLs.json in Resources */,
 				AB2DC63D1B1DA931008D3BB5 /* SelectoramaDialog.xib in Resources */,
 				AB2DC63F1B1DA931008D3BB5 /* ShapeDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		64A5A7B50A15045C0034015B /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6464B5BC1C46F389004F191B /* SelectoramaShape.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {

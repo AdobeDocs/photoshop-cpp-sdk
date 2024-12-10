@@ -4,6 +4,14 @@
 
 #define plugInCopyrightYear	"1996"
 
+#ifndef ResourceID
+#define ResourceID      16000
+#endif
+
+#ifndef AboutID
+#define AboutID         ResourceID
+#endif
+
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -108,7 +116,6 @@ END
 
 3 TEXTINCLUDE DISCARDABLE 
 BEGIN
-	"#include ""SelectoramaShape.pipl""\r\n"
 	"#include ""About.rc""\r\n"
 END
 
@@ -124,8 +131,13 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "SelectoramaShape.pipl"
 #include "About.rc"
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+AboutID "Selectorama\n\n(c) Adobe. All rights reserved.\nAn example plug-in selection module for Adobe Photoshop."
+END

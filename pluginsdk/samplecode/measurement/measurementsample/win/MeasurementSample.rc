@@ -10,6 +10,14 @@
 
 #define plugInCopyrightYear	"2007"
 
+#ifndef ResourceID
+#define ResourceID      16000
+#endif
+
+#ifndef AboutID
+#define AboutID         ResourceID
+#endif
+
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
@@ -42,7 +50,6 @@ END
 
 3 TEXTINCLUDE 
 BEGIN
-    "#include ""MeasurementSample.pipl""\r\n"
     "#include ""About.rc""\r\n"
     "\0"
 END
@@ -60,9 +67,14 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "MeasurementSample.pipl"
 #include "About.rc"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
+JSON_PIPL JSON "..\common\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+AboutID "Measurement Sample\n\n(c) Adobe. All rights reserved.\nAn example plug-in module from Adobe Photoshop."
+END

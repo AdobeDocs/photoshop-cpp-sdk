@@ -1,0 +1,20 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Measurement",
+			"Name":"Measurement Sample",
+			"RequiredHost":"8BIM",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Measurement Sample",
+			"PlugInMaxSize":[2000000,2000000],
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain"
+		}
+	]
+}
