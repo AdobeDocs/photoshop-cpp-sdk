@@ -17,7 +17,7 @@
 			"PickerID":"AdobeSDK NearestBase",
 			"EnableInfo":"true",
 			"SupportedModes":
-            {
+			{
 				"Bitmap":true,
 				"GrayScale":true,
 				"IndexedColor":true,
