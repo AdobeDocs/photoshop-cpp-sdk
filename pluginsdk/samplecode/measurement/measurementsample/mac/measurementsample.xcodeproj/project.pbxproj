@@ -10,6 +10,7 @@
 		643D6E0F09F92FFB0066B855 /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643D6E0E09F92FFB0066B855 /* DialogUtilitiesMac.cpp */; };
 		643D6E1A09F9305D0066B855 /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643D6E1709F9305C0066B855 /* PIUtilities.cpp */; };
 		647B64931113937D0067F135 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E78B5FE30BA215E1003C4D71 /* PIUSuites.cpp */; };
+		831035ED2D07F16E007E11D5 /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 831035EC2D07F16E007E11D5 /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 		E78B5FB50BA214E6003C4D71 /* MeasurementSamplePlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E78B5FB30BA214E6003C4D71 /* MeasurementSamplePlugin.cpp */; };
 		E7DA62AD0BA2235000426C63 /* PIUActionControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7DA62A10BA2235000426C63 /* PIUActionControl.cpp */; };
@@ -17,13 +18,11 @@
 		E7DA62B00BA2235000426C63 /* PIUASZString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7DA62A50BA2235000426C63 /* PIUASZString.cpp */; };
 		E7DA62B20BA2235000426C63 /* PIUActionDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7DA62A90BA2235000426C63 /* PIUActionDescriptor.cpp */; };
 		E7DA62B30BA2235000426C63 /* PIUExceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7DA62AC0BA2235000426C63 /* PIUExceptions.cpp */; };
-		E7EF09780BA22A18006A363D /* MeasurementSample.r in Rez */ = {isa = PBXBuildFile; fileRef = E7EF09770BA22A18006A363D /* MeasurementSample.r */; };
 		E7FD488F0BAB181F00B571E9 /* PIUMeasurementUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7FD488E0BAB181F00B571E9 /* PIUMeasurementUtilities.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		6427BDE609F92A0300223601 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		6427BE8909F92A2C00223601 /* ASPreInclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPreInclude.h; sourceTree = "<group>"; };
 		6427BE8A09F92A2C00223601 /* PIAbout.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAbout.h; sourceTree = "<group>"; };
 		6427BE8B09F92A2C00223601 /* PIAcquire.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIAcquire.h; sourceTree = "<group>"; };
@@ -74,9 +73,6 @@
 		6427BEBB09F92A2C00223601 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		6427BEBC09F92A2C00223601 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		6427BEBD09F92A2C00223601 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		6427BEBF09F92A2C00223601 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		6427BEC009F92A2C00223601 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		6427BEC109F92A2C00223601 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		643D6E0E09F92FFB0066B855 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
 		643D6E1109F9301E0066B855 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
 		643D6E1709F9305C0066B855 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
@@ -89,6 +85,7 @@
 		64CF8E9D0AA3A6F300120C5A /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASTypes.h; sourceTree = "<group>"; };
 		64CF8E9E0AA3A6F300120C5A /* ASPragma.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASPragma.h; sourceTree = "<group>"; };
 		64CF8E9F0AA3A6F300120C5A /* ASConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASConfig.h; sourceTree = "<group>"; };
+		831035EC2D07F16E007E11D5 /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* MeasurementSample.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeasurementSample.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29FC5AE0B0ADACC00614548 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E78B5E860BA20D0C003C4D71 /* PIMeasurement.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIMeasurement.h; sourceTree = "<group>"; };
@@ -105,7 +102,6 @@
 		E7DA62AA0BA2235000426C63 /* PIUActionControl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PIUActionControl.h; path = ../../common/PIUActionControl.h; sourceTree = SOURCE_ROOT; };
 		E7DA62AB0BA2235000426C63 /* PIUExceptions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PIUExceptions.h; path = ../../common/PIUExceptions.h; sourceTree = SOURCE_ROOT; };
 		E7DA62AC0BA2235000426C63 /* PIUExceptions.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PIUExceptions.cpp; path = ../../common/PIUExceptions.cpp; sourceTree = SOURCE_ROOT; };
-		E7EF09770BA22A18006A363D /* MeasurementSample.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = MeasurementSample.r; path = ../common/MeasurementSample.r; sourceTree = SOURCE_ROOT; };
 		E7FD488D0BAB181E00B571E9 /* PIUMeasurementUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PIUMeasurementUtilities.h; path = ../../common/PIUMeasurementUtilities.h; sourceTree = SOURCE_ROOT; };
 		E7FD488E0BAB181F00B571E9 /* PIUMeasurementUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PIUMeasurementUtilities.cpp; path = ../../common/PIUMeasurementUtilities.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -125,8 +121,8 @@
 		089C166AFE841209C02AAC07 /* MeasurementSample */ = {
 			isa = PBXGroup;
 			children = (
-				E7EF09770BA22A18006A363D /* MeasurementSample.r */,
 				E78B5FB30BA214E6003C4D71 /* MeasurementSamplePlugin.cpp */,
+				831035EC2D07F16E007E11D5 /* PiPLs.json */,
 				E78B5DCA0BA2088C003C4D71 /* Measurement common */,
 				6427BDBD09F92A0300223601 /* SDK common */,
 				6427BE2F09F92A2B00223601 /* Photoshop common */,
@@ -178,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				E29FC5AE0B0ADACC00614548 /* Info.plist */,
-				6427BDE609F92A0300223601 /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -279,9 +274,6 @@
 		6427BEBE09F92A2C00223601 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				6427BEBF09F92A2C00223601 /* PIGeneral.r */,
-				6427BEC009F92A2C00223601 /* PIMI.r */,
-				6427BEC109F92A2C00223601 /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -315,7 +307,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				643D6E9009F937470066B855 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -360,21 +351,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831035ED2D07F16E007E11D5 /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		643D6E9009F937470066B855 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7EF09780BA22A18006A363D /* MeasurementSample.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
