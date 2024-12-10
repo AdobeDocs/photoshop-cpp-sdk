@@ -1,0 +1,326 @@
+{
+	"PiPLs":
+	[
+		{
+			"Kind":"Selection",
+			"Name":"Selectorama...",
+			"Category":"AdobeSDK",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Selectorama",
+			"EnableInfo":"true",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"HasTerminology":
+			{
+				"ClassID":"sdk7",
+				"EventID":"selM",
+				"ScopeString":"AdobeSDK Selectorama"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suits":
+				[
+					{
+						"SuitName":"AdobeSDK",
+						"SuitID":"sdk7",
+						"SuitLevel":1,
+						"SuitVersion":1,
+						"SuitDescription":"Adobe example plug-ins",
+						"Events":
+						[
+							{
+								"EventName":"AdobeSDK selectorama",
+								"EventDescription":"selectorama plug-in",
+								"ClassID":"sdk7",
+								"EventType":"selM",
+								"ReplyType":"null",
+								"DirectParamType":"#ImR",
+								"DirectParamFlagBits":
+								{
+									"DirectParamOptional":true,
+									"ListOfItems":false,
+									"Enumerated":true,
+									"ChangesState":true
+								},
+								"Parameters":
+								[
+									{
+										"ParamName":"select area",
+										"ParamKeyword":"Ar  ",
+										"ParamType":"tseL",
+										"ParamDescription":"selection area",
+										"ParamFlagBits":
+										{
+											"Enumerated":true
+										}
+									},
+									{
+										"ParamName":"amount",
+										"ParamKeyword":"Amnt",
+										"ParamType":"doub",
+										"ParamDescription":"random amount"
+									},
+									{
+										"ParamName":"use channels from",
+										"ParamKeyword":"Chns",
+										"ParamType":"tcoM",
+										"ParamDescription":"use composite target or merged",
+										"ParamFlagBits":
+										{
+											"Enumerated":true
+										}
+									},
+									{
+										"ParamName":"create",
+										"ParamKeyword":"kcrE",
+										"ParamType":"tcrE",
+										"ParamDescription":"create type",
+										"ParamFlagBits":
+										{
+											"Enumerated":true
+										}
+									}
+								]
+							}
+						],
+						"Enumerations":
+						[
+							{
+								"EnumID":"tseL",
+								"Enumerators":
+								[
+									{
+										"EnumName":"minimum",
+										"EnumKeyword":"seL0",
+										"EnumDescription":"select minimum"
+									},
+									{
+										"EnumName":"maximum",
+										"EnumKeyword":"seL1",
+										"EnumDescription":"select maximum"
+									},
+									{
+										"EnumName":"random",
+										"EnumKeyword":"shL2",
+										"EnumDescription":"select random"
+									}
+								]
+							},
+							{
+								"EnumID":"tcoM",
+								"Enumerators":
+								[
+									{
+										"EnumName":"target",
+										"EnumKeyword":"useT",
+										"EnumDescription":"use target composite"
+									},
+									{
+										"EnumName":"merged",
+										"EnumKeyword":"useM",
+										"EnumDescription":"use merged composite"
+									}
+								]
+							},
+							{
+								"EnumID":"tseL",
+								"Enumerators":
+								[
+									{
+										"EnumName":"selection",
+										"EnumKeyword":"crE0",
+										"EnumDescription":"make selection"
+									},
+									{
+										"EnumName":"path",
+										"EnumKeyword":"crE1",
+										"EnumDescription":"make path"
+									},
+									{
+										"EnumName":"layer",
+										"EnumKeyword":"crE2",
+										"EnumDescription":"make layer"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Selection",
+			"Name":"Shape...",
+			"Category":"AdobeSDK",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Shape",
+			"EnableInfo":"true",
+			"CodeMacARM64":"PluginMain1",
+			"CodeMacIntel64":"PluginMain1",
+			"CodeEntryPointWin64":"PluginMain1",
+			"HasTerminology":
+			{
+				"ClassID":"sdk7",
+				"EventID":"shpE",
+				"ScopeString":"AdobeSDK Shape"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suits":
+				[
+					{
+						"SuitName":"AdobeSDK",
+						"SuitID":"sdk7",
+						"SuitLevel":1,
+						"SuitVersion":1,
+						"SuitDescription":"Adobe example plug-ins",
+						"Events":
+						[
+							{
+								"EventName":"AdobeSDK Shape",
+								"EventDescription":"shape plug-in",
+								"ClassID":"sdk7",
+								"EventType":"shpE",
+								"ReplyType":"null",
+								"DirectParamType":"#ImR",
+								"DirectParamFlagBits":
+								{
+									"DirectParamOptional":true,
+									"ListOfItems":false,
+									"Enumerated":true,
+									"ChangesState":true
+								},
+								"Parameters":
+								[
+									{
+										"ParamName":"shape",
+										"ParamKeyword":"Shp ",
+										"ParamType":"tshP",
+										"ParamDescription":"shape type",
+										"ParamFlagBits":
+										{
+											"Enumerated":true
+										}
+									},
+									{
+										"ParamName":"create",
+										"ParamKeyword":"kcrE",
+										"ParamType":"tcrE",
+										"ParamDescription":"create type",
+										"ParamFlagBits":
+										{
+											"Enumerated":true
+										}
+									}
+								]
+							}
+						],
+						"Enumerations":
+						[
+							{
+								"EnumID":"tshP",
+								"Enumerators":
+								[
+									{
+										"EnumName":"minimum",
+										"EnumKeyword":"seL0",
+										"EnumDescription":"select minimum"
+									},
+									{
+										"EnumName":"maximum",
+										"EnumKeyword":"seL1",
+										"EnumDescription":"select maximum"
+									},
+									{
+										"EnumName":"random",
+										"EnumKeyword":"shL2",
+										"EnumDescription":"select random"
+									}
+								]
+							},
+							{
+								"EnumID":"tcrE",
+								"Enumerators":
+								[
+									{
+										"EnumName":"triangle",
+										"EnumKeyword":"shP0",
+										"EnumDescription":"triangle path"
+									},
+									{
+										"EnumName":"square",
+										"EnumKeyword":"shP1",
+										"EnumDescription":"square path"
+									},
+									{
+										"EnumName":"circle",
+										"EnumKeyword":"shP2",
+										"EnumDescription":"circle path"
+									},
+									{
+										"EnumName":"star",
+										"EnumKeyword":"shP3",
+										"EnumDescription":"star path"
+									},
+									{
+										"EnumName":"treble",
+										"EnumKeyword":"shP4",
+										"EnumDescription":"treble path"
+									},
+									{
+										"EnumName":"ribbon",
+										"EnumKeyword":"shP5",
+										"EnumDescription":"ribbon path"
+									},
+									{
+										"EnumName":"note",
+										"EnumKeyword":"shP6",
+										"EnumDescription":"note path"
+									}
+								]
+							},
+							{
+								"EnumID":"tseL",
+								"Enumerators":
+								[
+									{
+										"EnumName":"selection",
+										"EnumKeyword":"crE0",
+										"EnumDescription":"make selection"
+									},
+									{
+										"EnumName":"path",
+										"EnumKeyword":"crE1",
+										"EnumDescription":"make mask path"
+									},
+									{
+										"EnumName":"layer",
+										"EnumKeyword":"crE2",
+										"EnumDescription":"make layer"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
