@@ -1,0 +1,83 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Picker",
+			"Name":"NearestBase",
+			"Category":"AdobeSDK",
+			"Version":1,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":2,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Picker",
+			"CodeMacARM64":"PluginMain",
+			"CodeMacIntel64":"PluginMain",
+			"CodeEntryPointWin64":"PluginMain",
+			"PickerID":"AdobeSDK NearestBase",
+			"EnableInfo":"true",
+			"SupportedModes":
+            {
+				"Bitmap":true,
+				"GrayScale":true,
+				"IndexedColor":true,
+				"RGBColor":true,
+				"CMYKColor":true,
+				"HSLColor":true,
+				"HSBColor":true,
+				"Multichannel":true,
+				"Duotone":true,
+				"LABColor":true
+			},
+			"HasTerminology":
+			{
+				"ClassID":"sdK9",
+				"EventID":"pckR"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"AdobeSDK",
+						"SuitDescription":"Adobe example plug-ins",
+						"SuiteID":"sdK9",
+						"SuiteLevel":1,
+						"SuiteVersion":1,
+						"Events":
+						[
+							{
+								"EventName":"AdobeSDK NearestBase",
+								"EventDescription":"nearestbase example color picker plug-in",
+								"ClassID":"sdK9",
+								"EventType":"pckR",
+								"ReplyType":"null",
+								"DirectParamType":"#ImR",
+								"DirectParamFlagBits":
+								{
+									"DirectParamOptional":true,
+									"ListOfItems":false,
+									"Enumerated":true,
+									"ChangesState":true
+								},
+								"Parameters":
+								[
+									{
+										"ParamName":"amount",
+										"ParamKeyword":"Amnt",
+										"ParamType":"doub",
+										"ParamDescription":"dissolve amount"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
