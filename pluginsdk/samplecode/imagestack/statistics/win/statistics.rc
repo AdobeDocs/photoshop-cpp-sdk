@@ -13,6 +13,14 @@
 
 #define plugInCopyrightYear	"2006"
 
+#ifndef ResourceID
+#define ResourceID      16000
+#endif
+
+#ifndef AboutID
+#define AboutID         ResourceID
+#endif
+
 #define VER_FILETYPE                 VFT_DLL
 #define VER_FILESUBTYPE              VFT2_UNKNOWN
 #define VER_FILEDESCRIPTION_STR     "Statistics"
@@ -20,6 +28,12 @@
 #define VER_ORIGINALFILENAME_STR    "Statistics.8BA"
 #define VER_PRODUCTVERSION_STR		"15.0"
 
-#include "statistics.pipl"
 #define PLUGINNAME "statistics sdk"
 #include "About.rc"
+
+JSON_PIPL JSON "..\common\PiPLs.json"
+
+STRINGTABLE
+BEGIN
+AboutID "Statistics\n\n(c) Adobe. All rights reserved.\nAn example plug-in module for Adobe Photoshop."
+END
