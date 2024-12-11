@@ -175,24 +175,13 @@
     <ClInclude Include="..\common\statisticsRes.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\common\statistics.r">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /I..\..\..\common\Includes /I..\..\..\..\PhotoshopAPI\Photoshop /I..\..\..\..\PhotoshopAPI\PICA_SP /I..\..\..\common\Resources /EP /DMSWindows=1 /DWIN32=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"
-..\..\..\resources\cnvtpipl.exe "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).pipl"
-del "$(IntDir)%(Filename).rr"
-</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cl /I..\..\..\common\Includes /I..\..\..\..\PhotoshopAPI\Photoshop /I..\..\..\..\PhotoshopAPI\PICA_SP /I..\..\..\common\Resources /EP /DMSWindows=1 /DWIN32=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"
-..\..\..\resources\cnvtpipl.exe "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).pipl"
-del "$(IntDir)%(Filename).rr"
-</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).pipl;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)%(Filename).pipl;%(Outputs)</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="statistics.rc">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\common;..\..\..\common\resources;..\..\..\Output\Objs\$(ProjectName)\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">..\common;..\..\..\common\resources;..\..\..\Output\Objs\$(ProjectName)\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\common\PiPLs.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,500 @@
+{
+	"PiPLs" :
+	[
+		{
+			"Kind":"Acquire",
+			"Name":"Mean SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/MeanSDK=Mean SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Mean SDK",
+			"CodeMacARM64":"MEAN_ENTRY",
+			"CodeMacIntel64":"MEAN_ENTRY",
+			"CodeEntryPointWin64":"MEAN_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"avrS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/MeanSDK=Mean SDK",
+								"ClassType":"avrS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Summation SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/SummationSDK=Summation SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Summation SDK",
+			"CodeMacARM64":"SUM_ENTRY",
+			"CodeMacIntel64":"SUM_ENTRY",
+			"CodeEntryPointWin64":"SUM_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"sumS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/SummationSDK=Summation SDK",
+								"ClassType":"sumS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Minimum SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/MinimumSDK=Minimum SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Minimum SDK",
+			"CodeMacARM64":"MIN_ENTRY",
+			"CodeMacIntel64":"MIN_ENTRY",
+			"CodeEntryPointWin64":"MIN_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"minS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/MinimumSDK=Minimum SDK",
+								"ClassType":"minS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Maximum SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/MaximumSDK=Maximum SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Maximum SDK",
+			"CodeMacARM64":"MAX_ENTRY",
+			"CodeMacIntel64":"MAX_ENTRY",
+			"CodeEntryPointWin64":"MAX_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"maxS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/MaximumSDK=Maximum SDK",
+								"ClassType":"maxS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Median SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/MedianSDK=Median SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Median SDK",
+			"CodeMacARM64":"MEDIAN_ENTRY",
+			"CodeMacIntel64":"MEDIAN_ENTRY",
+			"CodeEntryPointWin64":"MEDIAN_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"medS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/MedianSDK=Median SDK",
+								"ClassType":"medS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Variance SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/VarianceSDK=Variance SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Variance SDK",
+			"CodeMacARM64":"VAR_ENTRY",
+			"CodeMacIntel64":"VAR_ENTRY",
+			"CodeEntryPointWin64":"VAR_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"varS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/VarianceSDK=Variance SDK",
+								"ClassType":"varS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Standard Deviation SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/StandardDeviationSDK=Standard Deviation SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Standard Deviation SDK",
+			"CodeMacARM64":"STDDEV_ENTRY",
+			"CodeMacIntel64":"STDDEV_ENTRY",
+			"CodeEntryPointWin64":"STDDEV_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"stdS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/StandardDeviationSDK=Standard Deviation SDK",
+								"ClassType":"stdS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Skewness SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/SkewnessSDK=Skewness SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Skewness SDK",
+			"CodeMacARM64":"SKEW_ENTRY",
+			"CodeMacIntel64":"SKEW_ENTRY",
+			"CodeEntryPointWin64":"SKEW_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"skeS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/SkewnessSDK=Skewness SDK",
+								"ClassType":"skeS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Kurtosis SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/KurtosisSDK=Kurtosis SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Kurtosis SDK",
+			"CodeMacARM64":"KURT_ENTRY",
+			"CodeMacIntel64":"KURT_ENTRY",
+			"CodeEntryPointWin64":"KURT_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"kurS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/KurtosisSDK=Kurtosis SDK",
+								"ClassType":"kurS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Range SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/RangeSDK=Range SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Range SDK",
+			"CodeMacARM64":"RANGE_ENTRY",
+			"CodeMacIntel64":"RANGE_ENTRY",
+			"CodeEntryPointWin64":"RANGE_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"ranS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/RangeSDK=Range SDK",
+								"ClassType":"ranS"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"Kind":"Acquire",
+			"Name":"Entropy SDK",
+			"ZStringName":"$$$/AdobePlugin/PIPLInfo/PluginName/EntropySDK=Entropy SDK",
+			"Version":4,
+			"SubVersion":0,
+			"ComponentVersionShortNum":26,
+			"ComponentVersionMinorRevNum":1,
+			"ComponentVersionDotRevNum":0,
+			"ComponentName":"Entropy SDK",
+			"CodeMacARM64":"ENTROPY_ENTRY",
+			"CodeMacIntel64":"ENTROPY_ENTRY",
+			"CodeEntryPointWin64":"ENTROPY_ENTRY",
+			"RequiredHost":"8BIM",
+			"PlugInMaxSize":[2000000, 2000000],
+			"StackRenderer":true,
+			"HasTerminology":
+			{
+				"ClassID":"entS",
+				"EventID":"null"
+			},
+			"Terminology":
+			{
+				"MajorVersion":1,
+				"MinorVersion":0,
+				"Language":0,
+				"ScriptCode":0,
+				"Suites":
+				[
+					{
+						"SuiteName":"$$$/AETE/Common/Photoshop=Photoshop",
+						"SuiteID":"PHTO",
+						"SuiteLevel":0,
+						"SuiteVersion":0,
+						"Classes":
+						[
+							{
+								"ClassName":"$$$/AdobePlugin/statistics/EntropySDK=Entropy SDK",
+								"ClassType":"entS"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

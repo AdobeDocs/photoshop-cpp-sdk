@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		64FC827C1118E69700F6232D /* PIUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6C750AED2E2B006C09F7 /* PIUtilities.cpp */; };
 		64FC827D1118E69900F6232D /* DialogUtilitiesMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6C760AED2E2B006C09F7 /* DialogUtilitiesMac.cpp */; };
-		6BEA6C780AED2E2B006C09F7 /* PIUtilities.r in Rez */ = {isa = PBXBuildFile; fileRef = 6BEA6C700AED2E2B006C09F7 /* PIUtilities.r */; };
 		6BEA6C7A0AED2E2B006C09F7 /* PIUSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6C740AED2E2B006C09F7 /* PIUSuites.cpp */; };
 		6BEA6EC90AED2E98006C09F7 /* StatisticsUIMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6EC80AED2E98006C09F7 /* StatisticsUIMac.cpp */; };
 		6BEA6ED20AED2EA9006C09F7 /* Statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6ECD0AED2EA9006C09F7 /* Statistics.cpp */; };
-		6BEA6ED30AED2EA9006C09F7 /* Statistics.r in Rez */ = {isa = PBXBuildFile; fileRef = 6BEA6ECF0AED2EA9006C09F7 /* Statistics.r */; };
 		6BEA6ED40AED2EA9006C09F7 /* StatisticsScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA6ED10AED2EA9006C09F7 /* StatisticsScripting.cpp */; };
+		83D9B3552D0A11C100AFCB9D /* PiPLs.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D9B3542D0A11C100AFCB9D /* PiPLs.json */; };
 		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,7 @@
 			outputFiles = (
 				"$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Info.plist",
 			);
-			script = "/usr/bin/python \"../../build/build system files/xcode/PList.py\"";
+			script = "/usr/bin/python \"../../build/build system files/xcode/PList.py\"\n";
 		};
 		96D963C109C0BE6800A5716C /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -43,7 +42,7 @@
 			outputFiles = (
 				"\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${PRODUCT_NAME}.rsrc\"",
 			);
-			script = "/usr/bin/perl -w \"../../build/build system files/xcode/RCIncluder.pl\" -macverbose -o \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${PRODUCT_NAME}.rsrc\" \"${INPUT_FILE_PATH}\"";
+			script = "/usr/bin/perl -w \"../../build/build system files/xcode/RCIncluder.pl\" -macverbose -o \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${PRODUCT_NAME}.rsrc\" \"${INPUT_FILE_PATH}\"\n";
 		};
 /* End PBXBuildRule section */
 
@@ -57,7 +56,6 @@
 		6BEA6C6B0AED2E2B006C09F7 /* PIUSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUSuites.h; sourceTree = "<group>"; };
 		6BEA6C6C0AED2E2B006C09F7 /* PIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PIUtilities.h; sourceTree = "<group>"; };
 		6BEA6C6D0AED2E2B006C09F7 /* DialogUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DialogUtilities.h; sourceTree = "<group>"; };
-		6BEA6C700AED2E2B006C09F7 /* PIUtilities.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIUtilities.r; sourceTree = "<group>"; };
 		6BEA6C740AED2E2B006C09F7 /* PIUSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUSuites.cpp; sourceTree = "<group>"; };
 		6BEA6C750AED2E2B006C09F7 /* PIUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PIUtilities.cpp; sourceTree = "<group>"; };
 		6BEA6C760AED2E2B006C09F7 /* DialogUtilitiesMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialogUtilitiesMac.cpp; sourceTree = "<group>"; };
@@ -115,15 +113,12 @@
 		6BEA6EBC0AED2E42006C09F7 /* SPSTSPrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSTSPrp.h; sourceTree = "<group>"; };
 		6BEA6EBD0AED2E42006C09F7 /* SPSuites.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPSuites.h; sourceTree = "<group>"; };
 		6BEA6EBE0AED2E42006C09F7 /* SPTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTypes.h; sourceTree = "<group>"; };
-		6BEA6EC00AED2E42006C09F7 /* PIGeneral.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIGeneral.r; sourceTree = "<group>"; };
-		6BEA6EC10AED2E42006C09F7 /* PIMI.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIMI.r; sourceTree = "<group>"; };
-		6BEA6EC20AED2E42006C09F7 /* PIPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = PIPL.r; sourceTree = "<group>"; };
 		6BEA6EC80AED2E98006C09F7 /* StatisticsUIMac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = StatisticsUIMac.cpp; sourceTree = "<group>"; };
 		6BEA6ECD0AED2EA9006C09F7 /* Statistics.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Statistics.cpp; path = ../common/Statistics.cpp; sourceTree = SOURCE_ROOT; };
 		6BEA6ECE0AED2EA9006C09F7 /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Statistics.h; path = ../common/Statistics.h; sourceTree = SOURCE_ROOT; };
-		6BEA6ECF0AED2EA9006C09F7 /* Statistics.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = Statistics.r; path = ../common/Statistics.r; sourceTree = SOURCE_ROOT; };
 		6BEA6ED00AED2EA9006C09F7 /* StatisticsRes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = StatisticsRes.h; path = ../common/StatisticsRes.h; sourceTree = SOURCE_ROOT; };
 		6BEA6ED10AED2EA9006C09F7 /* StatisticsScripting.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = StatisticsScripting.cpp; path = ../common/StatisticsScripting.cpp; sourceTree = SOURCE_ROOT; };
+		83D9B3542D0A11C100AFCB9D /* PiPLs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PiPLs.json; path = ../common/PiPLs.json; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* Statistics.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Statistics.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2880D4F0B0EEAD3001C1C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +143,7 @@
 				6BEA6ECD0AED2EA9006C09F7 /* Statistics.cpp */,
 				6BEA6ED10AED2EA9006C09F7 /* StatisticsScripting.cpp */,
 				6BEA6EC80AED2E98006C09F7 /* StatisticsUIMac.cpp */,
-				6BEA6ECF0AED2EA9006C09F7 /* Statistics.r */,
+				83D9B3542D0A11C100AFCB9D /* PiPLs.json */,
 				6BEA6C660AED2E2B006C09F7 /* SDK common */,
 				6BEA6E840AED2E42006C09F7 /* Photoshop common */,
 				089C1671FE841209C02AAC07 /* Frameworks */,
@@ -200,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				E2880D4F0B0EEAD3001C1C00 /* Info.plist */,
-				6BEA6C700AED2E2B006C09F7 /* PIUtilities.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -300,9 +294,6 @@
 		6BEA6EBF0AED2E42006C09F7 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				6BEA6EC00AED2E42006C09F7 /* PIGeneral.r */,
-				6BEA6EC10AED2E42006C09F7 /* PIMI.r */,
-				6BEA6EC20AED2E42006C09F7 /* PIPL.r */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -316,7 +307,7 @@
 			buildPhases = (
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				969D52B109B681C300BD3566 /* Rez */,
+				83D9B3532D0A11AE00AFCB9D /* Resources */,
 			);
 			buildRules = (
 				969D530509B6834200BD3566 /* PBXBuildRule */,
@@ -357,17 +348,16 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXRezBuildPhase section */
-		969D52B109B681C300BD3566 /* Rez */ = {
-			isa = PBXRezBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		83D9B3532D0A11AE00AFCB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BEA6C780AED2E2B006C09F7 /* PIUtilities.r in Rez */,
-				6BEA6ED30AED2EA9006C09F7 /* Statistics.r in Rez */,
+				83D9B3552D0A11C100AFCB9D /* PiPLs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXRezBuildPhase section */
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
