@@ -46,18 +46,12 @@
 #define ENABLE_ZIP	1
 #endif
 
-#if ADOBE_WEB
-	#define AS_OS		asos_macgcc
-    #define AS_ISP		asisp_pentium
-
-#elif MacintoshOS
+#if MacintoshOS
 
 #if defined(__GNUC__)
 
 	#define AS_OS		asos_macgcc
-	#if __POWERPC__
-		#define AS_ISP		asisp_ppc603
-	#elif __i386__
+	#if __i386__
 		#define AS_ISP		asisp_pentium
 	#elif __LP64__
 		#define AS_ISP		asisp_pentium
@@ -77,12 +71,11 @@
 
 #endif	// MacintoshOS
 
+// REVISIT: jsisson copied the MacOS settings for now
 #if PS_OS_ANDROID
     #if defined(__GNUC__)
         #define AS_OS		asos_macgcc
-        #if __POWERPC__
-            #define AS_ISP		asisp_ppc603
-        #elif __i386__
+        #if __i386__
             #define AS_ISP		asisp_pentium
         #elif __LP64__
             #define AS_ISP		asisp_pentium
@@ -95,8 +88,31 @@
         #error "Unknown compiler"
     #endif
 #endif
+#if defined(WEB_ENV)
+    #define AS_OS		asos_macgcc
+    #define AS_ISP		asisp_pentium
+// end REVISIT
 
-#if	MSWindows || defined(__INTEL__) || defined (WIN32)
+// REVISIT: kaanand copied the android settings for now
+#elif PS_OS_LINUX
+    #if defined(__GNUC__)
+        #define AS_OS       asos_macgcc
+        #if __i386__
+            #define AS_ISP      asisp_pentium
+        #elif __LP64__
+            #define AS_ISP      asisp_pentium
+        #elif defined(__arm__)
+            #define AS_ISP      asisp_arm
+        #else
+            #error "Unknown processor"
+        #endif
+    #else
+        #error "Unknown compiler"
+    #endif
+#endif
+// end REVISIT
+
+#if	(MSWindows || defined(__INTEL__) || defined (WIN32)) && !PS_OS_LINUX && !PS_OS_ANDROID
 #define AS_OS		asos_windowsNT
 #define AS_ISP		asisp_pentium
 #define WIN_PLATFORM 1
