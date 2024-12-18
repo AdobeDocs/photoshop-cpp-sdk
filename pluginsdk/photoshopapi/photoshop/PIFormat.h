@@ -344,7 +344,7 @@ Return RGB data in interleaved form
 ///@}
   
 // called when the plugin is used to launch an external editor (that Photoshop may not know about)
-// fileSpec and fileSpec2 will be the only valid fields in the format record
+// fileSpecX will be the only valid field in the format record
 #define formatSelectorLaunchExternalEditor	41
 
 /*	We keep various pieces of information about the file format in the PiMI resource.
@@ -885,8 +885,12 @@ typedef struct FormatRecord
 										 to be read during the read sequence or written during the 
 										 write sequence. During the options and estimate selector
 										 sequences, this field is undefined. In Windows, this 
-										 field is undefined. */
-#if __LP64__
+                                         field is undefined. */
+#if PS_OS_IOS || defined(WEB_ENV)
+    void *              unusedFileSpec;
+#elif PS_OS_ANDROID || PS_OS_LINUX
+    void *              unusedFileSpec;
+#elif __LP64__
 	FSSpec *			unusedFileSpec;	
 #else
 	FSSpec *			fileSpec;		/**< Full file specification.  This is an array when
