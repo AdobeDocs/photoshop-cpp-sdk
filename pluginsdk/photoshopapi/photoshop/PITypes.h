@@ -33,9 +33,6 @@
 /* Set up the preprocessor flags to indicate the target platform.	*/
 
 #if MSWindows
-#if !defined(_WIN32_WINNT)
-#define _WIN32_WINNT 0x601 // minimal deployment is Windows 7
-#endif
 #include <sdkddkver.h> // for WINVER
 #endif
 
@@ -46,7 +43,7 @@
 #endif
 
 #ifndef Macintosh
-#if (defined(macintosh) || defined(__MC68K__) || defined(__MACH__) || defined (__POWERPC__) || defined(THINK_C)) && !MSWindows
+#if (defined(macintosh) || defined(__MACH__) || defined(THINK_C)) && !MSWindows && !defined(__ANDROID__) && !defined(__LINUX__)
 #define Macintosh 1
 #else
 #define Macintosh 0
@@ -55,14 +52,6 @@
 
 #ifndef MacintoshOS
 #define	MacintoshOS	(Macintosh)
-#endif
-
-#ifndef Macintosh68K
-#define	Macintosh68K	(MacintoshOS && m68k)
-#endif
-
-#ifndef MacintoshPPC
-#define	MacintoshPPC	(MacintoshOS && defined(__POWERPC__)) // DRSWAT
 #endif
 
 #endif // #if !MSWindows
@@ -85,7 +74,7 @@
 
 #if MSWindows
 #define WIN_ENV	1
-#if WIN32
+#if _WIN32
 #define WINNT_ENV   1
 #endif
 #endif
@@ -134,10 +123,8 @@
 #define MACPASCAL pascal
 #endif
 
-#ifndef __MWERKS__
 #ifndef far
 #define far
-#endif
 #endif
 
 #ifndef huge
@@ -171,8 +158,6 @@ typedef struct PlatformData {
 
 /* Native floating point type. */
 
-#ifndef nativeFloat		// DRSWAT - get rid of redefined warning in GCC
-#define nativeFloat real64
 #endif
 
 /******************************************************************************/
@@ -203,6 +188,7 @@ typedef struct PlatformData {
 #define memFullErr		(-108)
 #define nilHandleErr		(-109)
 #define memWZErr			(-111)
+#define badFileFormat	(-208)
 
 #ifndef TRUE
 #define TRUE 1
@@ -225,23 +211,32 @@ typedef struct PlatformData {
 
 typedef int32 Fixed;
 typedef int32 Fract;
-typedef int32 (*ProcPtr)();
 
 #ifndef __TYPES__
 #ifndef __GEOMETRY__
-typedef struct Point
+#ifndef PSPOINT_DEFINED // See MacTypes.h (for win), MacTypes.h (from mac OS SDK), PITypes.h, piwinutl.h and EvePrefix.h
+#define PSPOINT_DEFINED
+struct Point
    {
-	  int16 v;
-	  int16 h;
-   } Point;
+	  short v;
+      short h;
+   };
+typedef struct Point Point;
+typedef Point* PointPtr;
+#endif
 
-typedef struct Rect
+#ifndef PSRECT_DEFINED // See MacTypes.h (for win), MacTypes.h (from mac OS SDK), PITypes.h, piwinutl.h and EvePrefix.h
+#define PSRECT_DEFINED
+struct Rect
    {
-	  int16 top;
-	  int16 left;
-	  int16 bottom;
-	  int16 right;
-   } Rect;
+      short top;
+      short left;
+      short bottom;
+      short right;
+   };
+typedef struct Rect Rect;
+typedef Rect* RectPtr;
+#endif
 #endif // __GEOMETRY__
 #endif // __TYPES__
 
@@ -316,9 +311,13 @@ typedef unsigned8 PILookUpTable [256];
 
 /* Common datatypes defined in PSWorld */
 
+#ifndef PSLookUpTableDefined // Define this externally if LookUpTable is defined
 typedef PILookUpTable LookUpTable;
+#endif // PSLookUpTableDefined
 
+#ifndef PSLookUpTable8x16Defined // Define this externally if LookUpTable8x16 is defined
 typedef unsigned16 LookUpTable8x16 [256];
+#endif // PSLookUpTable8x16Defined
 
 /** Look up table for RGB. */
 typedef struct
