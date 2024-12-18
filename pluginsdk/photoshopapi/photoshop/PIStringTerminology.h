@@ -19,8 +19,52 @@
 * All Rights Reserved.
 *
 * Distribution:
-* PUBLIC
+* truark - 2023.11.9 - WARNING ADDED, THIS FILE CAUSES 2000+ FILES TO REBUILD
+* PRIVATE 
 */
+
+//*****************************************************************************
+//		WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+//
+//		WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+//
+// This file should NO LONGER BE USED to define new strings for actions.
+// Search this file carefully for keys that you can use.
+// If not found then create a new string in the CPP file that reads
+// and writes your descriptor.
+// 
+// namespace ps::actions {
+//     inline constexpr auto kMyStringStr = "MyString";
+// }
+// And use like this
+// int32 myValue = SomeDefault;
+// actionDescriptor->GetInteger(ps::actions::kMyStringStr, &myValue); // optional
+// or
+// int32 myValue = actionDescriptor->GetInteger(ps::actions::kMyStringStr); // required
+
+// Define what you need in your CPP file as described above.
+// Use the same syntax as was used in this file.
+// 
+//     kMyStringStr = "MyString"
+// 
+// Starting each string with a "k" and ending it with a "Str"
+// Why?
+//  1) Helps stay consistent with our current naming convention
+//  2) Helps find the string in other languages or context:
+//     a) UActionsTerminology.r sometimes uses the raw string like /width
+//        and sometimes uses the value found in PIStringTerminology.h (see 3D usage)
+//     b) JavaScript, we have UXP and the old ExtendScript that can not use
+//        PIStringTerminology.h so they are duplicated there and makes it easy
+//        to search for "MyString"
+// 
+// Pull Request with more discussion: https://git.corp.adobe.com/photoshop/photoshop/pull/43866
+// JIRA : https: // jira.corp.adobe.com/browse/PS-119644
+//
+//		WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+//
+//		WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+//
+//*****************************************************************************
 
 #ifndef __PIStringTerminology_h__
 #define __PIStringTerminology_h__
@@ -67,6 +111,7 @@
 
 // Reserved identifiers (do not use)
 
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kEnumSerializationStr "_enum"
 #define kValueSerializationStr "_value"
 #define kUnitSerializationStr "_unit"
@@ -85,18 +130,15 @@
 #define kDataSerializationStr "_data"
 #define kKindSerializationStr "_kind"
 #define kJsonNullClassID "jsonNull"
-
 // Identifiers used by Playground multi-get implementation
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kMultiGetRefSerializationStr "_multiGetRef"
 #define kPropertyListSerializationStr "_propertyList"
 #define kRangeSerializationStr "_range"
 #define kCountSerializationStr "_count"
-
 // Reserved identifiers for batchPlay options in simple descriptors
 #define kOptionsSerializationStr "_options"
-
 // Identifiers
-
 #define k128BitFloatingPointStr "128BitFloatingPoint"
 #define k16BitsPerPixelStr "16BitsPerPixel"
 #define k1BitPerPixelStr "1BitPerPixel"
@@ -107,6 +149,7 @@
 #define k32BitsPerPixelStr "32BitsPerPixel"
 #define k3DAdd3DObjectPositionStr "add3DObjectPosition"
 #define k3DAdd3DViewStr "add3DView"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DAddFromFileStr "3DAddFromFile"
 #define k3DAddLayerFromFileStr "add3DLayerFromFile"
 #define k3DAddLightsFromPresetStr "add3DLightsFromPreset"
@@ -116,8 +159,6 @@
 #define k3DAddObjectsStr "3DAddObjects"
 #define k3DAddPathToRepousseStr "addPathToRepousse"
 #define k3DAddRigToMeshStr "add3DRigToMesh"
-#define k3DAlignCentersStr "set3DMeshAlignmentCenters"
-#define k3DAlignEdgesStr "set3DMeshAlignmentEdges"
 #define k3DAllowBumpsOnStr "k3DAllowBumpsOn"
 #define k3DAllowNormalsOnStr "k3DAllowNormalsOn"
 #define k3DAnimationLoadPresetStr "AnimationLoadPresets"
@@ -125,8 +166,8 @@
 #define k3DAnimationReplacePresetStr "AnimationReplacePresets"
 #define k3DAntiAliasStr "3DAntiAlias"
 #define k3DApplyMixamoPresetStr "ApplyMixamoPreset"
-#define k3DAutoHideLayersStr "autoHide3D"
 #define k3DBackgroundCountStr "set3DBackgroundCount"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DBackgroundDisparityStr "set3DBackgroundDisparity"
 #define k3DBackgroundOffsetStr "set3DBackgroundOffset"
 #define k3DBackgroundTypeStr "set3DBackgroundType"
@@ -147,6 +188,7 @@
 #define k3DDelete3DViewStr "delete3DView"
 #define k3DDeleteAllAnimationPresetsStr "DeleteAll3DAnimationPresets"
 #define k3DDeleteAllFaceExpressionPresetsStr "DeleteAll3DFaceExpressionPresets"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DDeleteAllMaterialPresetsStr "DeleteAll3DMaterialPresets"
 #define k3DDeleteAllRepoussePresetsStr "DeleteAll3DRepoussePresets"
 #define k3DDeleteAnimationPresetStr "Delete3DAnimationPreset"
@@ -158,15 +200,11 @@
 #define k3DDeleteObjStr "objectDelete"
 #define k3DDeleteRepoussePresetStr "Delete3DRepoussePreset"
 #define k3DDisableColorLinearizationStr "set3DDisableColorLinearization"
-#define k3DDistributeStr "set3DMeshDistribution"
-#define k3DDroptMaterialToolStr "3DMaterialDropTool"
 #define k3DDropToGroundPlaneStr "dropTo3DGroundPlane"
 #define k3DDuplicateObjectsStr "3DDuplicateObjects"
 #define k3DenableStr "enable3D"
-#define k3DExportLayerStr "export3DModel"
-#define k3DExportPanoramaStr "ExportPanorama"
-#define k3DExportSingleMeshStr "export3DSingleMesh"
 #define k3DFaceExpressionLoadPresetStr "FaceExpressionLoadPresets"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DFaceExpressionObjectStr "faceExpressionObject"
 #define k3DFaceExpressionReplacePresetStr "FaceExpressionReplacePresets"
 #define k3DFOVToolStr "3DFOVTool"
@@ -177,7 +215,6 @@
 #define k3DFromDepthTwoSidedPlaneStr "create3DFromDepthTwoSidedPlane"
 #define k3DFromDepthTwoSidedSolidExtrusionStr "create3DFromDepthTwoSidedSolidExtrusion"
 #define k3DFromPanoramaStr "create3DFromPanorama"
-#define k3DFromRepousseAISOStr "create3DFromRepousseAISO"
 #define k3DFromRepousseSelectionStr "create3DFromRepousseSelection"
 #define k3DFromRepousseSheetMaskStr "create3DFromRepousseSheetMask"
 #define k3DFromRepousseTextStr "create3DFromRepousseText"
@@ -187,6 +224,7 @@
 #define k3DGetLastMixamoResultsStr "GetLastMixamoResults"
 #define k3DGetMixamoParametersStr "GetMixamoParameters"
 #define k3DGetMixamoThumbnailPathStr "GetMixamoThumbnailPath"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DGroupObjStr "objectGroup"
 #define k3DGroupUngroupObjectsStr "3DGroupUngroupObjects"
 #define k3DHeatPlateOnStr "k3DHeatPlateOn"
@@ -207,6 +245,7 @@
 #define k3DLoadMaterialPresetsStr "Load3DMaterialPresets"
 #define k3DLUTFileDataStr "LUT3DFileData"
 #define k3DLUTFileNameStr "LUT3DFileName"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DLUTStr "3DLUT"
 #define k3DMergeMaterialsStr "merge3DMaterials"
 #define k3DNewAnimationPresetStr "New3DAnimationPreset"
@@ -227,6 +266,7 @@
 #define k3DPaintTypeCustom "paint3DCustom"
 #define k3DPaintTypeDiffuse "paint3DDiffuse"
 #define k3DPaintTypeEnvironment "paint3DEnvironment"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DPaintTypeNormal "paint3DNormal"
 #define k3DPaintTypeOpacity "paint3DOpacity"
 #define k3DPaintTypeReflection "paint3DReflection"
@@ -247,6 +287,7 @@
 #define k3DPrefColorConstraintSelection "Z3DPrefColorConstraintSelection"
 #define k3DPrefColorGroundPlaneDisplay "Z3DPrefColorGroundPlaneDisplay"
 #define k3DPrefColorLightsourceDisplay "Z3DPrefColorLightsourceDisplay"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DPrefColorLightsourceSelection "Z3DPrefColorLightsourceSelection"
 #define k3DPrefColorMaterialSelection "Z3DPrefColorMaterialSelection"
 #define k3DPrefColorMeshSelection "Z3DPrefColorMeshSelection"
@@ -267,6 +308,7 @@
 #define k3DPrefOnCanvasAxisWidgetScale "Z3DPrefOnCanvasAxisWidgetScale"
 #define k3DPrefProjectionPaintingOn "Z3DPrefProjectionPaintingOn"
 #define k3DPrefRenderTileSize "Z3DPrefRenderTileSize"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DPrefsGLUseForMeshesVRAM_Kilobytes "Z3DPrefsGLUseVRAMMeshes"
 #define k3DPrefsGLUseForTexturesVRAM_Kilobytes "Z3DPrefsGLUseVRAMTextures"
 #define k3DPrefsGLUseVRAM_Kilobytes "Z3DPrefsGLUseVRAM"
@@ -287,6 +329,7 @@
 #define k3DPrintSetPropertiesStr "setPrint3DProperties"
 #define k3DPrintStr "print3D"
 #define k3DPrintSupportsOnStr "k3DPrintSupportsOn"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DPrintUtilitiesStr "print3DUtilities"
 #define k3DProjectionPaintToggleStr "projectionPaintToggle"
 #define k3DreferenceObjectNameStr "ref3DObjectName"
@@ -307,6 +350,7 @@
 #define k3DRenderUVNormalMapStr "renderUVNormalMap"
 #define k3DRenderUVShadedStr "renderUVShaded"
 #define k3DRenderUVVertexColorsStr "renderUVVertexColors"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DRenderUVWireframeStr "renderUVWireframe"
 #define k3DReorderObjectsStr "3DReorderObjects"
 #define k3DReorderObjStr "objectReorder"
@@ -327,6 +371,7 @@
 #define k3DRepousseConstraintDeleteStr "repousseConstraintDelete"
 #define k3DRepousseConstraintFromSelectionStr "createConstraintFromSelection"
 #define k3DRepousseConstraintFromWorkPathStr "createConstraintFromWorkPath"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DRepousseConstraintHeightStr "repousseConstraintHeight"
 #define k3DRepousseConstraintHomeStr "repousseConstraintHome"
 #define k3DRepousseConstraintPositionStr "repousseConstraintPosition"
@@ -347,6 +392,7 @@
 #define k3DRepousseLoadPresetStr "repousseLoadPresets"
 #define k3DRepousseMeshQualityStr "repousseMeshQuality"
 #define k3DRepousseNewPathsStr "repousseNewPaths"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DRepousseObjectStr "repousseObject"
 #define k3DRepoussePresetStr "repoussePreset"
 #define k3DRepousseReplacePresetStr "repousseReplacePresets"
@@ -367,6 +413,7 @@
 #define k3DRotateMeshToolStr "3DMeshRotateTool"
 #define k3DRotateObjectToolStr "3DObjectRotateTool"
 #define k3DSaveAnimationPresetsStr "Save3DAnimationPresets"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DSaveAnimationPresetStr "3DSaveAnimationPreset"
 #define k3DSaveFaceExpressionPresetsStr "Save3DFaceExpressionPresets"
 #define k3DSaveFaceExpressionPresetStr "3DSaveFaceExpressionPreset"
@@ -385,8 +432,8 @@
 #define k3DSearchMixamoStr "SearchMixamo"
 #define k3DSelectedNozzleStr "k3DSelectedNozzle"
 #define k3DSelectInstancesStr "select3DInstances"
-#define k3DSelectMaterialToolStr "3DMaterialSelectTool"
 #define k3DSelectPaintableStr "select3DPaintable"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DSelectReferenceStr "select3DReference"
 #define k3DSet3DVisibilityStr "objectVisibilitySwitch"
 #define k3DSetCameraStr "set3DCamera"
@@ -407,6 +454,7 @@
 #define k3DSetLightImageTypeStr "set3DLightImageType"
 #define k3DSetLightInnerRadiusStr "set3DLightInnerRadius"
 #define k3DSetLightIntensityStr "set3DLightIntensity"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DSetLightModeStr "set3DLightMode"
 #define k3DSetLightMoveToCurrViewStr "set3DLightMoveToCurrView"
 #define k3DSetLightOuterRadiusStr "set3DLightOuterRadius"
@@ -427,6 +475,7 @@
 #define k3DSetMeshPositionStr "set3DMeshPosition"
 #define k3DSetMeshShadowCastingStr "set3DMeshShadowCasting"
 #define k3DSetMeshShadowCatcherStr "set3DMeshShadowCatcher"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DSetMeshShadowInvisibleStr "set3DMeshShadowInvisible"
 #define k3DSetMeshShadowOpacityStr "set3DMeshShadowOpacity"
 #define k3DSetMeshSwitchStr "set3DMeshSwitch"
@@ -442,11 +491,10 @@
 #define k3DSetTransferFunctionStr "set3DTransferFunction"
 #define k3DSetUnitsStr "set3DUnits"
 #define k3DShellThicknessStr "k3DShellThickness"
-#define k3DShowDimensionsOnRegular3DOverlays "Z3DShowDimensionsOnRegular3DOverlays"
-#define k3DShowFaceRepairColorIn3DPrintPreview "Z3DShowFaceRepairColorIn3DPrintPreview"
 #define k3DSimplifyMeshStr "simplify3DModel"
 #define k3DSlideConstraintToolStr "3DConstraintSlideTool"
 #define k3DSlideLightToolStr "3DLightSlideTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k3DSlideMeshToolStr "3DMeshSlideTool"
 #define k3DSlideObjectToolStr "3DObjectSlideTool"
 #define k3DSplitRepousseMeshStr "splitRepousseMesh"
@@ -461,12 +509,12 @@
 #define k3DUnGroupObjStr "objectUnGroup"
 #define k3DUpdateSceneObjectsStr "updateSceneObjects"
 #define k3DUploadToSketchFabStr "upload3DToSketchFab"
-#define k3DUseRaytracingIn3DPrintPreview "Z3DUseRaytracingIn3DPrintPreview"
 #define k3DWalkCameraToolStr "3DWalkCameraTool"
 #define k3upHorizontalStr "3upHorizontal"
 #define k3upStackedStr "3upStacked"
 #define k3upVerticalStr "3upVertical"
 #define k4BitsPerPixelStr "4BitsPerPixel"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define k4upTileStr "4upTile"
 #define k5000Str "5000"
 #define k5500Str "5500"
@@ -487,6 +535,7 @@
 #define kaccentedEdgesStr "accentedEdges"
 #define kaccountGUIDStr "accountGUID"
 #define kaccountPreferencesStr "accountPreferences"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kaccountTypeStr "accountType"
 #define kAcrobat3dEngineEnabledStr "acrobat3dEnabled"
 #define kactionDataStr "actionData"
@@ -507,6 +556,7 @@
 #define kactiveViewChangedStr "activeViewChanged"
 #define kactiveViewStr "activeView"
 #define kactualPixelsStr "actualPixels"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kactualSampleStr "actualSample"
 #define kactualSizeStr "actualSize"
 #define kadaptationLooseStr "adaptationLoose"
@@ -527,6 +577,7 @@
 #define kadditionalVMStatusInfoStr "additionalVMStatusInfo"
 #define kaddKeyframeStr "addKeyframe"
 #define kaddKnotToolStr "addKnotTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kAddLayerFromFileStr "addLayerFromFile"
 #define kAddLayerFromViewlessDocStr "addLayerFromViewlessDoc"
 #define kaddLayerTogroupByDragStr "addLayerTogroupByDrag"
@@ -547,6 +598,7 @@
 #define kadjustmentAutoOptionsStr "adjustmentAutoOptions"
 #define kadjustmentAutoSelectParameterStr "adjustmentAutoSelectParameter"
 #define kadjustmentClipStr "adjustmentClip"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kadjustmentCloseGroupStr "adjustmentCloseGroup"
 #define kadjustmentCloseStr "adjustmentClose"
 #define kadjustmentCompositeStr "adjustmentComposite"
@@ -567,6 +619,7 @@
 #define kadobeOnlineUpdatesStr "adobeOnlineUpdates"
 #define kAdobePSLTestStr "AdobePSLTest"
 #define kadobeRGB1998Str "adobeRGB1998"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kadobeStockIdStr "adobeStockId"
 #define kadobeStockLicenseStateStr "adobeStockLicenseState"
 #define kADSBottomsStr "ADSBottoms"
@@ -587,6 +640,7 @@
 #define kAGMStrokeStyleInfo "AGMStrokeStyleInfo"
 #define kAGMStrokeStyleInfoClass "CAGMStrokeStyleInfo"
 #define kagmVectorSheet "agmVectorSheet"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kagmVectorSheetClass "agmVectorSheetClass"
 #define kairbrushEraserStr "airbrushEraser"
 #define kairbrushToolStr "airbrushTool"
@@ -607,6 +661,7 @@
 #define kalignToCanvasStr "alignToCanvas"
 #define kallCapsStr "allCaps"
 #define kallEnumStr "allEnum"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kallExceptStr "allExcept"
 #define kallMeasurementsStr "allMeasurements"
 #define kallowEventLevelMismatchStr "allowEventLevelMismatch"
@@ -627,6 +682,7 @@
 #define kalternateLigaturesStr "alternateLigatures"
 #define kalternateStr "alternate"
 #define kaltligatureStr "altligature"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kaltTagStr "altTag"
 #define kambientBrightnessStr "ambientBrightness"
 #define kambientColorStr "ambientColor"
@@ -647,6 +703,7 @@
 #define kangledStrokesStr "angledStrokes"
 #define kangleDynamicsStr "angleDynamics"
 #define kangleStr "angle"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kangleUnitStr "angleUnit"
 #define kanimateStr "animate"
 #define kanimationClassStr "animationClass"
@@ -667,6 +724,7 @@
 #define kanimationFramesToLayersStr "animationFramesToLayers"
 #define kanimationFXRefPointStr "animationFXRefPoint"
 #define kanimationGoToFirstFrameStr "animationGoToFirstFrame"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kanimationGoToLastFrameStr "animationGoToLastFrame"
 #define kanimationGoToNextFrameStr "animationGoToNextFrame"
 #define kanimationGoToPreviousFrameStr "animationGoToPreviousFrame"
@@ -687,6 +745,7 @@
 #define kanimationMatchLayerVisibilityStr "animationMatchLayerVisibility"
 #define kanimationNewLayerPerFrameStr "animationNewLayerPerFrame"
 #define kanimationOldLayerSpecificStr "_LSpec"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kanimationOptByBoundsStr "animationOptByBounds"
 #define kanimationOptByPixelRemovalStr "animationOptByPixelRemoval"
 #define kanimationOptimizeStr "animationOptimize"
@@ -707,6 +766,7 @@
 #define kanimationProtectionStr "animationProtection"
 #define kanimationSelectAllStr "animationSelectAll"
 #define kanimationShowNewLayersInFramesStr "animationShowNewLayersInFrames"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kanimationToFrameStr "animationToFrame"
 #define kanimationTrackStr "animationTrack"
 #define kanimationTweenAllLayersStr "animationTweenAllLayers"
@@ -727,6 +787,7 @@
 #define kanimKeyStr "animKey"
 #define kanimTransitionStr "animTransition"
 #define kanimTransitionTypeIDStr "animTransitionTypeID"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kanisotropicStr "anisotropic"
 #define kannotationStr "annotation"
 #define kannotSoundStr "annotSound"
@@ -747,6 +808,7 @@
 #define kantiAliasStr "antiAlias"
 #define kantiAliasStrongStr "antiAliasStrong"
 #define kantiAliasTypeStr "antiAliasType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kanyStr "any"
 #define kAOLPreferencesStr "AOLPreferences"
 #define kApolloNoneToolStr "ApolloNoneTool"
@@ -767,6 +829,7 @@
 #define kapplyImageEnumStr "applyImageEnum"
 #define kapplyImageEventStr "applyImageEvent"
 #define kapplyimageStackPluginRendererStr "applyImageStackPluginRenderer"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kapplyLockingStr "applyLocking"
 #define kapplyStr "apply"
 #define kapplyStyleFileStr "applyStyleFile"
@@ -787,6 +850,7 @@
 #define kartboardEnabledStr "artboardEnabled"
 #define kartboardFromLayerGroupEventStr "artboardFromLayerGroupEvent"
 #define kartboardFromLayersEventStr "artboardFromLayersEvent"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kartboardIndexStr "artboardIndex"
 #define kartboardListStr "artboardList"
 #define kartboardPresetNameStr "artboardPresetName"
@@ -807,6 +871,7 @@
 #define kaskMissingStr "askMissing"
 #define kaskStr "ask"
 #define kaskWhenOpeningStr "askWhenOpening"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kaspectHeightStr "aspectHeight"
 #define kaspectRatioStr "aspectRatio"
 #define kaspectWidthStr "aspectWidth"
@@ -827,6 +892,7 @@
 #define kattributeStr "attribute"
 #define kattributeTypeStr "attributeType"
 #define kaudioFadeListStr "audioFadeList"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kaudioLevelStr "audioLevel"
 #define kauthorNameStr "authorName"
 #define kautoAdvanceSecondsStr "autoAdvanceSeconds"
@@ -847,6 +913,7 @@
 #define kautoLeadingAssignedStr "autoLeadingAssigned"
 #define kautoLeadingPercentageStr "autoLeadingPercentage"
 #define kautoLeadingStr "autoLeading"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kautoMachineLearningStr "autoMachineLearning"
 #define kautoMaskingHardEdgeStr "hardEdge"
 #define kautoMaskingToolStr "autoMaskingTool"
@@ -867,11 +934,13 @@
 #define kaxisStr "axis"
 #define kbackgroundColorChangedStr "backgroundColorChanged"
 #define kbackgroundColorStr "backgroundColor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbackgroundEraserToolStr "backgroundEraserTool"
 #define kbackgroundLayerStr "backgroundLayer"
 #define kbackgroundLevelStr "backgroundLevel"
 #define kbackgroundStr "background"
 #define kbackgroundSaveCompletedStr "backgroundSaveCompleted"
+#define kbackgroundSaveInfoStr "backgroundSaveInfo"
 #define kbackLightStr "backLight"
 #define kbackStr "back"
 #define kbackwardEnumStr "backwardEnum"
@@ -886,6 +955,7 @@
 #define kbaseShapeStyleStr "baseShapeStyle"
 #define kbaseStr "base"
 #define kbasReliefStr "basRelief"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbatchFromDropletStr "batchFromDroplet"
 #define kbatchSourceTypeStr "batchSourceType"
 #define kbatchStr "batch"
@@ -906,6 +976,7 @@
 #define kbevelEmbossStyleStr "bevelEmbossStyle"
 #define kBevelHeightBackStr "bevelHeightBack"
 #define kBevelHeightStr "bevelHeight"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbevelJoinStr "bevelJoin"
 #define kbevelStyleStr "bevelStyle"
 #define kbevelTechniqueStr "bevelTechnique"
@@ -926,6 +997,7 @@
 #define kbitDepth8Str "bitDepth8"
 #define kbitDepthStr "bitDepth"
 #define kbitmapModeStr "bitmapMode"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbitmapStr "bitmap"
 #define kblackAndWhitePresetFileNameStr "blackAndWhitePresetFileName"
 #define kblackAndWhitePresetModeStr "blackAndWhitePresetMode"
@@ -946,6 +1018,7 @@
 #define kblackLimitStr "blackLimit"
 #define kblackPointToolStr "blackPointTool"
 #define kblacksStr "blacks"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kblackStr "black"
 #define kblankFrameReaderStr "blankFrameReader"
 #define kblastStr "blast"
@@ -966,6 +1039,7 @@
 #define kblueChannelCleanupStr "blueChannelCleanup"
 #define kblueFloatStr "blueFloat"
 #define kblueGammaStr "blueGamma"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbluesStr "blues"
 #define kblueStr "blue"
 #define kblueWhitePointStr "blueWhitePoint"
@@ -986,6 +1060,7 @@
 #define kboldStr "bold"
 #define kbookColorKeyStr "bookKey"
 #define kbookColorStr "bookColor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbookIDStr "bookID"
 #define kbookStr "book"
 #define kbooleanStr "boolean"
@@ -1006,6 +1081,7 @@
 #define kboxBlurStr "boxblur"
 #define kboxInStr "boxIn"
 #define kboxOutStr "boxOut"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kboxStr "box"
 #define kbrazilianPortugueseLanguageStr "brazilianPortugueseLanguage"
 #define kbrightnessContrastStr "brightnessContrast"
@@ -1026,6 +1102,7 @@
 #define kbrushDetailStr "brushDetail"
 #define kbrushesAppendDefaultStr "brushesAppendDefault"
 #define kbrushesAppendStr "brushesAppend"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbrushesDefineStr "brushesDefine"
 #define kbrushesDeleteStr "brushesDelete"
 #define kbrushesExportStr "brushesExport"
@@ -1046,6 +1123,7 @@
 #define kbrushPresetStr "brushPreset"
 #define kbrushProjection "brushProjection"
 #define kbrushSelectionModeAddStr "brushSelectionModeAdd"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbrushSelectionModeRefineStr "brushSelectionModeRefine"
 #define kbrushSelectionModeReplaceStr "brushSelectionModeReplace"
 #define kbrushSelectionModeStr "brushSelectionMode"
@@ -1066,6 +1144,7 @@
 #define kbuildNumberStr "buildNumber"
 #define kbuiltInContourStr "builtInShapeCurve"
 #define kbuiltinProfileStr "builtinProfile"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kbuiltinProofStr "builtinProof"
 #define kbuiltinStr "builtin"
 #define kbulgarianLanguageStr "bulgarianLanguage"
@@ -1086,6 +1165,7 @@
 #define kbuttonStr "button"
 #define kbwPresetFileNameStr "bwPresetFileName"
 #define kbwPresetKindStr "bwPresetKind"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klfPresetFileNameStr "lfPresetFileName"
 #define klfPresetKindStr "lfPresetKind"
 #define kbylineStr "byline"
@@ -1106,6 +1186,7 @@
 #define kcafSamplingRegionCustomStr "cafSamplingRegionCustom"
 #define kcafSmartValidMaskStr "cafSmartValidMask"
 #define kcafWorkspaceStr "cafWorkspace"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcafMirrorStr "cafMirror"
 #define kcafFirstTimeUsingMSCAFStr "kcafFirstTimeUsingMSCAF"
 #define kcafOutputStr "cafOutput"
@@ -1126,6 +1207,7 @@
 #define kcafFlexibilityDefaultStr "cafFlexibilityDefault"
 #define kcafFlexibilityHighStr "cafFlexibilityHigh"
 #define kcafBrightnessStr "cafBrightness"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcafContrastStr "cafContrast"
 #define kcafColorRedStr "cafColorRed"
 #define kcafColorGreenStr "cafColorGreen"
@@ -1146,6 +1228,7 @@
 #define kcanadianEnglishLanguageStr "canadianEnglishLanguage"
 #define kcanadianFrenchLanguageStr "canadianFrenchLanguage"
 #define kcancelStr "cancel"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcanDispatchWhileModalStr "kcanDispatchWhileModal"
 #define kcanOpenByPhotoshopStr "canOpenByPhotoshop"
 #define kcanvasAttributesStr "canvasAttributes"
@@ -1166,6 +1249,7 @@
 #define kcatalanLanguageStr "catalanLanguage"
 #define kcategoriesStr "categories"
 #define kcategoryStr "category"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCATracePenToolStr "CATracePenTool"
 #define kccittFaxStr "ccittFax"
 #define kccLibrariesElementStr "ccLibrariesElement"
@@ -1186,6 +1270,7 @@
 #define kchangeSizesStr "changeSizes"
 #define kchannelDenoiseParamsStr "channelDenoiseParams"
 #define kchannelDenoiseStr "channelDenoise"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kchannelMatrixStr "channelMatrix"
 #define kchannelMixerStr "channelMixer"
 #define kchannelNameStr "channelName"
@@ -1206,6 +1291,7 @@
 #define kcheckedStr "checked"
 #define kcheckerboardLargeStr "checkerboardLarge"
 #define kcheckerboardMediumStr "checkerboardMedium"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcheckerboardNoneStr "checkerboardNone"
 #define kcheckerboardSizeStr "checkerboardSize"
 #define kcheckerboardSmallStr "checkerboardSmall"
@@ -1226,6 +1312,7 @@
 #define kciecamConeStr "ciecamCone"
 #define kCIERGBStr "CIERGB"
 #define kCineonFullStr "CineonFull"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCineonHalfStr "CineonHalf"
 #define kcityStr "city"
 #define k_adj_brush_tool_class_str "adj_brush_tool_class"
@@ -1246,6 +1333,7 @@
 #define kclassStr "class"
 #define kclassStringFormatStr "classStringFormat"
 #define kclassTextExportStr "classTextExport"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kclassTextImportStr "classTextImport"
 #define kclassUIPoint "classUIPoint"
 #define kclassUIRect "classUIRect"
@@ -1266,6 +1354,7 @@
 #define kclearWarningStr "clearWarning"
 #define kclipboardStr "clipboard"
 #define kclipboardTIFFTransparencyPrefStr "clipboardTIFFTransparencyPref"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kclipBoundsStr "clipBounds"
 #define kclippingInfoStr "clippingInfo"
 #define kclippingPathEPSStr "clippingPathEPS"
@@ -1286,6 +1375,7 @@
 #define kcloneSourceResetTransformStr "cloneSourceResetTransform"
 #define kcloneSourceShowOverlayStr "cloneSourceShowOverlay"
 #define kcloneSourceSource1Str "cloneSourceSource1"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcloneSourceSource2Str "cloneSourceSource2"
 #define kcloneSourceSource3Str "cloneSourceSource3"
 #define kcloneSourceSource4Str "cloneSourceSource4"
@@ -1306,6 +1396,7 @@
 #define kCloseBrushesPanelGroupStr "closeBrushesPanelGroup"
 #define kCloseBrushesPanelStr "closeBrushesPanel"
 #define kCloseBrushPresetsPanelGroupStr "closeBrushPresetsPanelGroup"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCloseBrushPresetsPanelStr "closeBrushPresetsPanel"
 #define kCloseChannelsPanelGroupStr "closeChannelsPanelGroup"
 #define kCloseChannelsPanelStr "closeChannelsPanel"
@@ -1326,6 +1417,7 @@
 #define kCloseDocumentPanelStr "closeDocumentPanel"
 #define kclosedSubpathStr "closedSubpath"
 #define kCloseGradientsPanelGroupStr "closeGradientsPanelGroup"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCloseGradientsPanelStr "closeGradientsPanel"
 #define kCloseHistogramPanelGroupStr "closeHistogramPanelGroup"
 #define kCloseHistogramPanelStr "closeHistogramPanel"
@@ -1346,6 +1438,7 @@
 #define kcloseOthersStr "closeOthers"
 #define kCloseParagraphPanelGroupStr "closeParagraphPanelGroup"
 #define kCloseParagraphPanelStr "closeParagraphPanel"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCloseParagraphStylesPanelGroupStr "closeParagraphStylesPanelGroup"
 #define kCloseParagraphStylesPanelStr "closeParagraphStylesPanel"
 #define kClosePatchMatchFillPreviewPanelGroupStr "closePatchMatchFillPreviewPanelGroup"
@@ -1366,6 +1459,7 @@
 #define kCloseTimelinePanelStr "closeTimelinePanel"
 #define kCloseToolPresetsPanelGroupStr "closeToolPresetsPanelGroup"
 #define kCloseToolPresetsPanelStr "closeToolPresetsPanel"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCloseViewlessDocumentStr "closeViewlessDocument"
 #define kcloudDocumentStr "cloudDocument"
 #define kcloudDocumentsReadyStr "cloudDocumentsReady"
@@ -1386,6 +1480,7 @@
 #define kCMYKStr "CMYK"
 #define kcoarseDotsStr "coarseDots"
 #define kcolCountStr "colCount"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcolGutterStr "colGutter"
 #define kcollapseAllGroupsEventStr "collapseAllGroupsEvent"
 #define kcolor2GrayStr "color2Gray"
@@ -1406,6 +1501,7 @@
 #define kcolorHalftoneStr "colorHalftone"
 #define kcolorimetricStr "colorimetric"
 #define kcolorIndicatesStr "colorIndicates"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcolorizeStr "colorize"
 #define kcolorLookupBGROrderStr "bgrOrder"
 #define kcolorLookupOrderTypeStr "colorLookupOrder"
@@ -1426,6 +1522,7 @@
 #define kcolorPickerHUDHueStripLargeStr "hueStripLargeHUDColorPicker"
 #define kcolorPickerHUDHueStripSmallStr "hueStripSmallHUDColorPicker"
 #define kcolorPickerHUDHueStripStr "hueStripHUDColorPicker"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcolorPickerHUDModeStr "colorPickerHUD"
 #define kcolorPickerHUDModeEnumStr "colorPickerHUDMode"
 #define kcolorPickerHUDModeTypeStr "colorPickerHUDType"
@@ -1446,6 +1543,7 @@
 #define kcolorsListStr "colorsList"
 #define kcolorSpaceStr "colorSpace"
 #define kcolorsStr "colors"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcolorStopStr "colorStop"
 #define kcolorStopTypeStr "colorStopType"
 #define kcolorStr "color"
@@ -1466,6 +1564,7 @@
 #define kcommonIssuesStr "common"
 #define kcompatibleStr "compatible"
 #define kcompCoreGPUEnabledStr "compCoreGPUEnabled2"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcompCoreThreadsEnabledStr "compCoreThreadsEnabled"
 #define kcompensationStr "compensation"
 #define kcompGraphForSelection "compGraphForSelection"
@@ -1486,6 +1585,7 @@
 #define kconcavityStr "concavity"
 #define kconciseStr "concise"
 #define kconditionalStr "conditional"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kconditionStr "condition"
 #define kconfidenceStr "confidence"
 #define kconnectedStr "connected"
@@ -1506,17 +1606,16 @@
 #define kcontentAwareRotateFillStr "contentAwareRotateFill"
 #define kcontentAwareScaleFillStr "contentAwareScaleFill"
 #define kcontentAwareStr "contentAware"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcontentLayerStr "contentLayer"
 #define kcontentStr "content"
 #define kcontentCredentialsAvailableStr "contentCredentialsAvailable"
 #define kcontentCredentialsEnabledStr "contentCredentialsEnabled"
-
 #define kcontentCredentialsDocumentOptionsStr "contentCredentialsDocumentOptions"
 #define kcontentCredentialsDocumentOptionsTypeStr "contentCredentialsDocumentOptionsType"
 #define kcontentCredentialsDocumentAskStr "contentCredentialsDocumentAsk"
 #define kcontentCredentialsExportOptionsStr "contentCredentialsExportOptions"
 #define kcontentCredentialsExportOptionsTypeStr "contentCredentialsExportOptionsType"
-
 #define kcontextBarInfoStr "contextBarChangeInfo"
 #define kcontextStr "context"
 #define kcontextualLigaturesStr "contextualLigatures"
@@ -1526,6 +1625,7 @@
 #define kContour2Str "shapingCurve2"
 #define kcontourBrushStr "contourBrush"
 #define kContourCustomStr "shapeCurveCustom"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kContourDoubleStr "shapeCurveDouble"
 #define kcontourEdgeStr "contourEdge"
 #define kContourGaussianStr "shapeCurveGaussian"
@@ -1546,6 +1646,7 @@
 #define kcontrolColorEnumMagentaStr "controlColorMagenta"
 #define kcontrolColorEnumOrangeStr "controlColorOrange"
 #define kcontrolColorEnumPurpleStr "controlColorPurple"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcontrolColorEnumRedStr "controlColorRed"
 #define kcontrolColorEnumSeafoamStr "controlColorSeafoam"
 #define kcontrolColorEnumWhiteStr "controlColorWhite"
@@ -1566,6 +1667,7 @@
 #define kconvertToFramedGroupStr "convertToFramedGroup"
 #define kconvertToGrayStr "convertToGray"
 #define kconvertToLabStr "convertToLab"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kconvertToProfileStr "convertToProfile"
 #define kconvertToRGBStr "convertToRGB"
 #define kconvertToShapeStr "convertToShape"
@@ -1586,12 +1688,12 @@
 #define kcopyrightStr "copyright"
 #define kcopyStr "copy"
 #define kcopyHintStr "copyHint"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcopyToLayerStr "copyToLayer"
 #define kcornerCropMarksStr "cornerCropMarks"
 #define kcornerStr "corner"
 #define kcorrectionMethodStr "correctionMethod"
 #define kcountAddGroupStr "countAddGroup"
-#define kcountStr "count"
 #define kcountAddStr "countAdd"
 #define kcountAutoStr "countAuto"
 #define kcountClassStr "countClass"
@@ -1606,6 +1708,7 @@
 #define kcountGroupMarkerSizeStr "countGroupMarkerSize"
 #define kcountGroupVisibleStr "countGroupVisible"
 #define kcountMoveStr "countMove"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcountRenameGroupStr "countRenameGroup"
 #define kcountryNameStr "countryName"
 #define kcountSetCurrentGroupStr "countSetCurrentGroup"
@@ -1623,9 +1726,10 @@
 #define kcreateInterpolationStr "createInterpolation"
 #define kcreateLayersFromLayerFXStr "createLayersFromLayerFX"
 #define kcreatePreviewStr "createPreview"
-#define kcreateReviewTourEnabledStr "createReviewTourEnabled"
+#define kcreateFrameIOTourEnabledStr "createFrameIOTourEnabled"
 #define kcreateWorkPathStr "createWorkPath"
 #define kcreatorAddrCityStr "creatorAddrCity"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcreatorAddrCountryStr "creatorAddrCountry"
 #define kcreatorAddrPostStr "creatorAddrPostCode"
 #define kcreatorAddrRegionStr "creatorAddrRegion"
@@ -1646,6 +1750,7 @@
 #define kcropToStr "cropTo"
 #define kcropWhenPrinting "cropWhenPrinting"
 #define kcrossDissolveStr "crossDissolve"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcrosshatchStr "crosshatch"
 #define kcrossoverStr "crossover"
 #define kcrossStr "cross"
@@ -1666,6 +1771,7 @@
 #define kcurrentStr "current"
 #define kcurrentTextStyleStr "currentTextStyle"
 #define kcurrentToolOptionsStr "currentToolOptions"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcursorBrushTipOutlineStrokeWidthStr "cursorBrushTipOutlineStrokeWidth"
 #define kcursorCrosshairStr "cursorCrosshair"
 #define kcursorCrosshairStrokeStr "cursorCrosshairWhileStroking"
@@ -1686,6 +1792,7 @@
 #define kcustomEnumStr "customEnum"
 #define kcustomEnvelopeWarpStr "customEnvelopeWarp"
 #define kcustomForcedStr "customForced"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kCustomHSFIsStdStr "customHSFIsStd"
 #define kCustomHSFListStr "customHSFList"
 #define kCustomHSFNameStr "customHSFName"
@@ -1706,6 +1813,7 @@
 #define kcustomShapesRenameStr "customShapesRename"
 #define kcustomShapesAppendDefaultStr "customShapesAppendDefault"
 #define kcustomShapeStr "customShape"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kcustomShapesSmallTextViewStr "customShapesSmallTextView"
 #define kcustomShapesSmallThumbnailViewStr "customShapesSmallThumbnailView"
 #define kcustomShapesTextThumbnailViewStr "customShapesTextThumbnailView"
@@ -1726,6 +1834,7 @@
 #define kczechLanguageStr "czechLanguage"
 #define kdanishLanguageStr "danishLanguage"
 #define kdarkenOnlyStr "darkenOnly"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdarkenStr "darken"
 #define kdarkerColorStr "darkerColor"
 #define kdarkGrayStr "darkGray"
@@ -1746,6 +1855,7 @@
 #define kdateCreatedStr "dateCreated"
 #define kdateModifiedStr "dateModified"
 #define kdatumStr "datum"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdBrushStr "dBrush"
 #define kDCSStr "DCS"
 #define kdcxStr "dcx"
@@ -1766,6 +1876,7 @@
 #define kdeepDepthStr "deepDepth"
 #define kdeepMonitorStr "deepMonitor"
 #define kdeepSelectStr "deepSelect"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdeepStr "deep"
 #define kDeepUpscaleStr "deepUpscale"
 #define kdefaultAppScriptStr "defaultAppScript"
@@ -1786,6 +1897,7 @@
 #define kdefineCustomShapeStr "defineCustomShape"
 #define kdefineCustomGradientStr "defineCustomGradient"
 #define kdefinePatternFileStr "definePatternFile"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdefinePatternStr "definePattern"
 #define kdefineSprayerStr "defineSprayer"
 #define kdefineVariablesStr "defineVariables"
@@ -1806,6 +1918,7 @@
 #define kdeleteKnotToolStr "deleteKnotTool"
 #define kdeleteMeasurementsStr "deleteMeasurements"
 #define kdeleteScaleFactorStr "deleteScaleFactor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdeleteSelectedKeyframesStr "deleteSelectedKeyframes"
 #define kdeleteSelectionStr "deleteSelection"
 #define kdeleteShapeStyleStr "deleteShapeStyle"
@@ -1826,6 +1939,7 @@
 #define kdescriptionStr "description"
 #define kdeselectStr "deselect"
 #define kdesignSpaceLibrariesInfoStr "designSpaceLibrariesInfo"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdespeckleStr "despeckle"
 #define kdestBlackMaxStr "destBlackMax"
 #define kdestBlackMinStr "destBlackMin"
@@ -1846,6 +1960,7 @@
 #define kdiacVPosStr "diacVPos"
 #define kdiacVPosTightStr "diacVPosTight"
 #define kdiacXOffsetStr "diacXOffset"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdiacYOffsetStr "diacYOffset"
 #define kdiameterStr "diameter"
 #define kdiamondStr "diamond"
@@ -1866,6 +1981,7 @@
 #define kdirectionTypeStr "directionType"
 #define kdirectSelectToolStr "directSelectTool"
 #define kdirLeftToRightStr "dirLeftToRight"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdirOverrideDefaultStr "dirOverrideDefault"
 #define kdirOverrideLTRStr "dirOverrideLTR"
 #define kdirOverrideRTLStr "dirOverrideRTL"
@@ -1886,7 +2002,9 @@
 #define kdispatcherIDStr "dispatcherID"
 #define kdisplaceFileStr "displaceFile"
 #define kdisplacementMapStr "displacementMap"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdisplaceStr "displace"
+#define kdisplayStr "display"
 #define kdisplayCursorsPreferencesStr "displayCursorsPreferences"
 #define kdisplayNameStr "displayName"
 #define kdisplayPrefsStr "displayPrefs"
@@ -1906,6 +2024,7 @@
 #define kdivideStr "divide"
 #define kdlDocInfoChangedStr "dlDocInfoChanged"
 #define kdocDefaultNewArtboardBackgroundColorStr "docDefaultNewArtboardBackgroundColor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdocDefaultNewArtboardBackgroundTypeStr "docDefaultNewArtboardBackgroundType"
 #define kdocumentAreaStr "documentArea"
 #define kdocumentChangedStr "documentChanged"
@@ -1926,6 +2045,7 @@
 #define kdodgeSStr "dodgeS"
 #define kdodgeToolStr "dodgeTool"
 #define kdoGainBiasStr "doGainBias"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kdontAskOpenNonACRFileWithACRSettingsStr "kdontAskOpenNonACRFileWithACRSettings"
 #define kdontRecordStr "dontRecord"
 #define kdontUpdateTextOptionsStr "dontUpdateTextOptions"
@@ -1946,6 +2066,7 @@
 #define kdryBrushStr "dryBrush"
 #define kdryoutStr "dryness"
 #define kDSEncodingAuto "dataSetEncodingAuto"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kDSEncodingISOLatin1 "dataSetEncodingISOLatin1"
 #define kDSEncodingMacRoman "dataSetEncodingMacRoman"
 #define kDSEncodingNative "dataSetEncodingNative"
@@ -1966,11 +2087,13 @@
 #define kdualBrushLockStr "dualBrushLock"
 #define kdualBrushStr "dualBrush"
 #define kduotoneInkStr "duotoneInk"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kduotoneModeStr "duotoneMode"
 #define kduotoneStr "duotone"
 #define kduplicateAudioClipsStr "duplicateAudioClips"
 #define kduplicateFrameStr "duplicateFrame"
 #define kduplicateStr "duplicate"
+#define kduplicateToProfileStr "duplicateToProfile"
 #define kduplicationStr "duplication"
 #define kdurationStr "duration"
 #define kdustAndScratchesStr "dustAndScratches"
@@ -1986,6 +2109,7 @@
 #define kedgeBrightnessStr "edgeBrightness"
 #define kedgeFidelityStr "edgeFidelity"
 #define kedgeGlowStr "edgeGlow"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kedgeIntensityStr "edgeIntensity"
 #define kedgeLightingOpacityStr "edgeLightingOpacity"
 #define kedgePreservingUpscaleStr "preserveDetailsUpscale"
@@ -2006,6 +2130,7 @@
 #define keffectBevelStr "effectBevel"
 #define keffectColorOverlayStr "effectColorOverlay"
 #define keffectDropShadowStr "effectDropShadow"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define keffectGradientOverlayStr "effectGradientOverlay"
 #define keffectInnerGlowStr "effectInnerGlow"
 #define keffectInnerShadowStr "effectInnerShadow"
@@ -2026,6 +2151,7 @@
 #define kelseStr "else"
 #define kembedCMYKStr "embedCMYK"
 #define kembedFontsStr "embedFonts"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kembedGrayStr "embedGray"
 #define kembedLabStr "embedLab"
 #define kembedLayerStr "embedLayer"
@@ -2046,6 +2172,7 @@
 #define kenableGlyphAlternateStr "enableGlyphAlternate"
 #define kenableLargeTabsStr "enableLargeTabs"
 #define kenableMENATextEngineStr "enableMENATextEngine"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kenableNarrowOptionBarStr "enableNarrowOptionBar"
 #define kenablePlaceHolderTextStr "enablePlaceHolderText"
 #define kenablePluginDeveloperModeStr "enablePluginDeveloperMode"
@@ -2066,6 +2193,7 @@
 #define kenhancedControlsTouchBarPropertyFeedbackStr "enhancedControlsTouchBarPropertyFeedback"
 #define kenterModalWorkspaceStr "enterModalWorkspace"
 #define kenterStr "enter"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kentireImageStr "entireImage"
 #define kentryStatusInvalidStr "invalid"
 #define kentryStatusIsDirectoryStr "isDirectory"
@@ -2086,6 +2214,7 @@
 #define keraserToolStr "eraserTool"
 #define keraseToHistoryStr "eraseToHistory"
 #define kerrorStr "error"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kestimatedVMRequiredStr "estimatedVMRequired"
 #define kestonianLanguageStr "estonianLanguage"
 #define kevenStr "even"
@@ -2106,6 +2235,7 @@
 #define kExpandNewFXStr "expandNewFX"
 #define kexpandStr "expand"
 #define kexpertFormStr "expertForm"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kexpFeature3DAnimationsStr "expFeature3DAnimations"
 #define kexpFeature3DMultitonePrintingStr "expFeature3DMultitonePrinting"
 #define kexpFeatureAliasLayersStr "expFeatureAliasLayers"
@@ -2118,14 +2248,15 @@
 #define kexpFeatureUseNextGenVM "expFeatureUseNextGenVM"
 #define kexpFeatureEnableWarpRendererStr "expFeatureWarpRenderer"
 #define kexpFeatureDeepUpscaleStr "expFeatureDeepUpscale"
+#define kexpFeatureChalkboardStr "expFeatureChalkboard2"
 #define kexpFeatureCloudDocsStr "expFeatureCloudDocs"
-#define kexpFeatureCoeditingStr "expFeatureChalkboard"
 #define kexpFeatureFramedGroupsStr "expFeatureFramedGroups"
 #define kexpFeatureMagicLassoStr "expFeatureMagicLasso"
 #define kexpFeaturePaintSymmetryStr "expFeaturePaintSymmetry"
 #define kexpFeaturePropertyFeedbackStr "expFeaturePropertyFeedback"
 #define kexpFeaturesPrefsStr "experimentalFeatures"
 #define kexpFeatureDfltFontSize "expFeatureDfltFontSize"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kexportAssetJPGQualityStr "exportAssetsJPGQuality"
 #define kexportAssetJPGQualityEnumStr "exportAssetJPGQualityEnum"
 #define kexportAssetsConvertToSRGB "exportConvertToSRGB"
@@ -2146,6 +2277,7 @@
 #define kexportOptionsStr "exportOptions"
 #define kexportPathStr "exportPath"
 #define kexportPNGTransparencyStr "exportPNGTransparency"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kexportPreferencesStr "exportPreferences"
 #define kexportSelectionAsDialogStr "exportSelectionAsDialog"
 #define kexportSelectionAsFileTypePressedStr "exportSelectionAsFileTypePressed"
@@ -2166,6 +2298,7 @@
 #define kextensionStr "extension"
 #define kexternalConstraintsStr "externalConstraints"
 #define kexternalPreviewParamsStr "externalPreviewParams"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kextractAssetsStr "extractAssets"
 #define kextractWorkAreaStr "extractWorkArea"
 #define kextraLargeStr "extraLarge"
@@ -2186,6 +2319,7 @@
 #define keyedropper2ToolStr "eyedropper2Tool"
 #define keyeDropperHUDStr "eyeDropperHUD"
 #define keyedropperMinusToolStr "eyedropperMinusTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define keyedropperPlusToolStr "eyedropperPlusTool"
 #define keyeDropperSampleSheetStr "eyeDropperSampleSheet"
 #define keyeDropperSampleStr "eyeDropperSample"
@@ -2206,6 +2340,7 @@
 #define kfailOnMissingPropertyStr "failOnMissingProperty"
 #define kfalloffStr "falloff"
 #define kfalseStr "false"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfarsiDigitsStr "farsiDigits"
 #define kfasterStr "faster"
 #define kfavoriteFontListStr "favoriteFontList"
@@ -2226,6 +2361,7 @@
 #define kFileBrowserHighQualityPreviewStr "FileBrowserHighQualityPreview"
 #define kFileBrowserMaintainSidecarFilesStr "FileBrowserMaintainSidecarFiles"
 #define kFileBrowserParseNonImageXMPMetadataStr "FileBrowserParseNonImageXMPMetadata"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kFileBrowserParseVectorFilesStr "FileBrowserParseVectorFiles"
 #define kFileBrowserPrefsClassStr "FileBrowserPrefsClass"
 #define kFileBrowserPrefsEnumStr "FileBrowserPrefsEnum"
@@ -2246,6 +2382,7 @@
 #define kfileOpenContextEmbededLinkedFileStr "fileOpenContextEmbededLinkedFile"
 #define kfileOpenContextExternallyLinkedFileStr "fileOpenContextExternallyLinkedFile"
 #define kfileOpenContextHomeScreenLRImportStr "fileOpenContextHomeScreenLRImport"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfileOpenContextStr "fileOpenContext"
 #define kfileReferenceStr "fileReference"
 #define kFileSaveInBackgroundStr "fileSaveInBackground"
@@ -2266,6 +2403,7 @@
 #define kfillForeStr "fillFore"
 #define kfillInverseStr "fillInverse"
 #define kfillModeStr "fillMode"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfillNeutralStr "fillNeutral"
 #define kfillOpacityStr "fillOpacity"
 #define kfillOverPrintStr "fillOverPrint"
@@ -2286,6 +2424,7 @@
 #define kFilterMaskLinkedStr "filterMaskLinked"
 #define kfilterMaskOptionsStr "filterMaskOptions"
 #define kfilterMaskStr "filterMask"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfilterStr "filter"
 #define kfindEdgesStr "findEdges"
 #define kfindLayersStr "findLayers"
@@ -2306,6 +2445,7 @@
 #define kFittedThumbnailsStr "fitted"
 #define kfixedStr "fixed"
 #define kfixMissingLinkedAssetsStr "fixMissingLinkedAssets"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kflaggedStr "flagged"
 #define kflareCenterStr "flareCenter"
 #define kflashDebugEnableAllStr "flashDebugEnable"
@@ -2326,6 +2466,7 @@
 #define kfloatWindowStr "floatWindow"
 #define kflowStr "flow"
 #define kflushImageChangedEventsStr "flushImageChangedEvents"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kflyoutStr "flyout"
 #define kfocalLengthStr "focalLength"
 #define kfocusMaskBinarySegLambdaStr "focusMaskBinarySegLambda"
@@ -2346,6 +2487,7 @@
 #define kfontDesignAxesStr "fontDesignAxes"
 #define kfontDesignAxesVectorsStr "fontDesignAxesVectors"
 #define kfontFamilyNameStr "fontFamilyName"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfontLargeNameStr "fontLargeName"
 #define kfontLargeSizeStr "fontLargeSize"
 #define kfontListChangedStr "fontListChanged"
@@ -2366,6 +2508,7 @@
 #define kfootageInterpretationStr "footageInterpretation"
 #define kfootageSizeStr "footageSize"
 #define kforceCloudPickerFirst "forceCloudPickerFirst"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kforcedColorsStr "forcedColors"
 #define kforcedNoDebuggerStr "forcedNoDebugger"
 #define kforceFormatOptionsStr "forceFormatOptions"
@@ -2386,6 +2529,7 @@
 #define kFourDigitStr "fourDigit"
 #define kFPXCompressLossyJPEGStr "FPXCompressLossyJPEG"
 #define kFPXCompressNoneStr "FPXCompressNone"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kFPXCompressStr "FPXCompress"
 #define kFPXQualityStr "FPXQuality"
 #define kFPXSizeStr "FPXSize"
@@ -2406,6 +2550,7 @@
 #define kframedGroupStr "framedGroup"
 #define kframedGroupToolStr "framedGroupTool"
 #define kframedGroupTypeStr "framedGroupType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kframeDisposeStr "frameDispose"
 #define kframeFillStr "frameFill"
 #define kframeFromVideoStr "frameFromVideo"
@@ -2426,6 +2571,7 @@
 #define kframeStr "frame"
 #define kframeStyleStr "frameStyle"
 #define kframeWidthStr "frameWidth"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfreeformPenToolStr "freeformPenTool"
 #define kfreeTransformCenterStateStr "freeTransformCenterState"
 #define kfreeTransformStr "freeTransform"
@@ -2446,6 +2592,7 @@
 #define kfullpathStr "fullPath"
 #define kfullSizeStr "fullSize"
 #define kfullWidthFormStr "fullWidthForm"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kfullySelectedStr "fullySelected"
 #define kfunctionKeyStr "functionKey"
 #define kFuntaFormatStr "FuntaFormat"
@@ -2466,6 +2613,7 @@
 #define kgeneralPrefsStr "generalPrefs"
 #define kgeneralUnitsTypeStr "generalUnitsType"
 #define kgenerateAssetsStr "generateAssets"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kgenerateStr "generate"
 #define kgenerationalGuidStr "generationalGuid"
 #define kgenerativeDocInfoStr "generativeDocInfo"
@@ -2486,6 +2634,7 @@
 #define kgetShortcutForShortcutTypeStr "getShortcutForShortcutType"
 #define kgetDocumentAreaStr "getDocumentArea"
 #define kgetFeatureActiveStr "getFeatureActive"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kgetFeatureInfoStr "getFeatureInfo"
 #define kgetFeatureListStr "getFeatureList"
 #define kgetFeatureMetaStr "getFeatureMeta"
@@ -2506,6 +2655,7 @@
 #define kGIFColorFileColorTableStr "GIFColorFileColorTable"
 #define kGIFColorFileMicrosoftPaletteStr "GIFColorFileMicrosoftPalette"
 #define kGIFColorFileTypeStr "GIFColorFileType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kGIFColorLimitStr "GIFColorLimit"
 #define kGIFExportCaptionStr "GIFExportCaption"
 #define kGIFFormatStr "GIFFormat"
@@ -2526,6 +2676,7 @@
 #define kGIFTransparentColorStr "GIFTransparentColor"
 #define kGIFTransparentIndexBlueStr "GIFTransparentIndexBlue"
 #define kGIFTransparentIndexGreenStr "GIFTransparentIndexGreen"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kGIFTransparentIndexRedStr "GIFTransparentIndexRed"
 #define kGIFUseBestMatchStr "GIFUseBestMatch"
 #define kglassStr "glass"
@@ -2546,6 +2697,7 @@
 #define kglowingEdgesStr "glowingEdges"
 #define kglowTechniqueStr "glowTechnique"
 #define kgoodStr "good"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kGPUCompatibilityStr "GPUCompatibility"
 #define kGPUCompositingCheckedStr "gpuCompositingChecked"
 #define kGPUEnabledStr "gpuEnabled"
@@ -2561,11 +2713,14 @@
 #define kgradientInterpolationMethodClassicStr "classic"
 #define kgradientInterpolationMethodLinearStr "linear"
 #define kgradientInterpolationMethodPerceptualStr "perceptual"
+#define kgradientInterpolationMethodSmoothStr "smooth"
+#define kgradientInterpolationMethodStripesStr "stripes"
 #define kgradientLayerStr "gradientLayer"
 #define kgradientMapClassStr "gradientMapClass"
 #define kgradientMapCustomStopsStr "gradientMapCustomStops"
 #define kgradientMapEventStr "gradientMapEvent"
 #define kgradientMapNoiseStr "gradientMapNoise"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kgradientOverlayStr "gradientOverlay"
 #define kgradientsAppendDefaultStr "gradientsAppendDefault"
 #define kgradientsDeleteStr "gradientsDelete"
@@ -2586,6 +2741,7 @@
 #define kgradientsRadialType "gradientsRadialType"
 #define kgradientsAngleType "gradientsAngleType"
 #define kgradientsDiamondType "gradientsDiamondType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kgradientsReflectedType "gradientsReflectedType"
 #define kgrainClumpedStr "grainClumped"
 #define kgrainContrastyStr "grainContrasty"
@@ -2606,6 +2762,7 @@
 #define kgravityEffectStr "gravityEffect"
 #define kgray16Str "gray16"
 #define kgray18Str "gray18"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kgray22Str "gray22"
 #define kgray50Str "gray50"
 #define kgrayBehaviorStr "grayBehavior"
@@ -2626,6 +2783,7 @@
 #define kgreenStr "green"
 #define kgreenWhitePointStr "greenWhitePoint"
 #define kgreenXStr "greenX"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kgreenYStr "greenY"
 #define kgridAlignmentStr "gridAlignment"
 #define kgridColorStr "gridColor"
@@ -2646,6 +2804,7 @@
 #define kguidesColorStr "guidesColor"
 #define kguidesCustomColorStr "guidesCustomColor"
 #define kguideSetClassStr "guideSetClass"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kguideSetGuideCountStr "guideSetGuideCount"
 #define kguideSetNameStr "guideSetName"
 #define kguideSetStr "guideSet"
@@ -2666,6 +2825,7 @@
 #define kgutterWidthStr "gutterWidth"
 #define khalftoneFileStr "halftoneFile"
 #define khalftoneScreenStr "halftoneScreen"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khalftoneSizeStr "halftoneSize"
 #define khalftoneSpecStr "halftoneSpec"
 #define khalfWidthFormStr "halfWidthForm"
@@ -2686,6 +2846,7 @@
 #define khasUserMaskStr "hasUserMask"
 #define khasVectorMaskStr "hasVectorMask"
 #define khdAnamorphicStr "hdAnamorphic"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khdrOptionsStr "hdrOptions"
 #define khdrToningMethodTypeStr "hdrToningMethodType"
 #define khdrToningStr "hdrToning"
@@ -2706,6 +2867,7 @@
 #define khealFromDest2SrcStr "healFromDest2Src"
 #define khealFromSrc2DestStr "healFromSrc2Dest"
 #define khealingBrushToolStr "healingBrushTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khealingDirectionStr "healingDirection"
 #define khealingSmoothFactorStr "healSmoothFactor"
 #define khealJPEGStr "healJPEG"
@@ -2726,6 +2888,7 @@
 #define khideCloudPickerOnYourComputerButton "hideOnYourComputerButton"
 #define khideCurrentPathStr "hideCurrentPath"
 #define khideDocumentTabsStr "hideDocumentTabs"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khideHomeScreenStr "hideHomeScreen"
 #define khideLayersStr "hideLayers"
 #define khideModalStr "hideModal"
@@ -2746,6 +2909,7 @@
 #define khighlightsStr "highlights"
 #define khighlightStrengthStr "highlightStrength"
 #define khighPassStr "highPass"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khighQualityStr "highQuality"
 #define khighQualityWarpStr "highQualityWarp"
 #define khighStr "high"
@@ -2766,6 +2930,7 @@
 #define khistoryPreferencesStr "historyPreferences"
 #define khistoryPrefsClassStr "historyPrefsClass"
 #define khistoryPrefsStr "historyPrefs"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khistoryStateSourceStr "historyStateSource"
 #define khistoryStateSourceTypeStr "historyStateSourceType"
 #define khistoryStatesStr "historyStates"
@@ -2786,7 +2951,10 @@
 #define khorizontalStr "horizontal"
 #define khostNameStr "hostName"
 #define khostVersionStr "hostVersion"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khoursStr "hours"
+#define khoverBoundsColorStr "hoverBoundsColor"
+#define khoverBoundsCustomColorStr "hoverBoundsCustomColor"
 #define kHSBColorClassStr "HSBColorClass"
 #define kHSBColorEnumStr "HSBColorEnum"
 #define kHSBColorModeStr "HSBColorMode"
@@ -2806,6 +2974,7 @@
 #define khugeStr "huge"
 #define khungarianLanguageStr "hungarianLanguage"
 #define khyphenateCapitalizedStr "hyphenateCapitalized"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define khyphenateLimitStr "hyphenateLimit"
 #define khyphenatePostLengthStr "hyphenatePostLength"
 #define khyphenatePreLengthStr "hyphenatePreLength"
@@ -2826,6 +2995,7 @@
 #define kidentifyStr "identify"
 #define kidentifyGlobalRectStr "identifyGlobalRect"
 #define kidleStr "idle"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kidleVMStr "idleVM"
 #define kIDStr "ID"
 #define kIEEE32BitFloatingPointStr "IEEE32BitFloatingPoint"
@@ -2846,6 +3016,7 @@
 #define kimageProcessingModeCloudStr "imageProcessingModeCloud"
 #define kimageProcessingModeDeviceStr "imageProcessingModeDevice"
 #define kimageProcessingPrefsStr "imageProcessingPrefs"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kimageProcessingSafeModeStr "imageProcessingSafeMode"
 #define kimageProcessingSelectionsProcessingPrefsStr "imageProcessingSelectionsProcessingPrefsStr"
 #define kimageProcessingSelectSubjectPrefsStr "imageProcessingSelectSubjectPrefs"
@@ -2866,6 +3037,7 @@
 #define kimpliedFontSizeStr "impliedFontSize"
 #define kimpliedLeadingStr "impliedLeading"
 #define kimpliedSpaceAfterStr "impliedSpaceAfter"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kimpliedSpaceBeforeStr "impliedSpaceBefore"
 #define kimpliedStartIndentStr "impliedStartIndent"
 #define kimportAnnotsStr "importAnnots"
@@ -2886,6 +3058,7 @@
 #define kbadgerTestSuiteStartedStr "badgerTestSuiteStarted"
 #define kinchesUnitStr "inchesUnit"
 #define kincludeAdjustorsStr "includeAdjustors"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kincludeAncestorsStr "includeAncestors"
 #define kincludeAnnotationsStr "includeAnnotations"
 #define kincludeAuthorStr "includeAuthor"
@@ -2906,6 +3079,7 @@
 #define kindexedColorModeStr "indexedColorMode"
 #define kindexedColorStr "indexedColor"
 #define kindexStr "index"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kindicesStr "indices"
 #define kindigoStr "indigo"
 #define kindonesianLanguageStr "indonesianLanguage"
@@ -2926,6 +3100,7 @@
 #define kinnerGlowStr "innerGlow"
 #define kinnerShadowMultiStr "innerShadowMulti"
 #define kinnerShadowStr "innerShadow"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kinOutStr "inOut"
 #define kinpaintStr "inpaint"
 #define kinPlaceStr "inPlace"
@@ -2946,7 +3121,6 @@
 #define kinteractiveStr "interactive"
 #define kinteractiveReadyStr "interactiveReady"
 #define kinteractLevelAttrStr "interactLevelAttr"
-#define kinterface3DPrefsStr "z3DPrefs"
 #define kinterfaceBevelHighlightStr "interfaceBevelHighlight"
 #define kinterfaceBevelShadowStr "interfaceBevelShadow"
 #define kinterfaceBlackStr "interfaceBlack"
@@ -2966,6 +3140,7 @@
 #define kinterfaceColorStr "interfaceColor"
 #define kinterfaceIconFillActiveStr "interfaceIconFillActive"
 #define kinterfaceIconFillDimmedStr "interfaceIconFillDimmed"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kinterfaceIconFillSelectedStr "interfaceIconFillSelected"
 #define kinterfaceIconFrameActiveStr "interfaceIconFrameActive"
 #define kinterfaceIconFrameDimmedStr "interfaceIconFrameDimmed"
@@ -2986,6 +3161,7 @@
 #define kinterlaceStr "interlace"
 #define kinternalConstraintsStr "internalConstraints"
 #define kinterpolationHoldStr "interpolationHold"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kinterpolationLinearStr "interpolationLinear"
 #define kinterpolationMethodStr "interpolationMethod"
 #define kinterpolationStr "interpolation"
@@ -3006,6 +3182,7 @@
 #define kinvertMaskStr "invertMask"
 #define kinvertSource2Str "invertSource2"
 #define kinvertStr "invert"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kinvertTextureStr "invertTexture"
 #define kinvokeCommandStr "invokeCommand"
 #define kiptcSceneStr "iptcScene"
@@ -3016,6 +3193,7 @@
 #define kisFirstParty "isFirstParty"
 #define kisoCountryCodeStr "isoCountryCode"
 #define kisolateLayersStr "isolateLayers"
+#define kisPendingNormalSaveStr "isPendingNormalSave"
 #define kisSyntheticFillStr "isSyntheticFill"
 #define kisUsingGenTech "isUsingGenTech"
 #define kitalianLanguageStr "italianLanguage"
@@ -3025,6 +3203,7 @@
 #define kitemStr "item"
 #define kjapaneseAlternateStr "japaneseAlternate"
 #define kjapaneseLanguageStr "japaneseLanguage"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kjapaneseStr "japanese"
 #define kjavaScriptMessageStr "javaScriptMessage"
 #define kjavaScriptNameStr "javaScriptName"
@@ -3045,6 +3224,7 @@
 #define kJP2KThumbStr "Growing Thumbnail"
 #define kJP2KTile1024 "1024 x 1024"
 #define kJP2KTile128 "128 x 128"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kJP2KTile256 "256 x 256"
 #define kJP2KTile512 "512 x 512"
 #define kJPEGFormatStr "JPEGFormat"
@@ -3065,6 +3245,7 @@
 #define kjustificationWordDesiredStr "justificationWordDesired"
 #define kjustificationWordMaximumStr "justificationWordMaximum"
 #define kjustificationWordMinimumStr "justificationWordMinimum"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kjustifMethodArabicStr "justifMethodArabic"
 #define kjustifMethodAutomaticKashidaStr "justifMethodAutomatic"
 #define kjustifMethodDefaultStr "justifMethodDefault"
@@ -3085,6 +3266,7 @@
 #define kkashidaWidthMediumStr "kashidaWidthMedium"
 #define kkashidaWidthNoneStr "kashidaWidthNone"
 #define kkashidaWidthSmallStr "kashidaWidthSmall"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kkashidaWidthStylisticStr "kashidaWidthStylistic"
 #define kkashidaWidthTypeStr "kashidaWidthType"
 #define kkeepProfileStr "keepProfile"
@@ -3105,6 +3287,7 @@
 #define kkeywordsStr "keywords"
 #define kkeywordStr "keyword"
 #define kkhmerLanguageStr "khmerLanguage"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kkindStr "kind"
 #define kKinsokuHard "Hard"
 #define kKinsokuNone "None"
@@ -3125,6 +3308,7 @@
 #define klabStr "lab"
 #define klandscapeStr "landscape"
 #define klaoLanguageStr "laoLanguage"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klargeDocumentFormatStr "largeDocumentFormat"
 #define klargeStr "large"
 #define klassoToolStr "lassoTool"
@@ -3145,6 +3329,7 @@
 #define klayerFXVisibleStr "layerFXVisible"
 #define klayerGroupContentStr "layerSectionContent"
 #define klayerGroupEndStr "layerSectionEnd"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klayerGroupExpandedStr "layerSectionExpanded"
 #define klayerGroupFromLinkedEventStr "layerSetFromLinkedEvent"
 #define klayerGroupFromSelectedEventStr "layerSetFromSelectedEvent"
@@ -3165,6 +3350,7 @@
 #define klayerSectionEndStr klayerGroupEndStr
 #define klayerSectionStartStr klayerGroupStartStr
 #define klayerSectionStr klayerGroupStr
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klayerSectionTypeStr klayerGroupTypeStr
 #define klayerSetFromLinkedEventStr klayerGroupFromLinkedEventStr
 #define klayersFilteredStr "layersFiltered"
@@ -3185,6 +3371,7 @@
 #define klayoutStr "layout"
 #define klchConeStr "lchCone"
 #define kleadingAboveStr "leadingAbove"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kleadingAssignedStr "leadingAssigned"
 #define kleadingBelowStr "leadingBelow"
 #define kleadingStr "leading"
@@ -3205,6 +3392,7 @@
 #define klensFlareStr "lensFlare"
 #define klensStr "lens"
 #define kleSystemInfoStr "leSystemInfo"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kleTutorialsStr "leTutorials"
 #define kleUserForumsStr "leUserForums"
 #define klevelBasedStr "levelBased"
@@ -3225,6 +3413,7 @@
 #define klightDirLeftStr "lightDirLeft"
 #define klightDirRightStr "lightDirRight"
 #define klightDirTopLeftStr "lightDirTopLeft"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klightDirTopRightStr "lightDirTopRight"
 #define klightDirTopStr "lightDirTop"
 #define klightenGroutStr "lightenGrout"
@@ -3245,6 +3434,7 @@
 #define klightOmniStr "lightOmni"
 #define klightPosBottomLeftStr "lightPosBottomLeft"
 #define klightPosBottomRightStr "lightPosBottomRight"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klightPosBottomStr "lightPosBottom"
 #define klightPositionStr "lightPosition"
 #define klightPosLeftStr "lightPosLeft"
@@ -3265,6 +3455,7 @@
 #define klinearDodgeStr "linearDodge"
 #define klinearHeightStr "linearHeight"
 #define klinearLightStr "linearLight"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klinearStr "linear"
 #define klineCapStr "lineCap"
 #define klineClassStr "lineClass"
@@ -3285,6 +3476,7 @@
 #define klinkStr "link"
 #define klinksStr "links"
 #define klinkToOtherEffectsStr "linkToOtherEffects"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klistStr "list"
 #define klivePSDFormatStr "livePSDFormat"
 #define klithuanianLanguageStr "lithuanianLanguage"
@@ -3305,6 +3497,7 @@
 #define klogStr "log"
 #define klongFloatStr "longFloat"
 #define klongIntegerStr "longInteger"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klongLinesStr "longLines"
 #define klongStrokesStr "longStrokes"
 #define klookupTypeStr "lookupType"
@@ -3325,6 +3518,7 @@
 #define kLUTFormatCSPStr "LUTFormatCSP"
 #define kLUTFormatCUBEStr "LUTFormatCUBE"
 #define kLUTFormatLOOKStr "LUTFormatLOOK"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define klutFormatStr "LUTFormat"
 #define kLUTFormatTypeStr "LUTFormatType"
 #define kLZWCompressionStr "LZWCompression"
@@ -3345,6 +3539,7 @@
 #define kmagnificationStr "magnification"
 #define kmagnitudeStr "magnitude"
 #define kmainStr "main"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmakeAnimationStr "makeAnimation"
 #define kmakeColorLookupLayerFromFileStr "makerColorLookupLayerFromFile"
 #define kmakeFrameAnimationStr "makeFrameAnimation"
@@ -3365,6 +3560,7 @@
 #define kmarathiLanguageStr "marathiLanguage"
 #define kmarginBottomStr "marginBottom"
 #define kmarginLeftStr "marginLeft"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmarginRightStr "marginRight"
 #define kmarginTopStr "marginTop"
 #define kmarkAsDirtyStr "markAsDirty"
@@ -3385,6 +3581,7 @@
 #define kmasterPerceptualStr "masterPerceptual"
 #define kmasterSelectiveStr "masterSelective"
 #define kmatchColorStr "matchColor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmatchLocationStr "matchLocation"
 #define kmatchRotationStr "matchRotation"
 #define kmatchZoomAndLocationStr "matchZoomAndLocation"
@@ -3405,6 +3602,7 @@
 #define kmaximizeCompatibilityStr "maximizeCompatibility"
 #define kmaximumEnumStr "maximumEnum"
 #define kmaximumQualityStr "maximumQuality"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmaximumStatesStr "maximumStates"
 #define kmaximumStr "maximum"
 #define kmaxQualityStr "maxQuality"
@@ -3425,6 +3623,7 @@
 #define kmeasurementLogPanelKeyStr "measurementLogPanelKey"
 #define kmeasurementLogSelectAllStr "measurementLogSelectAll"
 #define kmeasurementRangeStr "measurementRange"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmeasurementRecordMeasurementsStr "measurementRecordMeasurements"
 #define kmeasurementScaleCustomStr "measurementScaleCustom"
 #define kmeasurementScaleDefaultStr "measurementScaleDefault"
@@ -3445,6 +3644,7 @@
 #define kmediumGrayStr "mediumGray"
 #define kmediumLinesStr "mediumLines"
 #define kmediumQualityStr "mediumQuality"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmediumStr "medium"
 #define kmediumStrokesStr "mediumStrokes"
 #define kmemoryPreferencesStr "memoryPreferences"
@@ -3465,6 +3665,7 @@
 #define kmergeSpotChannelStr "mergeSpotChannel"
 #define kmergeStr "merge"
 #define kmergeVisibleStr "mergeVisible"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmeshExtraDataStr "meshExtraData"
 #define kmeshNameStr "meshName"
 #define kmeshPointsStr "meshPoints"
@@ -3485,6 +3686,7 @@
 #define kmidtonesUpperLimitStr "midtonesUpperLimit"
 #define kmillimetersUnitStr "millimetersUnit"
 #define kmimeTypeStr "mimeType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kminDepthStr "minimumDepth"
 #define kminDiameterStr "minimumDiameter"
 #define kminDigitsStr "minDigits"
@@ -3505,6 +3707,7 @@
 #define kmixStr "mix"
 #define kmmddStr "mmdd"
 #define kmmddyyStr "mmddyy"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmodalDialogLevelStr "modalDialogLevel"
 #define kmodalDialogTitleStr "modalDialogTitle"
 #define kmodalStateChanged "modalStateChanged"
@@ -3525,6 +3728,7 @@
 #define kmojiKumiNameStr "mojiKumiName"
 #define kMojiKumiNone "Photoshop6MojiKumiNone"
 #define kMojikumiTable1 "Photoshop6MojiKumiSet1"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kMojikumiTable2 "Photoshop6MojiKumiSet2"
 #define kMojikumiTable3 "Photoshop6MojiKumiSet3"
 #define kMojikumiTable4 "Photoshop6MojiKumiSet4"
@@ -3545,6 +3749,7 @@
 #define kmotionTrackEffectParamsStr "motionTrackEffectParams"
 #define kMouseUpStr "mouseUp"
 #define kmoveAllTimeStr "moveAllTime"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmoveInTimeStr "moveInTime"
 #define kmoveKeyframesStr "moveKeyframes"
 #define kmoveOutTimeStr "moveOutTime"
@@ -3565,6 +3770,7 @@
 #define kmulti72GrayStr "multi72Gray"
 #define kmultiAdjustorStr "multiAdjustor"
 #define kmultichannelModeStr "multichannelMode"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kmultichannelStr "multichannel"
 #define kmultiGetStr "multiGet"
 #define kmultiNoCompositePSStr "multiNoCompositePS"
@@ -3585,6 +3791,7 @@
 #define knetscapeGrayStr "netscapeGray"
 #define knetworkEventSubscribeStr "networkEventSubscribe"
 #define knetworkEventUnsubscribeStr "networkEventUnsubscribe"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kneuralGalleryToolStr "neuralGalleryTool"
 #define kneuralGalleryHandToolStr "neuralGalleryHandTool"
 #define kneuralGalleryZoomToolStr "neuralGalleryZoomTool"
@@ -3605,6 +3812,7 @@
 #define knewDocPresetScreenScaleStr "newDocPresetScreenScale"
 #define knewDocumentPresetStr "newDocumentPreset"
 #define knewDocumentStr "newDocument"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define knewDocumentViewCreatedStr "newDocumentViewCreated"
 #define knewFramedGroupEventStr "newFramedGroupEvent"
 #define knewFromClipboardStr "newFromClipboard"
@@ -3625,6 +3833,7 @@
 #define knglProfileChangedStr "nglProfileChanged"
 #define knikon105Str "nikon105"
 #define knikonStr "nikon"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define knoBreakStr "noBreak"
 #define knoCompositePSStr "noCompositePS"
 #define knodeConnectionStr "nodeConnection"
@@ -3645,6 +3854,7 @@
 #define knoneUnitStr "noneUnit"
 #define knonImageDataStr "nonImageData"
 #define knonLinearStr "nonLinear"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kNonModalColorPickerStr "nonModalColorPicker"
 #define knonScriptLinkingWorkflowStr "nonScriptLinkingWorkflow"
 #define knoReferenceStr "noReference"
@@ -3665,6 +3875,7 @@
 #define kntscStr "ntsc"
 #define kNTSCWidescreenStr "NTSCWidescreen"
 #define kntscWideStr "ntscWide"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define knudgePathPointsStr "nudgePathPoints"
 #define knudgeStr "nudge"
 #define knullFrameReaderStr "nullFrameReader"
@@ -3685,6 +3896,7 @@
 #define knumberStr "number"
 #define knumberUnitStr "numberUnit"
 #define knumImagesStr "numImages"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define knumeratorStr "numerator"
 #define knumericSequenceFrameReaderStr "numericSequenceFrameReader"
 #define knumericSequenceSpecStr "numericSequenceSpec"
@@ -3705,6 +3917,7 @@
 #define koffStr "off"
 #define koilPaintFilterStr "oilPaint"
 #define kojiBrushStr "ojiBrush"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kojiBrushToolStr "ojiBrushTool"
 #define kokStr "ok"
 #define koldGermanLanguageStr "oldGermanLanguage"
@@ -3725,6 +3938,7 @@
 #define kopenAsSmartObjectStr "openAsSmartObject"
 #define kopenAsStr "openAs"
 #define kopenedDocumentStr "openedDocument"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kOpenGLACEEnabledStr "openglACEEnabled"
 #define kOpenGLAdvancedEnabledStr "glAdvancedEnabled"
 #define kOpenGLAdvancedStr "openglAdvanced"
@@ -3738,13 +3952,12 @@
 #define kOpenGLCheckCompStr "openglCheckerComposite"
 #define kOpenGLD2SEnabledStr "openglD2SEnabled"
 #define kOpenGLDeepColorEnabledStr "openglDeepColorEnabled"
-
 #define kUseGraphicsProcessorStr "openglEnabled"
-
 #define kOpenGLModeEnabledStr "openglModeEnabled"
 #define kOpenGLModeEnumStr "gpuMode"
 #define kOpenGLModeStr "openglmode"
 #define kOpenGLPOTEnabledStr "openglPOTEnabled"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kOpenGLResetStr "openglReset"
 #define kOpenGLSimpleTextUploadsEnabledStr "openglSimpleTextUploadsEnabled"
 #define kOpenGLTuneSizeStr "openglTunedSize"
@@ -3765,6 +3978,7 @@
 #define kordinalsStr "ordinals"
 #define kordinalStr "ordinal"
 #define korientationStr "orientation"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define koriginalAddressAttrStr "originalAddressAttr"
 #define koriginalHeaderStr "originalHeader"
 #define koriginalTransmissionReferenceStr "originalTransmissionReference"
@@ -3785,6 +3999,7 @@
 #define koutsideStr "outside"
 #define koutStr "out"
 #define koutTimeStr "outTime"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define koverlapStr "overlap"
 #define koverlayStr "overlay"
 #define koverlayColorEnumBlackStr "overlayColorBlack"
@@ -3805,6 +4020,7 @@
 #define kOverrideBrushPoseAngleStr "overridePoseAngle"
 #define kOverrideBrushPosePressureStr "overridePosePressure"
 #define kOverrideBrushPoseTiltXStr "overridePoseTiltX"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kOverrideBrushPoseTiltYStr "overridePoseTiltY"
 #define koverrideNodeStr "overrideNode"
 #define koverrideOpenStr "overrideOpen"
@@ -3825,6 +4041,7 @@
 #define kpagePosCenteredStr "pagePosCentered"
 #define kpagePositionStr "pagePosition"
 #define kpagePosTopLeftStr "pagePosTopLeft"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpageSetupStr "pageSetup"
 #define kpageStr "page"
 #define kpaintbrushEraserStr "paintbrushEraser"
@@ -3845,6 +4062,7 @@
 #define KPaletteFontTypePrefKeyDeprecatedStr "paletteFontTypeKey"
 #define KPaletteFontTypePrefKeyStr "paletteEnhancedFontTypeKey"
 #define kpaletteKnifeStr "paletteKnife"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpaletteStr "palette"
 #define KPaletteUIScaledPrefKeyStr "paletteUIScaledTypeKey"
 #define kpalSecamStr "palSecam"
@@ -3865,6 +4083,7 @@
 #define kpanelUILockIsEnabledStr "panelUILockIsEnabled"
 #define kpanoramaStr "panorama"
 #define kpaperBrightnessStr "paperBrightness"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpaperWhiteStr "paperWhite"
 #define kparagraphStyleRangeStr "paragraphStyleRange"
 #define kparagraphStyleStr "paragraphStyle"
@@ -3885,6 +4104,7 @@
 #define kpasteStr "paste"
 #define kpatchAdaptationStr "patchAdaptation"
 #define kpatchAdaptationTypeStr "patchAdaptationType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpatchColorAdaptationStr "patchColorAdaptation"
 #define kpatchContentAwareStr "patchContentAware"
 #define kpatchMatchAlignmentToolStr "patchMatchAlignmentTool"
@@ -3905,6 +4125,7 @@
 #define kpatchMatchToolStr "patchMatchTool"
 #define kpatchMatchUserSpecifiedOutputStr "patchMatchUserSpecifiedOutput"
 #define kpatchMatchWorkspaceStr "patchMatchWorkspace"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpatchMatchZoomToolIgnorePalettesStr "patchMatchZoomToolIgnorePalettes"
 #define kpatchMatchZoomToolScrubbyZoomStr "patchMatchZoomToolScrubbyZoom"
 #define kpatchMatchZoomToolStr "patchMatchZoomTool"
@@ -3925,6 +4146,7 @@
 #define kpathComponentsStr "pathComponents"
 #define kpathComponentStr "pathComponent"
 #define kpathContentsStr "pathContents"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpathIDStr "pathID"
 #define kpathKindStr "pathKind"
 #define kpathNameStr "pathName"
@@ -3945,6 +4167,7 @@
 #define kpathSymmetrySelectedPathStr "pathSymmetrySelectedPath"
 #define kpathTypeAlignmentStr "pathTypeAlignment"
 #define kpathTypeAlignToStr "pathTypeAlignTo"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpathTypeEffectStr "pathTypeEffect"
 #define kpathTypeSpacingStr "pathTypeSpacing"
 #define kpathTypeSpacingRealStr "pathTypeSpacingReal"
@@ -3965,6 +4188,7 @@
 #define kpatternsDeleteStr "patternsDelete"
 #define kpatternsExportStr "patternsExport"
 #define kpatternsImportLegacyStr "patternsLegacy"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpatternsImportStr "patternsImport"
 #define kpatternsNewStr "patternsNew"
 #define kpatternsRenameStr "patternsRename"
@@ -3985,6 +4209,7 @@
 #define kpdfChangesAllowedStr "pdfChangesAllowed"
 #define kpdfColorConversionStr "pdfColorConversion"
 #define kpdfCompatibilityLevelStr "pdfCompatibilityLevel"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpdfCompressionTypeStr "pdfCompressionType"
 #define kpdfConvert16To8Str "pdfConvert16To8"
 #define kpdfDestinationProfileDescriptionStr "pdfDestinationProfileDescription"
@@ -4005,6 +4230,7 @@
 #define kpdfOutputConditionIdentifierStr "pdfOutputConditionIdentifier"
 #define kpdfOutputConditionStr "pdfOutputCondition"
 #define kpdfPermissionPasswordStr "pdfPermissionPassword"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpdfPreserveEditingStr "pdfPreserveEditing"
 #define kpdfPresetFilenameStr "pdfPresetFilename"
 #define kpdfPrinterColorBarsStr "pdfPrinterColorBars"
@@ -4025,6 +4251,7 @@
 #define kpdfUsingModifiedPresetStr "pdfUsingModifiedPreset"
 #define kpdfViewAfterSaveStr "pdfViewAfterSave"
 #define kpdfx1a2001Str "pdfx1a2001"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpdfx1a2003Str "pdfx1a2003"
 #define kpdfx32001Str "pdfx32001"
 #define kpdfx32003Str "pdfx32003"
@@ -4035,6 +4262,7 @@
 #define kpencilToolStr "pencilTool"
 #define kpencilWidthStr "pencilWidth"
 #define kpenToolStr "penTool"
+#define kpercentCompletedStr "percentCompleted"
 #define kpercentUnitStr "percentUnit"
 #define kperceptualStr "perceptual"
 #define kperformanceStr "performance"
@@ -4044,6 +4272,7 @@
 #define kperspectiveCropToolStr "perspectiveCropTool"
 #define kperspectiveIndexStr "perspectiveIndex"
 #define kperspectiveStr "perspective"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kperspectiveWarpModeStr "perspectiveWarpMode"
 #define kperspectiveWarpQuadStr "perspectiveWarpQuad"
 #define kperspectiveWarpSideStr "perspectiveWarpSide"
@@ -4064,6 +4293,7 @@
 #define kphotoshopPDFFormatStr "photoshopPDFFormat"
 #define kphotoshopPickerStr "photoshopPicker"
 #define kphysicsStr "physics"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpicasUnitStr "picasUnit"
 #define kpickCMYKStr "pickCMYK"
 #define kpickerIDStr "pickerID"
@@ -4084,6 +4314,7 @@
 #define kpInheritsStr "pInherits"
 #define kpinLightStr "pinLight"
 #define kpixelDoublingStr "pixelDoubling"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpixelHeightStr "pixelHeight"
 #define kpixelLengthStr "pixelLength"
 #define kpixelPaintFormatStr "pixelPaintFormat"
@@ -4104,6 +4335,7 @@
 #define kplacedLayerConvertToLayersStr "placedLayerConvertToLayers"
 #define kplacedLayerEditContentsStr "placedLayerEditContents"
 #define kplacedLayerResetTransformsStr "placedLayerResetTransforms"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kplacedLayerEmbedAllStr "placedLayerEmbedAll"
 #define kplacedLayerExportContentsStr "placedLayerExportContents"
 #define kplacedLayerMakeCopyStr "placedLayerMakeCopy"
@@ -4124,6 +4356,7 @@
 #define kplasterStr "plaster"
 #define kplasticWrapStr "plasticWrap"
 #define kplatformStr "platform"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kplaybackOptionsStr "playbackOptions"
 #define kplaybackStrokeFromFile "playbackStrokeFromFile"
 #define kplayStr "play"
@@ -4144,6 +4377,7 @@
 #define kPNGInterlaceAdam7Str "PNGInterlaceAdam7"
 #define kPNGInterlaceNoneStr "PNGInterlaceNone"
 #define kPNGInterlaceTypeStr "PNGInterlaceType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kPNGCompressionTypeStr "PNGCompressionType"
 #define kPNGQuantOptionsStr "PNGQuantOptions"
 #define kpoint16Str "point16"
@@ -4164,6 +4398,7 @@
 #define kpondRipplesStr "pondRipples"
 #define kpopoutStr "popout"
 #define kpopupStr "popup"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kportStr "port"
 #define kposGaussClustersStr "posGaussClusters"
 #define kposGaussParamsStr "posGaussParams"
@@ -4184,6 +4419,7 @@
 #define kpreferencesClassStr "preferencesClass"
 #define kpreferencesFolderStr "preferencesFolder"
 #define kpreferencesStr "preferences"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpreferEnhancedTIFFStr "preferEnhancedTIFF"
 #define kPreferLargeFontTypeStr "preferLargePaletteFontType"
 #define kPreferMediumFontTypeStr "preferMediumPaletteFontType"
@@ -4204,6 +4440,7 @@
 #define kpresentationStr "presentation"
 #define kpresentStr "present"
 #define kpreserveAdditionalStr "preserveAdditional"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpreserveExactStr "preserveExact"
 #define kpreserveLuminosityStr "preserveLuminosity"
 #define kpreserveShapeStr "preserveShape"
@@ -4224,6 +4461,7 @@
 #define kpresetKindFactoryStr "presetKindFactory"
 #define kpresetKindStr "presetKind"
 #define kpresetKindTypeStr "presetKindType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpresetKindUserDefinedStr "presetKindUserDefined"
 #define kpresetLightNameStr "presetLightName"
 #define kpresetManagerStr "presetManager"
@@ -4244,6 +4482,7 @@
 #define kpreviewMacThumbnailStr "previewMacThumbnail"
 #define kpreviewMagentaStr "previewMagenta"
 #define kpreviewOffStr "previewOff"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpreviewsQueryStr "previewsQuery"
 #define kpreviewStr "preview"
 #define kpreviewWinThumbnailStr "previewWinThumbnail"
@@ -4264,6 +4503,7 @@
 #define kprintCopies "printCopies"
 #define kprintCurrentPrinter "printCurrentPrinter"
 #define kprinterName "printerName"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kprintingInksSetupStr "printingInksSetup"
 #define kprintKeysStr "printKeys"
 #define kprintKeysTypeStr "printKeysType"
@@ -4284,6 +4524,7 @@
 #define kprintStr "print"
 #define kprintStyleInfo "printOutputOptions"
 #define kprintStyleResolution "printStyleResolution"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kprintToFitStr "printToFit"
 #define kprintViewProofSetup "printViewProofSetup"
 #define kprivacyPrefsStr "privacyPrefs"
@@ -4304,6 +4545,7 @@
 #define kprogressTotalStr "progressTotal"
 #define kprogressUpdateStr "progressUpdate"
 #define kprojectionStr "projection"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpromptStr "prompt"
 #define kPromptedForColorSetup "promptedForColorSetup"
 #define kproofBlackStr "proofBlack"
@@ -4324,6 +4566,7 @@
 #define kpropertyStr "property"
 #define kproportionalLiningStr "proportionalLining"
 #define kproportionalMetricsStr "proportionalMetrics"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kproportionalNumbersStr "proportionalNumbers"
 #define kproportionalOldStyleStr "proportionalOldStyle"
 #define kproportionalScaling "proportionalScaling"
@@ -4344,6 +4587,7 @@
 #define kpurgeStr "purge"
 #define kpurityStr "purity"
 #define kpurpleStr "purple"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kpushDownStr "pushDown"
 #define kpushInStr "pushIn"
 #define kpushOutFirstStr "pushOutFirst"
@@ -4364,6 +4608,7 @@
 #define kQDRectangleStr "QDRectangle"
 #define kqsMatToolStr "qsMatTool"
 #define kquadAnchorStr "quadAnchor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kquadCenterStateStr "quadCenterState"
 #define kquadCorner0Str "quadCorner0"
 #define kquadCorner1Str "quadCorner1"
@@ -4384,6 +4629,7 @@
 #define kquickSelectAutoEnhanceStr "autoEnhance"
 #define kquickSelectBrushSizeStr "quickSelectBrushSize"
 #define kquickSelectModeStr "quickSelectMode"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kquickSelectSampleAllLayersStr "quickSelectSampleAllLayers"
 #define kquickSelectSelectionViewModeStr "quickSelectSelectionViewMode"
 #define kquickSelectSpreadStr "quickSelectSpread"
@@ -4404,6 +4650,7 @@
 #define krandomSeedStr "randomSeed"
 #define krandomStr "random"
 #define krangeStr "range"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krasterizeAllPlacedStr "rasterizeAllPlaced"
 #define krasterizeAllStr "rasterizeAll"
 #define krasterizeContentStr "rasterizeContent"
@@ -4424,6 +4671,7 @@
 #define kratioStr "ratio"
 #define krawDataStr "rawData"
 #define krawFormatStr "rawFormat"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krawPixmapFilePathStr "rawPixmapFilePath"
 #define kreadableFileExtensionsStr "readableFileExtensions"
 #define kreadBytesStr "readBytes"
@@ -4444,6 +4692,7 @@
 #define krectangleStr "rectangle"
 #define krectangleToolStr "rectangleTool"
 #define krectFirstCornerStr "rectangleCornerA"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krectSecondCornerStr "rectangleCornerB"
 #define krectThirdCornerStr "rectangleCornerC"
 #define krectFourthCornerStr "rectangleCornerD"
@@ -4464,6 +4713,7 @@
 #define kredXStr "redX"
 #define kredYStr "redY"
 #define kreferenceRectStr "referenceRect"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kreferrerStr "referrer"
 #define krefineEdgeAutoRadiusStr "refineEdgeAutoRadius"
 #define krefineEdgeBrushToolStr "refineEdgeBrushTool"
@@ -4484,6 +4734,7 @@
 #define krelativeStr "relative"
 #define kreleaseFileReferenceStr "releaseFileReference"
 #define kreleaseTypeStr "releaseType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kreleaseChannelStr "releaseChannel"
 #define kreliefStr "relief"
 #define kreloadFrameStr "reloadFrame"
@@ -4504,10 +4755,12 @@
 #define kremoveToolRemoveAfterEachStrokeStr "removeToolRemoveAfterEachStroke"
 #define kremoveToolUserConsentStr "removeToolUserConsent"
 #define kremoveToolUserConsentNAStr "removeToolUserConsentNA"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kremoveToolUserConsentNOStr "removeToolUserConsentNO"
 #define kremoveToolUserConsentYESStr "removeToolUserConsentYES"
 #define kremoveWhiteMatteStr "removeWhiteMatte"
 #define kremoveBackgroundStr "removeBackground"
+#define kgenerateBackgroundStr "generateBackground"
 #define kremoveToolStr "removeTool"
 #define krenameLayerStr "renameLayer"
 #define krenameStr "rename"
@@ -4524,6 +4777,7 @@
 #define kreplaceColorStr "replaceColor"
 #define kreplaceExistingStr "replaceExisting"
 #define kreplaceFootageStr "replaceFootage"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kreplaceStr "replace"
 #define kreplaceSubstitutesStr "replaceSubstitutes"
 #define krepresentationStr "representation"
@@ -4544,6 +4798,7 @@
 #define kresetMenusStr "resetMenus"
 #define kresetMessagesStr "resetMessages"
 #define kresetPalettesStr "resetPalettes"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kresetPrefsOnQuitStr "resetPrefsOnQuit"
 #define kresetScaleFactorStr "resetScaleFactor"
 #define kresetShortcutsStr "resetShortcuts"
@@ -4564,6 +4819,7 @@
 #define kreticulationStr "reticulation"
 #define kreturnIDAttrStr "returnIDAttr"
 #define krevealAllStr "revealAll"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krevealCurrentPathStr "revealCurrentPath"
 #define krevealSelectionStr "revealSelection"
 #define kreverseStr "reverse"
@@ -4584,6 +4840,7 @@
 #define krightsUsageStr "rightsUsage"
 #define krigidDeformedVertexArrayStr "deformedVertexArray"
 #define krigidExpansionStr "meshExpansion"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krigidFinalPinsStr "posFinalPins"
 #define krigidIndexArrayStr "indexArray"
 #define krigidMeshQualityStr "meshQuality"
@@ -4604,6 +4861,7 @@
 #define krotatedStr "rotated"
 #define krotateEventEnumStr "rotateEventEnum"
 #define krotateStr "rotate"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krotateToolStr "rotateTool"
 #define krotationCapsStr "rotationCaps"
 #define krotationDirectionStr "rotationDirection"
@@ -4624,6 +4882,7 @@
 #define krowMajorOrderStr "rowMajorOrder"
 #define kRTLarabicDigitsStr "RTLarabicDigits"
 #define krubyStr "ruby"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define krulerCmStr "rulerCm"
 #define krulerInchesStr "rulerInches"
 #define krulerMmStr "rulerMm"
@@ -4644,6 +4903,7 @@
 #define ksample3x3Str "sample3x3"
 #define ksample5x5Str "sample5x5"
 #define ksampleAllLayersStr "sampleAllLayers"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksampledBlurStr "shapeBlur"
 #define ksampledBrushStr "sampledBrush"
 #define ksampledDataStr "sampledData"
@@ -4664,6 +4924,7 @@
 #define ksaveHistoryToStr "saveHistoryTo"
 #define ksaveHistoryToTypeStr "saveHistoryToType"
 #define ksavePaletteLocationsStr "savePaletteLocations"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksavePathsStr "savePaths"
 #define ksavePyramidsStr "savePyramids"
 #define ksaveScheduleModeStr "saveScheduleMode"
@@ -4684,6 +4945,7 @@
 #define ksavingFilesPreferencesStr "savingFilesPreferences"
 #define ksavingStr "saving"
 #define kscaleEffectsEventStr "scaleEffectsEvent"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kscaleEffectsStr "scaleEffects"
 #define kscaleHorizontalStr "scaleHorizontal"
 #define kscaleKeyframesStr "scaleKeyframes"
@@ -4704,6 +4966,7 @@
 #define kscoreStr "score"
 #define kscratchDiskPreferences "scratchDiskPreferences"
 #define kscratchDisksStr "scratchDisks"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kscreenCircleStr "screenCircle"
 #define kscreenDotStr "screenDot"
 #define kscreenFileStr "screenFile"
@@ -4724,6 +4987,7 @@
 #define kscrubbyZoomStr "scrubbyZoom"
 #define kseafoamStr "seafoam"
 #define ksecondsStr "seconds"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksecondsUnitStr "secondsUnit"
 #define ksectionHStr "sectionH"
 #define kselectAllLayersStr "selectAllLayers"
@@ -4744,6 +5008,7 @@
 #define kselectionLabAlphaOptionsStr "selectionLabAlphaOptions"
 #define kselectionLabAutoMaskingToolStr "selectionLabAutoMaskingTool"
 #define kselectionLabDumbBrushToolStr "selectionLabDumbBrushTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kselectionLabLassoToolStr "selectionLabLassoTool"
 #define kselectionLabMagicLassoToolStr "selectionLabMagicLassoTool"
 #define kselectionLabPolyLassoToolStr "selectionLabPolyLassoTool"
@@ -4764,6 +5029,7 @@
 #define kselectionOutputToNewSheetStr "selectionOutputToNewSheet"
 #define kselectionOutputToSelectionStr "selectionOutputToSelection"
 #define kselectionOutputToUserMaskStr "selectionOutputToUserMask"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kselectionStr "selection"
 #define kselectiveColorStr "selectiveColor"
 #define kselectiveStr "selective"
@@ -4782,8 +5048,10 @@
 #define kselectSubjectFeedbackTriggerCountStr "selectSubjectFeedbackTriggerCount"
 #define kselectSubjectPortraitTriggerStr "selectSubjectPortraitTrigger"
 #define kselectSubjectServiceStr "selectSubjectService"
+#define kselectPeopleDistractorsStr "selectPeopleDistractors"
 #define ksendDataToNeuralGalleryStr "sendDataToNeuralGallery"
 #define ksendDocumentInfoToNetworkClientStr "sendDocumentInfoToNetworkClient"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksendDocumentThumbnailToNetworkClientStr "sendDocumentThumbnailToNetworkClient"
 #define ksendJSONToNetworkClientStr "sendJSONToNetworkClient"
 #define ksendLayerShapeToNetworkClientStr "sendLayerShapeToNetworkClient"
@@ -4804,6 +5072,7 @@
 #define ksetOverscrollModeStr "setOverscrollMode"
 #define ksetPanZoomStr "setPanZoom"
 #define ksetPlacedLayerCompStr "setPlacedLayerComp"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksetPresetPanelInfo "setPresetPanelInfo"
 #define ksetSlicesVisibleStr "setSlicesVisible"
 #define ksetStr "set"
@@ -4824,6 +5093,7 @@
 #define kshapeburstStr "shapeburst"
 #define kshapeClassStr "shapeClass"
 #define kshapeClipboardOperationStr "shapeClipboardOperation"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kshapeCopyFillStr "shapeCopyFill"
 #define kshapeCopyShapeAllStr "shapeCopyShapeAll"
 #define kshapeCopyStrokeAllStr "shapeCopyStrokeAll"
@@ -4844,6 +5114,7 @@
 #define ksharpenToolStr "sharpenTool"
 #define ksharpnessStr "sharpness"
 #define kshearEdStr "shearEd"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kshearPointsStr "shearPoints"
 #define kshearStr "shear"
 #define kshearStStr "shearSt"
@@ -4864,6 +5135,7 @@
 #define kshowBBoxStr "showBBox"
 #define kshowCJKFeaturesStr "showCJKFeatures"
 #define kshowCoachmarkStr "showCoachmark"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kshowColorPickerStr "showColorPicker"
 #define kshowComboFXPaletteStr "showComboFXPalette"
 #define kshowDirectoriesStr "showDirectories"
@@ -4884,12 +5156,14 @@
 #define kshowHUDBottomRightStr "showHUDBottomRight"
 #define kshowHUDNeverStr "showHUDNever"
 #define kshowHUDStateStr "showHUDState"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kshowHUDStr "showHUD"
 #define kshowHUDTopLeftStr "showHUDTopLeft"
 #define kshowHUDTopRightStr "showHUDTopRight"
 #define kshowInactiveArtboardGuidesStr "showInactiveArtboardGuides"
 #define kshowInDialog "showInDialog"
 #define kshowInfoPaletteStr "showInfoPalette"
+#define kshowLayerMaskBadges "showLayerMaskBadges"
 #define kshowLayersPaletteStr "showLayersPalette"
 #define kshowLayersStr "showLayers"
 #define kshowMenuColorsStr "showMenuColors"
@@ -4903,6 +5177,7 @@
 #define kshowNoneStr "showNone"
 #define kshownStr "shown"
 #define kshowPaletteBinStr "showPaletteBin"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kshowPanelArtboardCreation "showPanelArtboardCreation"
 #define kshowPanelOnShapeCreation "showPanelOnShapeCreation"
 #define kshowPanelOnVarFontUsage "showPanelOnVarFontUsage"
@@ -4923,6 +5198,7 @@
 #define ksimilarStr "similar"
 #define ksimplifyLayerStr "simplifyLayer"
 #define ksingle72ColorStr "single72Color"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksingle72GrayStr "single72Gray"
 #define ksingleColumnStr "singleColumn"
 #define ksingleNoCompositePSStr "singleNoCompositePS"
@@ -4943,6 +5219,7 @@
 #define kskyBlendingDensityStr "skyBlendingDensity"
 #define kskyBlendingFeatherStr "skyBlendingFeather"
 #define kskyBlendingMarginSizeStr "skyBlendingMarginSize"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kskyReplacementStr "skyReplacement"
 #define kskyReplacementOutputStr "skyReplacementOutput"
 #define kskyReplacementOutputToNewSheetsStr "skyReplacementOutputToNewSheets"
@@ -4963,6 +5240,7 @@
 #define ksliceToolStr "sliceTool"
 #define ksliceTypeStr "sliceType"
 #define kslipMaskStr "slipMask"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kslopeLimitMatteStr "slopeLimitMatte"
 #define kslotStr "slot"
 #define kslovakLanguageStr "slovakLanguage"
@@ -4983,6 +5261,7 @@
 #define ksmartBrushContrastStr "smartBrushContrast"
 #define ksmartBrushDeconAmountStr "smartBrushDeconAmount"
 #define ksmartBrushDecontaminateStr "smartBrushDecontaminate"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksmartBrushFeatherStr "smartBrushFeather"
 #define ksmartBrushHighResOnMouseDownStr "smartBrushHighResOnMouseDown"
 #define ksmartBrushMatteOpacityStr "smartMatteOpacity"
@@ -5003,6 +5282,7 @@
 #define ksmartBrushShowRefineModeSettingsStr "smartBrushShowRefineModeSettings"
 #define ksmartBrushSmoothStr "smartBrushSmooth"
 #define ksmartBrushToolStr "smartBrushTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksmartBrushTransparencyStr "smartBrushTransparency"
 #define ksmartBrushUserSpecifiedOutputStr "smartBrushUserSpecifiedOutput"
 #define ksmartBrushUseSmartRadiusStr "smartBrushUseSmartRadius"
@@ -5023,6 +5303,7 @@
 #define ksmartSubtractStr "smartSubtract"
 #define ksMFloatStr "sMFloat"
 #define ksMIntStr "sMInt"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksmoothCornersStr "smoothCorners"
 #define ksmoothIndentsStr "smoothIndents"
 #define ksmoothingCatchupAtEndStr "smoothingCatchupAtEnd"
@@ -5043,6 +5324,7 @@
 #define ksnapshotEnumStr "snapshotEnum"
 #define ksnapshotInitialStr "snapshotInitial"
 #define ksnapStr "snap"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksnapToDocBoundsStr "snapToDocBounds"
 #define ksnapToGridStr "snapToGrid"
 #define ksnapToGuidesStr "snapToGuides"
@@ -5063,6 +5345,7 @@
 #define ksourceFolderStr "sourceFolder"
 #define ksourceImportStr "sourceImport"
 #define ksourceModeStr "sourceMode"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksourceModeTypeStr "sourceModeType"
 #define ksourceOpenFilesStr "sourceOpenFiles"
 #define ksourceStr "source"
@@ -5083,6 +5366,7 @@
 #define kspeedStr "speed"
 #define kspellCheckStr "spellCheck"
 #define ksphericalStr "spherical"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kspherizeModeStr "spherizeMode"
 #define kspherizeStr "spherize"
 #define kspinStr "spin"
@@ -5103,6 +5387,7 @@
 #define ksquarenessStr "squareness"
 #define ksquareScaleFactorStr "squareScaleFactor"
 #define ksquareSizeStr "squareSize"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksquareStr "square"
 #define ksrcBlackMaxStr "srcBlackMax"
 #define ksrcBlackMinStr "srcBlackMin"
@@ -5123,6 +5408,7 @@
 #define kstandardGermanLanguageStr "standardGermanLanguage"
 #define kstandardPortugueseLanguageStr "standardPortugueseLanguage"
 #define kstandardStr "standard"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kstarStr "star"
 #define kstartArrowheadStr "startArrowhead"
 #define kstartFrameNumberStr "startFrameNumber"
@@ -5143,6 +5429,7 @@
 #define kstopPaintProfiling "stopPaintProfiling"
 #define kstopStr "stop"
 #define kstopStrokeRecording "stopStrokeRecording"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kstraightStr "straight"
 #define kstrengthPluginStr "strengthPlugin"
 #define kstrengthRatioStr "strengthRatio"
@@ -5163,6 +5450,7 @@
 #define kstrokeDirHorizontalStr "strokeDirHorizontal"
 #define kstrokeDirLeftDiagStr "strokeDirLeftDiag"
 #define kstrokeDirRightDiagStr "strokeDirRightDiag"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kstrokeDirVerticalStr "strokeDirVertical"
 #define kstrokeEmbossStr "strokeEmboss"
 #define kstrokeEnabledStr "strokeEnabled"
@@ -5183,6 +5471,7 @@
 #define kstrokeStyleLineAlignmentStr "strokeStyleLineAlignment"
 #define kstrokeStyleLineCapTypeStr "strokeStyleLineCapType"
 #define kstrokeStyleLineDashOffsetStr "strokeStyleLineDashOffset"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kstrokeStyleLineDashSetStr "strokeStyleLineDashSet"
 #define kstrokeStyleLineJoinTypeStr "strokeStyleLineJoinType"
 #define kstrokeStyleLineWidthStr "strokeStyleLineWidth"
@@ -5203,6 +5492,7 @@
 #define kstyleBrushStr "styleBrush"
 #define kstyleClassStr "styleClass"
 #define kstyleFolderClassStr "styleFolderClass"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kstylePresetStr "stylePreset"
 #define kstylesAppendStr "stylesAppend"
 #define kstylesAppendDefaultStr "stylesAppendDefault"
@@ -5223,6 +5513,7 @@
 #define kstylesStr "styles"
 #define kstylesTextThumbnailViewStr "stylesTextThumbnailView"
 #define kstylesTextViewStr "stylesTextView"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kstylesThumbnailViewStr "stylesThumbnailView"
 #define kstyleStr "style"
 #define kstylisticAlternatesStr "stylisticAlternates"
@@ -5243,6 +5534,7 @@
 #define ksubtractFromStr "subtractFrom"
 #define ksubtractStr "subtract"
 #define ksubtractUserMaskFromSelectionStr "subtractUserMaskFromSelection"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksubtractVectorMaskFromSelectionStr "subtractVectorMaskFromSelection"
 #define ksubTypeStr "subType"
 #define ksubViewsStr "subViews"
@@ -5263,6 +5555,7 @@
 #define kswatchesAppendStr "swatchesAppend"
 #define kswatchesDeleteStr "swatchesDelete"
 #define kswatchesExportStr "swatchesExport"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kswatchesImportLegacyStr "swatchesLegacy"
 #define kswatchesImportStr "swatchesImport"
 #define kswatchesLargeListViewStr "swatchesLargeListView"
@@ -5283,6 +5576,7 @@
 #define ksymmetryPathStr "symmetryPath"
 #define ksyncAdvancedStr "syncAdvanced"
 #define ksyncChooseWhatStr "syncChooseWhat"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksyncErrorTypeStr "syncErrorType"
 #define ksyncErrorDescriptionStr "syncErrorDescription"
 #define ksyncEverythingStr "syncEverything"
@@ -5303,6 +5597,7 @@
 #define ksyntheticStyleStr "syntheticStyle"
 #define ksystemCallStr "systemCall"
 #define ksystemCMYKStr "systemCMYK"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ksystemGrayStr "systemGray"
 #define ksystemInfoStr "systemInfo"
 #define ksystemInfoSectionsStr "systemInfoSections"
@@ -5323,6 +5618,7 @@
 #define kTargetColorStr "targetColor"
 #define ktargetedAdjustorToolStr "targetedAdjustorTool"
 #define ktargetEnumStr "targetEnum"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktargetIDStr "targetID"
 #define ktargetLayersIDsStr "targetLayersIDs"
 #define ktargetLayersIndexesStr "targetLayersIndexes"
@@ -5343,6 +5639,7 @@
 #define kTextBlendGammaStr "TextBlendGamma"
 #define ktextBurasagariStr "textBurasagari"
 #define ktextCharStyleImportStr "textCharStyleImport"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktextClickPointStr "textClickPoint"
 #define ktextCompModeStr "textCompMode"
 #define ktextComposerEngineStr "textComposerEngine"
@@ -5363,6 +5660,7 @@
 #define ktextNewTextMode "textNewTextMode"
 #define ktextNewTextOrientation "textNewTextOrientation"
 #define ktextNoBreakStr "textNoBreak"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktextOidashiStr "textOidashi"
 #define ktextOikomiStr "textOikomi"
 #define ktextOldStyleStr "textOldStyle"
@@ -5383,6 +5681,7 @@
 #define ktextSubscriptStr "textSubscript"
 #define ktextSuperscriptStr "textSuperscript"
 #define ktextTateChuuYokoStr "textTateChuuYoko"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktextThumbnailStr "textThumbnail"
 #define ktextToClipboardStr "textToClipboard"
 #define ktextToolCharacterOptions "textToolCharacterOptions"
@@ -5403,6 +5702,7 @@
 #define ktextureDepthStr "textureDepth"
 #define ktextureFileStr "textureFile"
 #define ktextureFillStr "textureFill"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktextureInteractionLockStr "textureInteractionLock"
 #define ktextureScaleStr "textureScale"
 #define ktextureStr "texture"
@@ -5423,6 +5723,7 @@
 #define kthirdWidthFormStr "thirdWidthForm"
 #define kthreeDigitStr "threeDigit"
 #define kthresholdClassEventStr "thresholdClassEvent"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kthresholdEnumStr "thresholdEnum"
 #define kthresholdStr "threshold"
 #define kthumbnailSizeStr "thumbnailSize"
@@ -5443,6 +5744,7 @@
 #define ktileVerticallyStr "tileVertically"
 #define ktiltBlurStr "tiltBlur"
 #define ktiltScaleStr "tiltScale"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktiltStr "tilt"
 #define ktimecodeStr "timecode"
 #define ktimeDenominatorStr "timeDenominator"
@@ -5463,6 +5765,7 @@
 #define ktimelineGoToLastFrameStr "timelineGoToLastFrame"
 #define ktimelineGoToNextFrameStr "timelineGoToNextFrame"
 #define ktimelineGoToPreviousFrameStr "timelineGoToPreviousFrame"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktimelineGoToTimeStr "timelineGoToTime"
 #define ktimelineGoToWorkAreaEndStr "timelineGoToWorkAreaEnd"
 #define ktimelineGoToWorkAreaStartStr "timelineGoToWorkAreaStart"
@@ -5483,6 +5786,7 @@
 #define ktimelineSetEndOfWorkAreaStr "timelineSetEndOfWorkArea"
 #define ktimelineSetStartOfWorkAreaStr "timelineSetStartOfWorkArea"
 #define ktimelineShowAllLayersStr "timelineShowAllLayers"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktimelineShowFavoriteLayersStr "timelineShowFavoriteLayers"
 #define ktimelineShowSetFavoriteLayersStr "timelineShowSetFavoriteLayers"
 #define ktimelineSplitLayerStr "timelineSplitLayer"
@@ -5503,7 +5807,7 @@
 #define ktitlingStr "titling"
 #define kshowToastStr "showToast"
 #define khideToastStr "hideToast"
-
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoBuiltinStr "toBuiltin"
 #define ktoggle3DAxisStr "toggle3DAxis"
 #define ktoggle3DGroundPlaneStr "toggle3DGroundPlane"
@@ -5511,7 +5815,6 @@
 #define ktoggle3DMeshCageBoundingBox "toggle3DMeshCageBoundingBox"
 #define ktoggle3DPanelStr "toggle3DPanel"
 #define ktoggle3DSelectionStr "toggle3DSelection"
-#define ktoggle3DUVOverlayStr "toggle3DUVOverlay"
 #define ktoggleActionsPaletteStr "toggleActionsPalette"
 #define ktoggleAdjustmentPaletteStr "toggleAdjustmentPalette"
 #define ktoggleAnimationPaletteStr "toggleAnimationPalette"
@@ -5523,6 +5826,7 @@
 #define ktoggleBrushesExpandedViewStr "toggleBrushesExpandedView"
 #define ktoggleBrushesFlyout "toggleBrushesFlyout"
 #define ktoggleBrushesPaletteStr "toggleBrushesPalette"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoggleBrushPresetsPaletteStr "toggleBrushPresetsPalette"
 #define ktoggleBrushPreviewStr "toggleBrushPreview"
 #define ktoggleBrushStylerPaletteStr "toggleBrushStylerPalette"
@@ -5543,6 +5847,7 @@
 #define ktoggleCountStr "toggleCount"
 #define ktoggleCreatePanelStr "toggleCreatePanel"
 #define ktoggleCyanPreviewStr "toggleCyanPreview"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoggleDiacriticsStr "toggleDiacritics"
 #define ktoggleEdgesStr "toggleEdges"
 #define ktoggleEffectsPaletteStr "toggleEffectsPalette"
@@ -5563,6 +5868,7 @@
 #define ktoggleLockSlicesStr "toggleLockSlices"
 #define ktoggleMagentaPreviewStr "toggleMagentaPreview"
 #define ktoggleMaskPaletteStr "toggleMaskPalette"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoggleMeasurementLogPaletteStr "toggleMeasurementLogPalette"
 #define ktoggleNavigatorPaletteStr "toggleNavigatorPalette"
 #define ktoggleOptionsPaletteStr "toggleOptionsPalette"
@@ -5583,6 +5889,7 @@
 #define ktoggleRecipesPaletteStr "toggleRecipesPalette"
 #define ktoggleRGBMacPreviewStr "toggleRGBMacPreview"
 #define ktoggleRGBUncompensatedPreviewStr "toggleRGBUncompensatedPreview"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoggleRGBWindowsPreviewStr "toggleRGBWindowsPreview"
 #define ktoggleRulersStr "toggleRulers"
 #define ktoggleSearchInBrushesPanel "toggleSearchInBrushesPanel"
@@ -5602,7 +5909,9 @@
 #define ktoggleShowMRUInGradientsPanelStr "toggleShowMRUInGradientsPanel"
 #define ktoggleSlicesStr "toggleSlices"
 #define ktoggleSmartGuidesStr "toggleSmartGuides"
+#define ktoggleHoverLayerBoundsStr "toggleLayerBounds"
 #define ktoggleSnapToGridStr "toggleSnapToGrid"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoggleSnapToGuidesStr "toggleSnapToGuides"
 #define ktoggleStatusBarStr "toggleStatusBar"
 #define ktoggleStr "toggle"
@@ -5623,6 +5932,7 @@
 #define ktoNextWholeSecond "toNextWholeSecond"
 #define ktoolbarCustomizationStr "toolbarCustomization"
 #define ktoolBarVisibleStr "toolBarVisible"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoolChangedStr "toolChanged"
 #define ktoolIDStr "toolID"
 #define ktoolKeyStr "toolKey"
@@ -5643,6 +5953,7 @@
 #define ktoolsStr "tools"
 #define ktoolStr "tool"
 #define ktoolSupportsBrushesStr "toolSupportsBrushes"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktoolSupportsBrushPresetsStr "toolSupportsBrushPresets"
 #define ktoolTipStr "toolTip"
 #define ktoPathBottomStr "toPathBottom"
@@ -5663,6 +5974,7 @@
 #define ktrackerEndedWithoutBreakingHysteresisStr "trackerEndedWithoutBreakingHysteresis"
 #define ktrackIDStr "trackID"
 #define ktrackingAssignedStr "trackingAssigned"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktrackingStr "tracking"
 #define ktracingSettingsStr "tracingSettings"
 #define ktraditionalFormStr "traditionalForm"
@@ -5683,6 +5995,7 @@
 #define ktransitionStr "transition"
 #define ktranslationStr "translation"
 #define ktransparencyEnumStr "transparencyEnum"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktransparencyGamutPreferencesStr "transparencyGamutPreferences"
 #define ktransparencyGridColorsStr "transparencyGridColors"
 #define ktransparencyGridColorsTypeStr "transparencyGridColorsType"
@@ -5703,6 +6016,7 @@
 #define ktrimBasedOnStr "trimBasedOn"
 #define ktrimBoxStr "trimBox"
 #define ktrimDocumentToWorkAreaStr "trimDocumentToWorkArea"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktrimToLayerBoundsStr "trimToLayerBounds"
 #define ktrimStr "trim"
 #define ktrinitronStr "trinitron"
@@ -5723,6 +6037,7 @@
 #define ktypeClassModeOrClassModeStr "typeClassModeOrClassMode"
 #define ktypeCreateMaskToolMEStr "typeCreateMaskToolME"
 #define ktypeCreateMaskToolStr "typeCreateMaskTool"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define ktypeCreateOrEditToolMEStr "typeCreateOrEditToolME"
 #define ktypeCreateOrEditToolStr "typeCreateOrEditTool"
 #define ktypeMagicCreateOrEditToolStr "typeMagicCreateOrEditTool"
@@ -5743,6 +6058,7 @@
 #define kuiBlueHighlightColor "uiBlueHighlightColor"
 #define kuiBrightnessChangedStr "uiBrightnessChanged"
 #define kuiBrightnessEnabledStr "uiBrightnessEnabled"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kuiBrightnessLevelEnumTypeStr "uiBrightnessLevelEnumType"
 #define kuiBrightnessLevelStr "kuiBrightnessLevel"
 #define kuiBrightnessStr "uiBrightness"
@@ -5763,6 +6079,7 @@
 #define kuInt32Str "uInt32"
 #define kuIRGBStr "uIRGB"
 #define kukenglishLanguageStr "ukenglishLanguage"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kukrainianLanguageStr "ukranianLanguage"
 #define kuncoverDownStr "uncoverDown"
 #define kuncoverRightStr "uncoverRight"
@@ -5783,6 +6100,7 @@
 #define kuniformStr "uniform"
 #define kunitRectStr "unitRect"
 #define kunitsPrefsStr "unitsPrefs"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kunitsRulersPreferencesStr "unitsRulersPreferences"
 #define kunitTestStr "unitTest"
 #define kunitValueQuadVersionStr "unitValueQuadVersion"
@@ -5803,6 +6121,7 @@
 #define kupdateLayoutsStr "updateLayouts"
 #define kupdateLinkedSmartObjectStr "updateLinkedSmartObject"
 #define kupdateMarkdownFileStr "updateMarkdownFile"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kupdatePlacedLayerStr "updatePlacedLayer"
 #define kupdateStr "update"
 #define kupdateUIStr "updateUI"
@@ -5823,6 +6142,7 @@
 #define kuseChildLayerCompStateStr "useChildLayerCompState"
 #define kuseColorDynamicsStr "useColorDynamics"
 #define kuseCurvesStr "useCurves"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kused "used"
 #define kuseDefaultStr "useDefault"
 #define kuseDualBrushStr "useDualBrush"
@@ -5843,6 +6163,7 @@
 #define kusePaintDynamicsStr "usePaintDynamics"
 #define kusePositionStr "usePosition"
 #define kusePressureOverridesOpacityStr "usePressureOverridesOpacity"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kusePressureOverridesSizeStr "usePressureOverridesSize"
 #define kuserDefinedStr "userDefined"
 #define kuseRichToolTipsStr "useRichToolTips"
@@ -5854,7 +6175,6 @@
 #define kuserMaskOptionsStr "userMaskOptions"
 #define kuserMaskStr "userMask"
 #define kuserStopStr "userStop"
-#define kuserStr "user"
 #define kusersStr "users"
 #define kuseScatterStr "useScatter"
 #define kuseShapeStr "useShape"
@@ -5863,6 +6183,7 @@
 #define kuseStrictDispatchStr "useStrictDispatch"
 #define kuseTabletTabGroupAppearanceStr "useTabletTabGroupAppearance"
 #define kuseTextOutlinesStr "useTextOutlines"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kuseTextureStr "useTexture"
 #define kuseTintStr "useTint"
 #define kuseTipDynamicsStr "useTipDynamics"
@@ -5883,6 +6204,7 @@
 #define kvariationsStr "variations"
 #define kvector0Str "vector0"
 #define kvector1Str "vector1"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kvectorColorStr "vectorColor"
 #define kvectorDataStr "vectorData"
 #define kvectorMaskAsGlobalMaskStr "vectorMaskAsGlobalMask"
@@ -5903,6 +6225,7 @@
 #define kverboseStr "verbose"
 #define kversionFixStr "versionFix"
 #define kversionMajorStr "versionMajor"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kversionMinorStr "versionMinor"
 #define kversionStr "version"
 #define kverticalLeftToRightStr "verticalLeftToRight"
@@ -5923,6 +6246,7 @@
 #define kvideoNextFrameStr "videoNextFrame"
 #define kvideoPreviousFrameStr "videoPreviousFrame"
 #define kvideoStr "video"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kview200PercentStr "view200Percent"
 #define kviewIDStr "viewID"
 #define kviewInfoStr "viewInfo"
@@ -5943,6 +6267,7 @@
 #define kwaitStr "wait"
 #define kwariChuAutoJustifyStr "wariChuAutoJustify"
 #define kwariChuCenterJustifyStr "wariChuCenterJustify"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kwariChuCountStr "wariChuCount"
 #define kwariChuFullJustifyLastLineCenterStr "wariChuFullJustifyLastLineCenter"
 #define kwariChuFullJustifyLastLineFullStr "wariChuFullJustifyLastLineFull"
@@ -5963,6 +6288,7 @@
 #define kwarpBulgeStr "warpBulge"
 #define kwarpCustomStr "warpCustom"
 #define kwarpCylinderStr "warpCylinder"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kwarpedVerticesStr "warpedVertices"
 #define kwarpFisheyeStr "warpFisheye"
 #define kwarpFishStr "warpFish"
@@ -5983,6 +6309,7 @@
 #define kwarpValuesStr    "warpValues"  // Plural
 #define kwarpWaveStr "warpWave"
 #define kwatchSuspensionStr "watchSuspension"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kwatercolorStr "watercolor"
 #define kwatermarkStr "watermark"
 #define kwaterPaperStr "waterPaper"
@@ -6003,6 +6330,7 @@
 #define kwetBrushToolStr "wetBrushTool"
 #define kwetEdgesLockStr "wetEdgesLock"
 #define kwetEdgesStr "wetEdges"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kwetnessStr "wetness"
 #define kwhatStr "what"
 #define kwheelSpinBlurStr "wheelSpinBlur"
@@ -6023,6 +6351,7 @@
 #define kwideGamutRGBStr "wideGamutRGB"
 #define kwidePhosphorsStr "widePhosphors"
 #define kwidgetTypeStr "widgetType"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kwidthStr "width"
 #define kwildCardStr "wildCard"
 #define kwindingFillStr "windingFill"
@@ -6043,6 +6372,7 @@
 #define kworkingCMYKStr "workingCMYK"
 #define kworkingGrayStr "workingGray"
 #define kworkingRGBStr "workingRGB"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kworkingSpaceCodeStr "workingSpaceCode"
 #define kworkingSpotStr "workingSpot"
 #define kworkingOnLiveShapeStr "workingOnLiveShape"
@@ -6063,6 +6393,7 @@
 #define kwrapAroundStr "wrapAround"
 #define kwrapPathStr "wrapPath"
 #define kwrapStr "wrap"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kwriteBytesStr "writeBytes"
 #define kwriteMessagesStr "writeMessages"
 #define kwritePatternToFileStr "writePatternToFile"
@@ -6083,11 +6414,11 @@
 #define kyStr "y"
 #define kyTiltStr "yTilt"
 #define kyxStr "yx"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define kyyddmmStr "yyddmm"
 #define kyymmddStr "yymmdd"
 #define kyyStr "yy"
 #define kyyyymmddStr "yyyymmdd"
-#define kZ3DPreferencesStr "z3DPreferences"
 #define kzedStr "zed"
 #define kzigZagStr "zigZag"
 #define kzigZagTypeStr "zigZagType"
@@ -6103,30 +6434,24 @@
 #define kzoomWithScrollWheelStr "zoomWithScrollWheel"
 #define kzStr "z"
 #define kzuidStr "zuid"
-
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 #define eventContactSheet "63676b34-cb65-11d1-bc43-0060b0a13dc4"
 #define eventExportTransparentImage "02879e00-cb66-11d1-bc43-0060b0a13dc4"
 #define eventFitImage "3caa3434-cb67-11d1-bc43-0060b0a13dc4"
 #define eventModeChange "8cba8cd6-cb66-11d1-bc43-0060b0a13dc4"
 #define eventMultiPagePDFtoPSD "ec8d7010-cb66-11d1-bc43-0060b0a13dc4"
 #define eventResizeImage "1333cf0c-cb67-11d1-bc43-0060b0a13dc4"
-
 #define kToggleBadgerTestStr "toggleBadgerTest"
 #define kCloseBadgerTestPanelGroupStr "closeBadgerTestPanelGroup"
 #define kCloseBadgerTestPanelStr "closeBadgerTestPanel"
 #define kRunBadgerTestPanelFilteredTestStr "runBadgerTestPanelFilteredTests"
-
 #define kBadgerTestPanelFilterData "badgerTestPanelFilterData"
 #define kBadgerTestPanelFilterListCapacity "badgerTestPanelFilterCapacity"
 #define kBadgerTestPanelFilterList "badgerTestPanelFilterTextList"
+#define kAdjBrushOverlayEnabled "adjBrushOverlayEnabled"
+#define kAdjBrushSubtractFromAdj "adjBrushSubtractFromAdj"
+/////// DO NOT ADD ANYTHING HERE - SEE WARNING AT TOP OF FILE ///////////
 
-/*
-These need to be multicharacter constants for backwards compatibility
-with the existing color label enums.
-*/
-#define enumSeafoam 'Seaf'
-#define enumIndigo 'Indi'
-#define enumMagentaColor 'Mgnt'
-#define enumFuchsia 'Fuch'
+static_assert(__LINE__ == 6455, "Please read the comment at the top of the file!");
 
 #endif

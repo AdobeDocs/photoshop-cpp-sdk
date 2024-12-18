@@ -35,6 +35,14 @@ typedef struct PSRGBColor
 	uint16 red;
 	uint16 green;
 	uint16 blue;
+#if defined(__cplusplus)
+    bool operator==(const PSRGBColor& rhs) const {
+        return (red == rhs.red) && (green == rhs.green) && (blue == rhs.blue);
+    }
+    bool operator!=(const PSRGBColor& rhs) const {
+        return !(*this == rhs);
+    }
+#endif
 } PSRGBColor;
 
 typedef struct PSPoint
