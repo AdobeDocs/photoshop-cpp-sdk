@@ -26,8 +26,7 @@
 // Macro helpers to define plugin entry points
 /******************************************************************************/
 
-#if defined(__PIWin__)
-  #if __PIWin__
+#if MSWindows
     #if defined(_M_AMD64)
         #define CodeEntryPointWin64 CodeWin64X86
     #elif defined(_M_ARM64)
@@ -35,7 +34,6 @@
     #else
         #error unknown architecture
     #endif
-  #endif
 #endif
 
 #endif // PI_RESOURCE_DEFINES_H

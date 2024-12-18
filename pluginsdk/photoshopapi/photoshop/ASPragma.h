@@ -27,22 +27,6 @@
 #include "ASConfig.h"
 #endif
 
-
-#ifdef MAC_ENV
-
-#ifdef MACPPC_ENV
-#define	PRAGMA_ALIGN_BEGIN			options align=mac68k
-#define PRAGMA_ALIGN_END			options align=reset
-#define PRAGMA_IMPORT_BEGIN			import on
-#define PRAGMA_IMPORT_END			import off
-#endif
-
-#ifdef MAC68K_ENV
-#error 68K plugins no longer supported!
-#endif
-
-#endif
-
 #ifdef WIN_ENV
 #define	PRAGMA_ALIGN_BEGIN			pack(push, 4)			
 #define PRAGMA_ALIGN_END			pack(pop)
