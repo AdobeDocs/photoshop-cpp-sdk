@@ -355,6 +355,11 @@ typedef enum
 */
 #define propVersion				'vers'
 
+/**	
+* The locale of the host. Example en_US  (Complex, read-only).
+*/
+#define propLocale				'locl'
+
 // Is an action play in progress? actions palette or automation plug in(Simple)
 /**
 * Action play information, for actions palette or automation plug in; (Simple, read-only).

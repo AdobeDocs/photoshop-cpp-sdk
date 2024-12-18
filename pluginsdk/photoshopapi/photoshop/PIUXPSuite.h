@@ -55,6 +55,7 @@ extern "C" {
 /******************************************************************************/
 
 #define kPSUXPSuiteVersion1			1	/**< UXP Suite version 1  */
+#define kPSUXPSuiteVersion2			2	/**< UXP Suite version 1  */
 
 /******************************************************************************/
 
@@ -72,6 +73,28 @@ typedef struct PsUXPSuite1
     SPAPI SPErr (*RemoveUXPMessageListener) (SPPluginRef selfRef);
 
 } PsUXPSuite1;
+
+typedef struct PsUXPSuite2
+{
+    /** Send a notifier message to a UXP plugin.
+    ----
+    @param selfRef      The plugin that is calling the method
+    @param uxpPluginId  Id of target UXP plugin. May not be null
+    @param descriptor   descriptor that is passed to the UXP target function.
+    @param launchPlugin if true, then the plugin will be launched if it is not already
+                        running. If false, then the message is ignored if the plugin is
+                        not running.
+    */
+    SPAPI SPErr (*SendUXPMessage) ( SPPluginRef selfRef,
+                                    const char* uxpPluginId,
+                                    PIActionDescriptor descriptor,
+                                    SPBoolean launchPlugin);
+    
+    SPAPI SPErr (*AddUXPMessageListener) (SPPluginRef selfRef, PIUXPMessageNotifier notifier);
+    
+    SPAPI SPErr (*RemoveUXPMessageListener) (SPPluginRef selfRef);
+
+} PsUXPSuite2;
 
 
 #ifdef __cplusplus

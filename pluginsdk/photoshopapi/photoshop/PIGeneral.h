@@ -655,6 +655,15 @@ typedef PIWin64CodeDesc PIWin64X86CodeDesc;
 #define PIRequiredHostProperty	0x686f7374L
 
 ///@ingroup PiPLGeneralKeys
+// 'rhsv' \<PIType\> giving host version required if any:
+/**
+* Minimum version of required host; key value is 'rhsv'.
+* This property key reflects the \c RequiredHostVersion property in the PiPL resource file.
+* If RequiredHostVersion is present, RequiredHost is required.
+*/
+#define PIRequiredHostVersionProperty	0x72687376L
+
+///@ingroup PiPLGeneralKeys
 // 'catg' \<PString\> Category name that appears on top level menu:
 /** 
 * In the \b Filter menu, what sub-menu to list this plug-in; key value is 'catg'.
