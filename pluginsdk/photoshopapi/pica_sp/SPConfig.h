@@ -61,11 +61,19 @@
 	#define ANDROID_ENV 1
 #endif
 
-#if !defined(WIN_ENV) && !defined(MAC_ENV) && !defined(ANDROID_ENV)
+#ifdef __LINUX__
+    #define UNIX_ENV 1
+#endif
+
+#if defined (__EMSCRIPTEN__)
+	#define WEB_ENV 1
+#endif
+
+#if !defined(WIN_ENV) && !defined(MAC_ENV) && !defined(ANDROID_ENV) && !defined(UNIX_ENV) && !defined(WEB_ENV)
 	#error
 #endif
 
-#if defined(WIN_ENV) && defined(MAC_ENV) && defined(ANDROID_ENV)
+#if defined(WIN_ENV) && defined(MAC_ENV) && defined(ANDROID_ENV) && defined(UNIX_ENV) && defined (WEB_ENV)
 	#error
 #endif
 
